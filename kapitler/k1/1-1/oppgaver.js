@@ -102,6 +102,110 @@ Bok.oppgaver([
     losning: "<p>\\(0{,}795 \\cdot 1000 = 795\\) kr. Kommaet skal flyttes tre plasser til høyre. Lærlingen flyttet det fire plasser. Et overslag (10 esker à ca. 80 kr) avslører feilen.</p>"
   },
   {
+    id: "tre-seks-hundre",
+    niva: "lett",
+    tittel: "Hundre skiver",
+    tekst: "<p>Én underlagsskive koster 3,60 kr. Hva koster 100 skiver?</p>",
+    stegForSteg: false,
+    svar: { verdi: 360, enhet: "kr" },
+    hint: ["Gang med 100: kommaet to plasser til høyre.", "\\(3{,}60 \\cdot 100\\)."],
+    losning: "<p>\\(3{,}60 \\cdot 100 = 360\\) kr.</p>"
+  },
+  {
+    id: "syttito-ti",
+    niva: "lett",
+    tittel: "Ti plater",
+    tekst: "<p>En bunt med 10 like plater er 72 mm tykk. Hvor tykk er én plate?</p>",
+    stegForSteg: false,
+    svar: { verdi: 7.2, enhet: "mm" },
+    hint: ["Del tykkelsen på 10.", "\\(72 : 10\\): kommaet én plass til venstre."],
+    losning: "<p>\\(72 : 10 = 7{,}2\\) mm.</p>"
+  },
+  {
+    id: "aatte-tideler",
+    niva: "lett",
+    tittel: "Flatstål til kutteren",
+    tekst: "<p>Flatstålet er 0,8 m langt. Laserkutteren vil ha målet i millimeter. Hvor mange mm er det?</p>",
+    steg: [{ verdi: 1000 }],
+    svar: { verdi: 800, enhet: "mm" },
+    hint: ["Fra m til mm ganger du med 1000.", "\\(0{,}8 \\cdot 1000\\)."],
+    losning: "<p>\\(0{,}8 \\cdot 1000 = 800\\) mm.</p>"
+  },
+  {
+    id: "kabel-mm",
+    niva: "middels",
+    tittel: "Kabel på tegningen",
+    tekst: "<p>En kabel er 2,4 m lang. Tegningen skal ha målet i mindre enheter.</p>",
+    deler: [
+      { tekst: "Hvor lang er kabelen i cm?", svar: { verdi: 240, enhet: "cm" } },
+      { tekst: "Hvor lang er kabelen i mm?", svar: { verdi: 2400, enhet: "mm" } }
+    ],
+    hint: ["Fra m til cm ganger du med 100. Fra m til mm ganger du med 1000.", "\\(2{,}4 \\cdot 100\\) og \\(2{,}4 \\cdot 1000\\)."],
+    losning: "<p>a) \\(2{,}4 \\cdot 100 = 240\\) cm.<br>b) \\(2{,}4 \\cdot 1000 = 2400\\) mm.</p>"
+  },
+  {
+    id: "stang-560",
+    niva: "middels",
+    tittel: "Stang på 560 mm",
+    tekst: "<p>En stang er kappet til 560 mm.</p>",
+    steg: [{ verdi: 56, enhet: "cm" }],
+    deler: [
+      { tekst: "Hvor mange centimeter er det?", svar: { verdi: 56, enhet: "cm" } },
+      { tekst: "Hvor mange meter er det?", svar: { verdi: 0.56, enhet: "m" } }
+    ],
+    hint: ["Fra mm til cm deler du med 10. Fra mm til m deler du med 1000.", "\\(560 : 10 = 56\\). \\(560 : 1000 = 0{,}56\\)."],
+    losning: "<p>a) \\(560 : 10 = 56\\) cm.<br>b) \\(560 : 1000 = 0{,}56\\) m.</p>"
+  },
+  {
+    id: "bolter-250",
+    niva: "middels",
+    tittel: "250 bolter",
+    tekst: "<p>En pose med 100 bolter koster 64 kr. Du trenger 250 bolter til et stativ.</p>",
+    steg: [{ verdi: 0.64, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva koster én bolt?", svar: { verdi: 0.64, enhet: "kr" } },
+      { tekst: "Hva koster 250 bolter?", svar: { verdi: 160, enhet: "kr" } }
+    ],
+    hint: ["Del poseprisen på 100.", "\\(64 : 100 = 0{,}64\\). \\(0{,}64 \\cdot 250 = 160\\). Du kan også regne \\(2{,}5 \\cdot 64\\)."],
+    losning: "<p>a) \\(64 : 100 = 0{,}64\\) kr.<br>b) \\(2{,}5 \\cdot 64 = 160\\) kr.</p>"
+  },
+  {
+    id: "blikk-tykkelse",
+    niva: "vanskelig",
+    tittel: "Bunt med blikk",
+    tekst: "<p>100 like blikkplater stablet oppå hverandre måler 35 mm. Du skal bestille 1000 plater.</p>",
+    steg: [{ verdi: 0.35, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor tykk er én plate?", svar: { verdi: 0.35, enhet: "mm" } },
+      { tekst: "Hvor tykk blir en bunt med 1000 plater?", svar: { verdi: 350, enhet: "mm" } }
+    ],
+    hint: ["Del buntens mål på 100.", "\\(35 : 100 = 0{,}35\\) mm. Gang med 1000, eller gang 35 mm med 10."],
+    losning: "<p>a) \\(35 : 100 = 0{,}35\\) mm.<br>b) \\(0{,}35 \\cdot 1000 = 350\\) mm. Det er 10 ganger den første bunten.</p>"
+  },
+  {
+    id: "kabel-pris",
+    niva: "vanskelig",
+    tittel: "Pris på kabel",
+    tekst: "<p>Kabel på hylla koster 2,50 kr per meter.</p>",
+    steg: [{ verdi: 250, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva koster 100 m?", svar: { verdi: 250, enhet: "kr" } },
+      { tekst: "Hva koster 4,8 m?", svar: { verdi: 12, enhet: "kr" } }
+    ],
+    hint: ["Gang meterprisen med lengden.", "\\(2{,}50 \\cdot 100 = 250\\). \\(2{,}50 \\cdot 4{,}8 = 12\\)."],
+    losning: "<p>a) \\(2{,}50 \\cdot 100 = 250\\) kr.<br>b) \\(2{,}50 \\cdot 4{,}8 = 12\\) kr.</p>"
+  },
+  {
+    id: "sveis-12kg",
+    niva: "vanskelig",
+    tittel: "Rull med sveisetråd",
+    tekst: "<p>En rull sveisetråd veier 12 kg. Hver brakett bruker 16 g tråd. Hvor mange braketter kan du sveise med én rull?</p>",
+    steg: [{ verdi: 12000, enhet: "g" }],
+    svar: { verdi: 750, enhet: "stk" },
+    hint: ["Gjør kg om til g før du deler.", "\\(12 \\cdot 1000 = 12\\,000\\). \\(12\\,000 : 16\\)."],
+    losning: "<p>\\(12\\ \\text{kg} = 12\\,000\\ \\text{g}\\). \\(12\\,000 : 16 = 750\\) braketter.</p>"
+  },
+  {
     id: "skivetykkelse",
     type: "verksted",
     niva: "middels",

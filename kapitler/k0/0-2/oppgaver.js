@@ -61,6 +61,102 @@ Bok.oppgaver([
     losning: "<p>Hele plata: \\(40 \\cdot 25 = 1000\\) cm². Hjørnet: \\(10 \\cdot 10 = 100\\) cm². Igjen: \\(1000 - 100 = 900\\) cm².</p>"
   },
   {
+    id: "omkrets-40",
+    niva: "lett",
+    tittel: "Omkrets av dekkplate",
+    tekst: "<p>En dekkplate er 40 cm lang og 15 cm bred. Hvor lang er omkretsen?</p>",
+    steg: [{ verdi: 55, enhet: "cm" }],
+    svar: { verdi: 110, enhet: "cm" },
+    hint: ["Omkretsen er to lengder og to bredder.", "\\(2 \\cdot (40 + 15)\\)."],
+    losning: "<p>\\(40 + 15 = 55\\). \\(2 \\cdot 55 = 110\\) cm.</p>"
+  },
+  {
+    id: "gang-48",
+    niva: "lett",
+    tittel: "Ti skruer",
+    tekst: "<p>Én skrue veier 4,8 g. Hvor mange gram veier 10 like skruer?</p>",
+    stegForSteg: false,
+    svar: { verdi: 48, enhet: "g" },
+    hint: ["Gange med 10 flytter kommaet én plass til høyre.", "\\(4{,}8 \\cdot 10\\)."],
+    losning: "<p>\\(4{,}8 \\cdot 10 = 48\\) g.</p>"
+  },
+  {
+    id: "tre-esker",
+    niva: "lett",
+    tittel: "Tre esker",
+    tekst: "<p>Formelen \\(n = e \\cdot 100\\) gir antall skruer når \\(e\\) er antall esker. Hvor mange skruer er det i 3 esker?</p>",
+    stegForSteg: false,
+    svar: { verdi: 300, enhet: "stk" },
+    hint: ["Sett \\(e = 3\\) inn i formelen.", "\\(3 \\cdot 100\\)."],
+    losning: "<p>\\(n = 3 \\cdot 100 = 300\\) skruer.</p>"
+  },
+  {
+    id: "areal-45",
+    niva: "middels",
+    tittel: "Areal av plate",
+    tekst: "<p>En plate til en kasse er 45 cm lang og 12 cm bred. Hvor stort er arealet?</p>",
+    steg: [{ verdi: 450, enhet: "cm²" }, { verdi: 90, enhet: "cm²" }],
+    svar: { verdi: 540, enhet: "cm²" },
+    hint: ["Areal er lengde ganger bredde.", "\\(45 \\cdot 10 = 450\\) og \\(45 \\cdot 2 = 90\\)."],
+    losning: "<p>\\(45 \\cdot 12 = 540\\) cm².</p>"
+  },
+  {
+    id: "lonn-tre",
+    niva: "middels",
+    tittel: "Tre timer i verkstedet",
+    tekst: "<p>Hjelp i verkstedet betales med \\(L = 200 + 150 \\cdot t\\), der \\(t\\) er timer. Hva blir lønna for 3 timer?</p>",
+    steg: [{ verdi: 450, enhet: "kr" }],
+    svar: { verdi: 650, enhet: "kr" },
+    hint: ["Regn \\(150 \\cdot t\\) først.", "\\(150 \\cdot 3 = 450\\). Legg til 200."],
+    losning: "<p>\\(L = 200 + 150 \\cdot 3 = 200 + 450 = 650\\) kr.</p>"
+  },
+  {
+    id: "bor-penger",
+    niva: "middels",
+    tittel: "Bor, tape og hansker",
+    tekst: "<p>Du har 400 kr. Et bor koster 125 kr, tape 36 kr og hansker 59 kr.</p>",
+    steg: [{ verdi: 161, enhet: "kr" }, { verdi: 220, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva koster de tre tingene til sammen?", svar: { verdi: 220, enhet: "kr" } },
+      { tekst: "Hvor mye har du igjen?", svar: { verdi: 180, enhet: "kr" } }
+    ],
+    hint: ["Legg sammen prisene først.", "\\(125 + 36 = 161\\), og \\(161 + 59 = 220\\)."],
+    losning: "<p>\\(125 + 36 + 59 = 220\\) kr. \\(400 - 220 = 180\\) kr igjen.</p>"
+  },
+  {
+    id: "hjorne-50",
+    niva: "vanskelig",
+    tittel: "Utsparing i hjørnet",
+    tekst: "<p>En plate er 50 cm × 32 cm. Du skjærer bort et hjørne på 12 cm × 8 cm til en utsparing. Hvor stort areal er igjen?</p>",
+    steg: [{ verdi: 1600, enhet: "cm²" }, { verdi: 96, enhet: "cm²" }],
+    svar: { verdi: 1504, enhet: "cm²" },
+    hint: ["Regn arealet av hele plata, og trekk fra hjørnet.", "\\(50 \\cdot 32 = 1600\\). \\(12 \\cdot 8 = 96\\)."],
+    losning: "<p>Hele plata: \\(50 \\cdot 32 = 1600\\) cm². Hjørnet: \\(12 \\cdot 8 = 96\\) cm². Igjen: \\(1600 - 96 = 1504\\) cm².</p>"
+  },
+  {
+    id: "plate-36",
+    niva: "vanskelig",
+    tittel: "Omkrets og areal",
+    tekst: "<p>En dekkplate er 36 cm × 25 cm.</p>",
+    steg: [{ verdi: 61, enhet: "cm" }],
+    deler: [
+      { tekst: "Hvor lang er omkretsen?", svar: { verdi: 122, enhet: "cm" } },
+      { tekst: "Hvor stort er arealet?", svar: { verdi: 900, enhet: "cm²" } }
+    ],
+    hint: ["Omkrets: \\(2 \\cdot (36 + 25)\\). Areal: \\(36 \\cdot 25\\).", "\\(36 + 25 = 61\\)."],
+    losning: "<p>a) \\(2 \\cdot 61 = 122\\) cm.<br>b) \\(36 \\cdot 25 = 900\\) cm². Enheten viser hva du har regnet.</p>"
+  },
+  {
+    id: "lonn-igjen",
+    niva: "vanskelig",
+    tittel: "Lønn etter verneutstyr",
+    tekst: "<p>Du jobber 4 timer. Lønna er \\(L = 200 + 150 \\cdot t\\). Verneutstyret du kjøpte, kostet 213 kr. Hvor mange kroner av lønna er igjen etter det kjøpet?</p>",
+    steg: [{ verdi: 600, enhet: "kr" }, { verdi: 800, enhet: "kr" }],
+    svar: { verdi: 587, enhet: "kr" },
+    hint: ["Finn lønna først. \\(150 \\cdot 4\\) før du legger til 200.", "\\(800 - 213\\)."],
+    losning: "<p>\\(150 \\cdot 4 = 600\\). \\(L = 200 + 600 = 800\\) kr. \\(800 - 213 = 587\\) kr igjen.</p>"
+  },
+  {
     id: "merkeskilt",
     type: "verksted",
     niva: "lett",

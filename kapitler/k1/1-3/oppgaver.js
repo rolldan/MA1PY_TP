@@ -67,6 +67,106 @@ Bok.oppgaver([
     losning: "<p>\\(80 + 140 - 20 = 200\\) kr.</p>"
   },
   {
+    id: "morgen-atte",
+    niva: "lett",
+    tittel: "Åtte kuldegrader",
+    tekst: "<p>Det er \\(-8\\) °C i verkstedet. Ovnen hever temperaturen med 5 grader. Hva blir temperaturen?</p>",
+    svar: { verdi: -3, enhet: "°C" },
+    hint: ["Du starter på −8 og går 5 til høyre.", "Du er fortsatt under null: \\(-8 + 5\\)."],
+    losning: "<p>\\(-8 + 5 = -3\\) °C.</p>"
+  },
+  {
+    id: "fortegn-lett",
+    niva: "lett",
+    tekst: "<p>Regn ut.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "\\(5 - 9\\)", svar: { verdi: -4 } },
+      { tekst: "\\(-3 + (-4)\\)", svar: { verdi: -7 } },
+      { tekst: "\\((-2) \\cdot 6\\)", svar: { verdi: -12 } },
+      { tekst: "\\((-4) \\cdot (-3)\\)", svar: { verdi: 12 } }
+    ],
+    hint: ["Ulike fortegn i gange gir minus. Like fortegn gir pluss.", "\\(5 - 9\\) går forbi null."],
+    losning: "<p>a) −4 &nbsp; b) −7 &nbsp; c) −12 &nbsp; d) 12</p>"
+  },
+  {
+    id: "avvik-80",
+    niva: "lett",
+    tittel: "Avvik på 80 mm",
+    tekst: "<p>Målet er 80,0 mm. Du måler 78,5 mm. Hva er avviket? Avvik = målt mål − riktig mål.</p>",
+    svar: { verdi: -1.5, enhet: "mm" },
+    hint: ["Trekk målet fra det du målte.", "\\(78{,}5 - 80\\). Negativt svar betyr for kort."],
+    losning: "<p>\\(78{,}5 - 80 = -1{,}5\\) mm. Emnet er 1,5 mm for kort.</p>"
+  },
+  {
+    id: "fire-kapp",
+    niva: "middels",
+    tittel: "Fire kapp",
+    tekst: "<p>En stang er 1000 mm. Du kapper fire biter på 120 mm. Hvor mye er igjen?</p>",
+    steg: [{ verdi: 480, enhet: "mm" }],
+    svar: { verdi: 520, enhet: "mm" },
+    hint: ["Gange før minus.", "\\(4 \\cdot 120 = 480\\). \\(1000 - 480\\)."],
+    losning: "<p>\\(1000 - 4 \\cdot 120 = 1000 - 480 = 520\\) mm.</p>"
+  },
+  {
+    id: "kutt-regning",
+    niva: "middels",
+    tittel: "Pris med avslag",
+    tekst: "<p>Et kapp koster 50 kr i oppstart og 20 kr per kutt. Du tar 3 kutt og får 15 kr i avslag. Regn ut \\(50 + 3 \\cdot 20 - 15\\).</p>",
+    steg: [{ verdi: 60, enhet: "kr" }],
+    svar: { verdi: 95, enhet: "kr" },
+    hint: ["Gange før pluss og minus.", "\\(3 \\cdot 20 = 60\\). Så \\(50 + 60 - 15\\)."],
+    losning: "<p>\\(50 + 60 - 15 = 95\\) kr.</p>"
+  },
+  {
+    id: "fortegn-mid",
+    niva: "middels",
+    tekst: "<p>Regn ut.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "\\((-8) \\cdot (-3)\\)", svar: { verdi: 24 } },
+      { tekst: "\\(18 : (-3)\\)", svar: { verdi: -6 } },
+      { tekst: "\\(20 - (-4)\\)", svar: { verdi: 24 } }
+    ],
+    hint: ["Like fortegn gir pluss. Ulike fortegn gir minus.", "\\(20 - (-4) = 20 + 4\\)."],
+    losning: "<p>a) 24 &nbsp; b) −6 &nbsp; c) 24</p>"
+  },
+  {
+    id: "stigning-tolv",
+    niva: "vanskelig",
+    tittel: "Fra kulde til pluss",
+    tekst: "<p>Om morgenen er det \\(-12\\) °C i hallen. Midt på dagen er det \\(3\\) °C. På samme ark står regnestykket \\(10 - 4 \\cdot 3\\).</p>",
+    deler: [
+      { tekst: "Hvor mange grader har temperaturen steget?", svar: { verdi: 15, enhet: "°C" } },
+      { tekst: "Regn ut \\(10 - 4 \\cdot 3\\).", svar: { verdi: -2 } }
+    ],
+    hint: ["Fra −12 til 3 er det samme som \\(3 - (-12)\\).", "Gange før minus: \\(4 \\cdot 3 = 12\\), så \\(10 - 12\\)."],
+    losning: "<p>a) \\(3 - (-12) = 15\\) grader.<br>b) \\(10 - 12 = -2\\).</p>"
+  },
+  {
+    id: "oppdrag-seks",
+    niva: "vanskelig",
+    tittel: "Seks kutt",
+    tekst: "<p>Et oppdrag koster 120 kr i oppstart og 25 kr per kutt. Du tar 6 kutt og får 30 kr i avslag. Regn ut \\(120 + 6 \\cdot 25 - 30\\).</p>",
+    steg: [{ verdi: 150, enhet: "kr" }],
+    svar: { verdi: 240, enhet: "kr" },
+    hint: ["Gange før pluss og minus.", "\\(6 \\cdot 25 = 150\\). Så \\(120 + 150 - 30\\)."],
+    losning: "<p>\\(120 + 150 - 30 = 240\\) kr.</p>"
+  },
+  {
+    id: "avvik-50",
+    niva: "vanskelig",
+    tittel: "Fem emner på 50 mm",
+    tekst: "<p>Målet er 50,0 mm. Målingene er 50,2 · 49,5 · 50,8 · 49,1 · 50,0 mm. Avviket er målt mål minus 50.</p>",
+    steg: [{ verdi: -0.5, enhet: "mm" }, { verdi: 0.2, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er det minste avviket?", svar: { verdi: -0.9, enhet: "mm" } },
+      { tekst: "Hva er det største avviket?", svar: { verdi: 0.8, enhet: "mm" } }
+    ],
+    hint: ["Regn hvert avvik. \\(49{,}1 - 50 = -0{,}9\\).", "Minste betyr mest negativ. Største er det som ligger lengst til høyre."],
+    losning: "<p>Avvikene er +0,2, −0,5, +0,8, −0,9 og 0 mm.<br>a) Minste er \\(-0{,}9\\) mm.<br>b) Største er \\(+0{,}8\\) mm.</p>"
+  },
+  {
     id: "avvik-tavla",
     type: "verksted",
     niva: "middels",

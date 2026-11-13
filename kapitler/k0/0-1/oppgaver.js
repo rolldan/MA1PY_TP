@@ -58,6 +58,99 @@ Bok.oppgaver([
     losning: "<p>a) Tallene har ulike enheter, så de kan ikke sammenlignes.<br>b) \\(2{,}4\\ \\text{m} = 240\\ \\text{cm}\\). \\(240 - 80 = 160\\) cm.</p>"
   },
   {
+    id: "oekt-tid",
+    niva: "lett",
+    tittel: "To økter",
+    tekst: "<p>Den korte økta varer 60 minutter. Den lange økta i verkstedet varer 75 minutter. Hvor mange minutter er de to øktene til sammen?</p>",
+    steg: [{ verdi: 60, enhet: "min" }, { verdi: 75, enhet: "min" }],
+    svar: { verdi: 135, enhet: "min" },
+    hint: ["Legg sammen de to tidene.", "\\(60 + 75\\)."],
+    losning: "<p>\\(60 + 75 = 135\\) minutter.</p>"
+  },
+  {
+    id: "fire-sider",
+    niva: "lett",
+    tittel: "Fire sider",
+    tekst: "<p>Hvert delkapittel har tavle, teori, oppgaver og verkstedkort. Hvor mange sider er det?</p>",
+    stegForSteg: false,
+    svar: { verdi: 4, enhet: "stk" },
+    hint: ["Tell sidene som står i forklaringen.", "Tavle, teori, oppgaver, verkstedkort."],
+    losning: "<p>Det er 4 sider.</p>"
+  },
+  {
+    id: "bor-cm",
+    niva: "lett",
+    tittel: "Boret i centimeter",
+    tekst: "<p>Et bor ved søyleboremaskinen er merket Ø16 mm. Hvor mange centimeter er det?</p>",
+    steg: [{ verdi: 10, enhet: "mm" }],
+    svar: { verdi: 1.6, enhet: "cm" },
+    hint: ["1 cm = 10 mm. Fra mm til cm deler du.", "\\(16 : 10\\)."],
+    losning: "<p>\\(16 : 10 = 1{,}6\\) cm.</p>"
+  },
+  {
+    id: "list-igjen",
+    niva: "middels",
+    tittel: "Lista etter kapp",
+    tekst: "<p>En list på lageret er 2,1 m. Du kapper av 45 cm til en brakett. Hvor mange centimeter er igjen?</p>",
+    steg: [{ verdi: 210, enhet: "cm" }],
+    svar: { verdi: 165, enhet: "cm" },
+    hint: ["Gjør meter om til centimeter før du trekker fra.", "\\(2{,}1 \\cdot 100 = 210\\). Så \\(210 - 45\\)."],
+    losning: "<p>\\(2{,}1\\ \\text{m} = 210\\ \\text{cm}\\). \\(210 - 45 = 165\\) cm.</p>"
+  },
+  {
+    id: "to-ror",
+    niva: "middels",
+    tittel: "To rør",
+    tekst: "<p>Rør A er 1,2 m. Rør B er 95 cm. Hvor mange centimeter lengre er rør A?</p>",
+    steg: [{ verdi: 120, enhet: "cm" }],
+    svar: { verdi: 25, enhet: "cm" },
+    hint: ["Gjør 1,2 m om til cm, så de har samme enhet.", "\\(120 - 95\\)."],
+    losning: "<p>\\(1{,}2\\ \\text{m} = 120\\ \\text{cm}\\). \\(120 - 95 = 25\\) cm.</p>"
+  },
+  {
+    id: "hva-er-trykk",
+    niva: "middels",
+    tittel: "Hva er trykk?",
+    tekst: "<p>På verkstedrunden noterer du 900 r/min, 1,8 m, 6 bar og 45 kr. Hvilket av dem er et trykk?</p>",
+    stegForSteg: false,
+    svar: { valg: ["900 r/min", "1,8 m", "6 bar", "45 kr"], riktig: 2, forklaring: "bar er trykk, slik det står på manometeret." },
+    hint: ["Trykk leser du på et manometer.", "Se etter enheten bar."],
+    losning: "<p>6 bar er trykk. r/min er turtall, m er lengde og kr er pris.</p>"
+  },
+  {
+    id: "to-kapp",
+    niva: "vanskelig",
+    tittel: "To kapp av hylla",
+    tekst: "<p>En hylle er 2,4 m. Du kapper to like biter på 55 cm. Hvor mange centimeter er igjen av hylla?</p>",
+    steg: [{ verdi: 240, enhet: "cm" }, { verdi: 110, enhet: "cm" }],
+    svar: { verdi: 130, enhet: "cm" },
+    hint: ["Gjør om til cm, og finn hvor mye to biter er til sammen.", "\\(2 \\cdot 55 = 110\\). \\(240 - 110\\)."],
+    losning: "<p>\\(2{,}4\\ \\text{m} = 240\\ \\text{cm}\\). To biter: \\(2 \\cdot 55 = 110\\) cm. Igjen: \\(240 - 110 = 130\\) cm.</p>"
+  },
+  {
+    id: "skilt-kapp",
+    niva: "vanskelig",
+    tittel: "Skilt og kapp",
+    tekst: "<p>Du ser tre skilt: 1400 r/min, 1,75 m og 79,50 kr. Hylla er den som er en lengde. Du kapper av 60 cm.</p>",
+    steg: [{ verdi: 175, enhet: "cm" }],
+    deler: [
+      { tekst: "Hvilket skilt er en lengde?", svar: { valg: ["1400 r/min", "1,75 m", "79,50 kr"], riktig: 1, forklaring: "m er meter, en lengde." } },
+      { tekst: "Hvor mange centimeter er igjen av hylla?", svar: { verdi: 115, enhet: "cm" } }
+    ],
+    hint: ["Lengde har enhet m, cm eller mm.", "\\(1{,}75\\ \\text{m} = 175\\ \\text{cm}\\). Trekk fra 60."],
+    losning: "<p>a) 1,75 m er lengden.<br>b) \\(175 - 60 = 115\\) cm.</p>"
+  },
+  {
+    id: "ror-to-kapp",
+    niva: "vanskelig",
+    tittel: "Rør med to kapp",
+    tekst: "<p>Et rør er 3,2 m. Du kapper først av 80 cm, og deretter 1,1 m. Hvor mange centimeter er igjen?</p>",
+    steg: [{ verdi: 320, enhet: "cm" }, { verdi: 110, enhet: "cm" }, { verdi: 240, enhet: "cm" }],
+    svar: { verdi: 130, enhet: "cm" },
+    hint: ["Gjør begge lengdene om til centimeter.", "\\(3{,}2\\ \\text{m} = 320\\ \\text{cm}\\) og \\(1{,}1\\ \\text{m} = 110\\ \\text{cm}\\). \\(320 - 80 - 110\\)."],
+    losning: "<p>\\(320 - 80 = 240\\). \\(240 - 110 = 130\\) cm.</p>"
+  },
+  {
     id: "fem-funn",
     type: "verksted",
     niva: "middels",

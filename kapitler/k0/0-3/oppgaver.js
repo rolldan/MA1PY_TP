@@ -61,6 +61,104 @@ Bok.oppgaver([
     losning: "<p>a) −19 &nbsp; b) −12 &nbsp; c) 10 &nbsp; d) 20 &nbsp; e) \\(2 + 12 = 14\\)</p>"
   },
   {
+    id: "pluss-fra-minus",
+    niva: "lett",
+    tittel: "Fra minus til pluss",
+    tekst: "<p>Temperaturen på lageret er \\(-2\\) °C. Den stiger 6 grader. Hva blir temperaturen?</p>",
+    svar: { verdi: 4, enhet: "°C" },
+    hint: ["Stige betyr å gå til høyre på tallinja.", "Fra −2 til 0 er 2. Du har 4 igjen."],
+    losning: "<p>\\(-2 + 6 = 4\\) °C.</p>"
+  },
+  {
+    id: "gang-82",
+    niva: "lett",
+    tittel: "Ti pakninger",
+    tekst: "<p>En pakning er 8,2 mm tykk. Du stabler 10 like pakninger. Hvor mange millimeter er bunken?</p>",
+    stegForSteg: false,
+    svar: { verdi: 82, enhet: "mm" },
+    hint: ["Gange med 10 flytter kommaet én plass til høyre.", "\\(8{,}2 \\cdot 10\\)."],
+    losning: "<p>\\(8{,}2 \\cdot 10 = 82\\) mm.</p>"
+  },
+  {
+    id: "minst-seks",
+    niva: "lett",
+    tekst: "<p>Hvilket avvik er minst: \\(-1\\) mm, \\(-6\\) mm, \\(0\\) mm eller \\(2\\) mm?</p>",
+    stegForSteg: false,
+    svar: { valg: ["−1 mm", "−6 mm", "0 mm", "2 mm"], riktig: 1, forklaring: "−6 ligger lengst til venstre på tallinja." },
+    hint: ["Negative tall ligger til venstre for null.", "−6 er lenger til venstre enn −1."],
+    losning: "<p>\\(-6\\) mm er minst. Emnet med det avviket er kortest.</p>"
+  },
+  {
+    id: "temp-minus-seks",
+    niva: "middels",
+    tittel: "Kald morgen",
+    tekst: "<p>Det er \\(-6\\) °C i verkstedet om morgenen. Innen lunsj stiger temperaturen 11 grader. Hva er temperaturen da?</p>",
+    steg: [{ verdi: 6, enhet: "°C" }],
+    svar: { verdi: 5, enhet: "°C" },
+    hint: ["Fra −6 til 0 er 6 grader. Resten går over null.", "\\(-6 + 11\\)."],
+    losning: "<p>\\(-6 + 11 = 5\\) °C.</p>"
+  },
+  {
+    id: "blandet-ti",
+    niva: "middels",
+    tekst: "<p>Regn ut uten kalkulator. Tallene er av den typen du møter på kartleggingen.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "\\(7 - 12\\)", svar: { verdi: -5 } },
+      { tekst: "\\(3{,}6 \\cdot 10\\)", svar: { verdi: 36 } },
+      { tekst: "\\(80 : 10\\)", svar: { verdi: 8 } }
+    ],
+    hint: ["\\(7 - 12\\) går forbi null.", "Gange med 10 flytter kommaet til høyre. Dele med 10 flytter det til venstre."],
+    losning: "<p>a) −5 &nbsp; b) 36 &nbsp; c) 8</p>"
+  },
+  {
+    id: "temp-to-steg",
+    niva: "middels",
+    tittel: "To stigninger",
+    tekst: "<p>Om morgenen er det \\(-9\\) °C i hallen. Før lunsj stiger temperaturen 4 grader. Etter lunsj stiger den 8 grader til.</p>",
+    steg: [{ verdi: -5, enhet: "°C" }],
+    deler: [
+      { tekst: "Hva er temperaturen før lunsj?", svar: { verdi: -5, enhet: "°C" } },
+      { tekst: "Hva er temperaturen etter lunsj?", svar: { verdi: 3, enhet: "°C" } }
+    ],
+    hint: ["Ta én stigning om gangen.", "\\(-9 + 4 = -5\\). Så \\(-5 + 8\\)."],
+    losning: "<p>a) \\(-9 + 4 = -5\\) °C.<br>b) \\(-5 + 8 = 3\\) °C. Hele stigningen er 12 grader: \\(-9 + 12 = 3\\).</p>"
+  },
+  {
+    id: "minus-videre",
+    niva: "vanskelig",
+    tekst: "<p>Et avvik er allerede \\(-13\\) mm. Du kapper 8 mm til, så avviket blir enda mer negativt. Regn ut \\(-13 - 8\\).</p>",
+    svar: { verdi: -21, enhet: "mm" },
+    hint: ["Du står på −13 og går videre til venstre.", "\\(-13 - 8\\) er ikke \\(-5\\)."],
+    losning: "<p>\\(-13 - 8 = -21\\) mm.</p>"
+  },
+  {
+    id: "fortegn-rekkefolge",
+    niva: "vanskelig",
+    tekst: "<p>Regn ut. Slik kan et avvik og et regnestykke med parentes se ut.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "\\(18 - (-7)\\)", svar: { verdi: 25 } },
+      { tekst: "\\((-4) \\cdot (-5)\\)", svar: { verdi: 20 } },
+      { tekst: "\\(6 + 4 \\cdot 3\\)", svar: { verdi: 18 } }
+    ],
+    hint: ["Minus et negativt tall er pluss. Like fortegn i gange gir pluss.", "Gange før pluss: \\(4 \\cdot 3 = 12\\)."],
+    losning: "<p>a) \\(18 + 7 = 25\\) &nbsp; b) 20 &nbsp; c) \\(6 + 12 = 18\\)</p>"
+  },
+  {
+    id: "grader-opp",
+    niva: "vanskelig",
+    tittel: "Hvor mye må det stige?",
+    tekst: "<p>Sveisehallen er \\(-8\\) °C. Dere vil ha \\(5\\) °C før dere starter. I tillegg står dette på kartleggingsarket: \\(-16 - 5\\).</p>",
+    steg: [{ verdi: 8, enhet: "°C" }, { verdi: 5, enhet: "°C" }],
+    deler: [
+      { tekst: "Hvor mange grader må temperaturen stige?", svar: { verdi: 13, enhet: "°C" } },
+      { tekst: "Regn ut \\(-16 - 5\\).", svar: { verdi: -21 } }
+    ],
+    hint: ["Fra −8 til 0 er 8 grader, og fra 0 til 5 er 5 til.", "\\(-16 - 5\\) går videre til venstre."],
+    losning: "<p>a) \\(5 - (-8) = 13\\) grader.<br>b) \\(-16 - 5 = -21\\).</p>"
+  },
+  {
     id: "hvorfor-tif",
     type: "verksted",
     niva: "lett",
