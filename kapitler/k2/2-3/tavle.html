@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 2.3 µm og mm</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="2" data-del="2.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Tusen deler">
+    <h2>En millimeter i tusen biter</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="En millimeterstrek som er delt i tusen mikrometer.">
+        <line x1="40" y1="80" x2="400" y2="80" stroke="#17202b" stroke-width="4"/>
+        <line x1="40" y1="64" x2="40" y2="96" stroke="#17202b" stroke-width="3"/>
+        <line x1="400" y1="64" x2="400" y2="96" stroke="#17202b" stroke-width="3"/>
+        <text x="220" y="50" text-anchor="middle" font-size="22" font-weight="700">1 mm</text>
+        <g data-vis-fra="2">
+          <text x="220" y="140" text-anchor="middle" font-size="20" fill="var(--kap)" font-weight="700">= 1000 µm</text>
+          <text x="220" y="175" text-anchor="middle" font-size="16" fill="#5b6675">µm uttales «mikrometer»</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>På verkstedtegningen står avvik ofte i mikrometer, µm. Mikrometeret leser du i millimeter.</p>
+      <div class="undre" data-hint="Samme triks som da du gjorde om meter til millimeter." data-sekunder="30">Hvor mange µm er det i 1 mm?</div>
+      <p class="steg">\(1\ \text{mm} = 1000\ \text{µm}\).</p>
+      <p class="steg">Fra µm til mm: del med 1000. Kommaet tre plasser til venstre.</p>
+      <p class="steg">Fra mm til µm: gang med 1000. Kommaet tre plasser til høyre.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="21 µm">
+    <h2>21 µm er ikke 0,21 mm</h2>
+    <div class="tekst">
+      <p>En boring Ø25 H7 har øvre avvik +21 µm. En lærling skriver +0,21 mm på tegningen.</p>
+      <div class="undre" data-hint="1000 µm = 1 mm, så 21 µm er mye mindre enn 1 mm.">Er 21 µm lik 0,21 mm, 0,021 mm eller 2,1 mm?</div>
+      <p class="steg">\(21 : 1000 = 0{,}021\) mm. Kommaet flyttes tre plasser, ikke én.</p>
+      <p class="steg">Øvre grensemål: \(25 + 0{,}021 = 25{,}021\) mm.</p>
+      <p class="steg">Lærlingens 0,21 mm er ti ganger for stort. Boringen ville blitt godkjent helt opp til 25,21 mm. Det er en annen del.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>\(1\ \text{mm} = 1000\ \text{µm}\)<br>
+        µm → mm: del på 1000.<br>
+        mm → µm: gang med 1000.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Avviket">
+    <h2>Avviket på akselen</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 200" role="img" aria-label="Aksel med basismål 30 mm og nedre avvik minus 13 mikrometer.">
+        <rect x="70" y="70" width="300" height="40" rx="20" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+        <text x="220" y="55" text-anchor="middle" font-size="18" font-weight="700">Ø30 h6</text>
+        <g data-vis-fra="2">
+          <text x="220" y="150" text-anchor="middle" font-size="18" fill="var(--kap)">nedre avvik −13 µm = −0,013 mm</text>
+          <text x="220" y="180" text-anchor="middle" font-size="18" font-weight="700">minste mål 29,987 mm</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Liten h på en aksel betyr at den aldri skal være større enn basismålet. For Ø30 h6 er nedre avvik −13 µm.</p>
+      <div class="undre" data-hint="Gjør 13 µm om til mm, og trekk fra 30.">Hva er minste godkjente diameter?</div>
+      <p class="steg">\(13\ \text{µm} = 0{,}013\) mm.</p>
+      <p class="steg">Nedre grensemål: \(30{,}000 - 0{,}013 = 29{,}987\) mm.</p>
+      <p class="steg">Akselen er godkjent fra 29,987 mm til 30,000 mm.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Sjekk kommaet">
+    <h2>Sjekk kommaet med et overslag</h2>
+    <div class="tekst">
+      <p>Du gjør om 0,035 mm til µm og får 35. Kameraten får 350.</p>
+      <div class="undre" data-hint="0,1 mm er 100 µm. 0,035 er mindre enn 0,1.">Hvem har rett?</div>
+      <p class="steg">\(0{,}035 \cdot 1000 = 35\) µm.</p>
+      <p class="steg">Overslag: 0,1 mm = 100 µm. 0,035 mm er omtrent en tredel, altså rundt 30 µm, ikke 350.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Husk</p>
+        <p>Tre nuller, tre plasser. Hvis svaret blir ti ganger for stort eller for lite, har kommaet flyttet seg feil.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../../k1/1-1/teori.html">1.1 Gange og dele med 1000</a> · <a href="../2-7/teori.html">2.7 Pasninger</a> · <a href="oppgaver.html">Oppgaver 2.3</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

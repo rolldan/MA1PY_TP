@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.4 Gjennomsnitt, variasjonsbredde og usikkerhet</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.4">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Måling · Måleserie</p>
+  <h1>Gjennomsnitt, variasjonsbredde og usikkerhet</h1>
+  <p class="ingress">Én måling kan være flaks. En serie forteller hvor delen ligger, og hvor mye den sprer seg. Relativ usikkerhet sier om feilen er stor i forhold til delen.</p>
+
+  <ul class="laeringsmal">
+    <li>regne gjennomsnitt og variasjonsbredde</li>
+    <li>skille absolutt og relativ usikkerhet</li>
+    <li>sammenligne to målinger med ulik relativ usikkerhet</li>
+  </ul>
+
+  <ol class="kjede"><li>skriv serien</li><li>finn sum, største og minste</li><li>regn gjennomsnitt og bredde</li><li>regn relativ usikkerhet</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Laget har målt samme aksel med skyvelære: 40,02 · 40,05 · 39,98 · 40,01 · 40,00 mm. Formannen vil ha ett tall til protokollen, og vite om dreiingen er jevn.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p><b>Gjennomsnittet</b> er summen delt på antallet. Det er det typiske målet i serien.</p>
+  <p><b>Variasjonsbredden</b> er største minus minste. Den sier hvor mye serien sprer seg. Den fjerner ikke en systematisk feil, og den bruker bare de to ytterverdiene.</p>
+  <p><b>Absolutt usikkerhet</b> er ±-tallet til verktøyet, i millimeter. I dette kapitlet: målebånd ± 1 mm, skyvelære ± 0,02 mm, mikrometer ± 0,001 mm.</p>
+  <p><b>Relativ usikkerhet</b> er den absolutte usikkerheten sett i forhold til det du målte, oppgitt i prosent. En halv millimeter på en hall er lite. En halv millimeter på en skrue er mye.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(\text{gjennomsnitt} = \dfrac{\text{sum}}{\text{antall}}\)</p>
+    <p>\(\text{variasjonsbredde} = \text{største} - \text{minste}\)</p>
+    <p>\(\text{relativ usikkerhet} = \dfrac{\text{absolutt usikkerhet}}{\text{målt verdi}} \cdot 100\%\)</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: fem mål på akselen</h3>
+    <p>40,02 · 40,05 · 39,98 · 40,01 · 40,00 mm. Skyvelær ± 0,02 mm. Bruk 40 mm som målt verdi i prosenten.</p>
+    <ol class="steg-liste">
+      <li class="steg">Sum: \(200{,}06\) mm. Gjennomsnitt: \(200{,}06 : 5 = 40{,}012\) mm.</li>
+      <li class="steg">Variasjonsbredde: \(40{,}05 - 39{,}98 = 0{,}07\) mm.</li>
+      <li class="steg">Absolutt usikkerhet: 0,02 mm.</li>
+      <li class="steg">Relativ: \(0{,}02 : 40 \cdot 100\% = 0{,}05\%\).</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Å dele variasjonsbredden på antall målinger gir ikke usikkerheten. Variasjonsbredde er største minus minste, uten å dele. Relativ usikkerhet deler den absolutte usikkerheten på målt verdi, ikke på antall målinger.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Et rør måles til 200 mm ± 1 mm. Hvor stor er den relative usikkerheten i prosent?</p>
+    <div class="fasit">\(0{,}5\%\)</div>
+    <div class="losning">\(1 : 200 \cdot 100\% = 0{,}5\%\). Absolutt usikkerhet er 1 mm.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Regneark:</b> Skriv måleserien i en kolonne. Gjennomsnitt er SUMMER delt på antall, eller GJENNOMSNITT. Variasjonsbredde er STØRST minus MINST. Det bruker dere på måleserien fra <a href="../2-2/verksted.html">samme aksel</a>.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

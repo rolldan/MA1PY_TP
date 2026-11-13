@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 2.2 Riktig måleverktøy</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="2" data-del="2.2">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Tre verktøy">
+    <h2>Tre verktøy, tre grenser</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="Målebånd, skyvelære og mikrometer med usikkerhet 1 mm, 0,02 mm og 0,001 mm.">
+        <g font-size="16" font-weight="700" text-anchor="middle">
+          <rect x="20" y="40" width="120" height="150" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/>
+          <text x="80" y="70">Målebånd</text>
+          <text x="80" y="120" font-size="22" fill="var(--kap)">± 1 mm</text>
+          <text x="80" y="155" font-size="13" font-weight="400" fill="#5b6675">stang og ramme</text>
+          <rect x="160" y="40" width="120" height="150" rx="8" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+          <text x="220" y="70">Skyvelære</text>
+          <text x="220" y="120" font-size="22" fill="var(--kap)">± 0,02 mm</text>
+          <text x="220" y="155" font-size="13" font-weight="400" fill="#5b6675">dreiing og fresing</text>
+          <rect x="300" y="40" width="120" height="150" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/>
+          <text x="360" y="70">Mikrometer</text>
+          <text x="360" y="120" font-size="22" fill="var(--kap)">± 0,001 mm</text>
+          <text x="360" y="155" font-size="13" font-weight="400" fill="#5b6675">lager og finpass</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>I verkstedet bruker vi tre lengdeverktøy. Hvert av dem har en grense for hvor sikkert tallet er.</p>
+      <div class="undre" data-hint="Jo finere krav, jo finere verktøy." data-sekunder="30">Hvilket verktøy tar du for å kappe en 2 meter stang, og hvilket for en lagerbane?</div>
+      <p class="steg"><b>Målebånd ± 1 mm.</b> Grovkapping, rammer og lange lengder.</p>
+      <p class="steg"><b>Skyvelære ± 0,02 mm.</b> Vanlig dreiing og fresing, omtrent opp til 150 mm.</p>
+      <p class="steg"><b>Mikrometer ± 0,001 mm.</b> Finpasninger og lagerbaner.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Rekker det?">
+    <h2>Rekker verktøyet?</h2>
+    <div class="tekst">
+      <p>En tapp skal være Ø20 med avvik −0,02 / −0,05 mm. Toleransen er bare 0,03 mm. Skyvelæret har usikkerhet ± 0,02 mm.</p>
+      <div class="undre" data-hint="Sammenlign 0,02 mm med hele toleransen, ikke med diameteren.">Kan du godkjenne tappen med et vanlig skyvelære?</div>
+      <p class="steg">Øvre grense: \(20 + (-0{,}02) = 19{,}98\) mm. Nedre grense: \(20 + (-0{,}05) = 19{,}95\) mm.</p>
+      <p class="steg">Toleransebredden er \(19{,}98 - 19{,}95 = 0{,}03\) mm.</p>
+      <p class="steg">Usikkerheten ± 0,02 mm er nesten like stor som hele toleransen. Du kan ikke være sikker nær grensen. Bruk mikrometer.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Tommelfingerregel</p>
+        <p>Verktøyets usikkerhet bør være høyst <b>1/10 av toleransebredden</b>.<br>0,03 mm / 10 = 0,003 mm. Mikrometeret (± 0,001 mm) klarer det. Skyvelæret gjør det ikke.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Samme aksel">
+    <h2>Samme aksel, tre tall</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Aksel målt til 41 mm, 40,02 mm og 40,018 mm.">
+        <rect x="30" y="90" width="380" height="36" rx="18" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+        <text x="220" y="70" text-anchor="middle" font-size="16" fill="#5b6675">samme aksel</text>
+        <g font-size="16" font-weight="700" text-anchor="middle">
+          <text x="80" y="160" fill="#5b6675">bånd</text>
+          <text x="80" y="184">41 mm</text>
+          <text x="220" y="160" fill="var(--kap)">skyvelære</text>
+          <text x="220" y="184">40,02 mm</text>
+          <g data-vis-fra="2">
+            <text x="360" y="160" fill="#15803d">mikrometer</text>
+            <text x="360" y="184" fill="#15803d">40,018 mm</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Hele laget måler samme aksel. Målebåndet sier 41 mm. Skyvelæret sier 40,02 mm. Mikrometeret sier 40,018 mm.</p>
+      <div class="undre" data-hint="± 1 mm rundt 40 mm er fra 39 til 41 mm.">Har den som brukte målebånd, målt feil?</div>
+      <p class="steg">41 mm og 40,018 mm skiller \(0{,}982\) mm, omtrent 1 mm.</p>
+      <p class="steg">Det ligger innenfor målebåndets grense på ± 1 mm. Båndet er grovt, men ikke «galt».</p>
+      <p class="steg">Til en lagerbane er ± 1 mm for grovt. Da er båndet feil <b>verktøy</b>, selv om avlesingen er ærlig.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Huskeregel">
+    <h2>Mål to ganger, kutt én gang</h2>
+    <div class="tekst">
+      <p>Du skal kappe stangstål til en ramme på 1800 mm, og du skal dreie en lagerbane på 25 mm.</p>
+      <div class="undre" data-hint="Langt og grovt, eller kort og fint?">Hvilket verktøy hører til hvilken jobb?</div>
+      <p class="steg">Ramma: målebånd. Kravet er i hele millimeter, og skyvelæret rekker ikke 1800 mm.</p>
+      <p class="steg">Lagerbanen: mikrometer. Skyvelær ± 0,02 mm er for grovt når toleransen er noen hundredeler.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Mål to ganger, kutt én gang – og kjenn verktøyets grenser.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../2-1/teori.html">2.1 Målefeil</a> · <a href="../2-3/teori.html">2.3 µm og mm</a> · <a href="oppgaver.html">Oppgaver 2.2</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
