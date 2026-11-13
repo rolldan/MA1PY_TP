@@ -100,5 +100,103 @@ Bok.oppgaver([
     ],
     hint: ["\\(F\\) står ganget med \\(a\\). Del begge sider på \\(a\\).", "\\(F = 120 : 0{,}6\\)."],
     losning: "<p>\\(F = M : a = 120 : 0{,}6 = 200\\) N.</p>"
+  },
+  {
+    id: "km-475",
+    niva: "lett",
+    tittel: "Regning på 475 kr",
+    tekst: "<p>\\(K = 350 + 5s\\). Tilhengeren kostet 475 kr. Hvor mange kilometer var turen?</p>",
+    steg: [{ verdi: 125, enhet: "kr" }],
+    svar: { verdi: 25, enhet: "km" },
+    hint: ["Trekk fra startprisen. Del resten på 5.", "\\(475 - 350 = 125\\). Så \\(125 : 5\\)."],
+    losning: "<p>\\(475 - 350 = 125\\).<br>\\(s = 125 : 5 = 25\\) km.<br>Kontroll: \\(350 + 5 \\cdot 25 = 475\\).</p>"
+  },
+  {
+    id: "antall-boyer",
+    niva: "lett",
+    tittel: "Hvor mange bøyer?",
+    tekst: "<p>\\(T = 8 + 3n\\). Plateknekkeren brukte 26 minutter. Hvor mange bøyer ble det?</p>",
+    steg: [{ verdi: 18, enhet: "min" }],
+    svar: { verdi: 6, enhet: "stk" },
+    hint: ["Trekk fra oppstarten på 8 minutter. Del resten på 3.", "\\(26 - 8 = 18\\). Så \\(18 : 3\\)."],
+    losning: "<p>\\(26 - 8 = 18\\).<br>\\(n = 18 : 3 = 6\\) bøyer.<br>Kontroll: \\(8 + 3 \\cdot 6 = 26\\).</p>"
+  },
+  {
+    id: "lonn-7",
+    niva: "lett",
+    tittel: "Lønnsslipp på 1460 kr",
+    tekst: "<p>\\(L = 200 + 180t\\). Slippen viser 1460 kr. Hvor mange timer er det?</p>",
+    steg: [{ verdi: 1260, enhet: "kr" }],
+    svar: { verdi: 7, enhet: "h" },
+    hint: ["Trekk fra det faste tillegget på 200 kr. Del resten på 180.", "\\(1460 - 200 = 1260\\). Så \\(1260 : 180\\)."],
+    losning: "<p>\\(1460 - 200 = 1260\\).<br>\\(t = 1260 : 180 = 7\\) timer.<br>Kontroll: \\(200 + 180 \\cdot 7 = 1460\\).</p>"
+  },
+  {
+    id: "lastebil-r",
+    niva: "middels",
+    tittel: "Motstand på 24 V",
+    tekst: "<p>Ohms lov sier \\(U = R \\cdot I\\). En arbeidslykt på lastebilen får 24 V og trekker 4 A.</p>",
+    deler: [
+      { tekst: "Hvilken formel gir motstanden \\(R\\)?", svar: { valg: ["\\(R = U \\cdot I\\)", "\\(R = U : I\\)", "\\(R = I : U\\)"], riktig: 1, forklaring: "Del spenningen på strømmen." } },
+      { tekst: "Hva er motstanden?", svar: { verdi: 6, enhet: "Ω" } },
+      { tekst: "Hva er effekten, når \\(P = U \\cdot I\\)?", svar: { verdi: 96, enhet: "W" } }
+    ],
+    hint: ["\\(R\\) står ganget med \\(I\\). Del begge sider på \\(I\\). Effekten er spenning ganger strøm.", "\\(R = 24 : 4\\). \\(P = 24 \\cdot 4\\)."],
+    losning: "<p>\\(R = 24 : 4 = 6\\) Ω.<br>\\(P = 24 \\cdot 4 = 96\\) W.<br>Kontroll: \\(6 \\cdot 4 = 24\\) V.</p>"
+  },
+  {
+    id: "arm-240",
+    niva: "middels",
+    tittel: "Hvor lang arm?",
+    tekst: "<p>Dreiemomentet er \\(M = F \\cdot a\\). Mutteren krever 240 Nm. Du klarer å dra med 400 N.</p>",
+    deler: [
+      { tekst: "Hvilken formel gir armen \\(a\\)?", svar: { valg: ["\\(a = M \\cdot F\\)", "\\(a = F : M\\)", "\\(a = M : F\\)"], riktig: 2, forklaring: "Del momentet på kraften." } },
+      { tekst: "Hvor lang må armen minst være?", svar: { verdi: 0.6, enhet: "m" } },
+      { tekst: "Hvor mange centimeter er det?", svar: { verdi: 60, enhet: "cm" } }
+    ],
+    hint: ["Snu til \\(a = M : F\\). Momentet er i Nm, armen skal ut i meter.", "\\(a = 240 : 400\\). Gang med 100 for å få centimeter."],
+    losning: "<p>\\(a = 240 : 400 = 0{,}6\\) m.<br>\\(0{,}6 \\cdot 100 = 60\\) cm.<br>Kontroll: \\(400 \\cdot 0{,}6 = 240\\) Nm.</p>"
+  },
+  {
+    id: "sveiser-okt",
+    niva: "vanskelig",
+    tittel: "Får 15 sveiser plass?",
+    tekst: "<p>Sveisetida følger \\(T = 12 + 5n\\). Du har 72 minutter ved benken. \\(T\\) er minutter, og \\(n\\) er antall sveiser.</p>",
+    deler: [
+      { tekst: "Hvilken formel gir antall sveiser?", svar: { valg: ["\\(n = T : 5 + 12\\)", "\\(n = (T - 12) : 5\\)", "\\(n = T \\cdot 5 - 12\\)"], riktig: 1, forklaring: "Trekk fra oppstarten før du deler." } },
+      { tekst: "Hvor mange sveiser rekker du på 72 minutter?", svar: { verdi: 12, enhet: "stk" } },
+      { tekst: "Hvor mange minutter tar 15 sveiser?", svar: { verdi: 87, enhet: "min" } },
+      { tekst: "Rekker du 15 sveiser på 72 minutter?", svar: { valg: ["Ja, 87 minutter er innenfor", "Nei, 87 minutter er mer enn 72", "Ja, hvis oppstarten droppes i formelen"], riktig: 1, forklaring: "87 er større enn 72. Oppstarten på 12 minutter ligger i formelen og skal være med." } }
+    ],
+    steg: [{ verdi: 60, enhet: "min" }, { verdi: 75, enhet: "min" }],
+    hint: ["Trekk fra 12 før du deler på 5. For 15 sveiser setter du inn, du snur ikke.", "\\(72 - 12 = 60\\), og \\(60 : 5 = 12\\). For 15 sveiser: \\(5 \\cdot 15 = 75\\)."],
+    losning: "<p>\\(n = (72 - 12) : 5 = 60 : 5 = 12\\) sveiser.<br>15 sveiser: \\(T = 12 + 5 \\cdot 15 = 12 + 75 = 87\\) min.<br>87 er mer enn 72, så 15 sveiser får ikke plass.</p>"
+  },
+  {
+    id: "forsikring",
+    niva: "vanskelig",
+    tittel: "Forsikringen står utenfor",
+    tekst: "<p>Tilhengerleie følger \\(K = 350 + 5s\\). Regningen er 860 kr. 60 kr av beløpet er en forsikring som ikke ligger i formelen. Resten er leie etter formelen.</p>",
+    deler: [
+      { tekst: "Hvor mange kroner skal inn i formelen?", svar: { verdi: 800, enhet: "kr" } },
+      { tekst: "Hvor mange kilometer var turen?", svar: { verdi: 90, enhet: "km" } }
+    ],
+    steg: [{ verdi: 450, enhet: "kr" }],
+    hint: ["Trekk fra forsikringen først. Deretter trekker du startprisen og deler på 5.", "\\(860 - 60 = 800\\). Så \\(800 - 350 = 450\\), og \\(450 : 5\\)."],
+    losning: "<p>\\(860 - 60 = 800\\) kr hører til formelen.<br>\\(800 - 350 = 450\\).<br>\\(s = 450 : 5 = 90\\) km.<br>Kontroll: \\(350 + 5 \\cdot 90 + 60 = 860\\).</p>"
+  },
+  {
+    id: "cas-sveis",
+    type: "verksted",
+    niva: "middels",
+    merke: "K",
+    tittel: "CAS og sveisetida",
+    utstyr: "PC med GeoGebra CAS",
+    hms: "Klasserom. Ta en kort pause fra skjermen hvis øynene blir slitne. Ingen maskiner.",
+    tekst: "<p>Sveisetida følger \\(T = 15 + 6n\\), og ramma tok 75 minutter. Regn ut antall sveiser for hånd, og sjekk med <b>Løs(15 + 6n = 75, n)</b> i CAS.</p>",
+    steg: [{ verdi: 60, enhet: "min" }],
+    svar: { verdi: 10, enhet: "stk" },
+    hint: ["Trekk fra oppstarten på 15 minutter før du deler på 6.", "\\(75 - 15 = 60\\). Så \\(60 : 6\\)."],
+    losning: "<p>\\(75 - 15 = 60\\).<br>\\(n = 60 : 6 = 10\\) sveiser. CAS gir \\(n = 10\\).<br>Kontroll: \\(15 + 6 \\cdot 10 = 75\\).</p>"
   }
 ]);
