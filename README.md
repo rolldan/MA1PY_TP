@@ -4,6 +4,8 @@ Bokmål. Læreplan MAT08-01 (LK20), fagkode MAT1129. Skoleåret 2026/2027.
 
 Nettboka brukes i to økter i uka: 60 minutter med tavle og måltrapp, og 75 minutter med verkstedkort. Hvert delkapittel har fire sider: **tavle**, **teori**, **oppgaver** og **verkstedkort**. Framdriften lagres bare i nettleseren.
 
+Publisert utgave: https://rolldan.github.io/MA1PY_TP/
+
 ## Åpne boka lokalt
 
 ```bash
