@@ -156,5 +156,204 @@ Bok.oppgaver([
       "\\(30 : 6 = 5\\)."
     ],
     losning: "<p>\\(30 : 6 = 5\\) kr per boks.</p>"
+  },
+  {
+    id: "to-kasser",
+    niva: "lett",
+    tittel: "To kasser i Danmark",
+    tekst: "<p>Én kasse i Danmark er 24 bokser for 96 kr. Dere kjøper to kasser.</p>",
+    steg: [{ verdi: 96, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor mange bokser er det?", svar: { verdi: 48, enhet: "stk" } },
+      { tekst: "Hva koster de to kassene?", svar: { verdi: 192, enhet: "kr" } },
+      { tekst: "Hva koster én boks?", svar: { verdi: 4, enhet: "kr" } }
+    ],
+    hint: [
+      "Doble både antall og pris. Stykkpris = total : antall.",
+      "\\(2 \\cdot 24 = 48\\). \\(2 \\cdot 96 = 192\\). \\(192 : 48 = 4\\)."
+    ],
+    losning: "<p>\\(2 \\cdot 24 = 48\\) bokser. \\(2 \\cdot 96 = 192\\) kr. \\(192 : 48 = 4\\) kr per boks, det samme som for én kasse.</p>"
+  },
+  {
+    id: "brakett",
+    niva: "lett",
+    tittel: "Liten brakett 3-4-5",
+    tekst: "<p>En brakett i baugen måler 3 cm, 4 cm og 5 cm. Den lengste siden er 5 cm.</p>",
+    steg: [{ verdi: 9 }, { verdi: 16 }],
+    deler: [
+      { tekst: "Hva er \\(3^2 + 4^2\\)? Skriv bare tallet.", svar: { verdi: 25 } },
+      {
+        tekst: "Er braketten rettvinklet?",
+        svar: { valg: ["Ja", "Nei"], riktig: 0, forklaring: "9 + 16 = 25, og 5² = 25." }
+      }
+    ],
+    hint: [
+      "Regn kvadratene av de to korte sidene. Sammenlign med kvadratet av den lengste.",
+      "\\(3^2 = 9\\) og \\(4^2 = 16\\). \\(9 + 16 = 25\\)."
+    ],
+    losning: "<p>\\(3^2 + 4^2 = 9 + 16 = 25 = 5^2\\). Braketten er rettvinklet. Esken 6-8-10 er samme forhold, ganget med 2.</p>"
+  },
+  {
+    id: "diagram-akse",
+    niva: "lett",
+    tittel: "Hva skal søylene vise?",
+    tekst: "<p>Danmark koster 4 kr per boks. Norge koster 6 kr per boks. Kassene har ikke like mange bokser.</p>",
+    steg: [{ verdi: 2, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor mange kroner høyere er den norske søylen enn den danske, når søylene viser pris per boks?", svar: { verdi: 2, enhet: "kr" } },
+      {
+        tekst: "Hva skal tallene på y-aksen bety?",
+        svar: {
+          valg: ["Kroner per kasse", "Kroner per boks", "Antall bokser"],
+          riktig: 1,
+          forklaring: "Kassene er ulike. Sammenligningen er pris per boks."
+        }
+      }
+    ],
+    hint: [
+      "Trekk stykkprisene fra hverandre. Aksen må ha samme enhet som det dere sammenligner.",
+      "\\(6 - 4 = 2\\)."
+    ],
+    losning: "<p>\\(6 - 4 = 2\\) kr. Y-aksen skal være kroner per boks. Kroner per kasse ville gjort en stor kasse kunstig dyr.</p>"
+  },
+  {
+    id: "billigere",
+    niva: "middels",
+    tittel: "Hvor mange prosent billigere?",
+    tekst: "<p>Danmark koster 4 kr per boks. Norge koster 6 kr per boks. Spørsmålet her er hvor mange prosent lavere prisen i Danmark er. Bruk prisen i Norge som grunnlag. Én desimal.</p>",
+    steg: [{ verdi: 2, enhet: "kr" }],
+    svar: { verdi: 33.3, enhet: "%", tol: 0.05 },
+    hint: [
+      "Forskjell delt på den norske prisen, gang med 100. Ikke del på 4 kr. Det er et annet spørsmål.",
+      "\\((6 - 4) : 6 = 2 : 6\\)."
+    ],
+    losning: "<p>\\(2 : 6 = 0{,}333\\ldots = 33{,}3\\) %. Norge er 50 % dyrere enn Danmark, fordi \\(2 : 4 = 0{,}5\\). De to prosentene har ulikt grunnlag.</p>"
+  },
+  {
+    id: "spara-sverige",
+    niva: "middels",
+    tittel: "Danmark mot Sverige",
+    tekst: "<p>Sverige koster 5,50 kr per boks. Danmark koster 4 kr per boks. Du sammenligner 20 bokser, som én svensk kartong.</p>",
+    steg: [{ verdi: 1.5, enhet: "kr" }, { verdi: 5.5, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor mange kroner sparer dere per boks?", svar: { verdi: 1.5, enhet: "kr" } },
+      { tekst: "Hvor mange kroner sparer dere på 20 bokser?", svar: { verdi: 30, enhet: "kr" } },
+      { tekst: "Hvor mange prosent lavere er Danmark enn Sverige? Bruk Sveriges pris som grunnlag. Én desimal.", svar: { verdi: 27.3, enhet: "%", tol: 0.05 } }
+    ],
+    hint: [
+      "Trekk stykkprisene. Prosenten er besparelsen delt på 5,50.",
+      "\\(5{,}50 - 4 = 1{,}50\\). \\(1{,}50 : 5{,}50 \\approx 0{,}273\\)."
+    ],
+    losning: "<p>\\(5{,}50 - 4 = 1{,}50\\) kr per boks. På 20 bokser: \\(20 \\cdot 1{,}50 = 30\\) kr.</p><p>\\(1{,}50 : 5{,}50 \\approx 0{,}273 = 27{,}3\\) %.</p>"
+  },
+  {
+    id: "luke-60",
+    niva: "middels",
+    tittel: "Luke 36 cm og 48 cm",
+    tekst: "<p>En luke har katetene 36 cm og 48 cm. Hjørnet skal være rett. Det er 3-4-5 ganget med 12.</p>",
+    steg: [{ verdi: 1296 }, { verdi: 2304 }],
+    deler: [
+      { tekst: "Hva er \\(36^2 + 48^2\\)? Skriv bare tallet.", svar: { verdi: 3600 } },
+      { tekst: "Hvor lang skal diagonalen være?", svar: { verdi: 60, enhet: "cm" } }
+    ],
+    hint: [
+      "Legg sammen kvadratene. Diagonalen er tallet som ganget med seg selv gir den summen. 60 · 60 = 3 600.",
+      "\\(36^2 = 1\\,296\\) og \\(48^2 = 2\\,304\\)."
+    ],
+    losning: "<p>\\(36^2 + 48^2 = 1\\,296 + 2\\,304 = 3\\,600\\). \\(60^2 = 3\\,600\\). Diagonalen er 60 cm.</p>"
+  },
+  {
+    id: "fem-hundre",
+    niva: "vanskelig",
+    tittel: "500 kr til brus",
+    tekst: "<p>Laget har 500 kr. Dere kjøper hele kasser, ikke løse bokser. Danmark: 24 bokser for 96 kr. Sverige: 20 bokser for 110 kr. Norge: 12 bokser for 72 kr. Dere skal ha så mange bokser som mulig uten å gå over 500 kr.</p>",
+    steg: [{ verdi: 480, enhet: "kr" }, { verdi: 440, enhet: "kr" }, { verdi: 432, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor mange bokser får dere i Danmark?", svar: { verdi: 120, enhet: "stk" } },
+      { tekst: "Hvor mange kroner blir igjen i Danmark?", svar: { verdi: 20, enhet: "kr" } },
+      { tekst: "Hvor mange bokser får dere i Sverige?", svar: { verdi: 80, enhet: "stk" } },
+      { tekst: "Hvor mange bokser får dere i Norge?", svar: { verdi: 72, enhet: "stk" } },
+      {
+        tekst: "Hvilket land gir flest bokser?",
+        svar: { valg: ["Danmark", "Sverige", "Norge"], riktig: 0, forklaring: "120 er mer enn 80 og 72." }
+      },
+      { tekst: "Hvor mange prosent flere bokser gir Danmark enn Norge? Bruk Norge som grunnlag. Én desimal.", svar: { verdi: 66.7, enhet: "%", tol: 0.05 } }
+    ],
+    hint: [
+      "Finn største antall hele kasser som koster høyst 500 kr. Bokser = kasser · antall i kassa.",
+      "Danmark: \\(5 \\cdot 96 = 480\\), så 5 · 24 bokser. Sverige: \\(4 \\cdot 110 = 440\\). Norge: \\(6 \\cdot 72 = 432\\)."
+    ],
+    losning: "<p>Danmark: 5 kasser, \\(5 \\cdot 96 = 480\\) kr, \\(5 \\cdot 24 = 120\\) bokser, 20 kr igjen. 6 kasser koster 576 kr og er for mye.</p><p>Sverige: 4 kartonger, \\(4 \\cdot 110 = 440\\) kr, \\(4 \\cdot 20 = 80\\) bokser. Norge: 6 kasser, \\(6 \\cdot 72 = 432\\) kr, \\(6 \\cdot 12 = 72\\) bokser.</p><p>Danmark gir flest. \\((120 - 72) : 72 = 48 : 72 \\approx 0{,}667 = 66{,}7\\) %.</p>"
+  },
+  {
+    id: "skjev",
+    niva: "vanskelig",
+    tittel: "10,5 cm er ikke 10 cm",
+    tekst: "<p>Esken skulle vært 6 cm, 8 cm og 10 cm. Dere måler 6 cm, 8 cm og 10,5 cm. Den lengste siden er 10,5 cm.</p>",
+    steg: [{ verdi: 100 }, { verdi: 110.25 }],
+    deler: [
+      { tekst: "Hva er \\(6^2 + 8^2\\)? Skriv bare tallet.", svar: { verdi: 100 } },
+      { tekst: "Hva er \\(10{,}5^2\\)? To desimaler.", svar: { verdi: 110.25, tol: 0.01 } },
+      {
+        tekst: "Er esken rettvinklet?",
+        svar: { valg: ["Ja", "Nei"], riktig: 1, forklaring: "100 er ikke lik 110,25." }
+      },
+      { tekst: "Hvor mange cm for lang er siden som skulle vært 10 cm?", svar: { verdi: 0.5, enhet: "cm" } }
+    ],
+    hint: [
+      "Sammenlign summen av de to små kvadratene med kvadratet av den lengste siden.",
+      "\\(36 + 64 = 100\\). \\(10{,}5 \\cdot 10{,}5 = 110{,}25\\)."
+    ],
+    losning: "<p>\\(6^2 + 8^2 = 100\\). \\(10{,}5^2 = 110{,}25\\). 100 er ikke 110,25, så vinkelen er ikke rett.</p><p>\\(10{,}5 - 10 = 0{,}5\\) cm for lang. På en stor ramme blir en slik feil synlig når dere måler diagonalen.</p>"
+  },
+  {
+    id: "mal-ramme",
+    type: "verksted",
+    merke: "V",
+    niva: "middels",
+    tittel: "15-20-25 på benken",
+    utstyr: "Målebånd",
+    hms: "Ikke start sveiseapparat. Hold avstand til varm sone. Målebåndet skal ikke henge i roterende deler.",
+    tekst: "<p>Dere kontrollerer et hjørne med 15 cm og 20 cm langs sidene. Det er 3-4-5 ganget med 5. Målebåndet viser 24 cm på diagonalen.</p>",
+    steg: [{ verdi: 225 }, { verdi: 400 }],
+    deler: [
+      { tekst: "Hva er \\(15^2 + 20^2\\)? Skriv bare tallet.", svar: { verdi: 625 } },
+      { tekst: "Hvor lang skal diagonalen være hvis hjørnet er rett?", svar: { verdi: 25, enhet: "cm" } },
+      { tekst: "Hvor mange cm er avviket når dere måler 24 cm?", svar: { verdi: 1, enhet: "cm" } }
+    ],
+    hint: [
+      "3-4-5 · 5 gir 15-20-25. Avvik er skal minus målt, uten fortegn.",
+      "\\(225 + 400 = 625\\), og \\(25^2 = 625\\)."
+    ],
+    losning: "<p>\\(15^2 + 20^2 = 225 + 400 = 625 = 25^2\\). Diagonalen skal være 25 cm. \\(25 - 24 = 1\\) cm avvik. Hjørnet er nesten rett.</p>"
+  },
+  {
+    id: "rep-mva-kasse",
+    type: "repetisjon",
+    fra: "kapittel 3",
+    niva: "lett",
+    tittel: "Kioskassen med mva",
+    tekst: "<p>Fra kapittel 3. En kasse brus i verkstedets kiosk koster 80 kr uten mva. Mva er 25 %. Hva koster kassen med mva?</p>",
+    svar: { verdi: 100, enhet: "kr" },
+    hint: [
+      "25 % mva betyr at dere betaler 125 % av prisen uten mva.",
+      "\\(80 \\cdot 1{,}25 = 100\\)."
+    ],
+    losning: "<p>\\(80 \\cdot 1{,}25 = 100\\) kr. Mva er 20 kr.</p>"
+  },
+  {
+    id: "eksamen-hyp",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "lett",
+    tittel: "9 cm og 12 cm",
+    tekst: "<p>En rettvinklet luke har katetene 9 cm og 12 cm. Hvor lang er diagonalen?</p>",
+    steg: [{ verdi: 81 }, { verdi: 144 }],
+    svar: { verdi: 15, enhet: "cm" },
+    hint: [
+      "\\(a^2 + b^2 = c^2\\). 9-12-15 er 3-4-5 ganget med 3.",
+      "\\(9^2 + 12^2 = 81 + 144 = 225\\). \\(15^2 = 225\\)."
+    ],
+    losning: "<p>\\(81 + 144 = 225 = 15^2\\). Diagonalen er 15 cm.</p>"
   }
 ]);
