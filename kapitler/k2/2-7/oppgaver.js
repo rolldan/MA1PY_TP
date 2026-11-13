@@ -118,5 +118,184 @@ Bok.oppgaver([
     ],
     hint: ["Minste hull minus største aksel: \\(30{,}000 - 30{,}000\\).", "Største klaring: \\(30{,}021 - 29{,}987 = 0{,}034\\). Klaring 0 er fortsatt klaring, ikke press."],
     losning: "<p>Minste klaring 0 mm. Største 0,034 mm. Akselen er aldri større enn hullet. Klaringspasning.</p>"
+  },
+  {
+    id: "null-er-klaring",
+    niva: "lett",
+    tittel: "Klaring null",
+    tekst: "<p>Hva slags pasning, eller hva er bokstaven?</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "Minste hull er lik største aksel.", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 0 } },
+      { tekst: "Største hull er mindre enn minste aksel.", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 2 } },
+      { tekst: "H8 i koden Ø40 H8/h7 er …", svar: { valg: ["hull", "aksel"], riktig: 0 } }
+    ],
+    hint: ["Klaring 0 er fortsatt klaring. Akselen er ikke større enn hullet.", "Stor bokstav er hull. Alltid fast er press."],
+    losning: "<p>a) Klaring. b) Press. c) Hull. h7 er akselen.</p>"
+  },
+  {
+    id: "kode-22",
+    niva: "lett",
+    tekst: "<p>Koden er Ø22 H7/h6.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "H7 er …", svar: { valg: ["hull", "aksel"], riktig: 0 } },
+      { tekst: "h6 er …", svar: { valg: ["hull", "aksel"], riktig: 1 } },
+      { tekst: "Hvilket tall er finere toleranse?", svar: { valg: ["6", "7"], riktig: 0 } }
+    ],
+    hint: ["Stor bokstav er hull. Liten bokstav er aksel.", "Lavere tall er finere."],
+    losning: "<p>H7 er hull, h6 er aksel. 6 er finere enn 7.</p>"
+  },
+  {
+    id: "h-betyr",
+    niva: "lett",
+    tittel: "H og h",
+    tekst: "<p>H-hullet har nedre avvik 0. h-akselen har øvre avvik 0. Basismålet er 25 mm.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "Kan h-akselen være større enn basismålet?", svar: { valg: ["Ja", "Nei"], riktig: 1 } },
+      { tekst: "Hva er minste mål for H-hullet?", svar: { verdi: 25, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["Øvre avvik 0 betyr at akselen stopper på basismålet.", "Nedre avvik 0 betyr at hullet aldri er mindre enn 25 mm."],
+    losning: "<p>Akselen er høyst 25 mm. Minste hull er 25 mm.</p>"
+  },
+  {
+    id: "tabell-30-h6",
+    niva: "middels",
+    tittel: "Ø30 H7/h6",
+    tekst: "<p>Ø30 H7/h6. 30 mm er med i tabellen på <a href=\"teori.html\">teorisiden</a>: H7 +21 / 0 µm, h6 0 / −13 µm.</p>",
+    steg: [{ verdi: 0.021, enhet: "mm" }, { verdi: 0.013, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål for hullet?", svar: { verdi: 30.021, enhet: "mm" } },
+      { tekst: "Nedre grensemål for akselen?", svar: { verdi: 29.987, enhet: "mm" } },
+      { tekst: "Minste klaring?", svar: { verdi: 0, enhet: "mm", tol: 0 } },
+      { tekst: "Største klaring?", svar: { verdi: 0.034, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 0 } }
+    ],
+    hint: ["21 µm = 0,021 mm. 13 µm = 0,013 mm. Trekk 0,013 fra 30.", "Minste klaring: \\(30{,}000 - 30{,}000 = 0\\). Største: \\(30{,}021 - 29{,}987\\)."],
+    losning: "<p>Hull 30,000 til 30,021 mm. Aksel 29,987 til 30,000 mm. Minste klaring 0 mm. Største klaring 0,034 mm. Klaringspasning.</p>"
+  },
+  {
+    id: "tabell-22-p6",
+    niva: "middels",
+    tittel: "Ø22 H7/p6",
+    tekst: "<p>Ø22 H7/p6. Samme tabell: H7 +21 / 0 µm, p6 +35 / +22 µm. Området er over 18 til og med 30 mm.</p>",
+    steg: [{ verdi: 0.021, enhet: "mm" }, { verdi: 22.022, enhet: "mm" }, { verdi: 22.035, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål for hullet?", svar: { verdi: 22.021, enhet: "mm" } },
+      { tekst: "Nedre grensemål for akselen?", svar: { verdi: 22.022, enhet: "mm" } },
+      { tekst: "Minste press?", svar: { verdi: 0.001, enhet: "mm" } },
+      { tekst: "Største press?", svar: { verdi: 0.035, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 2 } }
+    ],
+    hint: ["22 µm = 0,022 mm. Minste aksel er \\(22 + 0{,}022\\).", "\\(22{,}022 - 22{,}021 = 0{,}001\\). Største press: \\(22{,}035 - 22{,}000\\)."],
+    losning: "<p>Hull 22,000 til 22,021 mm. Aksel 22,022 til 22,035 mm. Minste press 0,001 mm. Største press 0,035 mm. Alltid press.</p>"
+  },
+  {
+    id: "g6-40",
+    niva: "middels",
+    tittel: "Ø40 H7/g6",
+    tekst: "<p>Ø40 H7/g6. For diameter over 30 til og med 50 mm er H7 +25 / 0 µm og g6 −9 / −25 µm (ISO 286). Det er en annen rad enn tabellen for 18 til 30 mm.</p>",
+    steg: [{ verdi: 0.025, enhet: "mm" }, { verdi: 0.009, enhet: "mm" }, { verdi: 39.991, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål for hullet?", svar: { verdi: 40.025, enhet: "mm" } },
+      { tekst: "Øvre grensemål for akselen?", svar: { verdi: 39.991, enhet: "mm" } },
+      { tekst: "Minste klaring?", svar: { verdi: 0.009, enhet: "mm" } },
+      { tekst: "Største klaring?", svar: { verdi: 0.05, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 0 } }
+    ],
+    hint: ["25 µm = 0,025 mm. 9 µm = 0,009 mm. Akselens øvre mål er \\(40 - 0{,}009\\).", "Minste klaring: \\(40{,}000 - 39{,}991\\). Største: \\(40{,}025 - 39{,}975\\)."],
+    losning: "<p>Hull 40,000 til 40,025 mm. Aksel 39,975 til 39,991 mm. Minste klaring 0,009 mm. Største klaring 0,050 mm. Alltid klaring.</p>"
+  },
+  {
+    id: "k6-40",
+    niva: "vanskelig",
+    tittel: "Ø40 H7/k6",
+    tekst: "<p>Ø40 H7/k6. For diameter over 30 til og med 50 mm er H7 +25 / 0 µm og k6 +18 / +2 µm (ISO 286).</p>",
+    steg: [{ verdi: 0.025, enhet: "mm" }, { verdi: 0.002, enhet: "mm" }, { verdi: 40.018, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål for hullet?", svar: { verdi: 40.025, enhet: "mm" } },
+      { tekst: "Nedre grensemål for akselen?", svar: { verdi: 40.002, enhet: "mm" } },
+      { tekst: "Største klaring?", svar: { verdi: 0.023, enhet: "mm" } },
+      { tekst: "Største press?", svar: { verdi: 0.018, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 1 } }
+    ],
+    hint: ["Største klaring = største hull − minste aksel.", "\\(40{,}025 - 40{,}002 = 0{,}023\\) klaring. \\(40{,}018 - 40{,}000 = 0{,}018\\) press. Begge kan skje."],
+    losning: "<p>Hull 40,000 til 40,025 mm. Aksel 40,002 til 40,018 mm. Største klaring 0,023 mm. Største press 0,018 mm. Mellompasning.</p>"
+  },
+  {
+    id: "sikker-48",
+    niva: "vanskelig",
+    tittel: "Usikkert eller vrak",
+    tekst: "<p>Krav 48,0 ± 0,2 mm. Verktøyets usikkerhet er ± 0,05 mm. Sikkert godkjent betyr at hele usikkerheten ligger innenfor grensene.</p>",
+    steg: [{ verdi: 47.8, enhet: "mm" }, { verdi: 48.2, enhet: "mm" }, { verdi: 47.85, enhet: "mm" }],
+    deler: [
+      { tekst: "Nedre grensemål på tegningen?", svar: { verdi: 47.8, enhet: "mm", tol: 0 } },
+      { tekst: "Minste måling som er sikkert godkjent?", svar: { verdi: 47.85, enhet: "mm", tol: 0 } },
+      { tekst: "Største måling som er sikkert godkjent?", svar: { verdi: 48.15, enhet: "mm", tol: 0 } },
+      { tekst: "Du leser 48,18 mm. Hva sier du?", svar: { valg: ["Sikkert godkjent", "Usikkert", "Sikkert vrak"], riktig: 1 } },
+      { tekst: "Du leser 48,30 mm. Hva sier du?", svar: { valg: ["Sikkert godkjent", "Usikkert", "Sikkert vrak"], riktig: 2 } }
+    ],
+    hint: ["Trekk usikkerheten inn fra hver grense: 47,8 + 0,05 og 48,2 − 0,05.", "48,18 kan være opp til 48,23. 48,30 kan være ned til 48,25, og øvre grense er 48,2."],
+    losning: "<p>Grenser 47,8 og 48,2. Sikkert inne: 47,85 til 48,15. 48,18 er usikkert. 48,30 er sikkert vrak, fordi selv 48,25 er over 48,2.</p>"
+  },
+  {
+    id: "krymp-25",
+    niva: "vanskelig",
+    tittel: "Tapp fra 70 °C",
+    tekst: "<p>Ståltapp målt til Ø25,000 mm ved 70 °C. Bruk \\(\\alpha = 0{,}000012\\) per °C ned til 20 °C. Ikke avrund underveis. Kravet kald er 25,00 ± 0,02 mm.</p>",
+    steg: [{ verdi: 50, enhet: "°C" }, { verdi: 0.015, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor mange mm krymper diameteren?", svar: { verdi: 0.015, enhet: "mm", tol: 0.00005 } },
+      { tekst: "Hva er diameteren ved 20 °C?", svar: { verdi: 24.985, enhet: "mm", tol: 0.00005 } },
+      { tekst: "Er den godkjent ved 20 °C?", svar: { valg: ["Ja", "Nei"], riktig: 1 } }
+    ],
+    hint: ["Temperaturfall 50 °C. \\(0{,}000012 \\cdot 25 \\cdot 50\\).", "\\(0{,}015\\) mm krymp. \\(25 - 0{,}015 = 24{,}985\\). Nedre grense er 24,98 mm."],
+    losning: "<p>\\(\\Delta L = 0{,}000012 \\cdot 25 \\cdot 50 = 0{,}015\\) mm. Kald diameter 24,985 mm. Nedre grense 24,98 mm. Den er ute.</p>"
+  },
+  {
+    id: "bolt-64",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Bolt 64 ± 0,2",
+    utstyr: "Skyvelære eller mikrometer, og bolter merket 64 ± 0,2 mm",
+    hms: "Ikke mål i maskin som går. Mål kald del, omtrent 20 °C. Verktøy tilbake i etui.",
+    tekst: "<p>Krav 64,0 ± 0,2 mm. Verktøyets usikkerhet ± 0,05 mm. Sikkert godkjent betyr at hele usikkerheten ligger innenfor grensene.</p>",
+    steg: [{ verdi: 63.8, enhet: "mm" }, { verdi: 64.2, enhet: "mm" }],
+    deler: [
+      { tekst: "Nedre grensemål på tegningen?", svar: { verdi: 63.8, enhet: "mm", tol: 0 } },
+      { tekst: "Minste måling som er sikkert godkjent?", svar: { verdi: 63.85, enhet: "mm", tol: 0 } },
+      { tekst: "Største måling som er sikkert godkjent?", svar: { verdi: 64.15, enhet: "mm", tol: 0 } },
+      { tekst: "Du leser 64,18 mm. Hva sier du?", svar: { valg: ["Sikkert godkjent", "Usikkert", "Sikkert vrak"], riktig: 1 } }
+    ],
+    hint: ["Trekk usikkerheten inn fra hver grense: 63,8 + 0,05 og 64,2 − 0,05.", "64,18 kan være opp til 64,23, og 64,2 er øvre grense."],
+    losning: "<p>Grenser 63,8 og 64,2. Sikkert inne: 63,85 til 64,15. 64,18 er usikkert.</p>"
+  },
+  {
+    id: "rep-eske-50",
+    type: "repetisjon",
+    fra: "kapittel 1",
+    niva: "lett",
+    tekst: "<p>En eske med 50 skruer koster 89 kr. Hva koster én skrue?</p>",
+    svar: { verdi: 1.78, enhet: "kr", tol: 0.005 },
+    hint: ["Del på 50.", "\\(89 : 50 = 1{,}78\\)."],
+    losning: "<p>\\(89 : 50 = 1{,}78\\) kr.</p>"
+  },
+  {
+    id: "eksamen-20-h6",
+    type: "eksamen",
+    eksamensdel: "Del 2 (med tabellen fra teorisiden)",
+    niva: "middels",
+    tekst: "<p>Ø20 H7/h6. Bruk tabellen: H7 +21 / 0 µm og h6 0 / −13 µm. 20 mm er i området over 18 til og med 30 mm.</p>",
+    steg: [{ verdi: 0.021, enhet: "mm" }, { verdi: 0.013, enhet: "mm" }],
+    deler: [
+      { tekst: "Nedre grensemål for akselen?", svar: { verdi: 19.987, enhet: "mm" } },
+      { tekst: "Minste klaring?", svar: { verdi: 0, enhet: "mm", tol: 0 } },
+      { tekst: "Største klaring?", svar: { verdi: 0.034, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 0 } }
+    ],
+    hint: ["13 µm = 0,013 mm. \\(20 - 0{,}013\\).", "Minste hull minus største aksel er \\(20{,}000 - 20{,}000\\). Største klaring: \\(20{,}021 - 19{,}987\\)."],
+    losning: "<p>Aksel 19,987 til 20,000 mm. Hull 20,000 til 20,021 mm. Minste klaring 0 mm. Største 0,034 mm. Klaringspasning.</p>"
   }
 ]);
