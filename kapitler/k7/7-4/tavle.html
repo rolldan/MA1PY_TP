@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 7.4 Lån: serielån og annuitetslån</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="7" data-del="7.4">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="To lån">
+    <h2>Samme lån, to måter å betale på</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Serielån med synkende stolper og annuitetslån med like stolper">
+        <text x="100" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#17202b">Serielån</text>
+        <g fill="var(--kap)">
+          <rect x="40" y="50" width="36" height="140"/>
+          <rect x="84" y="80" width="36" height="110"/>
+          <rect x="128" y="110" width="36" height="80"/>
+        </g>
+        <text x="320" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#17202b">Annuitetslån</text>
+        <g fill="#9a3412">
+          <rect x="260" y="80" width="36" height="110"/>
+          <rect x="304" y="80" width="36" height="110"/>
+          <rect x="348" y="80" width="36" height="110"/>
+        </g>
+        <text x="220" y="220" text-anchor="middle" font-size="14" fill="#5b6675">Høyden er terminbeløpet</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Sara låner 36 000 kr til et verktøysett. Renta er 5 % per år. Hun betaler én gang i året i tre år.</p>
+      <div class="undre" data-hint="Se på stolpene. Hva er likt i hvert lån?" data-sekunder="30">Hvilket lån har likt terminbeløp hver gang?</div>
+      <p class="steg">Annuitetslånet har like høye stolper. Terminbeløpet er det samme hver gang.</p>
+      <p class="steg">Serielånet synker. Avdraget er likt, men renta blir mindre når gjelden blir mindre.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">To lån</p>
+        <p>Serielån: likt avdrag, synkende terminbeløp.<br>Annuitetslån: likt terminbeløp, voksende avdrag.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Serielån">
+    <h2>Første år på serielånet</h2>
+    <div class="tekst">
+      <p>Avdraget er lånet delt på antall terminer. Renta er 5 % av restgjelden.</p>
+      <div class="undre" data-hint="36 000 delt på 3." data-sekunder="30">Hvor stort er avdraget per år?</div>
+      <p class="steg">Avdrag: \(36\,000 : 3 = 12\,000\) kr hvert år.</p>
+      <p class="steg">Rente år 1: \(36\,000 \cdot 0{,}05 = 1\,800\) kr.</p>
+      <p class="steg">Terminbeløp år 1: \(12\,000 + 1\,800 = 13\,800\) kr. Restgjeld: 24 000 kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Serielån</p>
+        <p>Avdrag = lån / antall terminer.<br>Rente = restgjeld · rentesats.<br>Terminbeløp = avdrag + rente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Billån">
+    <h2>6 % eller 15 %?</h2>
+    <div class="tekst">
+      <p>En bruktbil koster 80 000 kr. Billånet har 6 % rente. Forbrukslånet har 15 % rente. Begge er serielån over 4 år, med ett avdrag i året.</p>
+      <div class="undre" data-hint="Samme avdrag, mye høyere rente på forbrukslånet." data-sekunder="30">Hvilket lån koster mest i renter, selv om avdraget er likt?</div>
+      <p class="steg">Avdraget er \(80\,000 : 4 = 20\,000\) kr i året på begge.</p>
+      <p class="steg">Renter på billånet: 4 800 + 3 600 + 2 400 + 1 200 = <b>12 000 kr</b>.</p>
+      <p class="steg">Renter på forbrukslånet: 12 000 + 9 000 + 6 000 + 3 000 = <b>30 000 kr</b>.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Et lavere terminbeløp betyr ikke at lånet er billigere. Sjekk renta og hvor mange år du betaler.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../7-5/teori.html">7.5 Kredittkort</a> · <a href="../7-6/teori.html">7.6 Budsjett</a></p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Kontant">
+    <h2>Kontant er null i rente</h2>
+    <div class="tekst">
+      <p>Har du 80 000 kr på konto, kan du betale bilen kontant. Da betaler du ingen rente til banken.</p>
+      <div class="undre" data-hint="Pengene på konto kunne ha stått og fått rente. Det er også en kostnad, men den er mindre enn 15 %." data-sekunder="30">Hvor mange kroner betaler du i rente hvis du betaler kontant?</div>
+      <p class="steg">Rente til banken: 0 kr. Du betaler 80 000 kr, og gjelden er borte.</p>
+      <p class="steg">Billånet koster 12 000 kr i renter. Forbrukslånet koster 30 000 kr i renter.</p>
+      <p class="steg">Kontant er billigst hvis du har pengene og fortsatt har buffer til uforutsette regninger. Har du ikke buffer, kan et billån med lav rente være et bedre valg enn å tømme kontoen.</p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

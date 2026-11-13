@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 7.3 Sparing og BSU</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="7" data-del="7.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Tusen i måneden">
+    <h2>Hva blir 1 000 kr i måneden?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Tolv innskudd på 1 000 kroner blir 12 000 kroner på ett år">
+        <g fill="var(--kap)">
+          <rect x="30" y="80" width="22" height="70" rx="3"/>
+          <rect x="60" y="80" width="22" height="70" rx="3"/>
+          <rect x="90" y="80" width="22" height="70" rx="3"/>
+          <rect x="120" y="80" width="22" height="70" rx="3"/>
+        </g>
+        <text x="86" y="170" text-anchor="middle" font-size="14" fill="#5b6675">1 000 kr · 12</text>
+        <g data-vis-fra="2">
+          <rect x="230" y="50" width="170" height="110" rx="8" fill="#ffedd5" stroke="var(--kap)" stroke-width="2"/>
+          <text x="315" y="100" text-anchor="middle" font-size="16" fill="#9a3412">på ett år</text>
+          <text x="315" y="132" text-anchor="middle" font-size="28" font-weight="700" fill="#17202b">12 000 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Etter lønnsslippen setter lærlingen av 1 000 kr hver måned. Først uten rente.</p>
+      <div class="undre" data-hint="Tolv måneder i året." data-sekunder="30">Hvor mye er satt inn etter ett år?</div>
+      <p class="steg">\(12 \cdot 1\,000 = 12\,000\) kr.</p>
+      <p class="steg">Renten kommer i tillegg. Den regnes av det som står på konto, ikke av lønna.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Vekstfaktor</p>
+        <p>\(K = K_0 \cdot (1+r)^n\)<br>
+        2 % rente i ett år: gang med 1,02.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="To prosent">
+    <h2>2 % i ett år</h2>
+    <div class="tekst">
+      <p>12 000 kr settes inn ved starten av året. Renten er 2 % per år.</p>
+      <div class="undre" data-hint="2 % av 12 000 er 240." data-sekunder="30">Står det 12 240 kr eller 24 000 kr på konto etter ett år?</div>
+      <p class="steg">Vekstfaktor \(1 + 0{,}02 = 1{,}02\).</p>
+      <p class="steg">\(12\,000 \cdot 1{,}02 = 12\,240\) kr. Renta er 240 kr, ikke 12 000 kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>2 % per år er ikke 2 % per måned. 2 % per måned hadde vært en helt annen rente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="BSU">
+    <h2>BSU i 2026</h2>
+    <div class="tekst">
+      <p>Boligsparing for ungdom gir skattefradrag. Reglene for 2026 står hos Skatteetaten.</p>
+      <div class="undre" data-hint="Fradraget er 10 % av det du setter inn, ikke av rentene." data-sekunder="30">Setter du inn 27 500 kr, får du 2 750 kr ekstra inn på kontoen?</div>
+      <p class="steg">Nei. 10 % av 27 500 kr er 2 750 kr i <b>lavere skatt</b>, ikke et innskudd.</p>
+      <p class="steg">Du må betale skatt for å få fradraget. Med frikort og 0 kr i skatt blir fradraget 0 kr.</p>
+      <p class="steg">Du kan spare til og med året du fyller 33. Eier du bolig 31. desember, får du ikke fradrag det året. Rentene teller ikke med i grensen på 27 500 kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">BSU 2026</p>
+        <p>Maks 27 500 kr i året · 10 % skattefradrag · maks 2 750 kr i fradrag.<br>
+        Samlet sparebeløp maks 300 000 kr. Kilde: Skatteetaten.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../7-2/teori.html">7.2 Skatt</a> · <a href="../7-4/teori.html">7.4 Lån</a></p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Ti år">
+    <h2>Når er kontoen full?</h2>
+    <div class="tekst">
+      <p>Samlet innskudd på BSU kan ikke bli mer enn 300 000 kr. Rentene kommer utenom det taket.</p>
+      <div class="undre" data-hint="10 · 27 500 = 275 000. Hva mangler opp til 300 000?" data-sekunder="30">Kan du sette inn 27 500 kr hvert år i 11 år?</div>
+      <p class="steg">Ti fulle år: \(10 \cdot 27\,500 = 275\,000\) kr.</p>
+      <p class="steg">Det ellevte året er det plass til \(300\,000 - 275\,000 = 25\,000\) kr, ikke 27 500 kr.</p>
+      <p class="steg">Skattefradrag det året: \(25\,000 \cdot 0{,}10 = 2\,500\) kr, hvis du betaler nok skatt.</p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

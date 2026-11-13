@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 7.5 Kredittkort</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="7" data-del="7.5">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">ØKONOMI · KREDITT</p>
+  <h1>Kredittkort</h1>
+  <p class="ingress">Et kredittkort lar deg betale senere. Det er et lån. Renta oppgis ofte per måned, og den løper hvis du ikke betaler hele regningen innen forfall.</p>
+
+  <ul class="laeringsmal">
+    <li>regne rente for én måned når prosentsatsen er oppgitt</li>
+    <li>bruke vekstfaktor når renta legges til flere måneder</li>
+    <li>forklare hva som skjer hvis du bare betaler minste beløp</li>
+  </ul>
+
+  <ol class="kjede"><li>er regningen betalt i tide?</li><li>hvis nei, finn månedsrenta</li><li>gang med vekstfaktor</li><li>se hva det koster</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Et momentnøkkelsett står i katalogen med «betal senere». Prisen er 20 000 kr. Første måned er uten rente. Står regningen ubetalt etter det, er renta 1,8 % per måned.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Betaler du hele beløpet innen forfall i den rentefrie perioden, er renta 0 kr. Da er kortet bare en utsettelse.</p>
+  <p>Betaler du ikke, vokser gjelden:</p>
+  <p>\[ \text{ny saldo} = \text{gammel saldo} \cdot (1 + r) \]</p>
+  <p>Med 1,8 % er vekstfaktoren 1,018 per måned. Etter fem måneder med rente er faktoren \(1{,}018^5 = 1{,}093299\), avrundet til seks desimaler.</p>
+  <p>\[ 20\,000 \cdot 1{,}093299 = 21\,865{,}98 \]</p>
+  <p>Et halvt år er seks måneder: én rentefri og fem med rente. Merkostnaden er 1 865,98 kr, omtrent 1 866 kr.</p>
+  <p>1,8 % · 12 = 21,6 %. Det er renta uten rentesrente. Med rentesrente blir årsrenta omtrent 23,9 %, fordi \((1{,}018)^{12} - 1 \approx 0{,}239\). Et billån på 6 % per år er et annet prisnivå.</p>
+  <p>Minste beløp er det minste kortet krever at du betaler. Er minste beløp lik renta, synker ikke gjelden.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Rente én måned = saldo · månedsrente.<br>
+    Etter flere måneder: saldo · \((1 + r)^n\).<br>
+    1,8 % per måned er ikke 1,8 % per år.<br>
+    Rentefri periode gjelder bare ved full betaling innen forfall.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: du betaler 2 000 kr</h3>
+    <p>Etter den rentefrie måneden er gjelden 20 000 kr. Du betaler 2 000 kr etter at renta for måneden er lagt til.</p>
+    <ol class="steg-liste">
+      <li class="steg">Rente: \(20\,000 \cdot 0{,}018 = 360\) kr.</li>
+      <li class="steg">Saldo før innbetaling: \(20\,000 + 360 = 20\,360\) kr.</li>
+      <li class="steg">Etter innbetaling: \(20\,360 - 2\,000 = 18\,360\) kr.</li>
+      <li class="steg">Gjelden sank med 1 640 kr, ikke med 2 000 kr. 360 kr gikk til rente.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>1,8 % per måned er ikke 1,8 % per år. Den rentefrie måneden gjelder bare hvis hele beløpet er betalt innen forfall. Minste beløp stopper ikke rentene.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Gjelden er 8 000 kr, og du ikke betaler. Renta er 1,8 % denne måneden. Hvor mange kroner er renta?</p>
+    <div class="fasit">144 kr</div>
+    <div class="losning">\(8\,000 \cdot 0{,}018 = 144\) kr.</div>
+  </div>
+
+  <div class="verktoy">
+    <p>I regneark: saldo i celle A1. Neste måned er <b>=A1*1,018</b> hvis du ikke betaler noe. Trekk fra innbetalingen etter at renta er lagt til. Kredittkortet i eksemplene har 1,8 % per måned. Ekte kort har ulike satser. Les satsen før du sammenligner.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "nr": 7,
+  "tittel": "Lønn og personlig økonomi",
+  "status": "ferdig",
+  "ingress": "Timelønn, lærlinglønn og overtid, skatt og lønnsslipp med satser for 2026, sparing og BSU, serielån og annuitetslån, kredittkort, budsjett og regnskap. Kapitlet avsluttes med forberedelse til tentamen i uke 16.",
+  "handlerOm": "Når du er lærling i verkstedet, kommer lønna inn én gang i måneden. Her fører du timeliste med overtid, leser lønnsslippen og ser hva som er igjen etter skatt og trygdeavgift. Deretter sammenligner du sparing, lån og kredittkort, og setter opp budsjett før tentamen i uke 16.",
+  "byggerPa": [
+    { "tekst": "3.2 Prosent: del, hel og prosentandel" },
+    { "tekst": "3.4 Rabatt og mva" },
+    { "tekst": "3.5 Vekstfaktor" },
+    { "tekst": "4.4 Fart og tid. Desimaltimer" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 8: Bilprosjektet" }
+  ],
+  "delkapitler": [
+    { "nr": "7.1", "tittel": "Timelønn, overtid og lærlinglønn", "formel": "\\(\\text{brutto} = \\text{timer} \\cdot \\text{timelønn}\\)", "uke": "13" },
+    { "nr": "7.2", "tittel": "Skatt, trekk og lønnsslipp", "formel": "\\(\\text{netto} = \\text{brutto} - \\text{trekk}\\)", "uke": "13" },
+    { "nr": "7.3", "tittel": "Sparing og BSU", "formel": "\\(K = K_0 \\cdot (1+r)^n\\)", "uke": "14" },
+    { "nr": "7.4", "tittel": "Lån: serielån og annuitetslån", "formel": "\\(\\text{avdrag} = \\text{lån} / \\text{terminer}\\)", "uke": "14" },
+    { "nr": "7.5", "tittel": "Kredittkort", "formel": "\\(1{,}8\\,\\%\\) per måned", "uke": "14" },
+    { "nr": "7.6", "tittel": "Budsjett og regnskap i regneark", "formel": "\\(\\text{overskudd} = \\text{inntekter} - \\text{utgifter}\\)", "uke": "15" },
+    { "nr": "7.7", "tittel": "Forberedelse til tentamen", "formel": "Del 1 uten, del 2 med hjelpemidler", "uke": "16" }
+  ],
+  "jegKan": [
+    "Jeg kan regne timelønn, overtid og lærlinglønn ut fra en timeliste.",
+    "Jeg kan forklare lærlinglønn som 30, 40, 50 og 80 prosent av fagarbeiderlønn.",
+    "Jeg kan lese en lønnsslipp og regne ut netto lønn.",
+    "Jeg kan bruke satsene for 2026: 22 prosent skatt på alminnelig inntekt, 7,6 prosent trygdeavgift på lønn og frikortgrense 100 000 kr.",
+    "Jeg kan regne rente med vekstfaktor og skattefradrag på BSU.",
+    "Jeg kan skille serielån fra annuitetslån og regne avdrag og renter på et serielån.",
+    "Jeg kan forklare hva et kredittkort koster når renta er oppgitt per måned.",
+    "Jeg kan sette opp et budsjett, føre et enkelt regnskap og finne avvik.",
+    "Jeg kan sammenligne det å betale kontant, ta opp billån og ta opp forbrukslån.",
+    "Jeg kan forberede meg til tentamen i uke 16."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V/K", "tittel": "Timeliste fra verkstedet", "tekst": "Før timer for en verkstedsuke som lærling og regn lønn med overtidstillegg.", "lenke": "7-1/verksted.html" },
+    { "merke": "K", "tittel": "Lærlingens første lønnsslipp", "tekst": "Les en lønnsslipp med 17 220 kr i brutto og 25 prosent trekk, og sammenlign med trygdeavgiften for 2026.", "lenke": "7-2/verksted.html" },
+    { "merke": "K", "tittel": "BSU fra lønna", "tekst": "Sett av et fast beløp til BSU og regn skattefradraget for 2026.", "lenke": "7-3/verksted.html" },
+    { "merke": "K", "tittel": "Lånet til Sara", "tekst": "Avgjør om lånet er serielån eller annuitetslån, og finn hva det koster i renter.", "lenke": "7-4/verksted.html" },
+    { "merke": "K", "tittel": "Hva koster «betal senere»?", "tekst": "Sammenlign kontantpris og kreditt på et verktøysett.", "lenke": "7-5/verksted.html" },
+    { "merke": "K", "tittel": "Bilkjøp", "tekst": "Sammenlign kontant, billån og forbrukslån, og sett bilkostnadene inn i budsjettet.", "lenke": "7-6/verksted.html" },
+    { "merke": "K", "tittel": "Stasjoner før tentamen", "tekst": "Repeter lønn, lån og en sikker oppgave før tentamen i uke 16.", "lenke": "7-7/verksted.html" }
+  ]
+}
