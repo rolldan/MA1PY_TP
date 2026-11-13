@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 3.5 Vekstfaktor og flere perioder</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="3" data-del="3.5">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Faktor 1,20">
+    <h2>150 kr ganger 1,20</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 180" role="img" aria-label="Pil fra 150 kr gjennom faktor 1,20 til 180 kr">
+        <rect x="30" y="55" width="110" height="60" rx="8" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="85" y="92" text-anchor="middle" font-size="22" font-weight="700">150 kr</text>
+        <text x="210" y="50" text-anchor="middle" font-size="18" font-weight="700" fill="var(--kap)">· 1,20</text>
+        <line x1="150" y1="85" x2="270" y2="85" stroke="var(--kap)" stroke-width="3"/>
+        <polygon points="270,78 286,85 270,92" fill="var(--kap)"/>
+        <g data-vis-fra="2">
+          <rect x="300" y="55" width="110" height="60" rx="8" fill="var(--kap)"/>
+          <text x="355" y="92" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">180 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Samme lærlinglønn som i 3.3: fra 150 kr til 180 kr. Nå bruker vi vekstfaktor.</p>
+      <div class="undre" data-hint="20 % opp betyr at du beholder 100 % og legger til 20 %." data-sekunder="30">Hvilket tall ganger du med når noe øker med 20 %?</div>
+      <p class="steg">Økning på 20 %: vekstfaktoren er \(1 + 0{,}20 = 1{,}20\).</p>
+      <p class="steg">Ny lønn: \(150 \cdot 1{,}20 = 180\) kr. Samme svar som da vi regnet 30 : 150.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Vekstfaktor</p>
+        <p>Opp \(p\ \%\): \(V = 1 + \dfrac{p}{100}\). Ned \(p\ \%\): \(V = 1 - \dfrac{p}{100}\).<br>
+        Ny \(=\) gammel \(\cdot V\).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Mustang">
+    <h2>Hva kostet den i fjor?</h2>
+    <div class="tekst">
+      <p>En Mustang fra 1969 er verdt 1,25 millioner kroner etter at prisen steg 6,5 % i år.</p>
+      <div class="undre" data-hint="6,5 % opp er faktor 1,065. Du kjenner den nye verdien og skal finne den gamle.">Er fjorårsprisen litt under eller litt over 1,2 millioner?</div>
+      <p class="steg">Vekstfaktoren er \(1{,}065\). Ny \(=\) gammel \(\cdot 1{,}065\).</p>
+      <p class="steg">Gammel \(=\) ny \(: V\). \(1\,250\,000 : 1{,}065 \approx 1\,173\,709\) kr.</p>
+      <p class="steg">Sjekk: \(1\,173\,709 \cdot 1{,}065 \approx 1\,250\,000\).</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Avensis">
+    <h2>90 % verdifall</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 180" role="img" aria-label="En søyle på 100 prosent som krymper til 10 prosent etter 90 prosent verdifall">
+        <rect x="80" y="30" width="80" height="120" fill="#e2e8f0" stroke="#17202b"/>
+        <text x="120" y="24" text-anchor="middle" font-size="14">nypris</text>
+        <g data-vis-fra="2">
+          <rect x="250" y="126" width="80" height="24" fill="var(--kap)"/>
+          <text x="290" y="118" text-anchor="middle" font-size="14">10 % igjen</text>
+          <text x="220" y="170" text-anchor="middle" font-size="16" font-weight="700">faktor 0,10</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En Toyota Avensis fra 2000 er verdt 25 000 kr. Verdien har sunket 90 % siden den var ny.</p>
+      <div class="undre" data-hint="Hvis 90 % er borte, er 10 % igjen. 25 000 er de 10 prosentene.">Hva var nyprisen?</div>
+      <p class="steg">Ned 90 %: vekstfaktoren er \(1 - 0{,}90 = 0{,}10\).</p>
+      <p class="steg">Nypris \(= 25\,000 : 0{,}10 = 250\,000\) kr.</p>
+      <p class="steg">Faktoren er 0,10, ikke 1,90 og ikke −0,90. 90 % verdifall betyr at en tidel står igjen.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Snorre-kjeden">
+    <h2>Tre faktorer etter hverandre</h2>
+    <div class="tekst">
+      <p>Snorre regner verdien av et kjøp slik: \(25\,000 \cdot 1{,}05 \cdot 0{,}85 \cdot 0{,}97 = 21\,643\) kr.</p>
+      <div class="undre" data-hint="1,05 er litt over 1, altså oppgang. 0,85 og 0,97 er under 1, altså nedgang.">Hva betyr hvert av de tre desimaltallene?</div>
+      <p class="steg">25 000 kr er startverdien. \(1{,}05\) er +5 %. \(0{,}85\) er −15 %. \(0{,}97\) er −3 %.</p>
+      <p class="steg">21 643 kr er verdien etter alle tre endringene, avrundet til nærmeste krone.</p>
+      <p class="steg">Du kan ikke legge sammen \(5 - 15 - 3\). Faktorene ganges. Totalt er verdien sunket omtrent 13,4 %, ikke 13 %.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Flere perioder</p>
+        <p>Samme prosent hver gang: \(N = G \cdot V^{t}\).<br>Ulike prosenter: gang faktorene. Ikke legg sammen prosentene.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../3-3/teori.html">3.3 Prosent og prosentpoeng</a> · <a href="../3-6/teori.html">3.6 Promille</a> · <a href="oppgaver.html">Oppgaver 3.5</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 3.4 Rabatt, påslag og mva</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="3" data-del="3.4">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Bremseskive">
+    <h2>Nettbutikk eller butikk?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 230" role="img" aria-label="To prislapper for samme bremseskive, 377 kr på nett og 499 kr i butikk">
+        <circle cx="90" cy="100" r="52" fill="none" stroke="#475569" stroke-width="14"/>
+        <circle cx="90" cy="100" r="16" fill="#cbd5e1" stroke="#475569" stroke-width="4"/>
+        <rect x="170" y="40" width="110" height="70" rx="8" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
+        <text x="225" y="68" text-anchor="middle" font-size="14">nett</text>
+        <text x="225" y="94" text-anchor="middle" font-size="22" font-weight="700">377 kr</text>
+        <rect x="300" y="40" width="110" height="70" rx="8" fill="#fff" stroke="#17202b" stroke-width="2"/>
+        <text x="355" y="68" text-anchor="middle" font-size="14">butikk</text>
+        <text x="355" y="94" text-anchor="middle" font-size="22" font-weight="700">499 kr</text>
+        <g data-vis-fra="2">
+          <rect x="170" y="140" width="240" height="48" rx="8" fill="#dcfce7"/>
+          <text x="290" y="170" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">sparer 122 kr · ca. 24 %</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Liam skal bytte bremseskive. Nettbutikken tar 377 kr. Butikken ved verkstedet tar 499 kr for den samme skiven. Se bort fra frakt i dette første regnestykket.</p>
+      <div class="undre" data-hint="Trekk nettoprisen fra butikkprisen. Del differansen på butikkprisen." data-sekunder="30">Sparer han mer eller mindre enn 100 kr? Gjett først.</div>
+      <p class="steg">I kroner: \(499 - 377 = 122\) kr.</p>
+      <p class="steg">I prosent av butikkprisen: \(122 : 499 \approx 0{,}244\), altså omtrent 24,4 %.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Rabatt</p>
+        <p>15 % rabatt: gang med \(0{,}85\). 0,15 er selve avslaget, ikke den nye prisen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Rabattkode og frakt">
+    <h2>Lønner koden seg?</h2>
+    <div class="tekst">
+      <p>Liam har en kode som gir 15 % avslag i nettbutikken. Handler han for under 350 kr, kommer det 49 kr i frakt. Uten kode er prisen 377 kr, og da er frakten fri.</p>
+      <div class="undre" data-hint="Regn prisen etter 15 % først. Se om den havner under 350 kr.">Blir totalen lavere hvis han bruker koden?</div>
+      <p class="steg">Etter rabatt: \(377 \cdot 0{,}85 = 320{,}45\) kr. Det er under 350 kr, så frakten kommer på.</p>
+      <p class="steg">Med kode og frakt: \(320{,}45 + 49 = 369{,}45\) kr.</p>
+      <p class="steg">Uten kode: 377 kr. Koden sparer \(377 - 369{,}45 = 7{,}55\) kr. Den lønner seg så vidt. Hadde frakten vært høyere, hadde den ikke gjort det.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Mva-fellen">
+    <h2>125 kr med mva</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 200" role="img" aria-label="Prislapp 125 kr som inneholder 100 kr pluss 25 kr mva">
+        <rect x="40" y="40" width="360" height="50" rx="8" fill="var(--kap)"/>
+        <text x="220" y="72" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">125 kr med mva</text>
+        <g data-vis-fra="2">
+          <rect x="40" y="110" width="288" height="50" rx="8" fill="#e2e8f0"/>
+          <rect x="328" y="110" width="72" height="50" rx="8" fill="#fef3c7" stroke="#a16207"/>
+          <text x="184" y="142" text-anchor="middle" font-size="18" font-weight="700">100 kr uten mva</text>
+          <text x="364" y="142" text-anchor="middle" font-size="16" font-weight="700">25 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En prislapp viser 125 kr. Merverdiavgiften er 25 %, og den er inkludert.</p>
+      <div class="undre" data-hint="25 % av 100 kr er 25 kr, og 100 + 25 = 125. Gå den veien baklengs.">Hva er prisen uten mva?</div>
+      <p class="steg">Pris uten mva \(=\) pris med mva \(: 1{,}25\). \(125 : 1{,}25 = 100\) kr.</p>
+      <p class="steg">Mva-beløpet er \(125 - 100 = 25\) kr. Det er 20 % av prisen med mva, fordi \(25 : 125 = 0{,}20\).</p>
+      <p class="steg">Trekker du 25 % av 125, får du \(125 \cdot 0{,}75 = 93{,}75\) kr. Det er for lavt.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Påslag og mva">
+    <h2>Først påslag, så mva</h2>
+    <div class="tekst">
+      <p>Verkstedet kjøper en del for 240 kr uten mva. De legger på 50 % før de setter på mva.</p>
+      <div class="undre" data-hint="50 % påslag er faktor 1,50. Mva er faktor 1,25 etterpå.">Hva blir prisen kunden ser, med mva?</div>
+      <p class="steg">Etter påslag: \(240 \cdot 1{,}50 = 360\) kr. Dette er fortsatt uten mva.</p>
+      <p class="steg">Med mva: \(360 \cdot 1{,}25 = 450\) kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Påslag er verkstedets fortjeneste. Mva er avgift, 25 %.<br>
+        Uten mva \(=\) med mva \(: 1{,}25\). Med mva \(=\) uten mva \(\cdot 1{,}25\).</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../3-3/teori.html">3.3 Endring i prosent</a> · <a href="../3-5/teori.html">3.5 Vekstfaktor</a> · <a href="oppgaver.html">Oppgaver 3.4</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

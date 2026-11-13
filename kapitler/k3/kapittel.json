@@ -1,0 +1,49 @@
+{
+  "nr": 3,
+  "tittel": "Forhold og prosent i verkstedet",
+  "status": "ferdig",
+  "ingress": "Bland frostvæske i riktig forhold, regn svinn, rabatt og mva, og bruk vekstfaktor og promille på tall fra verkstedet.",
+  "handlerOm": "På verkstedet blander du kjølevæske, regner hvor mange hjulbolter som er solgt, og sjekker om en rabattkode lønner seg når frakten kommer i tillegg. Her bruker du forhold, prosent, mva, vekstfaktor og promille på innkjøp, svinn og blandinger.",
+  "byggerPa": [
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" },
+    { "tekst": "1.4 Brøk og desimaltall" },
+    { "tekst": "Kapittel 2: Måling og toleranser" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 4: Måleenheter" },
+    { "tekst": "Kapittel 7: Lønn og personlig økonomi" }
+  ],
+  "delkapitler": [
+    { "nr": "3.1", "tittel": "Forhold, veien om 1 og blandingsforhold", "formel": "\\(2 : 3\\) og veien om 1", "uke": "42" },
+    { "nr": "3.2", "tittel": "Prosent: del, hel og prosentandel", "formel": "\\(\\text{prosent} = \\dfrac{\\text{del}}{\\text{hel}} \\cdot 100\\)", "uke": "43" },
+    { "nr": "3.3", "tittel": "Endring i prosent og prosentpoeng", "formel": "\\(\\dfrac{\\text{endring}}{\\text{gammel verdi}}\\)", "uke": "44" },
+    { "nr": "3.4", "tittel": "Rabatt, påslag og mva", "formel": "\\(\\text{uten mva} = \\text{med mva} : 1{,}25\\)", "uke": "44" },
+    { "nr": "3.5", "tittel": "Vekstfaktor og flere perioder", "formel": "\\(N = G \\cdot V\\)", "uke": "45" },
+    { "nr": "3.6", "tittel": "Promille", "formel": "\\(1\\,\\text{‰} = 0{,}1\\,\\%\\)", "uke": "45" }
+  ],
+  "jegKan": [
+    "Jeg kan bruke veien om 1 til å regne pris og mengde.",
+    "Jeg kan regne med blandingsforhold og forenkle et forhold.",
+    "Jeg kan finne delen når jeg kjenner helheten og prosenten.",
+    "Jeg kan finne helheten når jeg kjenner delen og prosenten.",
+    "Jeg kan finne prosentandelen.",
+    "Jeg kan regne svinn i prosent.",
+    "Jeg kan regne endring i prosent.",
+    "Jeg kan skille mellom prosent og prosentpoeng.",
+    "Jeg kan regne pris med rabatt og påslag.",
+    "Jeg kan regne pris med og uten mva.",
+    "Jeg kan vurdere om en rabattkode lønner seg når frakt kommer i tillegg.",
+    "Jeg kan bruke vekstfaktor i én periode og i flere perioder.",
+    "Jeg kan finne gammel verdi ved å dele på vekstfaktoren.",
+    "Jeg kan regne om mellom prosent og promille.",
+    "Jeg kan regne relativ usikkerhet i prosent."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V", "tittel": "Bland riktig", "tekst": "Bland frostvæske 2 : 3 og spylervæske 2 : 8, og regn totaktsolje 1 : 50.", "lenke": "3-1/verksted.html" },
+    { "merke": "V", "tittel": "Svinnprosent", "tekst": "Vei eller mål kapprester fra programfaget og regn svinn i prosent.", "lenke": "3-2/verksted.html" },
+    { "merke": "V/K", "tittel": "Prosent eller prosentpoeng", "tekst": "Sammenlign to vrakandeler og en lengde som ble for kort.", "lenke": "3-3/verksted.html" },
+    { "merke": "V", "tittel": "Prismerking i verktøyskapet", "tekst": "Merk hylla med pris med mva, og finn prisen uten mva fra lappen.", "lenke": "3-4/verksted.html" },
+    { "merke": "K", "tittel": "Verdien av bilen", "tekst": "Mustang, Avensis og en kjede av vekstfaktorer. Regn i regneark.", "lenke": "3-5/verksted.html" },
+    { "merke": "V", "tittel": "Skjærevæske i promille", "tekst": "Bland skjærevæske som 5 % av den ferdige blandingen, og skriv det i promille.", "lenke": "3-6/verksted.html" }
+  ]
+}
