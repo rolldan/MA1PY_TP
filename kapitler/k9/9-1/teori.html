@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 9.1 Finansiering og budsjett</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="9" data-del="9.1">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Økonomi · Den store overfarten</p>
+  <h1>Finansiering og budsjett</h1>
+  <p class="ingress">Båten koster 150 000 kr. Turen koster også. Før dere kaster loss, må lånet og reisekassa være regnet ferdig.</p>
+
+  <ul class="laeringsmal">
+    <li>sammenligne annuitetslån og sparing for kjøpet</li>
+    <li>sette opp budsjett med valuta, prosent og buffer</li>
+    <li>finne hvor mye en prisendring betyr per person</li>
+  </ul>
+
+  <ol class="kjede"><li>egenkapital</li><li>lån eller sparing</li><li>poster</li><li>buffer</li><li>per person</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Tre venner har 30 000 kr til sammen. Resten, 120 000 kr, kan lånes i 3 år til 8,5 % rente per år. Alternativet er å spare 4 500 kr i måneden til sammen og kjøpe båten kontant. Les <a href="../9-0/teori.html">prosjektbeskrivelsen</a> før du regner.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Et annuitetslån har like stort terminbeløp hver måned. I starten betaler dere mest rente. Mot slutten betaler dere mest avdrag. Et serielån har likt avdrag hver måned, så terminbeløpet synker. I dette prosjektet er tilbudet et annuitetslån.</p>
+  <p>Månedsrenta finner dere ved å dele årsrenta på 12. 8,5 % per år er ikke 8,5 % per måned. Gebyrer i en nettbank kan flytte beløpet litt. I prosjektet ser vi bort fra gebyr.</p>
+  <p>Budsjettet har fem trinn: regn hver post, summer, ta buffer av den summen, og del på antall personer. Kursen står i oppgaven. 100 DKK = 150 NOK betyr at 1 DKK = 1,50 kr.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Annuitet, terminbeløp \(A\):</p>
+    <p>\[A = L \cdot \dfrac{r(1+r)^{n}}{(1+r)^{n}-1}\]</p>
+    <p>\(L\) er lånet i kroner, \(r\) er renta per måned som desimaltall, og \(n\) er antall måneder.</p>
+    <p>Buffer i kroner = prosentsats som desimal · summen av postene før buffer. Kostnad per person = total · antall personer i nevneren.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: lånet og de første kronene</h3>
+    <p>Lån 120 000 kr, 8,5 % per år, 36 måneder.</p>
+    <ol class="steg-liste">
+      <li class="steg">\(r = 0{,}085 : 12 \approx 0{,}007083\). \(n = 36\).</li>
+      <li class="steg">Formelen eller en lånekalkulator uten gebyr gir \(A \approx 3\,788\) kr per måned.</li>
+      <li class="steg">Til sammen på lånet: \(3\,788 \cdot 36 = 136\,368\) kr. Renter: \(136\,368 - 120\,000 = 16\,368\) kr.</li>
+      <li class="steg">Med egenkapitalen: \(136\,368 + 30\,000 = 166\,368\) kr. Kontant pris var 150 000 kr. Renta koster 16 368 kr.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>15 % buffer av 25 166 kr er ikke 15 kr, og det er ikke 15 % av en sum der bufferen allerede er med. Regn \(25\,166 \cdot 0{,}15 = 3\,774{,}9\) kr, og legg det på etterpå. En annen felle: 4 500 kr i måneden er det laget sparer til sammen, ikke per person.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Hvor mange hele måneder må laget spare 4 500 kr i måneden før de har minst 150 000 kr?</p>
+    <div class="fasit">34 måneder</div>
+    <div class="losning">\(150\,000 : 4\,500 = 33{,}33\). Etter 33 måneder har dere \(33 \cdot 4\,500 = 148\,500\) kr. Det mangler 1 500 kr. Måned 34 gir \(153\,000\) kr, og da holder det.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Regneark.</b> Kolonner: post, utregning, kroner. En rad per post, en rad for buffer \(= 0{,}15 \cdot\) summen, og en rad for total. Del totalen på 3. Sjekk mot <a href="oppgaver.html">oppgavene</a>. Vil du repetere prosent og lån, søk i <a href="https://ndla.no/nb/f/matematikk-1p-y---tp/5fff4ebc1153">NDLA 1P-Y TP</a>.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>
