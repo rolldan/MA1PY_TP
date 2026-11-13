@@ -99,5 +99,91 @@ Bok.oppgaver([
     ],
     hint: ["\\(n_2 = 900 \\cdot 80 : 160\\).", "80 : 160 = 1 : 2."],
     losning: "<p>\\(n_2 = 900 \\cdot 80 : 160 = 450\\) r/min. Turtallet halveres.</p>"
+  },
+  {
+    id: "reim-halv",
+    niva: "lett",
+    tittel: "Dobbelt så stor skive",
+    tekst: "<p>Motoren går på 1000 r/min og har en reimskive på 60 mm. Den drar en skive på 120 mm. Hva blir turtallet på den store skiva?</p>",
+    steg: [{ verdi: 60000 }],
+    svar: { verdi: 500, enhet: "r/min" },
+    hint: ["\\(n_2 = n_1 \\cdot d_1 : d_2\\). Større drevet skive gir lavere turtall.", "\\(1000 \\cdot 60 : 120\\)."],
+    losning: "<p>\\(1000 \\cdot 60 = 60\\,000\\).<br>\\(n_2 = 60\\,000 : 120 = 500\\) r/min.</p>"
+  },
+  {
+    id: "tenner-15",
+    niva: "lett",
+    tittel: "Tre ganger så mange tenner",
+    tekst: "<p>Et tannhjul med 15 tenner driver et hjul med 45 tenner. Det lille hjulet går på 900 r/min. Hva blir turtallet på det store?</p>",
+    svar: { verdi: 300, enhet: "r/min" },
+    hint: ["Tenner brukes som diameter: \\(n_2 = n_1 \\cdot z_1 : z_2\\).", "\\(900 \\cdot 15 : 45\\)."],
+    losning: "<p>\\(n_2 = 900 \\cdot 15 : 45 = 300\\) r/min. Tre ganger så mange tenner gir en tredel av turtallet.</p>"
+  },
+  {
+    id: "drei-reim",
+    niva: "middels",
+    tittel: "Reima på dreiebenken",
+    tekst: "<p>Motoren på dreiebenken går på 1440 r/min og har en skive på 80 mm. Spindelen har en skive på 160 mm. Motoren driver.</p>",
+    deler: [
+      { tekst: "Hva blir turtallet på spindelen?", svar: { verdi: 720, enhet: "r/min" } },
+      { tekst: "Hva er utvekslingen \\(i = d_2 : d_1\\)? Skriv tallet.", svar: { verdi: 2 } }
+    ],
+    steg: [{ verdi: 115200 }],
+    hint: ["\\(n_2 = 1440 \\cdot 80 : 160\\). Utvekslingen er drevet skive delt på drivende skive.", "80 : 160 = 1 : 2, så turtallet blir halvparten. \\(160 : 80 = 2\\)."],
+    losning: "<p>\\(n_2 = 1440 \\cdot 80 : 160 = 720\\) r/min.<br>\\(i = 160 : 80 = 2\\).</p>"
+  },
+  {
+    id: "overdrive",
+    niva: "middels",
+    tittel: "Overdrive i girkassa",
+    tekst: "<p>Inn i girkassa kommer 2500 r/min på et tannhjul med 30 tenner. Ut vil du ha 3750 r/min, slik at hjulene går fortere enn motoren.</p>",
+    deler: [
+      { tekst: "Hvor mange tenner må det drevne hjulet ha?", svar: { verdi: 20, enhet: "stk" } },
+      { tekst: "Hva skjer med turtallet?", svar: { valg: ["Det går opp", "Det går ned", "Det er uendret"], riktig: 0, forklaring: "Det drevne hjulet har færre tenner, så turtallet øker fra 2500 til 3750." } }
+    ],
+    hint: ["\\(z_2 = n_1 \\cdot z_1 : n_2\\). Færre tenner på det drevne hjulet gir høyere turtall.", "\\(2500 \\cdot 30 : 3750\\)."],
+    losning: "<p>\\(z_2 = 2500 \\cdot 30 : 3750 = 20\\) tenner.<br>Turtallet går opp. Kontroll: \\(2500 \\cdot 30 : 20 = 3750\\) r/min.</p>"
+  },
+  {
+    id: "to-trinn",
+    niva: "vanskelig",
+    tittel: "To trinn ned til trommelen",
+    tekst: "<p>En motor på 1500 r/min driver et tannhjul med 20 tenner. Det drar et hjul med 40 tenner. På samme aksel som 40-tenneren sitter et hjul med 12 tenner. Det driver trommelens hjul med 60 tenner.</p>",
+    deler: [
+      { tekst: "Hva er turtallet på den midterste akselen?", svar: { verdi: 750, enhet: "r/min" } },
+      { tekst: "Hva er turtallet på trommelen?", svar: { verdi: 150, enhet: "r/min" } },
+      { tekst: "Hva er utvekslingen \\(i = n_{\\text{motor}} : n_{\\text{trommel}}\\)? Skriv tallet.", svar: { verdi: 10 } },
+      { tekst: "Hva skjer med momentet på trommelen sammenlignet med motoren?", svar: { valg: ["Det blir mindre, fordi turtallet går opp", "Det blir større, fordi turtallet går ned", "Det er uendret"], riktig: 1, forklaring: "To nedgiringer senker turtallet fra 1500 til 150. Momentet går opp." } }
+    ],
+    steg: [{ verdi: 750, enhet: "r/min" }],
+    hint: ["Regn ett trinn om gangen. \\(n_2 = n_1 \\cdot z_1 : z_2\\). Utvekslingen er motorens turtall delt på trommelens.", "Første trinn: \\(1500 \\cdot 20 : 40\\). Andre trinn bruker 12 og 60 tenner."],
+    losning: "<p>Midtaksel: \\(1500 \\cdot 20 : 40 = 750\\) r/min.<br>Trommel: \\(750 \\cdot 12 : 60 = 150\\) r/min.<br>\\(i = 1500 : 150 = 10\\).<br>Turtallet går ned, så momentet på trommelen blir større.</p>"
+  },
+  {
+    id: "skive-bytte",
+    niva: "vanskelig",
+    tittel: "Hvilken skive på motoren?",
+    tekst: "<p>Motoren går på 2800 r/min. Du har to reimskiver, 90 mm og 180 mm. Du kan snu hvilken som sitter på motoren. Rustfritt stål vil ha lavt turtall på verktøyet.</p>",
+    deler: [
+      { tekst: "Hva blir turtallet når den store skiva sitter på maskinen og den lille på motoren?", svar: { verdi: 1400, enhet: "r/min" } },
+      { tekst: "Hva blir turtallet når den store skiva sitter på motoren og den lille på maskinen?", svar: { verdi: 5600, enhet: "r/min" } },
+      { tekst: "Hvilken plassering velger du til rustfritt?", svar: { valg: ["Stor skive på maskinen, 1400 r/min", "Stor skive på motoren, 5600 r/min", "Det spiller ingen rolle"], riktig: 0, forklaring: "Rustfritt vil ha lavt turtall. 1400 r/min er lavere enn 5600 r/min." } }
+    ],
+    hint: ["Den skiva som driver, er \\(d_1\\). \\(n_2 = n_1 \\cdot d_1 : d_2\\). Stor drevet skive gir lavt turtall.", "Lavt turtall: \\(2800 \\cdot 90 : 180\\). Høyt turtall: \\(2800 \\cdot 180 : 90\\)."],
+    losning: "<p>Stor skive på maskinen: \\(2800 \\cdot 90 : 180 = 1400\\) r/min.<br>Stor skive på motoren: \\(2800 \\cdot 180 : 90 = 5600\\) r/min.<br>Velg 1400 r/min til rustfritt.</p>"
+  },
+  {
+    id: "kompressor",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Skivene på kompressoren",
+    utstyr: "Kompressor med støpselet ute, skyvelære eller metermål",
+    hms: "Støpsel ute. Ikke mål på en skive som går. Hår, hette og snor unna reima når læreren senere starter.",
+    tekst: "<p>Du måler 75 mm på motorsviva og 225 mm på kompressoren. Skiltet på motoren sier 1500 r/min. Motoren driver. Hva blir turtallet på kompressoren?</p>",
+    steg: [{ verdi: 112500 }],
+    svar: { verdi: 500, enhet: "r/min" },
+    hint: ["\\(n_2 = n_1 \\cdot d_1 : d_2\\). Kompressorskiva er størst, så turtallet skal ned.", "\\(1500 \\cdot 75 : 225\\)."],
+    losning: "<p>\\(1500 \\cdot 75 = 112\\,500\\).<br>\\(n_2 = 112\\,500 : 225 = 500\\) r/min.</p>"
   }
 ]);
