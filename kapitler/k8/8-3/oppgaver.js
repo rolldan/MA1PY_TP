@@ -139,5 +139,170 @@ Bok.oppgaver([
     ],
     hint: ["\\(rente = lån \\cdot sats \\cdot år\\).", "\\(15\\,000 \\cdot 0{,}065 \\cdot 2\\)."],
     losning: "<p>Rente: \\(1\\,950\\) kr. Tilbake: \\(16\\,950\\) kr.</p>"
+  },
+  {
+    id: "rente-tyve",
+    niva: "lett",
+    tittel: "Ett år på 20 000",
+    tekst: "<p>Et lån på 20 000 kr har 6,5 % enkel rente per år. Hvor mange kroner er renta det første året?</p>",
+    steg: [{ verdi: 0.065 }],
+    svar: { verdi: 1300, enhet: "kr", tol: 0.5 },
+    hint: ["6,5 % = 0,065.", "\\(20\\,000 \\cdot 0{,}065\\)."],
+    losning: "<p>\\(20\\,000 \\cdot 0{,}065 = 1\\,300\\) kr.</p>"
+  },
+  {
+    id: "en-prosent",
+    niva: "lett",
+    tittel: "Én prosent av potten",
+    tekst: "<p>Potten er 50 000 kr. Hvor mange kroner er 1 % av potten?</p>",
+    svar: { verdi: 500, enhet: "kr", tol: 0.5 },
+    hint: ["1 % er en hundredel.", "\\(50\\,000 : 100\\)."],
+    losning: "<p>\\(50\\,000 \\cdot 0{,}01 = 500\\) kr.</p>"
+  },
+  {
+    id: "lan-andel",
+    niva: "lett",
+    tittel: "Lånet som andel av potten",
+    tekst: "<p>Prosjektlånet er 15 000 kr. Potten er 50 000 kr. Hvor mange prosent er lånet av potten?</p>",
+    svar: { verdi: 30, enhet: "%", tol: 0.1 },
+    hint: ["Del lånet på potten og gang med 100.", "\\(15\\,000 : 50\\,000 \\cdot 100\\)."],
+    losning: "<p>\\(15\\,000 : 50\\,000 = 0{,}30 = 30\\) %. Lånet er penger inn. Ekstrakostnaden i budsjettet er bare renta.</p>"
+  },
+  {
+    id: "annet-lan",
+    niva: "middels",
+    tittel: "Et mindre lån i to år",
+    tekst: "<p>Laget låner 12 000 kr i stedet. Enkel rente er 6,5 % per år i 2 år. Beløpet fordeles likt på 24 måneder.</p>",
+    steg: [{ verdi: 780, enhet: "kr" }, { verdi: 1560, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor stor er renta for begge årene?", svar: { verdi: 1560, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mye betales tilbake i alt?", svar: { verdi: 13560, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mye blir det per måned?", svar: { verdi: 565, enhet: "kr", tol: 0.5 } }
+    ],
+    hint: ["Rente ett år: \\(12\\,000 \\cdot 0{,}065\\). Gang med 2.", "Måned: del totalbeløpet på 24."],
+    losning: "<p>Rente: \\(12\\,000 \\cdot 0{,}065 \\cdot 2 = 1\\,560\\) kr.</p><p>Tilbake: \\(12\\,000 + 1\\,560 = 13\\,560\\) kr.</p><p>Per måned: \\(13\\,560 : 24 = 565\\) kr. Fortsatt enkel rente, ikke annuitet.</p>"
+  },
+  {
+    id: "hoyere-rente",
+    niva: "middels",
+    tittel: "8 % i stedet for 6,5 %",
+    tekst: "<p>Samme lån på 15 000 kr i 2 år, men satsen er 8 % enkel rente. Med 6,5 % var renta 1 950 kr.</p>",
+    steg: [{ verdi: 0.08 }, { verdi: 1200, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor stor er renta med 8 %?", svar: { verdi: 2400, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mange kroner dyrere er det enn 1 950 kr?", svar: { verdi: 450, enhet: "kr", tol: 0.5 } }
+    ],
+    hint: ["\\(15\\,000 \\cdot 0{,}08 \\cdot 2\\).", "Trekk 1 950 fra den nye renta."],
+    losning: "<p>\\(15\\,000 \\cdot 0{,}08 \\cdot 2 = 2\\,400\\) kr.</p><p>Ekstra: \\(2\\,400 - 1\\,950 = 450\\) kr. Forskjellen i sats er 1,5 prosentpoeng, ikke 1,5 % av lånet alene.</p>"
+  },
+  {
+    id: "uforutsett-andel",
+    niva: "middels",
+    tittel: "Uforutsett av potten",
+    tekst: "<p>På Focus er uforutsett 7 000 kr. Potten er 50 000 kr. Hvor mange prosent av potten er den posten?</p>",
+    svar: { verdi: 14, enhet: "%", tol: 0.1 },
+    hint: ["Del posten på 50 000 og gang med 100.", "\\(7\\,000 : 50\\,000 \\cdot 100\\)."],
+    losning: "<p>\\(7\\,000 : 50\\,000 \\cdot 100 = 14\\) %.</p>"
+  },
+  {
+    id: "tre-poster",
+    niva: "middels",
+    tittel: "Bil, forsikring og rente",
+    tekst: "<p>I eksempelbudsjettet: bil 25 760 kr, forsikring 4 800 kr og rente 1 950 kr. Potten er 50 000 kr.</p>",
+    steg: [{ verdi: 25760, enhet: "kr" }, { verdi: 32510, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er summen av de tre postene?", svar: { verdi: 32510, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mange prosent av potten er summen? Avrund til én desimal.", svar: { verdi: 65, enhet: "%", tol: 0.05 } }
+    ],
+    hint: ["Legg sammen 25 760, 4 800 og 1 950.", "\\(32\\,510 : 50\\,000 \\cdot 100\\)."],
+    losning: "<p>Sum: \\(25\\,760 + 4\\,800 + 1\\,950 = 32\\,510\\) kr.</p><p>\\(32\\,510 : 50\\,000 \\cdot 100 = 65{,}02\\) %, som er 65,0 % med én desimal.</p>"
+  },
+  {
+    id: "budsjett-underveis",
+    niva: "vanskelig",
+    tittel: "Underveis i Focus-budsjettet",
+    tekst: "<p>Bil etter rabatt 25 760 kr, uforutsett 7 000 kr, forsikring 4 800 kr og deler 3 037,50 kr. Deretter kommer lakk 1 900 kr, basskasse 1 705 kr og rente 1 950 kr. Potten er 50 000 kr.</p>",
+    steg: [{ verdi: 32760, enhet: "kr" }, { verdi: 40597.5, enhet: "kr" }, { verdi: 5555, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er summen etter bil, uforutsett, forsikring og deler?", svar: { verdi: 40597.5, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mye av potten er igjen da?", svar: { verdi: 9402.5, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mye er igjen når lakk, basskasse og rente også er med?", svar: { verdi: 3847.5, enhet: "kr", tol: 0.5 } }
+    ],
+    hint: ["Legg de fire første postene. Trekk summen fra 50 000.", "De tre siste koster \\(1\\,900 + 1\\,705 + 1\\,950\\)."],
+    losning: "<p>Etter deler: \\(25\\,760 + 7\\,000 + 4\\,800 + 3\\,037{,}50 = 40\\,597{,}50\\) kr.</p><p>Igjen da: \\(50\\,000 - 40\\,597{,}50 = 9\\,402{,}50\\) kr.</p><p>Siste tre: \\(5\\,555\\) kr. Til slutt: \\(9\\,402{,}50 - 5\\,555 = 3\\,847{,}50\\) kr.</p>"
+  },
+  {
+    id: "drivstoff-i-potten",
+    niva: "vanskelig",
+    tittel: "Drivstoffet som ikke hører hjemme",
+    tekst: "<p>Eksempelbudsjettet summerer til 46 152,50 kr. Etter prosjektet: 0,6 liter per mil, 1 000 mil i året, 21 kr per liter. En elev legger ett års drivstoff inn i potten.</p>",
+    steg: [{ verdi: 600, enhet: "L" }, { verdi: 12600, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva blir summen hvis drivstoffet legges til?", svar: { verdi: 58752.5, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mye over 50 000 kr er den summen?", svar: { verdi: 8752.5, enhet: "kr", tol: 0.5 } },
+      {
+        tekst: "Hører drivstoffet hjemme i prosjektpotten?",
+        svar: {
+          valg: [
+            "Nei. Det er drift etter oppussingen.",
+            "Ja. Alt som har med bilen å gjøre, skal inn i de 50 000.",
+            "Ja, men bare renta av drivstoffet."
+          ],
+          riktig: 0,
+          forklaring: "Potten dekker kjøp og oppussing. 12 600 kr i drivstoff ligger utenfor."
+        }
+      }
+    ],
+    hint: ["Liter = mil · liter per mil. Kroner = liter · 21.", "\\(46\\,152{,}50 + 12\\,600\\)."],
+    losning: "<p>Drivstoff: \\(1\\,000 \\cdot 0{,}6 \\cdot 21 = 12\\,600\\) kr.</p><p>Med drivstoff: \\(46\\,152{,}50 + 12\\,600 = 58\\,752{,}50\\) kr.</p><p>Over potten: \\(58\\,752{,}50 - 50\\,000 = 8\\,752{,}50\\) kr. Beløpet skal ikke inn.</p>"
+  },
+  {
+    id: "verditap-focus",
+    niva: "vanskelig",
+    tittel: "Focus om to år",
+    tekst: "<p>Focus koster 25 760 kr etter rabatt. Bilen taper 15 % av verdien hvert år. Vekstfaktoren er 0,85. Regn uten prosjektlånet.</p>",
+    steg: [{ verdi: 0.85 }, { verdi: 21896, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er bilen verdt etter ett år?", svar: { verdi: 21896, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hva er bilen verdt etter to år?", svar: { verdi: 18611.6, enhet: "kr", tol: 0.5 } }
+    ],
+    hint: ["Ett år: gang med 0,85.", "To år: gang resultatet med 0,85 en gang til."],
+    losning: "<p>Etter ett år: \\(25\\,760 \\cdot 0{,}85 = 21\\,896\\) kr.</p><p>Etter to år: \\(21\\,896 \\cdot 0{,}85 = 18\\,611{,}60\\) kr. \\(0{,}85^2 = 0{,}7225\\), så omtrent 72 % av prisen står igjen.</p>"
+  },
+  {
+    id: "lane-feil",
+    niva: "vanskelig",
+    tittel: "Hele lånet som utgift",
+    tekst: "<p>Eksempelbudsjettet er 46 152,50 kr, og renta på 1 950 kr er allerede med. En elev legger i tillegg inn lånebeløpet på 15 000 kr som en utgift.</p>",
+    steg: [{ verdi: 15000, enhet: "kr" }, { verdi: 46152.5, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvilken sum får eleven?", svar: { verdi: 61152.5, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor mye over 50 000 kr er den summen?", svar: { verdi: 11152.5, enhet: "kr", tol: 0.5 } },
+      {
+        tekst: "Hva er ekstrakostnaden ved lånet i prosjektet?",
+        svar: {
+          valg: [
+            "Bare renta, 1 950 kr. De 15 000 kronene kom inn og skal ikke telles som utgift en gang til.",
+            "Hele tilbakebetalingen på 16 950 kr.",
+            "Ingenting. Lån er gratis når renta er enkel."
+          ],
+          riktig: 0,
+          forklaring: "Pengene fra lånet brukes i prosjektet. Det som koster ekstra, er renta."
+        }
+      }
+    ],
+    hint: ["Legg 15 000 på 46 152,50.", "Sammenlign den nye summen med 50 000."],
+    losning: "<p>\\(46\\,152{,}50 + 15\\,000 = 61\\,152{,}50\\) kr.</p><p>Over potten: \\(61\\,152{,}50 - 50\\,000 = 11\\,152{,}50\\) kr.</p><p>Ekstrakostnaden er renta på 1 950 kr.</p>"
+  },
+  {
+    id: "repetisjon-desimaltime",
+    type: "repetisjon",
+    fra: "kapittel 4",
+    niva: "lett",
+    tekst: "<p>Verkstedøkta er 0,75 timer. Hvor mange minutter er det?</p>",
+    steg: [{ verdi: 0.75, enhet: "h" }],
+    svar: { verdi: 45, enhet: "min", tol: 0.1 },
+    hint: ["Én time er 60 minutter. Gang desimaltimen med 60.", "\\(0{,}75 \\cdot 60\\). 0,75 timer er ikke 75 minutter."],
+    losning: "<p>\\(0{,}75 \\cdot 60 = 45\\) minutter. Det er den faste verkstedøkta i prosjektet.</p>"
   }
 ]);
