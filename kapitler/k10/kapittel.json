@@ -1,0 +1,38 @@
+{
+  "nr": 10,
+  "tittel": "Eksamensforberedelse og avslutning",
+  "status": "ferdig",
+  "ingress": "To uker til sommeren. Du repeterer hele året i måltrappa, tar en øvingsprøve med og uten hjelpemidler, og øver på muntlig-praktisk eksamen i verkstedet.",
+  "handlerOm": "Eksamen handler om det du allerede har gjort i verkstedet: grensemål på en aksel, liter i en tank, strøm i en kurs, pris på et verktøy og en tegning i målestokk. I uke 24 øver du slik eksamen faktisk er. I uke 25 ser du tilbake på det du har fått til.",
+  "byggerPa": [
+    { "tekst": "Kapittel 1–9, hele året" },
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Ukeplanen", "lenke": "ukeplan.html" },
+    { "tekst": "Framdriften din", "lenke": "framdrift.html" }
+  ],
+  "delkapitler": [
+    { "nr": "10.1", "tittel": "Blandet repetisjon i måltrapp", "formel": "Velg metode · sjekk enhet · er svaret rimelig?", "uke": "24" },
+    { "nr": "10.2", "tittel": "Øvingsprøve del 1 og del 2", "formel": "Del 1: 1 time uten hjelpemidler · Del 2: med hjelpemidler", "uke": "24" },
+    { "nr": "10.3", "tittel": "Muntlig-praktisk eksamen og avslutning", "formel": "Forberedelse 24–48 t · eksamen inntil 45 min", "uke": "24–25" }
+  ],
+  "jegKan": [
+    "Jeg kan velge metode når oppgaven blander flere tema fra året.",
+    "Jeg kan sjekke at svaret har riktig enhet og er rimelig.",
+    "Jeg kan bruke \\(I = U/R\\), \\(F = M/a\\) og skjærehastighet med riktig enhet.",
+    "Jeg kan finne grensemål og regne vrakprosent.",
+    "Jeg kan regne pris med rabatt og mva, og lønn med tillegg og trekk.",
+    "Jeg kan regne areal, volum og målestokk, og forklare at volumet endres med skalaen i tredje potens.",
+    "Jeg kan gjøre om mellom vanlige enheter i verkstedet.",
+    "Jeg kan forklare forskjellen på del 1 og del 2 på skriftlig eksamen.",
+    "Jeg kan vise utregning og grunngi et valg.",
+    "Jeg kan forberede en fagsamtale med en praktisk del fra verkstedet.",
+    "Jeg kan se tilbake på året og si hva jeg har fått til."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V", "tittel": "Verkstedstasjoner", "tekst": "Fem stasjoner: toleranse, formler, areal og volum, enheter og økonomi.", "lenke": "10-1/verksted.html" },
+    { "merke": "K", "tittel": "Øvingsprøve del 1 og del 2", "tekst": "Kort øvingsprøve i 60-minuttersøkta: først uten hjelpemidler, så med.", "lenke": "10-2/verksted.html" },
+    { "merke": "V/K", "tittel": "Prøveeksamen muntlig-praktisk", "tekst": "Trekk et tema, forbered deg og gjennomfør en fagsamtale med praktisk del ved benken.", "lenke": "10-3/verksted.html" }
+  ]
+}
