@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 1.3 Negative tall og regnerekkefølge</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="1" data-del="1.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Minusgrader">
+    <h2>Under null</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 160" role="img" aria-label="Tallinje fra minus 4 til pluss 5, med en pil ni skritt til høyre">
+        <line x1="40" y1="90" x2="400" y2="90" stroke="#17202b" stroke-width="2"/>
+        <g font-size="16" text-anchor="middle" fill="#17202b">
+          <line x1="80" y1="80" x2="80" y2="100" stroke="#17202b"/><text x="80" y="120">−4</text>
+          <line x1="200" y1="78" x2="200" y2="102" stroke="#17202b" stroke-width="2"/><text x="200" y="120">0</text>
+          <line x1="340" y1="80" x2="340" y2="100" stroke="#17202b"/><text x="340" y="120">5</text>
+        </g>
+        <g data-vis-fra="2">
+          <path d="M80 70 C 140 20, 280 20, 340 70" fill="none" stroke="var(--kap)" stroke-width="3" marker-end="url(#p13)"/>
+          <text x="210" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="var(--kap)">+9</text>
+        </g>
+        <defs><marker id="p13" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--kap)"/></marker></defs>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Mandag morgen er det \(-4\) °C i verkstedet. Innen lunsj har det blitt 9 grader varmere.</p>
+      <div class="undre" data-hint="Fra −4 til 0 er fire grader." data-sekunder="30">Er det plussgrader ved lunsj?</div>
+      <p class="steg">Fra \(-4\) til \(0\) bruker du 4 av de 9 gradene.</p>
+      <p class="steg">\(-4 + 9 = 5\). Det er \(5\) °C.</p>
+      <p class="steg">Neste natt faller det 8 grader: \(5 - 8 = -3\) °C.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Avvik">
+    <h2>For lang eller for kort?</h2>
+    <div class="tekst">
+      <p>Målet er 100,0 mm. Du måler 99,2 mm.</p>
+      <div class="undre" data-hint="Trekk målet fra målingen." data-sekunder="30">Er avviket positivt eller negativt?</div>
+      <p class="steg">Avvik = målt − mål = \(99{,}2 - 100 = -0{,}8\) mm.</p>
+      <p class="steg">Negativt avvik: emnet er for kort. Positivt avvik: emnet er for langt.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Fortegn</p>
+        <p>Like fortegn i gange og dele gir +. Ulike gir −.<br>
+        \(15 - (-5) = 20\). To minus blir pluss.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Rekkefølge">
+    <h2>Hva skal gjøres først?</h2>
+    <div class="tekst">
+      <p>En stang er 1200 mm. Du kapper tre biter på 150 mm: \(1200 - 3 \cdot 150\).</p>
+      <div class="undre" data-hint="Gange før minus." data-sekunder="30">Er det igjen rundt 750 mm eller rundt 180 000 mm?</div>
+      <p class="steg">Gange først: \(3 \cdot 150 = 450\).</p>
+      <p class="steg">Så minus: \(1200 - 450 = 750\) mm.</p>
+      <p class="steg">Hvis du trekker fra 3 først, får du \((1200 - 3) \cdot 150 = 179\,550\) mm. Det er lenger enn stanga du startet med. Svaret er urimelig.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regnerekkefølge</p>
+        <p>1. Parentes. 2. Gange og dele. 3. Pluss og minus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="2 + 3 · 4">
+    <h2>14, ikke 20</h2>
+    <div class="tekst">
+      <p>\(2 + 3 \cdot 4\) er den feilen som kommer oftest.</p>
+      <div class="undre" data-hint="Se etter gangetegnet." data-sekunder="20">Hva blir stykket?</div>
+      <p class="steg">\(3 \cdot 4 = 12\) først.</p>
+      <p class="steg">\(2 + 12 = 14\).</p>
+      <p class="steg">20 er svaret på \((2 + 3) \cdot 4\). Parentesen endrer rekkefølgen.</p>
+      <p class="se-ogsa steg"><a href="../1-4/teori.html">1.4 Brøk og tommer</a> · <a href="oppgaver.html">Oppgaver 1.3</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

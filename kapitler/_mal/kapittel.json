@@ -1,0 +1,18 @@
+{
+  "nr": 9,
+  "tittel": "Tittel fra årsplanen",
+  "status": "utkast",
+  "ingress": "1–2 setninger som vises på forsiden.",
+  "handlerOm": "2–3 setninger med verkstedcase. Vises øverst på kapittelsiden.",
+  "byggerPa": [{ "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" }],
+  "lenkerVidere": [{ "tekst": "Kapittel 5: Formler" }],
+  "delkapitler": [
+    { "nr": "9.1", "tittel": "Første delkapittel", "formel": "\\(V = \\pi r^2 h\\)", "uke": "20" }
+  ],
+  "jegKan": [
+    "Jeg kan …"
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V", "tittel": "Navn på oppdraget", "tekst": "Én setning om oppdraget.", "lenke": "9-1/verksted.html" }
+  ]
+}
