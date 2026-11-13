@@ -133,5 +133,129 @@ Bok.oppgaver([
     ],
     hint: ["Regn rabatten ferdig før du legger til frakt. Sammenlign totalene.", "A: \\(2000 \\cdot 0{,}80 + 99 = 1699\\). B: \\(2200 \\cdot 0{,}75 = 1650\\)."],
     losning: "<p>A: \\(1600 + 99 = 1699\\) kr. B: 1650 kr. B er \\(1699 - 1650 = 49\\) kr billigere.</p>"
+  },
+  {
+    id: "borsett-rabatt",
+    niva: "lett",
+    tekst: "<p>Et borsett koster 250 kr. Du får 10 % rabatt.</p>",
+    deler: [
+      { tekst: "Hvor mange kroner er rabatten?", svar: { verdi: 25, enhet: "kr" } },
+      { tekst: "Hva betaler du?", svar: { verdi: 225, enhet: "kr" } }
+    ],
+    hint: ["10 % av prisen er rabatten. Du betaler resten, eller ganger med 0,90.", "\\(250 \\cdot 0{,}10 = 25\\). \\(250 - 25 = 225\\)."],
+    losning: "<p>Rabatt: 25 kr. Pris: \\(250 \\cdot 0{,}90 = 225\\) kr.</p>"
+  },
+  {
+    id: "mva-smatt",
+    niva: "lett",
+    tittel: "25 % mva",
+    tekst: "<p>Mva er 25 %.</p>",
+    deler: [
+      { tekst: "En pakning koster 40 kr uten mva. Hva koster den med mva?", svar: { verdi: 50, enhet: "kr" } },
+      { tekst: "En lapp viser 250 kr med mva. Hva er prisen uten mva?", svar: { verdi: 200, enhet: "kr" } }
+    ],
+    hint: ["Med mva: gang med 1,25. Uten mva: del på 1,25.", "\\(40 \\cdot 1{,}25 = 50\\). \\(250 : 1{,}25 = 200\\)."],
+    losning: "<p>a) \\(40 \\cdot 1{,}25 = 50\\) kr<br>b) \\(250 : 1{,}25 = 200\\) kr</p>"
+  },
+  {
+    id: "paslag-innkjop",
+    niva: "lett",
+    tekst: "<p>Verkstedet kjøper en tetning for 160 kr uten mva og legger på 25 %. Hva blir prisen uten mva, etter påslaget?</p>",
+    svar: { verdi: 200, enhet: "kr" },
+    hint: ["25 % påslag er faktor 1,25.", "\\(160 \\cdot 1{,}25 = 200\\) kr."],
+    losning: "<p>\\(160 \\cdot 1{,}25 = 200\\) kr.</p>"
+  },
+  {
+    id: "oljefilter",
+    niva: "middels",
+    tittel: "Oljefilter på nett",
+    tekst: "<p>Et oljefilter koster 400 kr på nett og 500 kr i butikken. Uten rabattkode er frakten fri. En kode gir 20 % avslag på nettprisen. Hvis handelen blir under 350 kr, koster frakten 59 kr.</p>",
+    steg: [{ verdi: 0.8 }, { verdi: 320, enhet: "kr" }],
+    deler: [
+      { tekst: "Hvor mange kroner sparer du på nett, uten kode og uten frakt?", svar: { verdi: 100, enhet: "kr" } },
+      { tekst: "Hvor mange prosent er det av butikkprisen?", svar: { verdi: 20, enhet: "%" } },
+      { tekst: "Hva koster filteret etter 20 % rabatt, før frakt?", svar: { verdi: 320, enhet: "kr" } },
+      { tekst: "Hva blir totalen med kode og frakt?", svar: { verdi: 379, enhet: "kr" } },
+      { tekst: "Lønner koden seg, sammenlignet med 400 kr uten kode?", svar: { valg: ["Ja, totalen blir lavere", "Nei, frakten gjør totalen høyere"], riktig: 0 } }
+    ],
+    hint: ["Sparingen er 500 − 400. Rabatt: gang 400 med 0,80. Legg til 59 kr hvis resultatet er under 350.", "\\(400 \\cdot 0{,}80 = 320\\). \\(320 + 59 = 379\\), som er lavere enn 400."],
+    losning: "<p>Sparer \\(500 - 400 = 100\\) kr, som er 20 % av 500 kr.<br>Etter kode: 320 kr. Med frakt: 379 kr. Det er 21 kr under 400 kr, så koden lønner seg.</p>"
+  },
+  {
+    id: "dobbel-faktor",
+    niva: "middels",
+    tekst: "<p>En lampe koster 320 kr uten mva. Verkstedet legger på 25 %, og deretter 25 % mva.</p>",
+    steg: [{ verdi: 400, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er prisen etter påslag, uten mva?", svar: { verdi: 400, enhet: "kr" } },
+      { tekst: "Hva blir prisen med mva?", svar: { verdi: 500, enhet: "kr" } }
+    ],
+    hint: ["Først faktor 1,25 for påslaget. Så faktor 1,25 en gang til for mva.", "\\(320 \\cdot 1{,}25 = 400\\). \\(400 \\cdot 1{,}25 = 500\\)."],
+    losning: "<p>Etter påslag: 400 kr. Med mva: \\(400 \\cdot 1{,}25 = 500\\) kr.</p>"
+  },
+  {
+    id: "lapp-750",
+    niva: "vanskelig",
+    tittel: "Prislapp 750 kr",
+    tekst: "<p>En prislapp viser 750 kr, mva inkludert. Mva er 25 %.</p>",
+    deler: [
+      { tekst: "Hva er prisen uten mva?", svar: { verdi: 600, enhet: "kr" } },
+      { tekst: "Hvor mange kroner er selve mva-en?", svar: { verdi: 150, enhet: "kr" } },
+      { tekst: "Hvilket regnestykke er feil når du skal finne prisen uten mva?", svar: { valg: ["750 : 1,25", "750 · 0,75", "750 − 150"], riktig: 1, forklaring: "0,75 trekker 25 % av prisen med mva. Det blir 562,50 kr, ikke 600 kr." } }
+    ],
+    hint: ["Del prisen med mva på 1,25. Mva-beløpet er differansen.", "\\(750 : 1{,}25 = 600\\). \\(750 - 600 = 150\\). \\(750 \\cdot 0{,}75 = 562{,}50\\), og det er feil metode."],
+    losning: "<p>Uten mva: 600 kr. Mva: 150 kr. Å gange med 0,75 tar 25 % av prisen som allerede inkluderer mva, og det blir for lavt.</p>"
+  },
+  {
+    id: "kode-367",
+    niva: "vanskelig",
+    tekst: "<p>En pakning koster 360 kr på nett, og frakten er fri. En kode gir 20 % rabatt. Hvis handelen blir under 300 kr, koster frakten 79 kr.</p>",
+    steg: [{ verdi: 288, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er prisen etter rabatt, før frakt?", svar: { verdi: 288, enhet: "kr" } },
+      { tekst: "Hva blir totalen med kode og frakt?", svar: { verdi: 367, enhet: "kr" } },
+      { tekst: "Lønner koden seg?", svar: { valg: ["Ja, totalen blir under 360 kr", "Nei, totalen blir over 360 kr"], riktig: 1 } }
+    ],
+    hint: ["Gang med 0,80. Se om prisen havner under 300 kr, og legg i så fall til frakten.", "\\(360 \\cdot 0{,}80 = 288\\). \\(288 + 79 = 367\\), som er mer enn 360."],
+    losning: "<p>Etter rabatt: 288 kr. Med frakt: 367 kr. Uten kode: 360 kr. Koden lønner seg ikke.</p>"
+  },
+  {
+    id: "skiver-hylle",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Skiver og en gammel lapp",
+    utstyr: "Faktura eller prisliste, lapper, kalkulator",
+    hms: "Smådeler blir i boksen. Legg esken tilbake i riktig hylle.",
+    tekst: "<p>En eske skiver står med 96 kr uten mva på fakturaen. En annen lapp i skapet viser 187,50 kr med mva.</p>",
+    deler: [
+      { tekst: "Hva skriver du på hylla for skivene, med mva?", svar: { verdi: 120, enhet: "kr" } },
+      { tekst: "Hva er prisen uten mva for lappen på 187,50 kr?", svar: { verdi: 150, enhet: "kr" } }
+    ],
+    hint: ["Gang med 1,25 for å legge på mva. Del på 1,25 for å ta den bort.", "\\(96 \\cdot 1{,}25 = 120\\). \\(187{,}50 : 1{,}25 = 150\\)."],
+    losning: "<p>Hylla: \\(96 \\cdot 1{,}25 = 120\\) kr. Uten mva: \\(187{,}50 : 1{,}25 = 150\\) kr.</p>"
+  },
+  {
+    id: "rep-vekt",
+    type: "repetisjon",
+    fra: "kapittel 1",
+    niva: "lett",
+    tekst: "<p>En pose med 10 skruer veier 40 g. Hva veier én skrue?</p>",
+    svar: { verdi: 4, enhet: "g" },
+    hint: ["Del vekten på 10.", "\\(40 : 10 = 4\\) g."],
+    losning: "<p>\\(40 : 10 = 4\\) g.</p>"
+  },
+  {
+    id: "eks-mva-rabatt",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "middels",
+    tekst: "<p>To priser uten kalkulator. Mva er 25 %.</p>",
+    deler: [
+      { tekst: "En pakning koster 160 kr uten mva. Hva koster den med mva?", svar: { verdi: 200, enhet: "kr" } },
+      { tekst: "Et filter koster 450 kr. Du får 20 % rabatt. Hva betaler du?", svar: { verdi: 360, enhet: "kr" } }
+    ],
+    hint: ["Mva: gang med 1,25. Rabatt 20 %: gang med 0,80.", "\\(160 \\cdot 1{,}25 = 200\\). \\(450 \\cdot 0{,}80 = 360\\)."],
+    losning: "<p>a) \\(160 \\cdot 1{,}25 = 200\\) kr<br>b) \\(450 \\cdot 0{,}80 = 360\\) kr</p>"
   }
 ]);

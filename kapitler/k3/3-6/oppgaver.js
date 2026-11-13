@@ -140,5 +140,138 @@ Bok.oppgaver([
     ],
     hint: ["Desimal til prosent: flytt kommaet to plasser. Til promille: tre plasser. 7 ‰ er 7 tusendeler.", "0,035 = 3,5 % = 35 ‰. \\(2000 \\cdot 7 : 1000 = 14\\) g."],
     losning: "<p>a) 3,5 % b) 35 ‰ c) \\(2000 \\cdot 0{,}007 = 14\\) g</p>"
+  },
+  {
+    id: "promille-mer",
+    niva: "lett",
+    tekst: "<p>Skriv som prosent.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "8 ‰", svar: { verdi: 0.8, enhet: "%" } },
+      { tekst: "25 ‰", svar: { verdi: 2.5, enhet: "%" } },
+      { tekst: "100 ‰", svar: { verdi: 10, enhet: "%" } }
+    ],
+    hint: ["Del promillen på 10 for å få prosent.", "8 ‰ = 0,8 %. 25 ‰ = 2,5 %. 100 ‰ = 10 %."],
+    losning: "<p>a) 0,8 % b) 2,5 % c) 10 %</p>"
+  },
+  {
+    id: "prosent-mer",
+    niva: "lett",
+    tekst: "<p>Skriv som promille.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "4 %", svar: { verdi: 40, enhet: "‰" } },
+      { tekst: "0,3 %", svar: { verdi: 3, enhet: "‰" } },
+      { tekst: "12,5 %", svar: { verdi: 125, enhet: "‰" } }
+    ],
+    hint: ["Gang prosenten med 10 for å få promille.", "4 % = 40 ‰. 0,3 % = 3 ‰. 12,5 % = 125 ‰."],
+    losning: "<p>a) 40 ‰ b) 3 ‰ c) 125 ‰</p>"
+  },
+  {
+    id: "botte-20",
+    niva: "lett",
+    tekst: "<p>En bøtte på 20 L skal være 3 % skjærevæskekonsentrat. Hvor mange liter konsentrat er det?</p>",
+    svar: { verdi: 0.6, enhet: "L" },
+    hint: ["3 % = 0,03. Gang med 20 L.", "\\(20 \\cdot 0{,}03 = 0{,}6\\) L."],
+    losning: "<p>\\(20 \\cdot 0{,}03 = 0{,}6\\) L.</p>"
+  },
+  {
+    id: "bensin-6l",
+    niva: "middels",
+    tekst: "<p>Elias fyller 6 L bensin. Oljen skal være 2 % av bensinen.</p>",
+    deler: [
+      { tekst: "Hvor mange promille er 2 %?", svar: { verdi: 20, enhet: "‰" } },
+      { tekst: "Hvor mange milliliter olje skal han ha i?", svar: { verdi: 120, enhet: "ml" } }
+    ],
+    hint: ["2 % = 20 ‰, og 20 mL per liter.", "\\(6 \\cdot 20 = 120\\) mL."],
+    losning: "<p>2 % = 20 ‰. Olje: \\(6 \\cdot 20 = 120\\) mL.</p>"
+  },
+  {
+    id: "tank-8l",
+    niva: "middels",
+    tekst: "<p>En tank på 8 L skal ha 4 % skjærevæskekonsentrat av den ferdige blandingen.</p>",
+    steg: [{ verdi: 8000, enhet: "ml" }],
+    deler: [
+      { tekst: "Hvor mange promille er 4 %?", svar: { verdi: 40, enhet: "‰" } },
+      { tekst: "Hvor mange milliliter konsentrat?", svar: { verdi: 320, enhet: "ml" } },
+      { tekst: "Hvor mange milliliter vann?", svar: { verdi: 7680, enhet: "ml" } }
+    ],
+    hint: ["4 % = 40 ‰. 8 L = 8000 mL. Ta 4 % av 8000.", "\\(8000 \\cdot 0{,}04 = 320\\) mL. Vann: \\(8000 - 320 = 7680\\) mL."],
+    losning: "<p>40 ‰. Konsentrat: 320 mL. Vann: 7680 mL.</p>"
+  },
+  {
+    id: "bronse",
+    niva: "middels",
+    tekst: "<p>200 g bronse inneholder 50 ‰ tinn.</p>",
+    deler: [
+      { tekst: "Hvor mange prosent er 50 ‰?", svar: { verdi: 5, enhet: "%" } },
+      { tekst: "Hvor mange gram tinn er det?", svar: { verdi: 10, enhet: "g" } }
+    ],
+    hint: ["Del promillen på 10. Deretter tar du den prosenten av 200 g.", "50 ‰ = 5 %. \\(200 \\cdot 0{,}05 = 10\\) g."],
+    losning: "<p>50 ‰ = 5 %. Tinn: \\(200 \\cdot 0{,}05 = 10\\) g.</p>"
+  },
+  {
+    id: "aksel-200",
+    niva: "vanskelig",
+    tekst: "<p>En aksel er 200 mm. Toleransen er \\(\\pm 0{,}4\\) mm.</p>",
+    steg: [{ verdi: 0.002 }],
+    deler: [
+      { tekst: "Hvor mange promille er den relative toleransen?", svar: { verdi: 2, enhet: "‰" } },
+      { tekst: "Hvor mange prosent er det samme avviket?", svar: { verdi: 0.2, enhet: "%" } }
+    ],
+    hint: ["Del 0,4 mm på 200 mm. 0,002 er 2 ‰ og 0,2 %.", "\\(0{,}4 : 200 = 0{,}002\\)."],
+    losning: "<p>\\(0{,}4 : 200 = 0{,}002 = 2\\) ‰ \\(= 0{,}2\\) %.</p>"
+  },
+  {
+    id: "olje-2l",
+    niva: "vanskelig",
+    tekst: "<p>Elias heller 80 mL olje i 2 L bensin og sier at blandingen er 2 %. Riktig mengde til 2 % er 20 mL per liter.</p>",
+    deler: [
+      { tekst: "Hvor mange prosent olje har han faktisk hatt i?", svar: { verdi: 4, enhet: "%" } },
+      { tekst: "Hvor mange milliliter for mye er det?", svar: { verdi: 40, enhet: "ml" } },
+      { tekst: "Hvor mange deler bensin går det på 1 del olje i blandingen hans?", svar: { verdi: 25 } }
+    ],
+    hint: ["80 mL av 2000 mL er 4 %. Riktig mengde i 2 L er 40 mL. 2000 : 80 gir forholdet.", "\\(80 : 2000 = 0{,}04 = 4\\) %. For mye: \\(80 - 40 = 40\\) mL. Forhold 1 : 25."],
+    losning: "<p>\\(80 : 2000 = 4\\) %. Han har 40 mL for mye. Forholdet er 1 : 25, fordi \\(2000 : 80 = 25\\).</p>"
+  },
+  {
+    id: "vaeske-20l",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "20 L skjærevæske",
+    utstyr: "Bøtte på 20 L, målebeger, konsentrat eller farget vann, hansker",
+    hms: "Unngå hudkontakt. Rester i merket dunk, ikke i sluket. Ikke bruk trykkluft på væsken.",
+    tekst: "<p>Etiketten sier 5 % konsentrat av den ferdige blandingen. Du fyller 20 L.</p>",
+    deler: [
+      { tekst: "Hvor mye konsentrat?", svar: { verdi: 1, enhet: "L" } },
+      { tekst: "Hvor mye vann?", svar: { verdi: 19, enhet: "L" } }
+    ],
+    hint: ["5 % av 20 L er konsentratet. Vannet er resten, slik at summen blir 20 L.", "\\(20 \\cdot 0{,}05 = 1\\) L. Vann: \\(20 - 1 = 19\\) L."],
+    losning: "<p>Konsentrat: 1 L. Vann: 19 L. 5 % er 50 ‰.</p>"
+  },
+  {
+    id: "rep-grense-50",
+    type: "repetisjon",
+    fra: "kapittel 2",
+    niva: "lett",
+    tekst: "<p>Kravet er \\(50{,}0 \\pm 0{,}2\\) mm. Et mål er 49,7 mm. Er emnet godkjent?</p>",
+    svar: { valg: ["Ja, innenfor nedre grensemål", "Nei, under nedre grensemål"], riktig: 1 },
+    hint: ["Nedre grensemål er 50,0 − 0,2.", "49,8 mm er nedre grense. 49,7 er under, så emnet er ikke godkjent."],
+    losning: "<p>Nedre grensemål er 49,8 mm. 49,7 mm er under, så emnet er ikke godkjent.</p>"
+  },
+  {
+    id: "eks-tusendel",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "middels",
+    tekst: "<p>Uten kalkulator.</p>",
+    deler: [
+      { tekst: "Skriv 0,012 som prosent.", svar: { verdi: 1.2, enhet: "%" } },
+      { tekst: "Skriv 0,012 som promille.", svar: { verdi: 12, enhet: "‰" } },
+      { tekst: "Hvor mange gram er 4 ‰ av 5000 g?", svar: { verdi: 20, enhet: "g" } }
+    ],
+    hint: ["Desimal til prosent: flytt kommaet to plasser. Til promille: tre plasser. 4 ‰ er 4 tusendeler.", "0,012 = 1,2 % = 12 ‰. \\(5000 \\cdot 4 : 1000 = 20\\) g."],
+    losning: "<p>a) 1,2 % b) 12 ‰ c) \\(5000 \\cdot 0{,}004 = 20\\) g</p>"
   }
 ]);
