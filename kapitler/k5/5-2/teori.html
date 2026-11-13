@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 5.2 Snu formelen</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="5" data-del="5.2">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Formler · fra verkstedet</p>
+  <h1>Snu formelen</h1>
+  <p class="ingress">Noen ganger kjenner du svaret og mangler en av bokstavene. Da snur du formelen, slik at den ukjente står alene. CAS i GeoGebra kan sjekke at snuingen er riktig.</p>
+
+  <ul class="laeringsmal">
+    <li>snu en formel slik at den ukjente står alene</li>
+    <li>sette inn tall etter at formelen er snudd</li>
+    <li>kontrollere med CAS i GeoGebra</li>
+  </ul>
+
+  <ol class="kjede"><li>skriv formelen</li><li>isoler bokstaven</li><li>sett inn tall</li><li>sjekk med CAS</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Lønnsslippen viser 1280 kr. Formelen er \(L = 200 + 180t\). Spørsmålet er ikke «hva blir lønna?», men «hvor mange timer ligger bak beløpet?». Den ukjente har byttet side.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>En formel er en likning. Du kan legge til, trekke fra, gange eller dele, så lenge du gjør <b>det samme på begge sider</b>.</p>
+  <p>Plusseledd fjernes med minus. Et tall som står ganget med bokstaven, fjernes med deling. Målet er at bokstaven står alene på den ene siden.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Utgangspunkt</th><th>Isolert</th><th>Med ord</th></tr></thead>
+      <tbody>
+        <tr><td>\(L = 200 + 180t\)</td><td>\(t = \dfrac{L - 200}{180}\)</td><td>trekk fra 200, del på 180</td></tr>
+        <tr><td>\(K = 350 + 5s\)</td><td>\(s = \dfrac{K - 350}{5}\)</td><td>trekk fra 350, del på 5</td></tr>
+        <tr><td>\(U = R \cdot I\)</td><td>\(I = \dfrac{U}{R}\)</td><td>del på motstanden</td></tr>
+        <tr><td>\(M = F \cdot a\)</td><td>\(F = \dfrac{M}{a}\)</td><td>del momentet på armen</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Gjør det samme på begge sider til den ukjente står alene. Sett inn tallene etterpå, ikke før, hvis du vil ha en formel du kan bruke flere ganger.</p>
+    <p>I CAS skriver du <b>Løs(likning, ukjent)</b>. Eksempel: <b>Løs(200 + 180t = 1280, t)</b>. CAS bruker punktum i desimaltall.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: 1280 kr</h3>
+    <p>\(L = 200 + 180t\), og \(L = 1280\). Finn \(t\).</p>
+    <ol class="steg-liste">
+      <li class="steg">Skriv tallene inn: \(1280 = 200 + 180t\).</li>
+      <li class="steg">Trekk fra 200 på begge sider: \(1080 = 180t\).</li>
+      <li class="steg">Del på 180: \(t = 1080 : 180 = 6\) timer.</li>
+      <li class="steg">Kontroll: \(200 + 180 \cdot 6 = 1280\). CAS gir samme svar, \(t = 6\).</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Operasjonen gjøres bare på ett ledd, eller gange brukes der du skulle delt. Fra \(M = F \cdot a\) er kraften \(F = M : a\). \(F = M \cdot a\) gjør svaret altfor stort. Fra \(U = R \cdot I\) er strømmen \(I = U : R\).</p>
+  </div>
+
+  <div class="underveis">
+    <p>Tilhengeren kostet 600 kr. Formelen er \(K = 350 + 5s\). Hvor lang var turen?</p>
+    <div class="fasit">\(50\) km</div>
+    <div class="losning">\(600 - 350 = 250\), og \(250 : 5 = 50\) km. Kontroll: \(350 + 5 \cdot 50 = 600\).</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>GeoGebra CAS.</b> Åpne <a href="https://www.geogebra.org/classic">geogebra.org/classic</a>, velg CAS, og skriv <b>Løs(350 + 5s = 800, s)</b>. Du skal få \(s = 90\). Gjør det samme for hånd på <a href="verksted.html">verkstedkortet</a> før du ser på skjermen.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

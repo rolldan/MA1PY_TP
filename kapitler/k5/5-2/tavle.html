@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 5.2 Snu formelen</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="5" data-del="5.2">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Vi vet lønna">
+    <h2>Vi vet lønna, ikke timene</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Lønnsslipp på 1280 kr og et spørsmålstegn for antall timer">
+        <rect x="40" y="40" width="170" height="120" rx="10" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="125" y="78" text-anchor="middle" font-size="16" fill="#5b6675">Utbetalt</text>
+        <text x="125" y="120" text-anchor="middle" font-size="32" font-weight="700" fill="#17202b">1280 kr</text>
+        <text x="250" y="110" text-anchor="middle" font-size="36" fill="var(--kap)">→</text>
+        <rect x="290" y="40" width="120" height="120" rx="10" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+        <text x="350" y="110" text-anchor="middle" font-size="48" font-weight="700" fill="var(--kap)">t?</text>
+        <g data-vis-fra="3">
+          <text x="220" y="210" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">t = 6 timer</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Lønna er \(L = 200 + 180t\). På slippen står det 1280 kr. Hvor mange timer er det?</p>
+      <div class="undre" data-hint="Ta bort det faste tillegget først. Det som er igjen, kommer fra timene." data-sekunder="30">Er det mer eller mindre enn 8 timer?</div>
+      <p class="steg">Det faste leddet er med i de 1280 kronene. \(1280 - 200 = 1080\) kr kommer fra timene.</p>
+      <p class="steg">Hver time gir 180 kr: \(t = 1080 : 180 = 6\) timer.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Gjør det samme på begge sider til bokstaven står alene. \(L = 200 + 180t\) blir \(t = \dfrac{L - 200}{180}\).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Begge sider">
+    <h2>Samme på begge sider</h2>
+    <div class="tekst">
+      <p>En formel er en likning. Det du gjør til venstre, gjør du til høyre.</p>
+      <div class="undre" data-hint="Du kan trekke fra 200, eller dele på 180. Rekkefølgen betyr noe." data-sekunder="30">Hva må vekk først, 200 eller 180?</div>
+      <p class="steg">Start: \(1280 = 200 + 180t\).</p>
+      <p class="steg">Trekk fra 200 på begge sider: \(1080 = 180t\).</p>
+      <p class="steg">Del på 180 på begge sider: \(t = 6\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Plusseledd fjernes med minus. Gange fjernes med deling. Aldri bare på den ene siden.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../5-1/teori.html">5.1 Tolke en formel</a></p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="CAS">
+    <h2>CAS sjekker snuingen</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="GeoGebra CAS med kommandoen Løs og svaret t = 6">
+        <rect x="40" y="30" width="360" height="160" rx="8" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <rect x="40" y="30" width="360" height="36" fill="#e2e8f0"/>
+        <text x="56" y="54" font-size="16" font-weight="700" fill="#17202b">GeoGebra · CAS</text>
+        <text x="56" y="100" font-size="18" fill="#17202b">1  Løs(200 + 180t = 1280, t)</text>
+        <g data-vis-fra="2">
+          <text x="56" y="145" font-size="18" fill="var(--kap)" font-weight="700">→ t = 6</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>CAS i GeoGebra kan isolere bokstaven. Du skal fortsatt skjønne stegene.</p>
+      <div class="undre" data-hint="Kommandoen heter Løs. Den ukjente står til slutt." data-sekunder="30">Hva tror du CAS svarer?</div>
+      <p class="steg">Åpne GeoGebra og velg CAS. Skriv <b>Løs(200 + 180t = 1280, t)</b>. CAS bruker punktum hvis du skriver desimaler.</p>
+      <p class="steg">Svaret er \(t = 6\). Det er det samme som du fikk for hånd.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Regn for hånd først. Bruk CAS som kontroll. Et svar fra CAS skal fortsatt ha enhet og gi mening i verkstedet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="To verkstedformler">
+    <h2>To formler du snart trenger</h2>
+    <div class="tekst">
+      <p>Samme metode virker på formlene ved bilen og momentnøkkelen.</p>
+      <div class="undre" data-hint="Du deler bort det som står ganget med den ukjente." data-sekunder="30">Fra \(U = R \cdot I\): hvordan finner du strømmen \(I\)?</div>
+      <p class="steg">Ohms lov: \(U = R \cdot I\). Del på \(R\): \(I = \dfrac{U}{R}\).</p>
+      <p class="steg">Dreiemoment: \(M = F \cdot a\). Del på \(a\): \(F = \dfrac{M}{a}\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Vanlig feil</p>
+        <p>Å gange i stedet for å dele. Kraften er \(F = M : a\), ikke \(F = M \cdot a\). Strømmen er \(I = U : R\), ikke \(I = R : U\).</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../5-3/teori.html">5.3 Ohms lov og effekt</a> · <a href="../5-4/teori.html">5.4 Dreiemoment</a> · <a href="oppgaver.html">Oppgaver 5.2</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

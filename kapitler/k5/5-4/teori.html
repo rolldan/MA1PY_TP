@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 5.4 Dreiemoment</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="5" data-del="5.4">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Formler · fra verkstedet</p>
+  <h1>Dreiemoment</h1>
+  <p class="ingress">En lang nøkkel løsner det en kort nøkkel ikke klarer. Dreiemoment er kraft ganger arm. Enheten er newtonmeter, Nm.</p>
+
+  <ul class="laeringsmal">
+    <li>bruke \(M = F \cdot a\) med arm i meter</li>
+    <li>finne kraften med \(F = M : a\)</li>
+    <li>vurdere om et moment er stort nok til jobben</li>
+  </ul>
+
+  <ol class="kjede"><li>arm i meter</li><li>velg M, F eller a</li><li>regn ut</li><li>sammenlign med kravet</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Topplokket skal ha 120 Nm, og momentnøkkelen er 0,6 m. Navmutteren krever 350 Nm. Lærlingen på 70 kg står på en arm på 40 cm. Før du drar, skal du vite om momentet holder.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Armen \(a\) er lengden fra senter av bolten til der kraften virker, målt i meter. Kraften \(F\) er i newton. Momentet \(M\) er i Nm.</p>
+  <p>I dette kapitlet bruker vi tommelfingerregelen <b>1 kg ≈ 10 N</b>. 70 kg er da omtrent 700 N. Tyngdens akselerasjon er nær 9,8, så 70 kg er egentlig nær 690 N. Forskjellen er liten mot kravet på 350 Nm, og vi holder oss til 10 N per kg slik at regnestykket er felles i klassen.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Bokstav</th><th>Navn</th><th>Enhet</th></tr></thead>
+      <tbody>
+        <tr><td>\(M\)</td><td>dreiemoment</td><td>Nm</td></tr>
+        <tr><td>\(F\)</td><td>kraft</td><td>N</td></tr>
+        <tr><td>\(a\)</td><td>arm</td><td>m</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(M = F \cdot a\)</p>
+    <p>\(F = \dfrac{M}{a}\)</p>
+    <p>\(a = \dfrac{M}{F}\)</p>
+    <p>50 cm = 0,5 m. 40 cm = 0,4 m. 45 mm = 0,045 m. Moment skrives Nm, ikke N.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: topplokk</h3>
+    <p>Kravet er 120 Nm. Nøkkelen er 0,6 m.</p>
+    <ol class="steg-liste">
+      <li class="steg">Du kjenner \(M\) og \(a\). Kraften er \(F = M : a\).</li>
+      <li class="steg">\(F = 120 : 0{,}6 = 200\) N.</li>
+      <li class="steg">200 N er omtrent 20 kg på håndtaket. Kontroll: \(200 \cdot 0{,}6 = 120\) Nm.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>To feil går igjen. Den ene er å gange: \(F = M \cdot a\) i stedet for \(F = M : a\). 120 · 0,6 = 72, og det er ikke en kraft som gir 120 Nm. Den andre er enheten. 1000 Nm er ikke 1000 N. Og 40 cm satt inn som 40 gir et moment som er 100 ganger for stort, fordi formelen vil ha meter.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Lærlingen veier 70 kg og står på en arm på 40 cm. Hvor stort moment blir det, når 1 kg ≈ 10 N?</p>
+    <div class="fasit">\(280\) Nm</div>
+    <div class="losning">\(F \approx 700\) N og \(a = 0{,}4\) m. \(M = 700 \cdot 0{,}4 = 280\) Nm. Mot et krav på 350 Nm er det for lite.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Momentnøkkel.</b> Still inn verdien, dra jevnt til den klikker, og ikke forleng skaftet med rør. På <a href="verksted.html">verkstedkortet</a> regner du kraften før du drar.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 5.3 Ohms lov og effekt</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="5" data-del="5.3">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Formler · fra verkstedet</p>
+  <h1>Ohms lov og effekt</h1>
+  <p class="ingress">Når en sikring ryker eller et lys blir svakt, henger det sammen med spenning, motstand og strøm. Ohms lov kobler de tre. Effekten sier hvor mange watt kretsen bruker.</p>
+
+  <ul class="laeringsmal">
+    <li>bruke \(U = R \cdot I\), \(I = U : R\) og \(R = U : I\)</li>
+    <li>regne effekt med \(P = U \cdot I\)</li>
+    <li>velge sikring ut fra strømmen du har regnet ut</li>
+  </ul>
+
+  <ol class="kjede"><li>les U, R og I</li><li>velg variant</li><li>regn ut</li><li>velg sikring</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>En LED-bar på taket måler 2,4 Ω, og bilen har 12 V. Før du legger sikring og ledning, skal du vite hvor mange ampere lykta trekker. Setevarmer, kjølevifte og et rustent jordpunkt er samme regnestykke med andre tall.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Spenningen \(U\) dytter ladning gjennom kretsen. Motstanden \(R\) sier hvor trangt det er. Strømmen \(I\) er det som faktisk går i ledningen.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Bokstav</th><th>Navn</th><th>Enhet</th></tr></thead>
+      <tbody>
+        <tr><td>\(U\)</td><td>spenning</td><td>volt, V</td></tr>
+        <tr><td>\(R\)</td><td>motstand</td><td>ohm, Ω</td></tr>
+        <tr><td>\(I\)</td><td>strøm</td><td>ampere, A</td></tr>
+        <tr><td>\(P\)</td><td>effekt</td><td>watt, W</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Personbil er som regel 12 V. Mange lastebiler er 24 V. Større motstand gir mindre strøm når spenningen er den samme.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(U = R \cdot I\)<br>
+    \(I = \dfrac{U}{R}\)<br>
+    \(R = \dfrac{U}{I}\)<br>
+    \(P = U \cdot I\)</p>
+    <p>Dekk til bokstaven du leter etter i trekanten med \(U\) øverst og \(R\) og \(I\) under. Det som står igjen ved siden av hverandre, ganges. Det som står over og under, deles.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: LED-bar</h3>
+    <p>Motstanden er 2,4 Ω. Spenningen er 12 V.</p>
+    <ol class="steg-liste">
+      <li class="steg">Du kjenner \(U\) og \(R\). Strømmen er \(I = U : R\).</li>
+      <li class="steg">\(I = 12 : 2{,}4 = 5\) A.</li>
+      <li class="steg">Effekten er \(P = 12 \cdot 5 = 60\) W.</li>
+      <li class="steg">En sikring på 5 A ligger helt på grensen. 7,5 A eller 10 A er et vanlig valg for denne lykta, hvis ledningen tåler det. Sjekk alltid ledningstverrsnittet.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Brøken blir snudd. Strømmen er \(I = U : R\), ikke \(I = R : U\). For LED-baren gir den feile brøken \(2{,}4 : 12 = 0{,}2\) A. Det er altfor lite for en lysbar, og overslaget avslører feilen. 12 delt på et lite tall blir en stor strøm.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Setevarmeren får 12 V, og tangamperemeteret viser 3 A. Hva er motstanden i varmetråden?</p>
+    <div class="fasit">\(4\) Ω</div>
+    <div class="losning">\(R = U : I = 12 : 3 = 4\) Ω. Effekten er \(P = 12 \cdot 3 = 36\) W.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Multimeter.</b> Motstand måles med kretsen spenningsløs. Strøm måles i serie, eller med tang, etter at læreren har koblet. På <a href="verksted.html">verkstedkortet</a> står måleskjema for LED-bar, setevarmer, vifte og jordpunkt.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>
