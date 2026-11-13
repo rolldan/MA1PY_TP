@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.5 Grensemål og toleranse</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.5">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Toleranse · Tegning</p>
+  <h1>Grensemål og toleranse</h1>
+  <p class="ingress">Basismålet på tegningen er et utgangspunkt. Godkjent er alt mellom nedre og øvre grensemål, grensene inkludert. Toleransen er bredden på det intervallet.</p>
+
+  <ul class="laeringsmal">
+    <li>finne øvre og nedre grensemål ved symmetrisk og usymmetrisk toleranse</li>
+    <li>regne toleransen som øvre minus nedre</li>
+    <li>avgjøre om et målt emne er godkjent, og regne vrakprosent</li>
+  </ul>
+
+  <ol class="kjede"><li>les basismål og avvik</li><li>finn øvre og nedre</li><li>regn toleransen</li><li>sammenlign med målt verdi</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Peder måler hullavstanden på en brakett. Kravet er 72 ± 0,3 mm. Han har sju emner fra programfaget og skal sortere godkjent og vrak før de går til sveising.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p><b>Basismål</b> er tallet på tegningen, for eksempel 50 mm eller Ø20.</p>
+  <p><b>Symmetrisk toleranse</b> skriver vi \(50 \pm 0{,}1\) mm. Avviket er like stort begge veier.</p>
+  <p><b>Usymmetrisk toleranse</b> har ulike avvik. \(30^{+0{,}20}_{\ 0}\) kan være større, men ikke mindre. \(\text{Ø}20^{-0{,}02}_{-0{,}05}\) skal være mindre enn 20 mm begge veier.</p>
+  <p>Et mål på grensen er godkjent. Først når målet er utenfor, er delen vrak.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Øvre grensemål = basismål + øvre avvik.</p>
+    <p>Nedre grensemål = basismål + nedre avvik.</p>
+    <p>Toleranse \(T\) = øvre grensemål − nedre grensemål.</p>
+    <p>For \(a \pm t\) er \(T = 2t\).</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: 50 ± 0,1 mm og 30 +0,20 / 0</h3>
+    <ol class="steg-liste">
+      <li class="steg">\(50 \pm 0{,}1\): øvre \(50{,}1\) mm, nedre \(49{,}9\) mm, \(T = 0{,}2\) mm.</li>
+      <li class="steg">\(30 + 0{,}20 / 0\): øvre \(30{,}20\) mm, nedre \(30{,}00\) mm, \(T = 0{,}20\) mm.</li>
+      <li class="steg">Et emne på 30,00 mm er godkjent. Et emne på 29,95 mm er vrak, selv om det bare er 0,05 mm under.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>For \(30 + 0{,}20 / 0\) er nedre grense 30,00 mm, ikke 29,80 mm. Ikke trekk øvre avvik fra begge veier. Og for ± 0,1 mm er toleransen 0,2 mm, ikke 0,1 mm. Toleranse er bredden.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Kravet er 72 ± 0,3 mm. Er 71,7 mm godkjent? Er 72,4 mm godkjent?</p>
+    <div class="fasit">71,7 mm er godkjent. 72,4 mm er vrak.</div>
+    <div class="losning">Nedre \(72 - 0{,}3 = 71{,}7\) mm. Øvre \(72{,}3\) mm. 71,7 ligger på nedre grense og er godkjent. 72,4 er over 72,3 og er vrak.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Sortering:</b> Skriv nedre og øvre øverst på arket før du ser på målene. Da slipper du å regne grensen på nytt for hvert emne. Vrakprosenten er antall vrak delt på antall emner, ganger 100. Sju emner og to vrak gir \(2 : 7 \cdot 100\% \approx 28{,}6\%\).</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

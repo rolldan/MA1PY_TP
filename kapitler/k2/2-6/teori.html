@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.6 Generelle toleranser ISO 2768-1</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.6">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Toleranse · ISO 2768-1</p>
+  <h1>Generelle toleranser ISO 2768-1</h1>
+  <p class="ingress">Når tegningen ikke setter ± på hvert mål, kan tittelfeltet vise en generell klasse. Da henter du avviket fra ISO 2768-1. Riktig rad er like viktig som riktig regnestykke.</p>
+
+  <ul class="laeringsmal">
+    <li>lese klassen f, m, c eller v</li>
+    <li>finne riktig rad for basismålet i ISO 2768-1</li>
+    <li>regne grensemål og vurdere om et emne er inne</li>
+  </ul>
+
+  <ol class="kjede"><li>se etter eget ±</li><li>les klassen</li><li>finn raden</li><li>regn grensene</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Mathias skal lage stålstenger på 1220 mm. Tegningen har ingen ± på lengden, men tittelfeltet sier ISO 2768-m. Han måler 1221, 1219, 1218,8 og 1221,3 mm og lurer på om kunden kan godta dem.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>ISO 2768-1 gir tillatte avvik for lengdemål som ikke har egen toleranse. Klassen står i tittelfeltet, for eksempel ISO 2768-m. Uten den henvisningen gjelder ikke tabellen.</p>
+  <p>Har målet allerede et ± eller et avvik, bruker du det. Tabellen gjelder ikke oppå et eget krav.</p>
+  <p>Radene er «fra 0,5 til og med 3», deretter «over … til og med …». 120 mm er fortsatt i raden som slutter på 120. 120,1 mm er i neste rad. En strek (–) betyr at standarden ikke oppgir verdi. Da skal toleransen stå ved målet. Det gjelder også mål under 0,5 mm.</p>
+  <p>Tabellen under er for vanlige lengdemål: ytter mål, innermål, diametere og avstander. Fasekanter og vinkler har egne, mindre tabeller i standarden. Dem tar vi ikke med her.</p>
+  <p>Noen eldre hefter viser DIN 7168, med andre intervaller (blant annet 120–315 og 315–1000) og verdier forbi 4000 mm. Den tabellen bruker vi ikke. For 1220 mm er middels ± 1,2 mm. ± 0,8 mm er middels for mål over 400 til og med 1000 mm, ikke for 1220 mm.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>1. Eget toleransetall vinner over tabellen.</p>
+    <p>2. Finn raden der basismålet hører hjemme. Endepunktet er med i raden.</p>
+    <p>3. Les avviket i kolonnen for klassen. Grensemål = basismål ± avviket.</p>
+    <p>4. På grensen er godkjent.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: Mathias, 1220 mm, middels</h3>
+    <ol class="steg-liste">
+      <li class="steg">1220 mm er over 1000 til og med 2000. Middels: ± 1,2 mm.</li>
+      <li class="steg">Nedre \(1220 - 1{,}2 = 1218{,}8\) mm. Øvre \(1220 + 1{,}2 = 1221{,}2\) mm.</li>
+      <li class="steg">1221 er inne (+1,0). 1219 er inne (−1,0). 1218,8 er på grensen og er inne. 1221,3 er ute (+1,3).</li>
+      <li class="steg">Grov i samme rad er ± 3 mm. Alle fire er da inne. Den strengeste klassen som godkjenner alle fire, er grov.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Å legge 1220 mm i raden «over 400 til og med 1000» gir ± 0,8 mm middels. Det er feil rad. Like vanlig: å tro at 120 mm allerede er ± 0,5 mm. 120 mm middels er ± 0,3 mm. Og 2500 mm meget grov er ± 8 mm, ikke ± 4 mm og ikke ± 6 mm.</p>
+  </div>
+
+  <div class="underveis">
+    <p>ISO 2768-m. Basismål 15 mm. Hva er øvre og nedre grensemål?</p>
+    <div class="fasit">15,2 mm og 14,8 mm</div>
+    <div class="losning">15 mm er over 6 til og med 30. Middels ± 0,2 mm. Øvre 15,2 mm. Nedre 14,8 mm.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>ISO 2768-1, tillatte avvik for lengdemål uten eget toleransetall.</b> Verdiene er i millimeter. Dette er tabellen du skal bruke i oppgavene.</p>
+    <div class="tabell-rull">
+      <table>
+        <thead>
+          <tr><th>Basismål (mm)</th><th>f fin</th><th>m middels</th><th>c grov</th><th>v meget grov</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>0,5 til og med 3</td><td>± 0,05</td><td>± 0,1</td><td>± 0,2</td><td>–</td></tr>
+          <tr><td>over 3 til og med 6</td><td>± 0,05</td><td>± 0,1</td><td>± 0,3</td><td>± 0,5</td></tr>
+          <tr><td>over 6 til og med 30</td><td>± 0,1</td><td>± 0,2</td><td>± 0,5</td><td>± 1</td></tr>
+          <tr><td>over 30 til og med 120</td><td>± 0,15</td><td>± 0,3</td><td>± 0,8</td><td>± 1,5</td></tr>
+          <tr><td>over 120 til og med 400</td><td>± 0,2</td><td>± 0,5</td><td>± 1,2</td><td>± 2,5</td></tr>
+          <tr><td>over 400 til og med 1000</td><td>± 0,3</td><td>± 0,8</td><td>± 2</td><td>± 4</td></tr>
+          <tr><td>over 1000 til og med 2000</td><td>± 0,5</td><td>± 1,2</td><td>± 3</td><td>± 6</td></tr>
+          <tr><td>over 2000 til og med 4000</td><td>–</td><td>± 2</td><td>± 4</td><td>± 8</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</article>
+</main>
+</body>
+</html>

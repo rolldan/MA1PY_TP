@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 2.5 Grensemål og toleranse</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="2" data-del="2.5">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="50 ± 0,1">
+    <h2>50 er ikke ett tall</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Tallinje fra 49,9 til 50,1 med godkjent område markert.">
+        <line x1="40" y1="110" x2="400" y2="110" stroke="#17202b" stroke-width="3"/>
+        <line x1="40" y1="96" x2="40" y2="124" stroke="#17202b" stroke-width="3"/>
+        <line x1="220" y1="96" x2="220" y2="124" stroke="#17202b" stroke-width="3"/>
+        <line x1="400" y1="96" x2="400" y2="124" stroke="#17202b" stroke-width="3"/>
+        <text x="40" y="80" text-anchor="middle" font-size="16">49,9</text>
+        <text x="220" y="80" text-anchor="middle" font-size="16">50,0</text>
+        <text x="400" y="80" text-anchor="middle" font-size="16">50,1</text>
+        <g data-vis-fra="2">
+          <rect x="40" y="128" width="360" height="28" fill="var(--kap)" opacity="0.25"/>
+          <text x="220" y="180" text-anchor="middle" font-size="18" font-weight="700" fill="var(--kap)">godkjent: 49,9 til 50,1 mm</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Tegningen sier 50 ± 0,1 mm. Delen skal ikke være nøyaktig 50,000. Den skal ligge i et intervall.</p>
+      <div class="undre" data-hint="Legg til 0,1 og trekk fra 0,1." data-sekunder="30">Er 50,1 mm godkjent? Er 50,2 mm godkjent?</div>
+      <p class="steg">Øvre grensemål: \(50 + 0{,}1 = 50{,}1\) mm.</p>
+      <p class="steg">Nedre grensemål: \(50 - 0{,}1 = 49{,}9\) mm.</p>
+      <p class="steg">50,1 mm er på grensen og er godkjent. 50,2 mm er utenfor.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Ulikt slingringsmonn">
+    <h2>Ikke alltid like mye hver vei</h2>
+    <div class="tekst">
+      <p>En flens kan være 30 +0,20 / 0 mm. Den kan være større enn 30, men ikke mindre.</p>
+      <div class="undre" data-hint="Nedre avvik er 0, ikke −0,20.">Hva er minste godkjente mål?</div>
+      <p class="steg">Øvre: \(30 + 0{,}20 = 30{,}20\) mm. Nedre: \(30 + 0 = 30{,}00\) mm.</p>
+      <p class="steg">En tapp Ø20 −0,02 / −0,05 er motsatt: begge avvikene er negative. Den skal være mindre enn 20.</p>
+      <p class="steg">Øvre \(19{,}98\) mm. Nedre \(19{,}95\) mm.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Øvre grensemål = basismål + øvre avvik.<br>
+        Nedre grensemål = basismål + nedre avvik.<br>
+        Toleranse \(T\) = øvre − nedre.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Bredden">
+    <h2>Toleranse er bredden</h2>
+    <div class="tekst">
+      <p>For 50 ± 0,1 mm er det fristende å si at toleransen er 0,1 mm.</p>
+      <div class="undre" data-hint="Fra 49,9 til 50,1. Hvor langt er det?">Hvor bredt er det godkjente området?</div>
+      <p class="steg">\(T = 50{,}1 - 49{,}9 = 0{,}2\) mm.</p>
+      <p class="steg">± 0,1 mm gir en bredde på 0,2 mm, fordi slingringsmonnet går begge veier.</p>
+      <p class="steg">For 30 +0,20 / 0 er \(T = 30{,}20 - 30{,}00 = 0{,}20\) mm. Her er ±-tallet og bredden ikke det samme mønsteret. Regn alltid øvre minus nedre.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Vrak">
+    <h2>Godkjent eller vraket?</h2>
+    <div class="tekst">
+      <p>Peder kontrollerer hullavstand 72 ± 0,3 mm. Ett av målene er 71,3 mm. Ett er 72,5 mm. Ett er 71,8 mm.</p>
+      <div class="undre" data-hint="Grenseene er 71,7 og 72,3.">Hvilke av de tre er godkjent?</div>
+      <p class="steg">Nedre 71,7 mm. Øvre 72,3 mm. Toleranse \(0{,}6\) mm.</p>
+      <p class="steg">71,8 er inne. 71,3 er for kort. 72,5 er for lang.</p>
+      <p class="steg">På grensen er godkjent. 71,7 og 72,3 ville vært inne.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Husk</p>
+        <p>Godkjent når nedre ≤ mål ≤ øvre.<br>Vrakprosent \(= \dfrac{\text{antall vrak}}{\text{antall mål}} \cdot 100\%\).</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../2-6/teori.html">2.6 ISO 2768-1</a> · <a href="oppgaver.html">Oppgaver 2.5</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

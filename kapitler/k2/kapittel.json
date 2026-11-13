@@ -1,0 +1,129 @@
+{
+  "nr": 2,
+  "tittel": "Måling, måleusikkerhet og toleranser",
+  "status": "ferdig",
+  "ingress": "Mål en aksel, velg verktøy, regn om mellom µm og mm, og avgjør om delen er godkjent. Toleranse, ISO 2768-1 og pasninger fra verkstedet.",
+  "handlerOm": "En aksel er aldri nøyaktig 40,000 mm. I dette kapitlet måler du med målebånd, skyvelære og mikrometer, regner usikkerhet og ser om delen ligger innenfor grensemålene. Når tegningen ikke har eget ±, bruker du ISO 2768-1. Til slutt avgjør du om hull og aksel blir klaring, mellompasning eller press.",
+  "byggerPa": [
+    {
+      "tekst": "1.1 Gange og dele med 10, 100 og 1000",
+      "lenke": "kapitler/k1/1-1/teori.html"
+    },
+    {
+      "tekst": "1.2 Overslag og avrunding",
+      "lenke": "kapitler/k1/1-2/teori.html"
+    },
+    {
+      "tekst": "1.3 Negative tall",
+      "lenke": "kapitler/k1/1-3/teori.html"
+    }
+  ],
+  "lenkerVidere": [
+    {
+      "tekst": "Kapittel 3: Forhold og prosent (relativ usikkerhet i prosent)"
+    },
+    {
+      "tekst": "Kapittel 4: Måleenheter"
+    }
+  ],
+  "delkapitler": [
+    {
+      "nr": "2.1",
+      "tittel": "Målefeil: tilfeldige og systematiske",
+      "formel": "flere målinger demper tilfeldig feil",
+      "uke": "38"
+    },
+    {
+      "nr": "2.2",
+      "tittel": "Riktig måleverktøy",
+      "formel": "bånd \\(\\pm 1\\) mm · skyvelære \\(\\pm 0{,}02\\) mm · mikrometer \\(\\pm 0{,}001\\) mm",
+      "uke": "38"
+    },
+    {
+      "nr": "2.3",
+      "tittel": "µm og mm",
+      "formel": "\\(1\\ \\text{mm} = 1000\\ \\text{µm}\\)",
+      "uke": "38"
+    },
+    {
+      "nr": "2.4",
+      "tittel": "Gjennomsnitt, variasjonsbredde og usikkerhet",
+      "formel": "\\(\\text{relativ} = \\dfrac{\\text{absolutt}}{\\text{målt}} \\cdot 100\\,\\%\\)",
+      "uke": "39"
+    },
+    {
+      "nr": "2.5",
+      "tittel": "Grensemål og toleranse",
+      "formel": "\\(T = \\text{øvre} - \\text{nedre}\\)",
+      "uke": "39"
+    },
+    {
+      "nr": "2.6",
+      "tittel": "Generelle toleranser ISO 2768-1",
+      "formel": "ISO 2768-m",
+      "uke": "39"
+    },
+    {
+      "nr": "2.7",
+      "tittel": "Pasninger og verktøyets grenser",
+      "formel": "H = hull · h = aksel",
+      "uke": "41"
+    }
+  ],
+  "jegKan": [
+    "Jeg kan skille tilfeldige og systematiske målefeil.",
+    "Jeg kan velge målebånd, skyvelære eller mikrometer ut fra kravet.",
+    "Jeg kan gjøre om mellom µm og mm.",
+    "Jeg kan regne gjennomsnitt og variasjonsbredde av en måleserie.",
+    "Jeg kan regne absolutt og relativ usikkerhet.",
+    "Jeg kan finne øvre og nedre grensemål, symmetrisk og usymmetrisk.",
+    "Jeg kan avgjøre om et mål er godkjent.",
+    "Jeg kan bruke ISO 2768-1 og velge riktig rad og nøyaktighetsgrad.",
+    "Jeg kan avgjøre om en pasning er klaring, mellom eller press.",
+    "Jeg kan vurdere om målingen er sikker når verktøyet har usikkerhet."
+  ],
+  "verkstedoppdrag": [
+    {
+      "merke": "V",
+      "tittel": "Finn feilen",
+      "tekst": "Mål samme kloss flere ganger og sorter feilene i tilfeldige og systematiske.",
+      "lenke": "2-1/verksted.html"
+    },
+    {
+      "merke": "V/K",
+      "tittel": "Samme aksel, mange målere",
+      "tekst": "Hele laget måler samme aksel med målebånd, skyvelære og mikrometer.",
+      "lenke": "2-2/verksted.html"
+    },
+    {
+      "merke": "V",
+      "tittel": "Fra µm til mm",
+      "tekst": "Les mikrometeret og gjør avviket om mellom µm og mm.",
+      "lenke": "2-3/verksted.html"
+    },
+    {
+      "merke": "V/K",
+      "tittel": "Måleserien",
+      "tekst": "Regn gjennomsnitt, variasjonsbredde og relativ usikkerhet fra egne mål.",
+      "lenke": "2-4/verksted.html"
+    },
+    {
+      "merke": "V",
+      "tittel": "Godkjent eller vraket?",
+      "tekst": "Sorter mål mot 72 ± 0,3 mm og regn vrakprosent. Gjør det samme med ekte emner.",
+      "lenke": "2-5/verksted.html"
+    },
+    {
+      "merke": "V/K",
+      "tittel": "Hvilken nøyaktighetsgrad trengs?",
+      "tekst": "Stenger på 1220 mm: sjekk mot ISO 2768-1 middels og grov.",
+      "lenke": "2-6/verksted.html"
+    },
+    {
+      "merke": "V",
+      "tittel": "Verktøyets grenser og temperatur",
+      "tekst": "Praktisk måleprøve: godkjenning når verktøyet har usikkerhet, og en varm aksel som krymper.",
+      "lenke": "2-7/verksted.html"
+    }
+  ]
+}

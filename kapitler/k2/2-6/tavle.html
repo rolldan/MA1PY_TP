@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 2.6 Generelle toleranser ISO 2768-1</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="2" data-del="2.6">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Uten ±">
+    <h2>Tegningen har ikke ±</h2>
+    <div class="tekst">
+      <p>På en plate står det 70, uten ±. I tittelfeltet står det ISO 2768-m.</p>
+      <div class="undre" data-hint="m betyr middels. Du må finne riktig rad for 70 mm." data-sekunder="30">Betyr det at 70 mm skal være nøyaktig, eller at det finnes en generell toleranse?</div>
+      <p class="steg">ISO 2768-1 gjelder mål <b>uten</b> eget toleransetall, når tegningen viser klassen.</p>
+      <p class="steg">m er middels. f er fin, c er grov, v er meget grov.</p>
+      <p class="steg">70 mm ligger i raden «over 30 til og med 120». Middels der er ± 0,3 mm.</p>
+      <p class="steg">Godkjent: 69,7 mm til 70,3 mm.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Riktig rad">
+    <h2>120 mm er ikke neste rad</h2>
+    <div class="tekst">
+      <p>En lengde er 120 mm, klasse middels. Neste rad i tabellen starter først når målet er <b>over</b> 120.</p>
+      <div class="undre" data-hint="«Til og med 120» betyr at 120 fortsatt er i den raden.">Er tillatt avvik ± 0,3 mm eller ± 0,5 mm?</div>
+      <p class="steg">120 mm: over 30 til og med 120. Middels ± 0,3 mm.</p>
+      <p class="steg">120,1 mm: over 120 til og med 400. Middels ± 0,5 mm.</p>
+      <p class="steg">1000 mm er med i raden til og med 1000: middels ± 0,8 mm. 1220 mm er i neste rad: middels ± 1,2 mm.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Les raden «over … til og med …». Tallet på slutten av raden hører til den raden.<br>
+        Strek (–) i tabellen: standarden har ingen verdi. Skriv toleransen på målet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Mathias">
+    <h2>Mathias og stengene på 1220 mm</h2>
+    <div class="tekst">
+      <p>Mathias lager stenger på 1220 mm. Tegningen sier ISO 2768-m. Målene blir 1221 · 1219 · 1218,8 · 1221,3 mm.</p>
+      <div class="undre" data-hint="1220 mm er over 1000 til og med 2000. Middels er ikke ± 0,8.">Er alle fire innenfor middels?</div>
+      <p class="steg">Middels for denne raden: ± 1,2 mm. Grenser: 1218,8 mm og 1221,2 mm.</p>
+      <p class="steg">1221, 1219 og 1218,8 er inne. 1218,8 ligger på grensen og er godkjent. 1221,3 er 0,1 mm for lang.</p>
+      <p class="steg">Grov (c) i samme rad er ± 3 mm. Da er alle fire inne. Kunden må si hvilken grad delen faktisk trenger.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Ikke DIN">
+    <h2>Bruk ISO 2768-1, ikke en gammel tabell</h2>
+    <div class="tekst">
+      <p>Eldre verkstedtabeller (DIN 7168) har andre intervaller, blant annet 120–315 og 315–1000, og de går forbi 4000 mm.</p>
+      <div class="undre" data-hint="Meget grov for 2000 til 4000 mm er den nederste raden.">En stang på 2500 mm, meget grov. Er avviket ± 4 mm, ± 6 mm eller ± 8 mm?</div>
+      <p class="steg">2500 mm er over 2000 til og med 4000.</p>
+      <p class="steg">Meget grov i ISO 2768-1: ± 8 mm. Ikke ± 4 og ikke ± 6.</p>
+      <p class="steg">Fin (f) har ingen verdi i den raden. Da må toleransen stå på tegningen.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">I denne boka</p>
+        <p>Vi bruker tabellen i ISO 2768-1. Eget ± på et mål slår tabellen. Uten ISO-klasse i tittelfeltet gjelder ikke tabellen.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="teori.html">Tabellen</a> · <a href="../2-5/teori.html">2.5 Grensemål</a> · <a href="oppgaver.html">Oppgaver 2.6</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

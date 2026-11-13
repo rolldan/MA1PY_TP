@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.7 Pasninger og verktøyets grenser</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.7">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Pasning · Verksted</p>
+  <h1>Pasninger og verktøyets grenser</h1>
+  <p class="ingress">Hull og aksel får hver sin toleranse. Om de alltid har klaring, alltid press, eller begge deler, kalles pasningen. I tillegg må du vite om måleverktøyet og temperaturen gjør godkjenningen usikker.</p>
+
+  <ul class="laeringsmal">
+    <li>lese H og h, og si om koden er hull eller aksel</li>
+    <li>avgjøre klaring, mellompasning eller press fra grensemålene</li>
+    <li>vurdere godkjenning når verktøyet har usikkerhet, og når delen er varm</li>
+  </ul>
+
+  <ol class="kjede"><li>gjør µm om til mm</li><li>finn grensene</li><li>regn minste og største klaring</li><li>sjekk temperatur og verktøy</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>En lagerbane skal presses på en aksel. Tegningen sier Ø25 H7/p6. Ved siden av ligger bolter på 90,0 ± 0,3 mm som skal sjekkes med et verktøy på ± 0,1 mm, og en aksel som fortsatt er 60 °C etter dreiing.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Stor bokstav er hull. Liten bokstav er aksel. Lavere tall er finere toleranse.</p>
+  <p><b>H</b>: nedre avvik for hullet er 0. Hullet er aldri mindre enn basismålet. <b>h</b>: øvre avvik for akselen er 0. Akselen er aldri større enn basismålet.</p>
+  <p><b>Klaringspasning:</b> selv den største akselen er mindre enn eller lik det minste hullet. Det er alltid plass. Eksempel: hjul og glidende føringer. H7/h6 kan ha klaring 0. Den kaller vi fortsatt klaring, fordi akselen ikke er større enn hullet.</p>
+  <p><b>Presspasning:</b> selv det største hullet er mindre enn den minste akselen. Delen må presses eller varmes. Eksempel: lager på aksel.</p>
+  <p><b>Mellompasning:</b> noen kombinasjoner gir klaring, andre gir press. Eksempel: styretapp som bankes inn med klubbe.</p>
+  <p>Klaring = hull − aksel. Negativ klaring er press.</p>
+  <p>Verktøyets usikkerhet flytter på det du kan love. Er usikkerheten ± 0,1 mm, er delen <b>sikkert</b> inne bare når målingen ligger minst 0,1 mm innenfor begge grenser. Mellom den sonen og grensen pluss usikkerheten er svaret usikkert.</p>
+  <p>Lengdemål gjelder ved 20 °C. For vanlig stål kan du regne krymp med \(\alpha = 0{,}000012\) per °C (12 µm per meter per grad). Aluminium krymper omtrent dobbelt så mye. \(\alpha\) er en typisk verdi, ikke et tall som står på hvert emne.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Minste klaring = minste hull − største aksel.</p>
+    <p>Største klaring = største hull − minste aksel.</p>
+    <p>Minste klaring ≥ 0: klaring. Største klaring &lt; 0: press. Ellers: mellom.</p>
+    <p>\(\Delta L = \alpha \cdot L \cdot \Delta T\), med \(\alpha = 0{,}000012\) per °C for stål.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: Ø25 H7/g6</h3>
+    <p>H7: +21 / 0 µm. g6: −7 / −20 µm. Diameteren er i området over 18 til og med 30 mm.</p>
+    <ol class="steg-liste">
+      <li class="steg">Hull: \(25{,}000\) til \(25{,}021\) mm.</li>
+      <li class="steg">Aksel: \(25 - 0{,}020 = 24{,}980\) til \(25 - 0{,}007 = 24{,}993\) mm.</li>
+      <li class="steg">Minste klaring: \(25{,}000 - 24{,}993 = 0{,}007\) mm.</li>
+      <li class="steg">Største klaring: \(25{,}021 - 24{,}980 = 0{,}041\) mm. Alltid klaring.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>H7/h6 er ikke press bare fordi den er trang. Akselen er aldri større enn hullet, så det er klaring (klaringen kan være 0). En annen vanlig feil: å godkjenne en aksel som er målt ved 60 °C. Den blir kortere når den kjøles til 20 °C. Og 21 µm er 0,021 mm, ikke 0,21 mm.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Ø25 H7/p6. Akselen er 25,022 mm til 25,035 mm. Hullet er 25,000 mm til 25,021 mm. Hva slags pasning er det?</p>
+    <div class="fasit">Presspasning</div>
+    <div class="losning">Minste aksel 25,022 mm er større enn største hull 25,021 mm. Minste press er 0,001 mm. Alltid press.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Utvalg for Ø over 18 til og med 30 mm</b> (ISO 286). Avvik i µm, øvre / nedre. Hele tabellen står i verkstedhåndboka. 30 mm er med i denne raden. 30,1 mm er i neste.</p>
+    <div class="tabell-rull">
+      <table>
+        <thead><tr><th>Kode</th><th>Gjelder</th><th>Øvre / nedre (µm)</th></tr></thead>
+        <tbody>
+          <tr><td>H7</td><td>hull</td><td>+21 / 0</td></tr>
+          <tr><td>g6</td><td>aksel</td><td>−7 / −20</td></tr>
+          <tr><td>h6</td><td>aksel</td><td>0 / −13</td></tr>
+          <tr><td>k6</td><td>aksel</td><td>+15 / +2</td></tr>
+          <tr><td>p6</td><td>aksel</td><td>+35 / +22</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</article>
+</main>
+</body>
+</html>

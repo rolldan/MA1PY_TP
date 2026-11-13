@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.3 µm og mm</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.3">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Måling · Enheter</p>
+  <h1>µm og mm</h1>
+  <p class="ingress">Pasningstabeller oppgir avvik i mikrometer. Mikrometeret og skyvelæret viser millimeter. Du må kunne flytte kommaet tre plasser uten å bli ti ganger for grov.</p>
+
+  <ul class="laeringsmal">
+    <li>gjøre om mellom µm og mm</li>
+    <li>legge et avvik i µm på et basismål i mm</li>
+    <li>oppdage når kommaet har flyttet seg feil</li>
+  </ul>
+
+  <ol class="kjede"><li>les avviket i µm</li><li>del på 1000</li><li>legg til basismålet</li><li>sjekk med overslag</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>På en tegning av en lagerbane står Ø25 H7. I tabellen er øvre avvik +21 µm. På mikrometeret skal du se om banen er høyst 25,021 mm, ikke 25,21 mm.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>En mikrometer er en milliondels meter, og en tusendels millimeter:</p>
+  <p>\(1\ \text{mm} = 1000\ \text{µm}\).</p>
+  <p>Det er samme kommaflytting som mellom meter og millimeter. Antall nuller i 1000 er tre, så kommaet flyttes tre plasser.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>µm</th><th>mm</th><th>Hvorfor</th></tr></thead>
+      <tbody>
+        <tr><td>25</td><td>0,025</td><td>25 : 1000</td></tr>
+        <tr><td>130</td><td>0,130</td><td>130 : 1000</td></tr>
+        <tr><td>800</td><td>0,800</td><td>800 : 1000</td></tr>
+        <tr><td>73</td><td>0,073</td><td>73 : 1000</td></tr>
+        <tr><td>7000</td><td>7</td><td>7000 : 1000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Når avviket skal legges på et basismål, gjør du om først, og adderer etterpå. Negativt avvik trekkes fra.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>µm → mm: del med 1000. mm → µm: gang med 1000.</p>
+    <p>Overslag: 0,1 mm = 100 µm. 0,01 mm = 10 µm. 0,001 mm = 1 µm.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: Ø25 med avvik +21 µm</h3>
+    <p>Hva er øvre grensemål?</p>
+    <ol class="steg-liste">
+      <li class="steg">\(21\ \text{µm} = 21 : 1000 = 0{,}021\) mm.</li>
+      <li class="steg">Øvre grensemål: \(25 + 0{,}021 = 25{,}021\) mm.</li>
+      <li class="steg">Sjekk: 21 µm er litt mer enn 20 µm, og 20 µm er 0,020 mm. 25,021 mm er fornuftig. 25,21 mm er det ikke.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>21 µm er 0,021 mm, ikke 0,21 mm. Én for lite kommaflytting gjør avviket ti ganger for stort. På en lagerbane er det forskjellen på godkjent og vrak.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Nedre avvik på en aksel er −13 µm. Basismålet er Ø30. Hva er nedre grensemål i mm?</p>
+    <div class="fasit">\(29{,}987\) mm</div>
+    <div class="losning">\(13\ \text{µm} = 0{,}013\) mm. \(30{,}000 - 0{,}013 = 29{,}987\) mm.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>På mikrometeret:</b> 0,001 mm på skalaen er 1 µm. Når du leser 12,476 mm og basismålet er 12,500 mm, er avviket \(12{,}476 - 12{,}500 = -0{,}024\) mm = −24 µm. Skriv avviket med fortegn, så du ser om delen er for stor eller for liten.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

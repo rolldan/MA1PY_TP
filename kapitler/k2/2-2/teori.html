@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.2 Riktig måleverktøy</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.2">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Måling · Verksted</p>
+  <h1>Riktig måleverktøy</h1>
+  <p class="ingress">Målebånd, skyvelære og mikrometer måler alle lengde. De har ikke samme grense. Verktøyet må være fint nok til toleransen, og langt nok til delen.</p>
+
+  <ul class="laeringsmal">
+    <li>oppgi usikkerheten til målebånd, skyvelære og mikrometer</li>
+    <li>velge verktøy ut fra toleranse og lengde</li>
+    <li>bruke regelen om 1/10 av toleransebredden</li>
+  </ul>
+
+  <ol class="kjede"><li>les toleransen</li><li>finn toleransebredden</li><li>del på 10</li><li>velg verktøy</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>En ramme i stål er 1800 mm og kappes med målebånd. En lagerbane på Ø25 mm sjekkes med mikrometer. Samme person, to verktøy. Feilen er å bruke båndet på lagerbanen.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>I dette kapitlet bruker vi disse grensene. De er de praktiske grensene for verktøyet, ikke halvparten av det du måler.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Verktøy</th><th>Usikkerhet</th><th>Passer til</th></tr></thead>
+      <tbody>
+        <tr><td>Målebånd</td><td>± 1 mm</td><td>Grovkapping, rammer, lange lengder</td></tr>
+        <tr><td>Skyvelære</td><td>± 0,02 mm</td><td>Vanlig dreiing og fresing, typisk til 150 mm</td></tr>
+        <tr><td>Mikrometer</td><td>± 0,001 mm</td><td>Finpasning og lagerbaner</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>En millimeterlinjal har streker for hver millimeter. Da er en vanlig vurdering av avlesingen ± 0,5 mm, altså en halv delestrek. Målebåndet i verkstedet setter vi likevel til ± 1 mm, fordi kroken har slark og båndet kan henge.</p>
+  <p><b>Tommelfingerregel:</b> usikkerheten bør være høyst 1/10 av toleransebredden. Toleransebredden er avstanden fra minste til største godkjente mål, ikke ±-tallet alene. For ± 0,05 mm er bredden 0,10 mm, og 1/10 er 0,01 mm.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Målebånd ± 1 mm. Skyvelære ± 0,02 mm. Mikrometer ± 0,001 mm.</p>
+    <p>Største ønskede usikkerhet ≈ toleransebredde / 10.</p>
+    <p>Verktøyet må også rekke over delen. Et skyvelære på 150 mm måler ikke en ramme på 1800 mm.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: tapp Ø20 −0,02 / −0,05</h3>
+    <p>Kan tappen kontrolleres med skyvelære?</p>
+    <ol class="steg-liste">
+      <li class="steg">Øvre grensemål: \(20 + (-0{,}02) = 19{,}98\) mm.</li>
+      <li class="steg">Nedre grensemål: \(20 + (-0{,}05) = 19{,}95\) mm.</li>
+      <li class="steg">Toleransebredde: \(19{,}98 - 19{,}95 = 0{,}03\) mm.</li>
+      <li class="steg">1/10 av bredden er \(0{,}003\) mm. Skyvelær ± 0,02 mm er for grovt. Mikrometer ± 0,001 mm er fint nok.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Å si «0,02 er mindre enn 0,03, så skyvelæret holder» er for optimistisk. Usikkerheten eter opp nesten hele toleransen. Nær grensen vet du ikke om delen er inne eller ute. Bruk et finere verktøy.</p>
+  </div>
+
+  <div class="underveis">
+    <p>En aksel skal være 40 ± 0,05 mm. Hvor stor bør usikkerheten høyst være, etter 1/10-regelen?</p>
+    <div class="fasit">\(0{,}01\) mm</div>
+    <div class="losning">Toleransebredden er \(0{,}10\) mm (fra 39,95 til 40,05). \(0{,}10 : 10 = 0{,}01\) mm. Skyvelær ± 0,02 mm er for grovt. Mikrometeret holder.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Før du måler:</b> Nullstill. Velg verktøy etter tabellen. Klem ikke hardt på mikrometeret: skruen har en friksjonsklikk som skal stoppe deg. Les noniusen rett forfra, ellers får du parallakse. Huskeregelen: mål to ganger, kutt én gang – og kjenn verktøyets grenser.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

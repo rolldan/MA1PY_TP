@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 2.4 Gjennomsnitt, variasjonsbredde og usikkerhet</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="2" data-del="2.4">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Fem bolter">
+    <h2>Fem bolter, ett tall</h2>
+    <div class="tekst">
+      <p>Fem bolter som skal være 90 mm, måles til 90,2 · 89,8 · 90,0 · 90,1 · 89,9 mm.</p>
+      <div class="undre" data-hint="Legg sammen og del på hvor mange bolter du har." data-sekunder="30">Hva er et rettferdig «typisk» mål for serien?</div>
+      <p class="steg">Sum: \(90{,}2 + 89{,}8 + 90{,}0 + 90{,}1 + 89{,}9 = 450{,}0\) mm.</p>
+      <p class="steg">Gjennomsnitt: \(450{,}0 : 5 = 90{,}0\) mm.</p>
+      <p class="steg">Serien treffer 90 mm i snitt, selv om ingen bolt utenom én er nøyaktig 90,0.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Gjennomsnitt</p>
+        <p>\(\text{gjennomsnitt} = \dfrac{\text{sum}}{\text{antall}}\)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Spredning">
+    <h2>Hvor mye sprer de seg?</h2>
+    <div class="tekst">
+      <p>Samme bolter. Største er 90,2 mm. Minste er 89,8 mm.</p>
+      <div class="undre" data-hint="Du trenger bare de to ytterpunktene.">Hvor stor er forskjellen mellom den lengste og den korteste?</div>
+      <p class="steg">Variasjonsbredde: \(90{,}2 - 89{,}8 = 0{,}4\) mm.</p>
+      <p class="steg">Liten variasjonsbredde betyr at prosessen er jevn. Stor bredde betyr at noe hopper: mating, temperatur eller måletrykk.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Variasjonsbredde</p>
+        <p>\(\text{variasjonsbredde} = \text{største} - \text{minste}\)</p>
+      </div>
+      <p class="se-ogsa steg">Gjennomsnittet sier hvor serien ligger. Variasjonsbredden sier hvor jevn den er. Du trenger begge.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Prosent">
+    <h2>0,2 mm er ikke alltid lite</h2>
+    <div class="tekst">
+      <p>Ei tynn skive er 8 mm, målt med skyvelære ± 0,02 mm. En aksel er 200 mm, med samme skyvelære.</p>
+      <div class="undre" data-hint="Del usikkerheten på det du målte, og gang med 100.">Hvor er 0,02 mm mest alvorlig?</div>
+      <p class="steg">Absolutt usikkerhet er ±-tallet: 0,02 mm begge steder.</p>
+      <p class="steg">Skive: \(0{,}02 : 8 \cdot 100\% = 0{,}25\%\).</p>
+      <p class="steg">Aksel: \(0{,}02 : 200 \cdot 100\% = 0{,}01\%\).</p>
+      <p class="steg">Samme millimeterfeil er 25 ganger viktigere på skiva. Det er den relative usikkerheten.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Formelen">
+    <h2>Absolutt og relativ</h2>
+    <div class="tekst">
+      <p>Et rør måles til 200 mm med målebånd. Usikkerheten er ± 1 mm.</p>
+      <div class="undre" data-hint="1 mm av 200 mm. Hvor mange hundredeler er det?">Hvor mange prosent er 1 mm av 200 mm?</div>
+      <p class="steg">Absolutt usikkerhet: 1 mm.</p>
+      <p class="steg">Relativ: \(1 : 200 \cdot 100\% = 0{,}5\%\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Absolutt usikkerhet: ±-tallet, i mm.<br>
+        Relativ usikkerhet \(= \dfrac{\text{absolutt}}{\text{målt verdi}} \cdot 100\%\).</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../2-2/teori.html">2.2 Verktøyets usikkerhet</a> · <a href="oppgaver.html">Oppgaver 2.4</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

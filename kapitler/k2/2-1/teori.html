@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 2.1 Målefeil: tilfeldige og systematiske</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="2" data-del="2.1">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Måling · Toleranse</p>
+  <h1>Målefeil: tilfeldige og systematiske</h1>
+  <p class="ingress">To personer kan måle samme aksel og få to tall. Forskjellen er enten tilfeldig, systematisk, eller begge deler. Du må vite hvilken, før du vraker delen.</p>
+
+  <ul class="laeringsmal">
+    <li>forklare at en måling alltid er en tilnærming</li>
+    <li>skille tilfeldige og systematiske målefeil</li>
+    <li>si hva som hjelper mot hver type</li>
+  </ul>
+
+  <ol class="kjede"><li>mål flere ganger</li><li>se på spredningen</li><li>se på retningen</li><li>rett det som kan rettes</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Sara måler en dreid tapp til 40,02 mm. Jonas, med et annet skyvelære, får 40,12 mm. Før formannen vraker tappen, sjekker de nullpunktet på Jonas sitt skyvelære. Det viser 0,10 mm når kjevene er lukket.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Ingen måling treffer «det sanne målet» helt. Verktøyet, hånda di og temperaturen på delen påvirker tallet du leser av.</p>
+  <p><b>Tilfeldig feil</b> skifter fra gang til gang. Du leser skjevt (parallakse), klemmer ulikt på målebakkene, eller runder av ulikt. Tallene sprer seg både opp og ned.</p>
+  <p><b>Systematisk feil</b> trekker samme vei hver gang. Skyvelæret er ikke nullstilt. Målebåndets krok har slark. Du måler alltid mens akselen er varm etter dreiing, og stål er lengre når det er varmt. Flere målinger gir fortsatt samme skjeve resultat.</p>
+  <p>En serie kan ha begge. Gjennomsnittet viser den systematiske feilen, hvis du kjenner det sanne målet (en passbit). Forskjellen mellom største og minste viser den tilfeldige spredningen.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Tilfeldig feil: spredt, ulikt fortegn. Dempes med flere målinger og rolig avlesing.</p>
+    <p>Systematisk feil: samme avvik hver gang. Rettes med nullstilling, kalibrering og måling ved omtrent 20 °C.</p>
+    <p>Gjennomsnitt fjerner ikke en systematisk feil.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: passbiten på 50,00 mm</h3>
+    <p>Fem avlesinger: 50,12 · 50,08 · 50,11 · 50,09 · 50,10 mm.</p>
+    <ol class="steg-liste">
+      <li class="steg">Sum: \(50{,}12 + 50{,}08 + 50{,}11 + 50{,}09 + 50{,}10 = 250{,}50\) mm.</li>
+      <li class="steg">Gjennomsnitt: \(250{,}50 : 5 = 50{,}10\) mm.</li>
+      <li class="steg">Systematisk avvik: \(50{,}10 - 50{,}00 = 0{,}10\) mm for høyt.</li>
+      <li class="steg">Tilfeldig spredning: \(50{,}12 - 50{,}08 = 0{,}04\) mm. Nullstill verktøyet. Ikke ta ti målinger til og håp at 0,10 mm forsvinner.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Å måle mange ganger retter ikke et verktøy som ligger feil. Hvis alle tallene er for høye, er feilen systematisk. Da skal verktøyet nullstilles, ikke bare gjennomsnittsregnes.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Et mikrometer viser 0,03 mm når det er lukket. Du leser 18,47 mm på en aksel. Hva er korrigert mål?</p>
+    <div class="fasit">\(18{,}44\) mm</div>
+    <div class="losning">Verktøyet viser 0,03 mm for mye. \(18{,}47 - 0{,}03 = 18{,}44\) mm. Feilen er systematisk, så du trekker fra det samme hver gang.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Sjekk før du måler:</b> Lukk skyvelæret eller mikrometeret. Viser det 0? Hvis ikke, noter avviket og korriger, eller nullstill. Mål ikke en aksel som nettopp er dreid, før den har kjølt seg ned mot 20 °C. Se <a href="../2-7/teori.html">2.7</a> om temperatur.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

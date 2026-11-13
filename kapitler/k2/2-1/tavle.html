@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 2.1 Målefeil: tilfeldige og systematiske</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="2" data-del="2.1">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="To svar">
+    <h2>Samme tapp, to svar</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="To skyvelærer mot samme tapp. Den ene viser 40,02 mm, den andre 40,12 mm.">
+        <rect x="40" y="70" width="360" height="28" rx="6" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+        <text x="220" y="60" text-anchor="middle" font-size="16" fill="#5b6675">dreid tapp</text>
+        <g font-size="20" font-weight="700">
+          <rect x="50" y="130" width="150" height="70" rx="8" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+          <text x="125" y="160" text-anchor="middle" fill="#17202b">Sara</text>
+          <text x="125" y="186" text-anchor="middle" fill="var(--kap)">40,02 mm</text>
+          <rect x="240" y="130" width="150" height="70" rx="8" fill="#fff" stroke="#475569" stroke-width="3"/>
+          <text x="315" y="160" text-anchor="middle" fill="#17202b">Jonas</text>
+          <text x="315" y="186" text-anchor="middle" fill="#17202b">40,12 mm</text>
+        </g>
+        <g data-vis-fra="2">
+          <text x="220" y="240" text-anchor="middle" font-size="18" font-weight="700" fill="var(--kap)">0,10 mm mellom dem</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Sara og Jonas måler den samme tappen med hvert sitt skyvelære. Sara får 40,02 mm. Jonas får 40,12 mm.</p>
+      <div class="undre" data-hint="Er avviket likt hver gang, eller hopper det?" data-sekunder="30">Hvem har målt feil? Eller kan begge ha gjort en ærlig måling?</div>
+      <p class="steg">En måling er alltid en tilnærming. Displayet viser ikke «sannheten», bare et tall med slingringsmonn.</p>
+      <p class="steg">Forskjellen kan komme av verktøyet, avlesingen eller av at tappen fortsatt er varm etter dreiing.</p>
+      <p class="steg">Før vi vraker delen, må vi vite <b>hva slags feil</b> det er.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="To typer">
+    <h2>Tilfeldig eller systematisk?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="To skyteskiver. Den ene har treff spredt rundt midten. Den andre har alle treff samlet til høyre.">
+        <g>
+          <circle cx="110" cy="130" r="80" fill="none" stroke="#94a3b8" stroke-width="2"/>
+          <circle cx="110" cy="130" r="48" fill="none" stroke="#94a3b8" stroke-width="2"/>
+          <circle cx="110" cy="130" r="16" fill="none" stroke="#94a3b8" stroke-width="2"/>
+          <text x="110" y="28" text-anchor="middle" font-size="16" font-weight="700">Tilfeldig</text>
+          <g data-vis-fra="1" fill="var(--kap)">
+            <circle cx="96" cy="118" r="6"/><circle cx="128" cy="140" r="6"/><circle cx="100" cy="150" r="6"/><circle cx="122" cy="108" r="6"/><circle cx="108" cy="132" r="6"/>
+          </g>
+        </g>
+        <g>
+          <circle cx="320" cy="130" r="80" fill="none" stroke="#94a3b8" stroke-width="2"/>
+          <circle cx="320" cy="130" r="48" fill="none" stroke="#94a3b8" stroke-width="2"/>
+          <circle cx="320" cy="130" r="16" fill="none" stroke="#94a3b8" stroke-width="2"/>
+          <text x="320" y="28" text-anchor="middle" font-size="16" font-weight="700">Systematisk</text>
+          <g data-vis-fra="2" fill="#b45309">
+            <circle cx="368" cy="124" r="6"/><circle cx="376" cy="136" r="6"/><circle cx="360" cy="142" r="6"/><circle cx="372" cy="118" r="6"/><circle cx="366" cy="132" r="6"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Tenk på målingene som treff på en blink.</p>
+      <div class="undre" data-hint="Systematisk feil trekker samme vei hver gang.">Hvis alle målingene ligger 0,10 mm for høyt: er det tilfeldig eller systematisk?</div>
+      <p class="steg"><b>Tilfeldig feil</b> sprer seg til begge sider. Slurv ved avlesing, ulikt måletrykk, parallakse.</p>
+      <p class="steg"><b>Systematisk feil</b> trekker samme vei hver gang. Verktøy som ikke er nullstilt. Del som alltid måles varm.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Tilfeldig: spredt, ulikt fortegn.<br>Systematisk: samme avvik, hver gang.<br>En måleserie kan ha begge deler.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Fem målinger">
+    <h2>Flere målinger hjelper bare én vei</h2>
+    <div class="tekst">
+      <p>En passbit er 50,00 mm. Fem avlesinger: 50,12 · 50,08 · 50,11 · 50,09 · 50,10 mm.</p>
+      <div class="undre" data-hint="Legg sammen og del på fem. Sammenlign med 50,00.">Blir gjennomsnittet 50,00 mm hvis vi måler mange nok ganger?</div>
+      <p class="steg">Summen er \(250{,}50\) mm. Gjennomsnittet er \(250{,}50 : 5 = 50{,}10\) mm.</p>
+      <p class="steg">Alle tallene ligger omtrent 0,10 mm for høyt. Det er en <b>systematisk</b> feil, for eksempel et skyvelære som ikke er nullstilt.</p>
+      <p class="steg">Spredningen er liten: \(50{,}12 - 50{,}08 = 0{,}04\) mm. Den tilfeldige feilen er liten. Flere målinger fjerner ikke de 0,10 mm.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Husk</p>
+        <p>Flere målinger og gjennomsnitt demper <b>tilfeldig</b> feil.<br>Systematisk feil må rettes med nullstilling, kalibrering eller riktig temperatur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Hva gjør du?">
+    <h2>Hva gjør du med feilen?</h2>
+    <div class="tekst">
+      <p>Du skal godkjenne en lagerbane. Mikrometeret viser 0,02 mm for mye når du lukker det mot null.</p>
+      <div class="undre" data-hint="Feilen er lik hver gang. Den forsvinner ikke av seg selv.">Bør du måle ti ganger og ta gjennomsnittet, eller nullstille først?</div>
+      <p class="steg">Feilen er systematisk. Gjennomsnitt av ti målinger blir også omtrent 0,02 mm for høyt.</p>
+      <p class="steg">Nullstill mikrometeret. Mål deretter delen ved romtemperatur, omtrent 20 °C.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">I verkstedet</p>
+        <p>1. Se på nullpunktet før du måler.<br>2. Mål flere ganger hvis avlesingen hopper.<br>3. Ikke mål en glovarm aksel og tro at tallet gjelder kald.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../2-2/teori.html">2.2 Riktig måleverktøy</a> · <a href="oppgaver.html">Oppgaver 2.1</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
