@@ -142,5 +142,122 @@ Bok.oppgaver([
     ],
     hint: ["kW til W og m til mm: gang med 1000. mm til m: del med 1000.", "\\(3{,}2 \\cdot 1000 = 3200\\). \\(6400 : 1000 = 6{,}4\\). \\(0{,}075 \\cdot 1000 = 75\\)."],
     losning: "<p>a) 3200 W &nbsp; b) 6,4 m &nbsp; c) 75 mm</p>"
+  },
+  {
+    id: "drill-mw",
+    niva: "lett",
+    tittel: "MW, kW og W",
+    tekst: "<p>Hvert steg på stigen er 1000. Gjør om uten kalkulator.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "\\(4{,}5\\ \\text{kW}\\) i watt", svar: { verdi: 4500, enhet: "W" } },
+      { tekst: "\\(0{,}025\\ \\text{MW}\\) i kilowatt", svar: { verdi: 25, enhet: "kW" } },
+      { tekst: "\\(0{,}025\\ \\text{MW}\\) i watt", svar: { verdi: 25000, enhet: "W" } },
+      { tekst: "\\(750\\ \\text{W}\\) i kilowatt", svar: { verdi: 0.75, enhet: "kW" } }
+    ],
+    hint: ["Fra MW til kW er ett steg. Fra MW til W er to steg. Fra W til kW deler du med 1000.", "\\(0{,}025 \\cdot 1000 = 25\\) kW. \\(0{,}025 \\cdot 1000 \\cdot 1000 = 25\\,000\\) W."],
+    losning: "<p>a) 4500 W &nbsp; b) 25 kW &nbsp; c) 25 000 W &nbsp; d) 0,75 kW</p>"
+  },
+  {
+    id: "sveisestrom",
+    niva: "lett",
+    tittel: "mA og A",
+    tekst: "<p>Liten m betyr milli, altså tusendel. \\(1\\ \\text{A} = 1000\\ \\text{mA}\\).</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "\\(850\\ \\text{mA}\\) i ampere", svar: { verdi: 0.85, enhet: "A" } },
+      { tekst: "\\(2{,}4\\ \\text{A}\\) i milliampere", svar: { verdi: 2400, enhet: "mA" } },
+      { tekst: "\\(0{,}15\\ \\text{A}\\) i milliampere", svar: { verdi: 150, enhet: "mA" } },
+      { tekst: "\\(5000\\ \\text{mA}\\) i ampere", svar: { verdi: 5, enhet: "A" } }
+    ],
+    hint: ["mA til A: del med 1000. A til mA: gang med 1000.", "\\(850 : 1000 = 0{,}85\\) A. \\(2{,}4 \\cdot 1000 = 2400\\) mA."],
+    losning: "<p>a) 0,85 A &nbsp; b) 2400 mA &nbsp; c) 150 mA &nbsp; d) 5 A</p>"
+  },
+  {
+    id: "skyvelaer-um",
+    niva: "middels",
+    tittel: "Avvik på skyvelæret",
+    tekst: "<p>Tegningen sier at avviket kan være høyst 0,10 mm. Skyvelæret viser hundredeler.</p>",
+    steg: [{ verdi: 100, enhet: "µm" }],
+    deler: [
+      { tekst: "Hvor mange µm er 0,125 mm?", svar: { verdi: 125, enhet: "µm" } },
+      { tekst: "Hvor mange mm er 80 µm?", svar: { verdi: 0.08, enhet: "mm" } },
+      { tekst: "Er 80 µm innenfor grensen på 0,10 mm?", svar: { valg: ["Ja, 80 µm er mindre enn 0,10 mm", "Nei, 80 µm er mer enn 0,10 mm"], riktig: 0, forklaring: "0,10 mm = 100 µm. 80 er mindre enn 100." } }
+    ],
+    hint: ["1 mm = 1000 µm. Fra mm til µm ganger du. Fra µm til mm deler du.", "\\(0{,}125 \\cdot 1000 = 125\\) µm. \\(80 : 1000 = 0{,}08\\) mm. Grensen 0,10 mm er 100 µm."],
+    losning: "<p>a) 125 µm<br>b) 0,08 mm<br>c) 0,10 mm = 100 µm. 80 µm er innenfor.</p>"
+  },
+  {
+    id: "lagring-256",
+    niva: "middels",
+    tittel: "256 GB i SI",
+    tekst: "<p>I SI er 1 GB = 1000 MB. Ikke bruk 1024.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "Hvor mange MB er 256 GB? Svar med tallet.", svar: { verdi: 256000 } },
+      { tekst: "Hvor mange MB er 1,5 GB? Svar med tallet.", svar: { verdi: 1500 } },
+      { tekst: "En kollega ganger 256 med 1024. Hva har hen gjort?", svar: { valg: ["Brukt SI, som vi skal bruke her", "Brukt binær omgjøring. I 1P-Y er faktoren 1000"], riktig: 1, forklaring: "1024 hører til GiB. 256 GB = 256 000 MB i SI." } }
+    ],
+    hint: ["G til M er ett steg ned. Gang med 1000.", "\\(256 \\cdot 1000 = 256\\,000\\). \\(1{,}5 \\cdot 1000 = 1500\\)."],
+    losning: "<p>a) 256 000 MB &nbsp; b) 1500 MB &nbsp; c) 1024 er ikke SI. Riktig svar er 256 000 MB.</p>"
+  },
+  {
+    id: "to-maskiner",
+    niva: "middels",
+    tittel: "Maskin og kurs",
+    tekst: "<p>Søyleboremaskinen er merket 7,5 kW. Kursen i tavla er merket 0,012 MW. Ikke åpne skapet. Her skal du bare regne.</p>",
+    steg: [{ verdi: 7500, enhet: "W" }, { verdi: 12, enhet: "kW" }],
+    deler: [
+      { tekst: "Hvor mange watt er maskinen?", svar: { verdi: 7500, enhet: "W" } },
+      { tekst: "Hvor mange watt er kursen?", svar: { verdi: 12000, enhet: "W" } },
+      { tekst: "Kan maskinen stå på kursen?", svar: { valg: ["Ja, 7500 W er mindre enn 12 000 W", "Nei, maskinen trekker mer enn kursen"], riktig: 0, forklaring: "7,5 kW = 7500 W og 0,012 MW = 12 000 W." } }
+    ],
+    hint: ["kW til W er ett steg. MW til W er to steg, altså · 1000 · 1000.", "\\(7{,}5 \\cdot 1000 = 7500\\) W. \\(0{,}012 \\cdot 1000 \\cdot 1000 = 12\\,000\\) W."],
+    losning: "<p>Maskinen: 7500 W.<br>Kursen: \\(0{,}012\\ \\text{MW} = 12\\,000\\) W.<br>7500 er mindre enn 12 000, så kursen holder.</p>"
+  },
+  {
+    id: "tre-effekter",
+    niva: "vanskelig",
+    tittel: "Tre maskiner på samme kurs",
+    tekst: "<p>Tre maskiner står på en kurs merket 230 V og 16 A. De er merket 450 W, 1,2 kW og 0,0008 MW. Effekten kursen tåler er \\(230 \\cdot 16\\) watt.</p>",
+    steg: [{ verdi: 1200, enhet: "W" }, { verdi: 800, enhet: "W" }, { verdi: 3680, enhet: "W" }],
+    deler: [
+      { tekst: "Hvor mange watt er 1,2 kW?", svar: { verdi: 1200, enhet: "W" } },
+      { tekst: "Hvor mange watt er 0,0008 MW?", svar: { verdi: 800, enhet: "W" } },
+      { tekst: "Hvor mange watt trekker de tre til sammen?", svar: { verdi: 2450, enhet: "W" } },
+      { tekst: "Hvor mange watt tåler kursen?", svar: { verdi: 3680, enhet: "W" } },
+      { tekst: "Kan alle tre stå på kursen samtidig?", svar: { valg: ["Ja, 2450 W er mindre enn 3680 W", "Nei, summen er større enn kursen"], riktig: 0, forklaring: "2450 W er under 3680 W." } }
+    ],
+    hint: ["Gjør alle tre om til watt før du legger sammen. 0,0008 MW er to steg ned.", "\\(1{,}2 \\cdot 1000 = 1200\\) W. \\(0{,}0008 \\cdot 1\\,000\\,000 = 800\\) W. Summen er \\(450 + 1200 + 800 = 2450\\) W. Kursen tåler \\(230 \\cdot 16 = 3680\\) W."],
+    losning: "<p>1200 W + 800 W + 450 W = 2450 W = 2,45 kW.<br>Kursen tåler 3680 W.<br>2450 er mindre, så de kan stå på samtidig.</p>"
+  },
+  {
+    id: "toleranseband",
+    niva: "vanskelig",
+    tittel: "Toleranse i µm",
+    tekst: "<p>En aksel har toleranse 0,15 mm. Du måler et avvik på 0,08 mm med skyvelæret. Kontrollen vil ha begge tallene i µm.</p>",
+    steg: [{ verdi: 0.15, enhet: "mm" }, { verdi: 0.08, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor mange µm er toleransen?", svar: { verdi: 150, enhet: "µm" } },
+      { tekst: "Hvor mange µm er avviket?", svar: { verdi: 80, enhet: "µm" } },
+      { tekst: "Er akselen innenfor?", svar: { valg: ["Ja, 80 µm er mindre enn 150 µm", "Nei, 80 µm er mer enn 150 µm"], riktig: 0, forklaring: "80 er mindre enn 150." } }
+    ],
+    hint: ["Begge tallene er i mm. Gang hvert av dem med 1000 for å få µm.", "\\(0{,}15 \\cdot 1000 = 150\\) µm. \\(0{,}08 \\cdot 1000 = 80\\) µm."],
+    losning: "<p>Toleranse 150 µm. Avvik 80 µm. 80 er mindre enn 150, så akselen er innenfor.</p>"
+  },
+  {
+    id: "minne-fritt",
+    niva: "vanskelig",
+    tittel: "Ledig plass på telefonen",
+    tekst: "<p>Arbeidstelefonen har 512 GB. 180 GB er brukt. I SI er 1 GB = 1000 MB.</p>",
+    steg: [{ verdi: 512000 }, { verdi: 332 }],
+    deler: [
+      { tekst: "Hvor mange MB er hele lageret? Svar med tallet.", svar: { verdi: 512000 } },
+      { tekst: "Hvor mange GB er ledige? Svar med tallet.", svar: { verdi: 332 } },
+      { tekst: "Hvor mange MB er ledige? Svar med tallet.", svar: { verdi: 332000 } },
+      { tekst: "Noen får 524 288 MB for hele lageret. Hva er feilen?", svar: { valg: ["De har brukt 1000, og svaret er riktig", "De har brukt 1024. I SI er 512 GB = 512 000 MB"], riktig: 1, forklaring: "512 · 1024 = 524 288. Det er binært. SI-svaret er 512 000 MB." } }
+    ],
+    hint: ["Ledige gigabyte er 512 minus 180. Gang med 1000 når du går fra GB til MB.", "\\(512 - 180 = 332\\) GB. \\(332 \\cdot 1000 = 332\\,000\\) MB. Hele lageret er \\(512 \\cdot 1000 = 512\\,000\\) MB."],
+    losning: "<p>Hele lageret: 512 000 MB.<br>Ledig: \\(512 - 180 = 332\\) GB = 332 000 MB.<br>524 288 kommer av 1024 og brukes ikke her.</p>"
   }
 ]);
