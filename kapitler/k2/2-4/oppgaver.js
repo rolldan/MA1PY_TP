@@ -236,5 +236,82 @@ Bok.oppgaver([
     ],
     hint: ["Absolutt usikkerhet står bak ±.", "\\(0{,}4 : 80 \\cdot 100 = 0{,}5\\)."],
     losning: "<p>Absolutt 0,4 mm. \\(0{,}4 : 80 \\cdot 100\\% = 0{,}5\\%\\).</p>"
+  },
+  {
+    id: "nav-48",
+    niva: "lett",
+    tittel: "Fire mål på et nav",
+    tekst: "<p>Et nav måles fire ganger med skyvelære: 48,02 · 48,06 · 48,04 · 48,08 mm.</p>",
+    steg: [{ verdi: 192.2, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er gjennomsnittet?", svar: { verdi: 48.05, enhet: "mm" } },
+      { tekst: "Hva er variasjonsbredden?", svar: { verdi: 0.06, enhet: "mm" } }
+    ],
+    hint: ["Summen er 192,20 mm. Del på 4. Variasjonsbredde er største minus minste, uten å dele.", "\\(192{,}20 : 4 = 48{,}05\\). \\(48{,}08 - 48{,}02 = 0{,}06\\)."],
+    losning: "<p>Gjennomsnitt 48,05 mm. Variasjonsbredde 0,06 mm.</p>"
+  },
+  {
+    id: "ror-250",
+    niva: "lett",
+    tittel: "Rør på 250 mm",
+    tekst: "<p>Leo måler et rør til 250 mm med målebånd. Usikkerheten er ± 1 mm.</p>",
+    steg: [{ verdi: 1, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor stor er den absolutte usikkerheten?", svar: { verdi: 1, enhet: "mm", tol: 0 } },
+      { tekst: "Hvor stor er den relative usikkerheten i prosent?", svar: { verdi: 0.4, enhet: "%", tol: 0 } }
+    ],
+    hint: ["Absolutt usikkerhet er ±-tallet, her 1 mm. Relativ er det tallet delt på målt lengde, ganger 100.", "\\(1 : 250 \\cdot 100 = 0{,}4\\)."],
+    losning: "<p>Absolutt usikkerhet 1 mm. \\(1 : 250 \\cdot 100\\% = 0{,}4\\%\\).</p>"
+  },
+  {
+    id: "pinne-bjelke",
+    niva: "middels",
+    tittel: "Pinne og bjelke",
+    tekst: "<p>En styrepinne måles til \\((24 \\pm 0{,}12)\\) mm. En bjelke måles til \\((800 \\pm 2)\\) mm. Sammenlign den relative usikkerheten.</p>",
+    steg: [{ verdi: 0.12, enhet: "mm" }, { verdi: 2, enhet: "mm" }],
+    deler: [
+      { tekst: "Relativ usikkerhet for pinnen, i prosent?", svar: { verdi: 0.5, enhet: "%", tol: 0 } },
+      { tekst: "Relativ usikkerhet for bjelken, i prosent?", svar: { verdi: 0.25, enhet: "%", tol: 0 } },
+      { tekst: "Hvilken måling har størst relativ usikkerhet?", svar: { valg: ["Pinnen", "Bjelken", "De er like"], riktig: 0 } }
+    ],
+    hint: ["Del absolutt usikkerhet på målt verdi og gang med 100. Ikke sammenlign millimeterne direkte.", "Pinnen: \\(0{,}12 : 24 \\cdot 100 = 0{,}5\\). Bjelken: \\(2 : 800 \\cdot 100 = 0{,}25\\)."],
+    losning: "<p>Pinnen 0,5 %. Bjelken 0,25 %. 2 mm på bjelken er et større millimeter-tall, men en mindre andel. Pinnen har størst relativ usikkerhet.</p>"
+  },
+  {
+    id: "laser-750",
+    niva: "middels",
+    tittel: "Fra prosent til millimeter",
+    tekst: "<p>En lasermåler har relativ usikkerhet 0,4 %. Den viser 750 mm på en kappet stang.</p>",
+    steg: [{ verdi: 0.004 }],
+    deler: [
+      { tekst: "Hvor stor er den absolutte usikkerheten?", svar: { verdi: 3, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["0,4 % er 0,004 av lengden. Gang med 750 mm.", "\\(0{,}004 \\cdot 750 = 3\\) mm."],
+    losning: "<p>\\(0{,}4\\%\\) av 750 mm er \\(0{,}004 \\cdot 750 = 3\\) mm. Målingen kan skrives \\(750 \\pm 3\\) mm.</p>"
+  },
+  {
+    id: "to-malere",
+    niva: "vanskelig",
+    tittel: "To målere på samme skrue",
+    tekst: "<p>Noor måler diameteren på en skrue til 4,8 mm. Emil måler den samme skruen til 5,4 mm. Hvor mange prosent høyere er Emils måling enn Noors?</p>",
+    steg: [{ verdi: 0.6, enhet: "mm" }],
+    svar: { verdi: 12.5, enhet: "%", tol: 0 },
+    hint: ["Finn differansen først. Prosenten regnes av Noors mål, ikke av Emils.", "\\(5{,}4 - 4{,}8 = 0{,}6\\). \\(0{,}6 : 4{,}8 \\cdot 100 = 12{,}5\\)."],
+    losning: "<p>\\(0{,}6 : 4{,}8 \\cdot 100\\% = 12{,}5\\%\\). Emil ligger 12,5 % høyere enn Noor. Så stor forskjell på en skrue tyder på ulikt verktøy eller feil avlesing, ikke bare tilfeldig spredning.</p>"
+  },
+  {
+    id: "serie-50",
+    niva: "vanskelig",
+    tittel: "Serie på en flens",
+    tekst: "<p>Fem mål på en flens, skyvelære ± 0,02 mm: 50,03 · 49,97 · 50,06 · 50,00 · 49,94 mm. Bruk 50 mm som målt verdi i prosenten.</p>",
+    steg: [{ verdi: 250, enhet: "mm" }, { verdi: 0.02, enhet: "mm" }],
+    deler: [
+      { tekst: "Gjennomsnitt?", svar: { verdi: 50, enhet: "mm", tol: 0 } },
+      { tekst: "Variasjonsbredde?", svar: { verdi: 0.12, enhet: "mm" } },
+      { tekst: "Absolutt usikkerhet fra verktøyet?", svar: { verdi: 0.02, enhet: "mm", tol: 0 } },
+      { tekst: "Relativ usikkerhet i prosent?", svar: { verdi: 0.04, enhet: "%", tol: 0 } }
+    ],
+    hint: ["Summen er 250,00 mm. Variasjonsbredde er største minus minste. Relativ usikkerhet bruker ± 0,02 mm, ikke variasjonsbredden.", "\\(250 : 5 = 50\\). \\(50{,}06 - 49{,}94 = 0{,}12\\). \\(0{,}02 : 50 \\cdot 100 = 0{,}04\\)."],
+    losning: "<p>Gjennomsnitt 50,00 mm. Variasjonsbredde 0,12 mm. Absolutt usikkerhet 0,02 mm. Relativ usikkerhet \\(0{,}04\\%\\). Variasjonsbredden er ikke usikkerheten.</p>"
   }
 ]);
