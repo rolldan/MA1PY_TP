@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.2 Pytagoras og 3-4-5-metoden</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.2">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Rammen drar seg">
+    <h2>Er hjørnet fortsatt rett?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="En sveiset rektangulær ramme. Diagonalen kontrollerer om hjørnene er rette">
+        <rect x="50" y="40" width="280" height="180" fill="#fff" stroke="#17202b" stroke-width="4"/>
+        <line x1="50" y1="220" x2="330" y2="40" stroke="var(--kap)" stroke-width="3" stroke-dasharray="7 5"/>
+        <text x="190" y="250" text-anchor="middle" font-size="16">600 mm</text>
+        <text x="360" y="140" font-size="16">800 mm</text>
+        <g data-vis-fra="3">
+          <text x="160" y="130" font-size="18" font-weight="700" fill="var(--kap)">1000 mm</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En stålramme er sveiset 600 mm × 800 mm. Under sveising drar den seg. Vinkelhaken er for kort til å si om hele rammen er rett.</p>
+      <div class="undre" data-hint="Tenk 3-4-5, bare med større tall." data-sekunder="30">Hvor lang bør diagonalen være hvis hjørnene er 90°?</div>
+      <p class="steg">6 og 8 er 3 og 4 ganget med 2. Da er den tredje siden 5 ganget med 2, altså 10.</p>
+      <p class="steg">I millimeter: \(600\), \(800\) og \(1000\). Diagonalen skal være <b>1000 mm</b>.</p>
+      <p class="steg">Måler du 1015 mm, er rammen 15 mm for lang på skrå. Hjørnene er ikke rette.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="3-4-5">
+    <h2>3-4-5 med målebånd</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 260" role="img" aria-label="Rettvinklet trekant med sider 3, 4 og 5">
+        <polygon points="40,210 280,210 280,50" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <path d="M280 180 L250 180 L250 210" fill="none" stroke="var(--kap)" stroke-width="3"/>
+        <text x="150" y="235" text-anchor="middle" font-size="20" font-weight="700">3</text>
+        <text x="300" y="140" font-size="20" font-weight="700">4</text>
+        <text x="140" y="120" font-size="20" font-weight="700" fill="var(--kap)">5</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>På en stor konstruksjon setter du av 3 enheter den ene veien og 4 den andre. Avstanden mellom merkene skal være 5.</p>
+      <div class="undre" data-hint="3 · 3 = 9 og 4 · 4 = 16.">Hvorfor blir det akkurat 5, og ikke 7?</div>
+      <p class="steg">\(3^2 + 4^2 = 9 + 16 = 25\), og \(25 = 5^2\).</p>
+      <p class="steg">Du kan gange alle tre med samme tall: 30-40-50 cm, 300-400-500 mm, 600-800-1000 mm.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Pytagoras</p>
+        <p>I en rettvinklet trekant: \(a^2 + b^2 = c^2\).<br>\(a\) og \(b\) er katetene. \(c\) er hypotenusen, den lengste siden, mot den rette vinkelen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="8-15-17">
+    <h2>Er 8-15-17 rett?</h2>
+    <div class="tekst">
+      <p>En plate er merket 8 cm, 15 cm og 17 cm. Noen fasiter sier at trekanten ikke er rettvinklet. Regn selv.</p>
+      <div class="undre" data-hint="Regn kvadratene, ikke summen av sidene.">Stemmer \(8^2 + 15^2\) med \(17^2\)?</div>
+      <p class="steg">\(8^2 = 64\) og \(15^2 = 225\). Summen er \(64 + 225 = 289\).</p>
+      <p class="steg">\(17^2 = 289\). Likheten stemmer. <b>8-15-17 er rettvinklet.</b></p>
+      <p class="steg">5-7-9 er ikke rettvinklet: \(25 + 49 = 74\), mens \(9^2 = 81\).</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Vanlig feil">
+    <h2>Ikke legg sammen sidene</h2>
+    <div class="tekst">
+      <p>En lærling sier: «3 pluss 4 er 7, så skråsiden er 7.» Rammen blir for lang, og hjørnet blir ikke rett.</p>
+      <div class="undre" data-hint="Du skal legge sammen kvadratene, og deretter ta kvadratrot.">Hva mangler når noen svarer 25 i stedet for 5?</div>
+      <p class="steg">\(3^2 + 4^2 = 25\) er kvadratene. Hypotenusen er \(\sqrt{25} = 5\), ikke 25.</p>
+      <p class="steg">Pytagoras gjelder bare når vinkelen <b>mellom</b> de to korte sidene er 90°.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Kvadrer, legg sammen, ta rot. Og spør: er vinkelen rett? To like diagonaler på en rektangulær ramme er en ekstra sjekk.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../6-1/teori.html">6.1 Vinkler</a> · <a href="../6-3/teori.html">6.3 Areal</a> · <a href="oppgaver.html">Oppgaver 6.2</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

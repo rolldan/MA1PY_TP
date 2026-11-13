@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.5 Slagvolum og tanker</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.5">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Mopeden">
+    <h2>Hvor stor er sylinderen?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 250" role="img" aria-label="Sylinder med boring 47 mm og slag 40 mm">
+        <rect x="140" y="30" width="120" height="180" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <line x1="150" y1="70" x2="250" y2="70" stroke="var(--kap)" stroke-width="3"/>
+        <line x1="150" y1="150" x2="250" y2="150" stroke="var(--kap)" stroke-width="3"/>
+        <line x1="280" y1="70" x2="280" y2="150" stroke="#17202b" stroke-width="2"/>
+        <text x="292" y="116" font-size="16">slag 40 mm</text>
+        <text x="200" y="58" text-anchor="middle" font-size="16">boring 47 mm</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En moped-trimsylinder har boring 47 mm og slag 40 mm. Boring er diameteren. Slag er hvor langt stempelet går.</p>
+      <div class="undre" data-hint="Dette er en sylinder. Radius er halvparten av boringen." data-sekunder="30">Er slagvolumet nærmere 70 cm³ eller 700 cm³?</div>
+      <p class="steg">Radius: \(47 : 2 = 23{,}5\ \text{mm}\).</p>
+      <p class="steg">\(V = \pi \cdot 23{,}5^2 \cdot 40 \approx 69\,400\ \text{mm}^3 \approx 69{,}4\ \text{cm}^3\).</p>
+      <p class="steg">Omtrent 69 cm³. 1 cm³ = 1000 mm³. Glemmer du den omgjøringen, blir svaret tusen ganger for stort.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Volvo B230">
+    <h2>Stemmer 2,3 liter?</h2>
+    <div class="tekst">
+      <p>Volvo B230 har fire sylindre. Boring 96 mm, slag 80 mm. Navnet sier 2,3 liter. Stemmer det?</p>
+      <div class="undre" data-hint="Regn én sylinder, og gang med 4. 1 L = 1 000 000 mm³.">Er fire slike sylindre omtrent 2 liter eller omtrent 8 liter?</div>
+      <p class="steg">Én sylinder: \(r = 48\ \text{mm}\). \(V = \pi \cdot 48^2 \cdot 80 \approx 579\,000\ \text{mm}^3 \approx 579\ \text{cm}^3\).</p>
+      <p class="steg">Fire sylindre: \(4 \cdot 579 \approx 2316\ \text{cm}^3 = 2{,}32\ \text{L}\).</p>
+      <p class="steg">Ja, «2,3 liter» stemmer. Glemmer du å gange med 4, sitter du igjen med 0,58 L.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Slagvolum</p>
+        <p>\(V = \pi r^2 h \cdot n\)<br>\(r\): halve boringen. \(h\): slaglengden. \(n\): antall sylindre.<br>Svar gjerne i cm³ eller liter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="To slanger">
+    <h2>Hver slange, ikke begge</h2>
+    <div class="tekst">
+      <p>En lagertank på 3 000 000 L skal fylles på 48 timer. To like slanger deler jobben.</p>
+      <div class="undre" data-hint="Finn først liter per minutt for begge, og del på 2.">Er én slange nærmere 500 L/min eller 1000 L/min?</div>
+      <p class="steg">48 timer = \(48 \cdot 60 = 2880\) minutter.</p>
+      <p class="steg">Samlet: \(3\,000\,000 : 2880 \approx 1042\ \text{L/min}\).</p>
+      <p class="steg">Per slange: halvparten, omtrent <b>521 L/min</b>. Det er 8,68 L/s. 17,36 L/s er begge slangene, ikke hver av dem.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="1 til 50">
+    <h2>Olje og bensin</h2>
+    <div class="tekst">
+      <p>Mopeden skal ha olje og bensin i forholdet 1 : 50. Du har målt opp 1 dl olje.</p>
+      <div class="undre" data-hint="1 : 50 betyr 1 del olje og 50 deler bensin. Oljen er med i blandingen.">Hvor mange liter blir blandingen, ikke bare bensinen?</div>
+      <p class="steg">Bensin: \(50\ \text{dl} = 5{,}0\ \text{L}\).</p>
+      <p class="steg">Hele blandingen: \(1 + 50 = 51\ \text{dl} = 5{,}1\ \text{L}\).</p>
+      <p class="steg">«50 dl = 5 liter» er bare bensinen. Glemmer du oljen, blir blandingen 1 dl for liten, og forholdet stemmer ikke med det du heller i.</p>
+      <p class="se-ogsa steg"><a href="../6-4/teori.html">6.4 Volum</a> · <a href="../6-6/teori.html">6.6 Målestokk</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

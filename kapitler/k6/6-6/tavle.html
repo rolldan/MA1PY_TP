@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.6 Målestokk og arbeidstegninger</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.6">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Arbeidstegningen">
+    <h2>1 cm på arket er ikke 1 cm i verkstedet</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 250" role="img" aria-label="En arbeidstegning i målestokk 1 til 5 av en kasse, og kassen i virkelig størrelse">
+        <rect x="30" y="70" width="80" height="50" fill="#fff" stroke="#17202b" stroke-width="2"/>
+        <text x="70" y="100" text-anchor="middle" font-size="14">8 cm</text>
+        <text x="70" y="145" text-anchor="middle" font-size="14">1 : 5</text>
+        <line x1="140" y1="100" x2="190" y2="100" stroke="var(--kap)" stroke-width="3"/>
+        <polygon points="185,94 200,100 185,106" fill="var(--kap)"/>
+        <rect x="220" y="40" width="180" height="140" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="310" y="115" text-anchor="middle" font-size="18" font-weight="700">40 cm</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En arbeidstegning av en kasse er i målestokk 1 : 5. På arket er kassen 8 cm lang, 5 cm bred og 4 cm høy. Målene på tegningen er tegnemål. Du skal lage tingen i virkelig størrelse.</p>
+      <div class="undre" data-hint="1 : 5 betyr at virkeligheten er 5 ganger tegningen." data-sekunder="30">Hvor lang er kassen i verkstedet?</div>
+      <p class="steg">1 : 5 betyr at 1 cm på tegningen er 5 cm i virkeligheten. Gang alle lengder med 5.</p>
+      <p class="steg">\(8 \cdot 5 = 40\) cm, \(5 \cdot 5 = 25\) cm, \(4 \cdot 5 = 20\) cm.</p>
+      <p class="steg">Volumet er \(40 \cdot 25 \cdot 20 = 20\,000\) cm³ \(= 20\) L. Ikke \(8 \cdot 5 \cdot 4 = 160\) cm³. Det er volumet av tegningen, ikke av kassen.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Målestokk-fellen">
+    <h2>Halve sidene, åttendedels volum</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="En stor boks og en modell i målestokk 1 til 2 som er mye mindre enn halvparten">
+        <rect x="30" y="40" width="176" height="150" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="118" y="120" text-anchor="middle" font-size="16">11 × 6 × 5 cm</text>
+        <text x="118" y="145" text-anchor="middle" font-size="16">330 cm³</text>
+        <rect x="280" y="115" width="88" height="75" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+        <text x="324" y="150" text-anchor="middle" font-size="13" fill="var(--kap)">1 : 2</text>
+        <g data-vis-fra="3">
+          <text x="324" y="210" text-anchor="middle" font-size="16" font-weight="700" fill="#15803d">41 cm³</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Figur B er brusboksen din i målestokk 1 : 2. Alle lengder halveres. Modellen kuttes i papp og testes med sand.</p>
+      <div class="undre" data-hint="Volum skalerer med lengdefaktoren tre ganger: en halv · en halv · en halv.">Rommer modellen 165 cm³ eller noe mye mindre?</div>
+      <p class="steg">Målene blir 5,5 cm, 3 cm og 2,5 cm.</p>
+      <p class="steg">\(5{,}5 \cdot 3 \cdot 2{,}5 = 41{,}25\) cm³.</p>
+      <p class="steg">\(330 : 8 = 41{,}25\). Halvparten hadde vært 165 cm³. Det er målestokk-fellen. Lengde blir \(1/2\), areal \(1/4\), volum \(1/8\).</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Forstørret">
+    <h2>Liten pinne, stor tegning</h2>
+    <div class="tekst">
+      <p>En pinne er 12 mm i virkeligheten. Tegningen er i 5 : 1, altså forstørret. Det brukes når delen er for liten til å ses tydelig i 1 : 1.</p>
+      <div class="undre" data-hint="5 : 1 betyr at tegningen er 5 ganger virkeligheten.">Hvor lang er pinnen på arket?</div>
+      <p class="steg">\(12 \cdot 5 = 60\) mm på tegningen.</p>
+      <p class="steg">Leser du 60 mm som et verkstedmål, lager du en pinne som er fem ganger for lang.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Målestokk</p>
+        <p>Målestokk = tegning : virkelighet.<br>
+        1 : n betyr at virkeligheten er n ganger tegningen.<br>
+        n : 1 betyr at tegningen er n ganger virkeligheten.<br>
+        Arbeidstegningen har mål i millimeter. Ikke mål på papiret hvis målet står påskrevet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Sandtesten">
+    <h2>Stemmer boksen?</h2>
+    <div class="tekst">
+      <p>Etter kutt og montering heller du sand eller sagflis i figur A og i modellen. 1 cm³ = 1 ml.</p>
+      <div class="undre" data-hint="Figur A skal ta 330 ml. Modellen skal ta 41 ml.">Hva gjør du hvis figur A bare tar 280 ml?</div>
+      <p class="steg">Da er et mål for lite, eller du har regnet utvendig volum. Rett regnestykket før du kutter på nytt.</p>
+      <p class="steg">Tar modellen omtrent 165 ml, har du halvert volumet i stedet for sidene. Lag ny modell i ekte 1 : 2.</p>
+      <p class="steg">1 : 50 på et kart: både «1 cm er 50 cm» og «1 m er 50 m» er rett. Det er samme forhold.</p>
+      <p class="se-ogsa steg"><a href="../6-4/verksted.html">6.4 Design av boksen</a> · <a href="verksted.html">Kutt og test</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

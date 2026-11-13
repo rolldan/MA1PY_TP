@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 6.2 Pytagoras og 3-4-5-metoden</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="6" data-del="6.2">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Geometri · Pytagoras</p>
+  <h1>Pytagoras og 3-4-5-metoden</h1>
+  <p class="ingress">Store stålkonstruksjoner kontrolleres med målebånd. En rett vinkel gir en bestemt skrålengde, og den kan du regne ut.</p>
+
+  <ul class="laeringsmal">
+    <li>bruke \(a^2 + b^2 = c^2\) til å finne en side i en rettvinklet trekant</li>
+    <li>kontrollere en rett vinkel med 3-4-5 og med diagonaler</li>
+    <li>avgjøre om en trekant er rettvinklet</li>
+  </ul>
+
+  <ol class="kjede"><li>finn den rette vinkelen</li><li>kvadrer</li><li>legg sammen eller trekk fra</li><li>ta kvadratrot</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>En sveiset ramme «drar seg». Hjørnet som var 90° før sveising, er det ikke sikkert etterpå. På en stor ramme er vinkelhaken for kort. Da måler du diagonalene, eller du setter av 3-4-5 med målebånd.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>I en rettvinklet trekant kalles de to korte sidene kateter. Den lengste, mot den rette vinkelen, er hypotenusen. Kvadratet på hypotenusen er lik summen av kvadratene på katetene:</p>
+  <p>\(a^2 + b^2 = c^2\).</p>
+  <p>3-4-5 er den enkleste talltrioen: \(9 + 16 = 25\). Ganger du alle tre tallene med samme tall, virker den fortsatt. 300 mm, 400 mm og 500 mm er like rett som 3, 4 og 5.</p>
+  <p>Kjenner du hypotenusen og én katet, bytter du om: \(a^2 = c^2 - b^2\). Så tar du kvadratrot.</p>
+  <p>Skal du <b>teste</b> om en vinkel er rett, regner du begge sider av likheten. Er de like, er vinkelen rett. Er de ulike, er den ikke rett.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(c = \sqrt{a^2 + b^2}\) når du skal finne hypotenusen.<br>
+    \(a = \sqrt{c^2 - b^2}\) når du skal finne en katet.</p>
+    <p>3-4-5, 6-8-10 og 9-12-15 er samme form, bare skalert. 8-15-17 er også rettvinklet, fordi \(64 + 225 = 289\).</p>
+    <p>På en rektangulær ramme skal de to diagonalene være like lange.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: ramme 600 mm × 800 mm</h3>
+    <p>Finn diagonalen hvis hjørnene er rette.</p>
+    <ol class="steg-liste">
+      <li class="steg">\(600^2 = 360\,000\) og \(800^2 = 640\,000\).</li>
+      <li class="steg">Summen er \(360\,000 + 640\,000 = 1\,000\,000\).</li>
+      <li class="steg">\(\sqrt{1\,000\,000} = 1000\). Diagonalen skal være 1000 mm. Det er 3-4-5 ganget med 200.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>3 + 4 er ikke 5. Du skal legge sammen <b>kvadratene</b>, og deretter ta kvadratrot. Svarer du 25, har du glemt rota. Og 8-15-17 <b>er</b> rettvinklet: \(8^2 + 15^2 = 64 + 225 = 289 = 17^2\). En fasit som sier «nei» på den trioen, er feil.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Et skråstag går 3 m ut fra veggen og 4 m opp. Hvor langt er staget?</p>
+    <div class="fasit">5 m</div>
+    <div class="losning">\(3^2 + 4^2 = 9 + 16 = 25\), og \(\sqrt{25} = 5\). Staget er 5 m. Det er 3-4-5 i meter.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>På kalkulatoren:</b> kvadrat er \(x^2\), kvadratrot er \(\sqrt{\ }\). Regn \(3^2 + 4^2\) først og sjekk at du får 25, før du stoler på et lengre regnestykke. To diagonaler som ikke er like, betyr at rammen ikke er rettvinklet, selv om sidene er riktige.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

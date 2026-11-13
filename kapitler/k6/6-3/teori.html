@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 6.3 Omkrets og areal</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="6" data-del="6.3">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Geometri · Areal</p>
+  <h1>Omkrets og areal</h1>
+  <p class="ingress">Plate, hull, stempel og et halvsirkelformet vern. Omkrets er kanten. Areal er flaten. Ikke bytt ordene.</p>
+
+  <ul class="laeringsmal">
+    <li>regne omkrets og areal av rektangel, trekant og sirkel</li>
+    <li>legge sammen og trekke fra i sammensatte figurer</li>
+    <li>oppdage når et areal-svar er urimelig</li>
+  </ul>
+
+  <ol class="kjede"><li>del opp figuren</li><li>velg formel</li><li>bruk samme enhet</li><li>sjekk med overslag</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>En standard plate kan være 2000 mm × 1000 mm. Braketter på 250 mm × 180 mm skal kappes ut. Før du bestiller, trenger du både hvor mange du får plass til, og hvor mange prosent som blir svinn.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Omkrets er summen av kantene. Areal er flaten inni. For et rektangel er omkretsen \(2l + 2b\) og arealet \(l \cdot b\). For en trekant er arealet \(\dfrac{g \cdot h}{2}\), der \(h\) står vinkelrett på grunnlinjen \(g\).</p>
+  <p>I en sirkel er alle punkt på streken like langt fra sentrum. Den avstanden er radius \(r\). Diameteren er \(d = 2r\). Omkretsen er \(\pi d\). Arealet er \(\pi r^2\). Bruk \(\pi\)-tasten. 3,14 er nært nok til et overslag.</p>
+  <p>En halvsirkel har bue \(\pi r\) og rett kant \(2r\). Arealet er halvparten av sirkelarealet, \(\dfrac{\pi r^2}{2}\).</p>
+  <p>Sammensatt figur: regn delene hver for seg. Hull trekkes fra. Hold én enhet, for eksempel cm, gjennom hele stykket.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Rektangel: \(A = l \cdot b\).<br>
+    Trekant: \(A = \dfrac{g \cdot h}{2}\).<br>
+    Sirkel: \(O = \pi d = 2\pi r\) og \(A = \pi r^2\).<br>
+    Halvsirkel, omkrets: \(\pi r + 2r\). Halvsirkel, areal: \(\dfrac{\pi r^2}{2}\).</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: vern og stempel</h3>
+    <p>Et vern er en halvsirkel med radius 3 cm. Et stempel har radius 42 mm. Finn omkretsen av vernet og arealet av stempelbunnen.</p>
+    <ol class="steg-liste">
+      <li class="steg">Vern, bue: \(\pi \cdot 3 \approx 9{,}42\ \text{cm}\). Rett kant: 6 cm. Omkrets \(\approx 15{,}4\ \text{cm}\).</li>
+      <li class="steg">Stempel: \(A = \pi \cdot 42^2 = \pi \cdot 1764 \approx 5542\ \text{mm}^2\). Dette er et <b>areal</b>, ikke en omkrets.</li>
+      <li class="steg">Overslag på stempelet: \(40 \cdot 40 \cdot 3 = 4800\ \text{mm}^2\). 5542 ligger rett over. Et svar på noen få hundre mm² er galt.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Ikke kall arealet for omkrets. Omkrets er en lengde (cm). Areal er en flate (cm²). Halvsirkel med radius 3 cm har omkrets omtrent <b>15,4 cm</b>, ikke 24,8 cm. Den feilen kommer av å bruke \(\pi \cdot d\) som bue. Stempel med radius 42 mm har areal omtrent <b>5542 mm²</b>, ikke 364 mm². Et halvsirkeldeksel med diameter 125 mm har areal omtrent <b>6136 mm²</b>: radius er 62,5 mm, og du deler sirkelarealet på 2.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Et blinddeksel er en halvsirkel med diameter 125 mm. Hvor stort er arealet, i mm²?</p>
+    <div class="fasit">omtrent 6136 mm²</div>
+    <div class="losning">Radius er \(125 : 2 = 62{,}5\) mm. \(A = \pi \cdot 62{,}5^2 / 2 \approx 6136\ \text{mm}^2\). Ikke bruk 125 som radius, og ikke glem å dele på 2.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Kutteplan:</b> Tegn plata som et rektangel og delene inni, samme veg. Antall på langs ganger antall på tvers. Svinn i prosent er restareal delt på plateareal, ganget med 100. Det er prosenten fra kapittel 3.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>
