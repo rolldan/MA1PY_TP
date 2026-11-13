@@ -106,5 +106,99 @@ Bok.oppgaver([
     ],
     hint: ["9-12-15 er 3-4-5 ganget med 3. Du kan også regne kvadratene.", "81 + 144 = 225, og \\(\\sqrt{225} = 15\\)."],
     losning: "<p>\\(9^2 + 12^2 = 81 + 144 = 225 = 15^2\\). Hypotenusen er 15 cm. Trioen er 3-4-5 ganget med 3.</p>"
+  },
+  {
+    id: "benk-130",
+    niva: "lett",
+    tittel: "Anlegg på benken",
+    tekst: "<p>Et anlegg går 50 mm bort og 120 mm opp. Hvor langt er skråstrekket?</p>",
+    steg: [{ verdi: 2500 }, { verdi: 14400 }, { verdi: 16900 }],
+    svar: { verdi: 130, enhet: "mm" },
+    hint: ["\\(c = \\sqrt{50^2 + 120^2}\\). 5-12-13 ganget med 10 gir samme svar.", "2500 + 14 400 = 16 900, og \\(\\sqrt{16\\,900} = 130\\)."],
+    losning: "<p>\\(50^2 + 120^2 = 2500 + 14\\,400 = 16\\,900\\). \\(\\sqrt{16\\,900} = 130\\). Skråstrekket er 130 mm.</p>"
+  },
+  {
+    id: "skrustikke-250",
+    niva: "lett",
+    tekst: "<p>Fra et hjørne setter du av 150 mm den ene veien og 200 mm den andre. Hvor langt skal det være mellom merkene hvis hjørnet er 90°?</p>",
+    steg: [{ verdi: 22500 }, { verdi: 40000 }, { verdi: 62500 }],
+    svar: { verdi: 250, enhet: "mm" },
+    hint: ["150-200-250 er 3-4-5 ganget med 50.", "\\(150^2 + 200^2 = 22\\,500 + 40\\,000 = 62\\,500\\), og rota er 250."],
+    losning: "<p>\\(\\sqrt{150^2 + 200^2} = \\sqrt{62\\,500} = 250\\). Avstanden skal være 250 mm.</p>"
+  },
+  {
+    id: "kvadrat-141",
+    niva: "lett",
+    tittel: "Diagonal i kvadratplate",
+    tekst: "<p>En kvadratisk dekkplate er 100 mm × 100 mm. Hvor lang er diagonalen? Rund av til én desimal.</p>",
+    steg: [{ verdi: 10000 }, { verdi: 20000 }],
+    svar: { verdi: 141.4, enhet: "mm", tol: 0.5 },
+    hint: ["\\(c = \\sqrt{100^2 + 100^2}\\).", "10 000 + 10 000 = 20 000. Kvadratroten er omtrent 141,4 mm."],
+    losning: "<p>\\(\\sqrt{100^2 + 100^2} = \\sqrt{20\\,000} \\approx 141{,}4\\) mm.</p>"
+  },
+  {
+    id: "ikke-rett-11",
+    niva: "lett",
+    tekst: "<p>En trekant har sider 6 cm, 8 cm og 11 cm. Er vinkelen mellom de to korte sidene rett?</p>",
+    steg: [{ verdi: 36 }, { verdi: 64 }, { verdi: 100 }, { verdi: 121 }],
+    svar: { valg: ["Nei", "Ja"], riktig: 0, forklaring: "36 + 64 = 100, men 11² = 121." },
+    hint: ["Sjekk om \\(6^2 + 8^2\\) er lik \\(11^2\\).", "36 + 64 = 100. 11² = 121. 100 er ikke 121, så vinkelen er ikke rett."],
+    losning: "<p>\\(6^2 + 8^2 = 100\\), mens \\(11^2 = 121\\). Summen av kvadratene er mindre, så vinkelen er ikke rett. 6-8-10 hadde vært rett. 11 cm er for langt.</p>"
+  },
+  {
+    id: "takstol-26",
+    niva: "middels",
+    tittel: "Sperre i leskuret",
+    tekst: "<p>En takstol går 2,4 m vannrett ut fra midten og 1,0 m opp. Hvor lang er sperra?</p>",
+    steg: [{ verdi: 5.76 }, { verdi: 1 }, { verdi: 6.76 }],
+    svar: { verdi: 2.6, enhet: "m" },
+    hint: ["\\(c = \\sqrt{2{,}4^2 + 1{,}0^2}\\).", "2,4² = 5,76. 5,76 + 1 = 6,76, og \\(\\sqrt{6{,}76} = 2{,}6\\)."],
+    losning: "<p>\\(2{,}4^2 + 1^2 = 5{,}76 + 1 = 6{,}76\\). \\(\\sqrt{6{,}76} = 2{,}6\\). Sperra er 2,6 m. Trioen 1,0-2,4-2,6 er 5-12-13 ganget med 0,2.</p>"
+  },
+  {
+    id: "port-hoyde",
+    niva: "middels",
+    tekst: "<p>Diagonalen i en port skal være 1300 mm, og bredden er 500 mm. Hjørnene er 90°. Hvor høy er porten?</p>",
+    steg: [{ verdi: 1690000 }, { verdi: 250000 }, { verdi: 1440000 }],
+    svar: { verdi: 1200, enhet: "mm" },
+    hint: ["Du kjenner hypotenusen. \\(a = \\sqrt{1300^2 - 500^2}\\).", "1 690 000 − 250 000 = 1 440 000. \\(\\sqrt{1\\,440\\,000} = 1200\\)."],
+    losning: "<p>\\(h = \\sqrt{1300^2 - 500^2} = \\sqrt{1\\,440\\,000} = 1200\\). Porten er 1200 mm høy. 500-1200-1300 er 5-12-13 ganget med 100.</p>"
+  },
+  {
+    id: "kontroll-250",
+    niva: "middels",
+    tittel: "7-24-25 i millimeter",
+    tekst: "<p>Et stag har sider 70 mm, 240 mm og 250 mm. Den rette vinkelen, hvis den finnes, ligger mellom de to korte sidene.</p>",
+    steg: [{ verdi: 4900 }, { verdi: 57600 }, { verdi: 62500 }],
+    svar: { valg: ["Ja, trekanten er rettvinklet", "Nei, kvadratene stemmer ikke"], riktig: 0, forklaring: "4900 + 57 600 = 62 500 = 250²." },
+    hint: ["Sammenlign \\(70^2 + 240^2\\) med \\(250^2\\).", "4900 + 57 600 = 62 500, og 250² = 62 500. Likheten stemmer."],
+    losning: "<p>\\(70^2 + 240^2 = 4900 + 57\\,600 = 62\\,500 = 250^2\\). Ja, staget er rettvinklet. Det er 7-24-25 ganget med 10.</p>"
+  },
+  {
+    id: "port-diagonal",
+    niva: "vanskelig",
+    tittel: "To diagonaler i porten",
+    tekst: "<p>En port er 1,5 m bred og 2,0 m høy. Du måler diagonalene til 2,48 m og 2,53 m.</p>",
+    steg: [{ verdi: 2.25 }, { verdi: 4 }, { verdi: 6.25 }],
+    deler: [
+      { tekst: "Hvor lang skal hver diagonal være?", svar: { verdi: 2.5, enhet: "m" } },
+      { tekst: "Hvor mange millimeter er den lengste diagonalen for lang?", svar: { verdi: 30, enhet: "mm" } },
+      { tekst: "Er hjørnene rette?", svar: { valg: ["Nei, diagonalene er ulike", "Ja, begge er nær nok"], riktig: 0 } }
+    ],
+    hint: ["1,5-2,0-2,5 er 3-4-5 ganget med 0,5. Gjør deretter avviket om til millimeter.", "\\(1{,}5^2 + 2^2 = 6{,}25\\), rota er 2,5 m. 2,53 − 2,50 = 0,03 m = 30 mm."],
+    losning: "<p>\\(\\sqrt{1{,}5^2 + 2^2} = \\sqrt{6{,}25} = 2{,}5\\) m. Den lengste diagonalen er 30 mm for lang, den korteste 20 mm for kort. Ulike diagonaler betyr at hjørnene ikke er rette.</p>"
+  },
+  {
+    id: "etter-sveis",
+    niva: "vanskelig",
+    tittel: "Etter sveising",
+    tekst: "<p>Før sveising satte du av 600 mm og 800 mm fra hjørnet for en 3-4-5-kontroll. Etter sveising er avstanden mellom merkene 1020 mm. Konstruksjonen har dratt seg.</p>",
+    deler: [
+      { tekst: "Hvor lang skal avstanden være hvis hjørnet er 90°?", svar: { verdi: 1000, enhet: "mm" } },
+      { tekst: "Hvor mange millimeter er målet for langt?", svar: { verdi: 20, enhet: "mm" } },
+      { tekst: "Hva betyr det for hjørnet?", svar: { valg: ["Hjørnet er ikke lenger 90°", "Hjørnet er fortsatt 90°, målebåndet er bare feil merket"], riktig: 0 } }
+    ],
+    hint: ["600-800-1000 er 3-4-5 ganget med 200.", "Riktig skråmål er 1000 mm. 1020 − 1000 = 20. Et annet mål enn 1000 mm betyr at vinkelen har endret seg."],
+    losning: "<p>\\(600^2 + 800^2 = 1\\,000\\,000\\), og rota er 1000 mm. Målt 1020 mm er 20 mm for langt. Hjørnet er ikke 90° lenger. På store konstruksjoner er det derfor målebåndet, ikke den korte vinkelhaken, som viser om sveisen har dratt rammen.</p>"
   }
 ]);
