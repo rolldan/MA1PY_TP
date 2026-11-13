@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 5.6 Skjærehastighet og turtall</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="5" data-del="5.6">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Formler · fra verkstedet</p>
+  <h1>Skjærehastighet og turtall</h1>
+  <p class="ingress">Maskinen stilles i omdreininger per minutt. Verktøyet tåler en fart i meter per minutt. Formelen og nomogrammet kobler de to, før du starter dreiebenken eller søyleboret.</p>
+
+  <ul class="laeringsmal">
+    <li>regne skjærehastighet i m/min</li>
+    <li>finne turtall når diameter og skjærehastighet er kjent</li>
+    <li>lese et nomogram og sjekke med formelen</li>
+    <li>bruke håndformelen for liten innstillingsvinkel</li>
+  </ul>
+
+  <ol class="kjede"><li>les d og materiale</li><li>finn \(v_c\)</li><li>regn \(n\)</li><li>sjekk nomogram</li><li>still inn</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Et 5 mm bor og et 25 mm bor står på samme maskin, 500 r/min. Nora skal i tillegg dreie en aksel til Ø64 mm ± 0,2 mm fra et emne på Ø70 mm. Farten og grensemålet må være klare før spindelen går.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Når du dreier, roterer arbeidsstykket. Når du borer eller freser, roterer verktøyet. Skjærehastigheten er farten til kanten som skjærer, i meter per minutt.</p>
+  <p>Omkretsen er \(\pi \cdot d\) millimeter. På ett minutt blir det \(\pi \cdot d \cdot n\) millimeter. Delt på 1000 er det meter. Derfor står 1000 i formelen: \(d\) er i mm, og \(v_c\) er i m/min.</p>
+  <p>Samme turtall og fem ganger så stor diameter gir fem ganger så høy skjærehastighet. Det er derfor det store boret blir varmt først.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(v_c = \dfrac{\pi \cdot d \cdot n}{1000}\)</p>
+    <p>\(n = \dfrac{1000 \cdot v_c}{\pi \cdot d}\)</p>
+    <p>\(v_c\) i m/min, \(d\) i mm, \(n\) i r/min. Bruk π-knappen. Eske på verktøyet gjelder foran en huskeliste.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: to bor på 500 r/min</h3>
+    <p>Begge borene går på 500 r/min.</p>
+    <ol class="steg-liste">
+      <li class="steg">5 mm: \(v_c = \pi \cdot 5 \cdot 500 : 1000 = 2{,}5\pi \approx 7{,}9\) m/min.</li>
+      <li class="steg">25 mm: \(v_c = \pi \cdot 25 \cdot 500 : 1000 = 12{,}5\pi \approx 39{,}3\) m/min.</li>
+      <li class="steg">\(39{,}3 : 7{,}9 = 5\). Forholdet er det samme som 25 : 5. Det store boret skjærer fem ganger så fort.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Skjærehastigheten får enheten r/min. 20 m/min er ikke 20 r/min. En annen feil er å glemme 1000, slik at 7,9 m/min blir 7900. Spør: kan kanten på et lite bor gå flere kilometer i minuttet? Hvis svaret kjennes som motorveifart, mangler du delingen.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Et 10 mm bor skal gå med 30 m/min i stål. Hvilket turtall stiller du, avrundet til hele r/min?</p>
+    <div class="fasit">955 r/min</div>
+    <div class="losning">\(n = 1000 \cdot 30 : (\pi \cdot 10) \approx 955\) r/min. Velg nærmeste gir på maskinen, og sjekk at det ikke ligger langt over.</div>
+  </div>
+
+  <h2>Nomogram</h2>
+  <p>Tre loddrette skalaer: diameter til venstre, turtall i midten, skjærehastighet til høyre. Legg en linjal fra \(d\) til \(v_c\), og les \(n\) der linjen krysser midten. Figuren under er logaritmisk, så like steg på papiret er ikke like steg i tallet.</p>
+  <div class="figur">
+    <svg viewBox="0 0 500 320" role="img" aria-label="Nomogram for omdreiningstall. Linje for 5 mm og 7,9 m/min og linje for 25 mm og 39 m/min møtes på 500 r/min.">
+      <line x1="70" y1="36" x2="70" y2="284" stroke="#17202b" stroke-width="2"/>
+      <line x1="240" y1="36" x2="240" y2="284" stroke="#17202b" stroke-width="2"/>
+      <line x1="410" y1="36" x2="410" y2="284" stroke="#17202b" stroke-width="2"/>
+      <text x="70" y="22" text-anchor="middle" font-size="14" font-weight="700">d (mm)</text>
+      <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="700">n (r/min)</text>
+      <text x="410" y="22" text-anchor="middle" font-size="14" font-weight="700">v (m/min)</text>
+      <line x1="70" y1="284" x2="410" y2="76" stroke="var(--kap)" stroke-width="2"/>
+      <line x1="70" y1="140" x2="410" y2="220" stroke="#1d4ed8" stroke-width="2"/>
+      <circle cx="240" cy="180" r="5" fill="var(--kap)"/>
+      <g font-size="12" fill="#17202b">
+        <g text-anchor="end">
+          <text x="62" y="288">5</text><text x="62" y="226">10</text><text x="62" y="164">20</text><text x="62" y="144">25</text><text x="62" y="102">40</text><text x="62" y="40">80</text>
+        </g>
+        <g text-anchor="start">
+          <text x="248" y="112">100</text><text x="248" y="143">200</text><text x="228" y="176" text-anchor="end">500</text><text x="248" y="215">1000</text><text x="248" y="246">2000</text>
+        </g>
+        <g text-anchor="start">
+          <text x="418" y="40">5</text><text x="418" y="102">10</text><text x="418" y="164">20</text><text x="418" y="226">40</text><text x="418" y="288">80</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <p>Den røde linja er 5 mm og omtrent 8 m/min. Den blå er 25 mm og omtrent 39 m/min. Begge treffer 500 r/min. Les av nærmeste verdi, og regn etter. Mer enn 10 % avvik betyr at linjen eller formelen bør sjekkes på nytt.</p>
+
+  <h2>Grensemål før du dreier</h2>
+  <p>Nora skal til Ø64 mm ± 0,2 mm. Øvre grensemål er 64,2 mm, nedre er 63,8 mm. Emnet er Ø70 mm. Kuttdybde er hvor dypt stålet tar, målt på radien, altså halvparten av det som tas av på diameteren.</p>
+  <p>Største kuttdybde uten å komme under 63,8 mm: \((70 - 63{,}8) : 2 = 3{,}1\) mm. Sikter hun på 64,0 mm, er kuttdybden 3,0 mm. Hun har 0,1 mm å gå på før nedre grense.</p>
+
+  <h2>Konus og innstillingsvinkel</h2>
+  <p>For en slak konus, under omtrent 10°, er innstillingsvinkelen på toppsleiden omtrent</p>
+  <div class="regel">
+    <h3>Håndformel</h3>
+    <p>\(\alpha \approx \dfrac{(D - d) \cdot 29}{L}\)</p>
+    <p>\(D\) stor diameter, \(d\) liten diameter, \(L\) lengde, alle i mm. \(\alpha\) i grader. Formelen er en forenkling og skal ikke brukes på en 45° fas.</p>
+  </div>
+  <div class="eksempel">
+    <h3>Eksempel: slak konus</h3>
+    <p>\(D = 50\) mm, \(d = 40\) mm, \(L = 145\) mm.</p>
+    <ol class="steg-liste">
+      <li class="steg">Differansen i diameter: \(50 - 40 = 10\) mm.</li>
+      <li class="steg">\(\alpha \approx 10 \cdot 29 : 145 = 290 : 145 = 2\) grader.</li>
+      <li class="steg">2° er godt under 10°, så håndformelen er på sin plass.</li>
+    </ol>
+  </div>
+  <div class="vanlig-feil">
+    <p>Halve vinkelen. En kjørner tegnet med 60° mellom sidene er toppvinkelen. Toppsleiden følger den ene siden mot senterlinja, så den stilles på 30°. Stiller du 60°, blir spissen dobbelt så butt som tegningen.</p>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Regneark.</b> Én rute for \(d\), én for \(v_c\), og formelen <b>= 1000 * vc / (PI() * d)</b> for turtallet. Bytt tall uten å bygge formelen på nytt. Nomogrammet på denne siden og skjemaet på <a href="verksted.html">verkstedkortet</a> brukes sammen.</p>
+    <p>Slagvolum og sylindervolum kommer i kapittel 6.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

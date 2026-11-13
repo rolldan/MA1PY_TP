@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 5.5 Utveksling</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="5" data-del="5.5">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Formler · fra verkstedet</p>
+  <h1>Utveksling</h1>
+  <p class="ingress">Reimskiver på søyleboremaskinen, kjede på mopeden og tannhjul i en vinsj gjør den samme jobben: de bytter turtall mot kraft. Formelen er den samme.</p>
+
+  <ul class="laeringsmal">
+    <li>bruke \(n_1 \cdot d_1 = n_2 \cdot d_2\)</li>
+    <li>bruke samme formel med antall tenner</li>
+    <li>avgjøre om turtallet går opp eller ned</li>
+  </ul>
+
+  <ol class="kjede"><li>hvem driver?</li><li>sett inn</li><li>regn ut</li><li>sjekk retningen</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Motoren på søyleboremaskinen går på 1400 r/min. Du flytter reima fra en liten skive på 50 mm til en stor på 200 mm ved spindelen, fordi rustfritt vil ha lavt turtall. På mopeden teller du 11 tenner foran og 55 bak.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Reima, kjedet eller tennene som griper i hverandre, har samme fart der de møtes. Et stort hjul har lengre vei rundt, så det bruker lengre tid på én omdreining. Turtallet blir lavere. Til gjengjeld blir momentet større.</p>
+  <p>Indeks 1 er det drivende hjulet. Indeks 2 er det drevne. Diameteren kan stå i mm på begge, for enhetene forkortes bort. Tennene \(z\) brukes på samme måte som diameteren.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(n_1 \cdot d_1 = n_2 \cdot d_2\)</p>
+    <p>\(n_2 = \dfrac{n_1 \cdot d_1}{d_2}\)</p>
+    <p>Med tenner: \(n_1 \cdot z_1 = n_2 \cdot z_2\).</p>
+    <p>Utvekslingen \(i = \dfrac{n_1}{n_2} = \dfrac{d_2}{d_1} = \dfrac{z_2}{z_1}\) når hjul 1 driver.</p>
+    <p>Lita driver stor: turtall ned, moment opp. Stor driver lita: turtall opp, moment ned.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: søyleboremaskin</h3>
+    <p>Motor 1400 r/min, skive 50 mm. Spindelskive 200 mm.</p>
+    <ol class="steg-liste">
+      <li class="steg">Motoren driver, så \(n_1 = 1400\) og \(d_1 = 50\). \(d_2 = 200\).</li>
+      <li class="steg">\(n_2 = 1400 \cdot 50 : 200\).</li>
+      <li class="steg">\(1400 \cdot 50 = 70\,000\), og \(70\,000 : 200 = 350\). Boret går på 350 r/min.</li>
+      <li class="steg">Den drevne skiva er større, og 350 er mindre enn 1400. Retningen stemmer.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Brøken snus, så den store skiva får høyere turtall enn den lille. Da har \(d_1\) og \(d_2\) byttet plass. Spør først: blir hjulet jeg regner på, større eller mindre enn det som driver? Større hjul skal få lavere turtall.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Moped: 11 tenner foran driver 55 tenner bak. Motoren ligger på 6000 r/min. Hva er turtallet på bakhjulet?</p>
+    <div class="fasit">\(1200\) r/min</div>
+    <div class="losning">\(n_2 = 6000 \cdot 11 : 55 = 1200\) r/min. Utvekslingen er \(55 : 11 = 5\).</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Maskinen av.</b> Tell tenner eller mål skiver bare når reima står og støpselet er ute. Skriv tallene i skjemaet på <a href="verksted.html">verkstedkortet</a>, og regn før noen starter maskinen.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

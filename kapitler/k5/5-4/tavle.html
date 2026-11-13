@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 5.4 Dreiemoment</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="5" data-del="5.4">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Latmannsarm">
+    <h2>Hvorfor hjelper et langt rør?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 230" role="img" aria-label="Mutter i sentrum og en lang arm. Kraften virker ytterst">
+        <line x1="80" y1="120" x2="360" y2="120" stroke="#17202b" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="80" cy="120" r="22" fill="#fff" stroke="var(--kap)" stroke-width="4"/>
+        <text x="80" y="126" text-anchor="middle" font-size="14" font-weight="700">M</text>
+        <g data-vis-fra="2">
+          <line x1="360" y1="70" x2="360" y2="120" stroke="var(--kap)" stroke-width="3"/>
+          <polygon points="360,58 352,78 368,78" fill="var(--kap)"/>
+          <text x="378" y="90" font-size="16" font-weight="700" fill="var(--kap)">F</text>
+          <text x="220" y="150" text-anchor="middle" font-size="16">a</text>
+        </g>
+        <text x="220" y="200" text-anchor="middle" font-size="16" fill="#5b6675">Lang arm, mindre kraft for samme moment</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En mutter sitter fast. Den korte skralle holder ikke. Et rør på skaftet, en latmannsarm, løsner den.</p>
+      <div class="undre" data-hint="Du bruker samme kropp. Armen er det som endrer seg." data-sekunder="30">Blir du sterkere av røret, eller flytter du kraften lenger ut?</div>
+      <p class="steg">Moment er kraft ganger arm: \(M = F \cdot a\).</p>
+      <p class="steg">Armen \(a\) måles i meter, fra senter av bolten til der hånda drar. Kraften \(F\) er i newton. Momentet \(M\) er i newtonmeter, Nm.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>\(M = F \cdot a\). Lengre arm gir større moment når kraften er den samme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Enheter">
+    <h2>Nm, ikke N</h2>
+    <div class="tekst">
+      <p>Verkstedhåndboka sier at en mutter krever 1000 Nm for å løsne. En lærling leser «1000 N» og regner feil.</p>
+      <div class="undre" data-hint="N er kraft. Nm er kraft ganger meter." data-sekunder="30">Hva mangler i enheten hvis det bare står N?</div>
+      <p class="steg">1000 N er en kraft. 1000 Nm er et moment. Her er kravet 1000 Nm.</p>
+      <p class="steg">Tommelfingerregel i dette kapitlet: 1 kg tilsvarer omtrent 10 N. 70 kg er omtrent 700 N.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Moment i <b>Nm</b>, kraft i <b>N</b>, arm i <b>m</b>. 50 cm = 0,5 m. 40 cm = 0,4 m. 1000 mm = 1 m.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Topplokk">
+    <h2>Hvor hardt må du dra?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 200" role="img" aria-label="Momentnøkkel på 0,6 m som skal gi 120 Nm">
+        <rect x="40" y="70" width="280" height="28" rx="6" fill="#cbd5e1" stroke="#17202b" stroke-width="3"/>
+        <circle cx="40" cy="84" r="18" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+        <text x="180" y="50" text-anchor="middle" font-size="18" font-weight="700">0,6 m · mål 120 Nm</text>
+        <g data-vis-fra="2">
+          <text x="220" y="150" text-anchor="middle" font-size="28" font-weight="700" fill="var(--kap)">F = 200 N</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Topplokket skal trekkes til 120 Nm. Momentnøkkelen er 0,6 m lang.</p>
+      <div class="undre" data-hint="Du kjenner M og a. Kraften står ganget med a." data-sekunder="30">Skal du gange 120 med 0,6, eller dele?</div>
+      <p class="steg">Fra \(M = F \cdot a\) får du \(F = M : a\).</p>
+      <p class="steg">\(F = 120 : 0{,}6 = 200\) N. Det er omtrent 20 kg på håndtaket.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>\(F = \dfrac{M}{a}\) og \(a = \dfrac{M}{F}\). Kraften er moment delt på arm, ikke moment ganger arm.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Lærlingen">
+    <h2>Klarer lærlingen det?</h2>
+    <div class="tekst">
+      <p>Navmutteren krever 350 Nm. Lærlingen veier 70 kg og står med hele tyngden på en latmannsarm på 40 cm.</p>
+      <div class="undre" data-hint="70 kg er omtrent 700 N. 40 cm er 0,4 m." data-sekunder="30">Holder 350 Nm, eller må lærlingen hente et lengre rør?</div>
+      <p class="steg">Kraft: omtrent \(70 \cdot 10 = 700\) N. Arm: \(40\ \text{cm} = 0{,}4\ \text{m}\).</p>
+      <p class="steg">\(M = 700 \cdot 0{,}4 = 280\) Nm. 280 er mindre enn 350.</p>
+      <p class="steg">Lærlingen klarer det ikke med denne armen. For 350 Nm trengs \(a = 350 : 700 = 0{,}5\) m.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Regn momentet lærlingen faktisk lager, og sammenlign med kravet. Ikke heng et rør på en momentnøkkel. Da blir både momentet og nøkkelen ødelagt.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="verksted.html">Verkstedkort</a> · <a href="../5-5/teori.html">5.5 Utveksling</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

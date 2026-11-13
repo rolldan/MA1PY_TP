@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 5.6 Skjærehastighet og turtall</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="5" data-del="5.6">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="To bor">
+    <h2>Hvem brenner opp boret først?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 230" role="img" aria-label="Et bor på 5 mm og et bor på 25 mm, begge på 500 omdreininger i minuttet">
+        <g>
+          <rect x="70" y="40" width="16" height="90" rx="3" fill="#94a3b8" stroke="#17202b" stroke-width="2"/>
+          <polygon points="62,130 94,130 78,160" fill="#cbd5e1" stroke="#17202b" stroke-width="2"/>
+          <text x="78" y="190" text-anchor="middle" font-size="16" font-weight="700">5 mm</text>
+        </g>
+        <g>
+          <rect x="250" y="40" width="28" height="70" rx="3" fill="#94a3b8" stroke="#17202b" stroke-width="2"/>
+          <polygon points="240,110 288,110 264,170" fill="#cbd5e1" stroke="#17202b" stroke-width="2"/>
+          <text x="264" y="200" text-anchor="middle" font-size="16" font-weight="700">25 mm</text>
+        </g>
+        <g data-vis-fra="2">
+          <text x="78" y="222" text-anchor="middle" font-size="14" fill="#15803d">ca. 7,9 m/min</text>
+          <text x="264" y="222" text-anchor="middle" font-size="14" fill="var(--kap)" font-weight="700">ca. 39 m/min</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>To bor i samme søyleboremaskin, begge på 500 r/min. Det ene er 5 mm, det andre 25 mm.</p>
+      <div class="undre" data-hint="En tann ytterst på det store boret har lengre vei per omdreining." data-sekunder="30">Hvem brenner opp boret først? Gjett før du regner.</div>
+      <p class="steg">Samme turtall. Det store boret har fem ganger så lang vei rundt kanten.</p>
+      <p class="steg">Skjærehastigheten blir omtrent 7,9 m/min og 39 m/min. Det store boret skjærer fem ganger så fort.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Skjærehastighet \(v_c\) måles i <b>m/min</b>, ikke i r/min. Større diameter gir høyere \(v_c\) når turtallet er det samme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="m/min">
+    <h2>Fra omkrets til m/min</h2>
+    <div class="tekst">
+      <p>Kanten på arbeidsstykket er en sirkel. På ett minutt går den mange runder.</p>
+      <div class="undre" data-hint="Omkretsen er π ganger diameteren. Så ganger du med antall runder." data-sekunder="30">Hvis omkretsen er 31,4 mm og turtallet er 200 r/min, hvor mange mm går kanten på ett minutt?</div>
+      <p class="steg">Omkrets i mm: \(\pi \cdot d\). Vei på ett minutt: \(\pi \cdot d \cdot n\) mm/min.</p>
+      <p class="steg">\(v_c\) skal være i meter. Del på 1000: \(v_c = \dfrac{\pi \cdot d \cdot n}{1000}\).</p>
+      <p class="steg">\(d\) er mm, \(n\) er r/min, \(v_c\) er m/min. Tallet 1000 gjør om millimeter til meter.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>\(v_c = \dfrac{\pi \cdot d \cdot n}{1000}\)<br>Glemmer du 1000, blir svaret tusen ganger for stort.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Finn n">
+    <h2>Hvilket turtall skal maskinen ha?</h2>
+    <div class="tekst">
+      <p>På esken til et 10 mm bor står det 30 m/min i stål. Maskinen stilles i r/min, ikke i m/min.</p>
+      <div class="undre" data-hint="Snu formelen slik at n står alene. Du gjorde det samme i 5.2." data-sekunder="30">Blir turtallet nærmere 100 eller nærmere 1000?</div>
+      <p class="steg">\(n = \dfrac{1000 \cdot v_c}{\pi \cdot d}\).</p>
+      <p class="steg">\(n = 1000 \cdot 30 : (\pi \cdot 10) \approx 955\) r/min.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>\(n = \dfrac{1000 \cdot v_c}{\pi \cdot d}\) i r/min. Større bor, samme materiale: lavere turtall.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../5-2/teori.html">5.2 Snu formelen</a></p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Nomogram">
+    <h2>Les av, og sjekk med formelen</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Forenklet nomogram der linjer fra 5 mm og 25 mm møtes på 500 r/min">
+        <line x1="50" y1="30" x2="50" y2="180" stroke="#17202b" stroke-width="2"/>
+        <line x1="200" y1="30" x2="200" y2="180" stroke="#17202b" stroke-width="2"/>
+        <line x1="350" y1="30" x2="350" y2="180" stroke="#17202b" stroke-width="2"/>
+        <text x="50" y="20" text-anchor="middle" font-size="13" font-weight="700">d</text>
+        <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="700">n</text>
+        <text x="350" y="20" text-anchor="middle" font-size="13" font-weight="700">v</text>
+        <text x="40" y="184" text-anchor="end" font-size="12">5</text>
+        <text x="40" y="90" text-anchor="end" font-size="12">25</text>
+        <text x="360" y="48" font-size="12">7,9</text>
+        <text x="360" y="150" font-size="12">39</text>
+        <line x1="50" y1="180" x2="350" y2="40" stroke="var(--kap)" stroke-width="2"/>
+        <line x1="50" y1="86" x2="350" y2="146" stroke="#1d4ed8" stroke-width="2"/>
+        <circle cx="200" cy="110" r="5" fill="var(--kap)"/>
+        <text x="210" y="106" font-size="13" font-weight="700" fill="var(--kap)">500</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Et nomogram har tre skalaer. Du trekker en linje fra diameter til skjærehastighet og leser turtallet i midten.</p>
+      <div class="undre" data-hint="Begge borene har samme turtall. Linjene skal møtes." data-sekunder="30">Hvorfor kan to ulike bor treffe samme tall i midten?</div>
+      <p class="steg">5 mm og omtrent 7,9 m/min treffer 500 r/min. 25 mm og omtrent 39 m/min treffer også 500 r/min.</p>
+      <p class="steg">Avlesningen er omtrentlig. Regn alltid med formelen etterpå. Avvik under 10 % er vanlig på et nomogram.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Nomogrammet gir et raskt valg av gir. Formelen gir tallet du stoler på. Enheten på \(v_c\) er m/min.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Konus">
+    <h2>Liten vinkel på toppsleiden</h2>
+    <div class="tekst">
+      <p>En konus er tykk i den ene enden og tynn i den andre. For små vinkler, under omtrent 10°, bruker vi en håndformel i stedet for invers tangens.</p>
+      <div class="undre" data-hint="Toppsleiden dreier den ene siden av konen, ikke hele toppvinkelen." data-sekunder="30">En kjørner er tegnet med 60° i spissen. Stiller du toppsleiden på 60° eller 30°?</div>
+      <p class="steg">\(\alpha \approx \dfrac{(D - d) \cdot 29}{L}\). \(D\) og \(d\) er diameterne, \(L\) er lengden, alle i mm. \(\alpha\) er innstillingsvinkelen i grader.</p>
+      <p class="steg">Eksempel: \(D = 50\), \(d = 40\), \(L = 145\). \(\alpha \approx 10 \cdot 29 : 145 = 2\) grader.</p>
+      <p class="steg">Kjørneren med 60° mellom sidene dreies med toppsleiden på 30°. Sleiden følger den ene siden, altså halve toppvinkelen.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Håndformelen gjelder små vinkler. En fas på 45° regnes ikke med den. Slagvolum hører til kapittel 6.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="teori.html">Teori 5.6</a> · <a href="verksted.html">Verkstedkort</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

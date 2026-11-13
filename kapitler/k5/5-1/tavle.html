@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 5.1 Tolke en formel</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="5" data-del="5.1">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Dagslønn">
+    <h2>Hva betyr bokstavene?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 280" role="img" aria-label="Kort med formelen L = 200 + 180t og en klokke som viser 6 timer">
+        <rect x="30" y="40" width="230" height="150" rx="12" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <rect x="30" y="40" width="230" height="36" rx="12" fill="var(--kap)"/>
+        <text x="145" y="64" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">DAGSLØNN</text>
+        <text x="145" y="110" text-anchor="middle" font-size="28" font-weight="700" fill="#17202b">L = 200 + 180t</text>
+        <text x="145" y="150" text-anchor="middle" font-size="15" fill="#5b6675">L i kr · t i timer</text>
+        <circle cx="340" cy="110" r="52" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <line x1="340" y1="110" x2="340" y2="74" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+        <line x1="340" y1="110" x2="340" y2="148" stroke="var(--kap)" stroke-width="4" stroke-linecap="round"/>
+        <text x="340" y="188" text-anchor="middle" font-size="16" font-weight="700" fill="#17202b">6 timer</text>
+        <g data-vis-fra="3">
+          <rect x="90" y="210" width="260" height="44" rx="8" fill="#dcfce7"/>
+          <text x="220" y="238" text-anchor="middle" font-size="20" font-weight="700" fill="#15803d">L = 1280 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>På lønnsslippen til lærlingen står det et fast tillegg på 200 kr, pluss 180 kr for hver time. Formelen er \(L = 200 + 180t\).</p>
+      <div class="undre" data-hint="200 kr får du uansett. 180 ganges med antall timer." data-sekunder="30">Hva er \(L\), og hva er \(t\)? Gjett før du regner.</div>
+      <p class="steg">\(L\) er lønna i kroner. \(t\) er antall timer. 200 er fast. 180 er kroner per time.</p>
+      <p class="steg">Seks timer: \(180 \cdot 6 = 1080\). Så \(L = 200 + 1080 = 1280\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Bytt bokstaven med tallet fra situasjonen. Det faste leddet ganges ikke med tida. Svaret skal ha en enhet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Tilhenger">
+    <h2>Startpris pluss kilometer</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="Tilhenger og formelen K = 350 + 5s for 40 km">
+        <rect x="70" y="70" width="200" height="80" rx="6" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <polygon points="270,110 330,110 330,150 270,150" fill="#cbd5e1" stroke="#17202b" stroke-width="3"/>
+        <circle cx="120" cy="160" r="18" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <circle cx="210" cy="160" r="18" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="170" y="115" text-anchor="middle" font-size="18" font-weight="700" fill="#17202b">40 km</text>
+        <text x="220" y="50" text-anchor="middle" font-size="26" font-weight="700" fill="#17202b">K = 350 + 5s</text>
+        <g data-vis-fra="2">
+          <text x="220" y="220" text-anchor="middle" font-size="18" fill="#17202b">5 · 40 = 200 kr for kjøringen</text>
+        </g>
+        <g data-vis-fra="3">
+          <text x="220" y="248" text-anchor="middle" font-size="20" font-weight="700" fill="var(--kap)">K = 550 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Verkstedet leier tilhenger. Startprisen er 350 kr, og hver kilometer koster 5 kr. Turen er 40 km.</p>
+      <div class="undre" data-hint="350 kr betaler dere før hjulene har rullet." data-sekunder="30">Blir prisen nærmere 200 kr eller nærmere 600 kr?</div>
+      <p class="steg">\(K\) er prisen i kroner. \(s\) er strekningen i km. \(K = 350 + 5s\).</p>
+      <p class="steg">\(5 \cdot 40 = 200\). \(K = 350 + 200 = 550\) kr.</p>
+      <p class="steg">Overslag: 40 km à 5 kr er 200 kr, pluss 350. Omtrent 550 kr. Det stemmer.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Tre formler">
+    <h2>Samme mønster</h2>
+    <div class="tekst">
+      <p>Tre jobber, tre formler. Alle har et fast ledd og et ledd som vokser.</p>
+      <div class="undre" data-hint="Se hvilken bokstav som står for det du vet." data-sekunder="30">Hvilken formel bruker du når du skal sveise 4 fester på en ramme?</div>
+      <p class="steg">Dagslønn: \(L = 200 + 180t\). \(t\) er timer, \(L\) er kroner.</p>
+      <p class="steg">Tilhenger: \(K = 350 + 5s\). \(s\) er kilometer, \(K\) er kroner.</p>
+      <p class="steg">Sveisetid: \(T = 15 + 6n\). \(n\) er antall sveiser, \(T\) er minutter. 15 min er oppstart.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Les formelen som en setning før du regner. «15 minutter pluss 6 minutter for hver sveis.» Fire sveiser: \(T = 15 + 6 \cdot 4 = 39\) min.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Stemmer størrelsen?">
+    <h2>Stemmer størrelsen?</h2>
+    <div class="tekst">
+      <p>En medelev regner lønn for 6 timer slik: \(200 \cdot 6 + 180 = 1380\) kr.</p>
+      <div class="undre" data-hint="Hvilket tall hører sammen med timene?" data-sekunder="30">Hvilket tall skulle ha blitt ganget med 6?</div>
+      <p class="steg">180 kr hører til hver time. 200 kr er fast og skal ikke ganges.</p>
+      <p class="steg">Riktig: \(180 \cdot 6 = 1080\), og \(200 + 1080 = 1280\) kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Spør: <b>Hva vokser, og hva er fast?</b> Sjekk enheten til slutt. Lønn i kroner, tid i minutter, strekning i kilometer.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../5-2/teori.html">5.2 Snu formelen</a> · <a href="oppgaver.html">Oppgaver 5.1</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

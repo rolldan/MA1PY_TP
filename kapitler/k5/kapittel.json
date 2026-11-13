@@ -1,0 +1,39 @@
+{
+  "nr": 5,
+  "tittel": "Formler fra verkstedet",
+  "status": "ferdig",
+  "ingress": "Les en formel, sett inn tall og snu den. Deretter bruker du Ohms lov, dreiemoment, utveksling og skjærehastighet på bilen, momentnøkkelen og dreiebenken.",
+  "handlerOm": "På verkstedet står formlene ved dreiebenken, i verkstedhåndboka og på sikringsskapet. Her lærer du å lese dem, sette inn tall med riktig enhet og snu dem når den ukjente står på feil side. Du regner strøm i bilen, moment på en bolt, turtall i en reimdrift og skjærehastighet før maskinen startes.",
+  "byggerPa": [
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" },
+    { "tekst": "Kapittel 4: Måleenheter" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 6: Geometri, målestokk og makerspace" }
+  ],
+  "delkapitler": [
+    { "nr": "5.1", "tittel": "Tolke en formel", "formel": "\\(L = 200 + 180t\\)", "uke": "1" },
+    { "nr": "5.2", "tittel": "Snu formelen", "formel": "\\(t = \\dfrac{L - 200}{180}\\)", "uke": "1" },
+    { "nr": "5.3", "tittel": "Ohms lov og effekt", "formel": "\\(I = \\dfrac{U}{R}\\)", "uke": "2" },
+    { "nr": "5.4", "tittel": "Dreiemoment", "formel": "\\(F = \\dfrac{M}{a}\\)", "uke": "3" },
+    { "nr": "5.5", "tittel": "Utveksling", "formel": "\\(n_1 \\cdot d_1 = n_2 \\cdot d_2\\)", "uke": "3" },
+    { "nr": "5.6", "tittel": "Skjærehastighet og turtall", "formel": "\\(v_c = \\dfrac{\\pi \\cdot d \\cdot n}{1000}\\)", "uke": "4" }
+  ],
+  "jegKan": [
+    "Jeg kan lese hva bokstavene i en formel betyr, og sette inn tall med riktig enhet.",
+    "Jeg kan snu en formel slik at den ukjente står alene, både for hånd og med CAS i GeoGebra.",
+    "Jeg kan bruke \\(U = R \\cdot I\\) og \\(I = U/R\\), og regne effekt med \\(P = U \\cdot I\\).",
+    "Jeg kan bruke \\(M = F \\cdot a\\) og \\(F = M/a\\), med moment i Nm og arm i meter.",
+    "Jeg kan bruke \\(n_1 \\cdot d_1 = n_2 \\cdot d_2\\) på reimskiver og tannhjul.",
+    "Jeg kan regne skjærehastighet i m/min og velge turtall med formel og nomogram.",
+    "Jeg kan bruke håndformelen for innstillingsvinkel når vinkelen er liten, og jeg stiller toppsleiden på 30° når kjørneren er tegnet med 60°."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V/K", "tittel": "Tilhengerleie og dagslønn", "tekst": "Finn riktig formel på kortene, sett inn tallene og sjekk at svaret har fornuftig størrelse.", "lenke": "5-1/verksted.html" },
+    { "merke": "K", "tittel": "CAS i GeoGebra", "tekst": "Snu formelen for hånd, og sjekk svaret med Løs i CAS.", "lenke": "5-2/verksted.html" },
+    { "merke": "V", "tittel": "Ohms lov i bilen", "tekst": "Regn strøm, motstand og spenningsfall, og velg sikring. Mål med multimeter der det er trygt.", "lenke": "5-3/verksted.html" },
+    { "merke": "V", "tittel": "Klarer lærlingen det?", "tekst": "Regn kraft og moment. 700 N på en arm på 0,4 m gir 280 Nm, og det holder ikke mot 350 Nm.", "lenke": "5-4/verksted.html" },
+    { "merke": "V", "tittel": "Utveksling på maskinen", "tekst": "Mål reimskiver eller tell tenner, og regn ut turtallet på boret.", "lenke": "5-5/verksted.html" },
+    { "merke": "V", "tittel": "Hvem brenner opp boret først?", "tekst": "Sammenlign 5 mm og 25 mm på 500 r/min, og velg turtall med formel og nomogram.", "lenke": "5-6/verksted.html" }
+  ]
+}
