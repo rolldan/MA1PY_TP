@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 8.3 Lån og kostnadsfordeling</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="8" data-del="8.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Lånet">
+    <h2>15 000 kr i to år</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 230" role="img" aria-label="Tidslinje fra i dag til om to år. Lån 15 000 kroner, rente 1 950 kroner, tilbake 16 950 kroner.">
+        <line x1="40" y1="120" x2="400" y2="120" stroke="#17202b" stroke-width="3"/>
+        <circle cx="60" cy="120" r="8" fill="var(--kap)"/>
+        <circle cx="380" cy="120" r="8" fill="var(--kap)"/>
+        <text x="60" y="155" text-anchor="middle" font-size="16">I dag</text>
+        <text x="380" y="155" text-anchor="middle" font-size="16">Om 2 år</text>
+        <text x="60" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="var(--kap)">+15 000</text>
+        <g data-vis-fra="2">
+          <text x="380" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#be123c">−16 950</text>
+          <text x="220" y="50" text-anchor="middle" font-size="18" fill="#17202b">Renta er 1 950 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Laget kan låne <b>15 000 kr</b> i to år. Enkel rente er <b>6,5 % per år</b> av det opprinnelige beløpet. Renta betales av prosjektpotten.</p>
+      <div class="undre" data-hint="Først ett år: 15 000 · 0,065." data-sekunder="30">Blir renta over eller under 2 000 kr for to år?</div>
+      <p class="steg">Ett år: \(15\,000 \cdot 0{,}065 = 975\) kr.</p>
+      <p class="steg">To år: \(975 \cdot 2 = 1\,950\) kr. Under 2 000 kr.</p>
+      <p class="steg">Tilbake: \(15\,000 + 1\,950 = 16\,950\) kr. Ekstrakostnaden er renta, 1 950 kr.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Enkel rente">
+    <h2>Ikke det samme som annuitet</h2>
+    <div class="tekst">
+      <p>I kapittel 7 møtte dere serielån og annuitetslån. Der endrer renta seg fordi restgjelda synker. I dette prosjektet bruker vi <b>enkel rente</b>: renta regnes av de 15 000 kronene hvert år, som et overslag.</p>
+      <div class="undre" data-hint="6,5 % to ganger er 13 % av lånet." data-sekunder="30">Hvor mange prosent av lånebeløpet er renta på to år?</div>
+      <p class="steg">\(1\,950 : 15\,000 = 0{,}13 = 13\) %.</p>
+      <p class="steg">Det er \(6{,}5\) % \(+\) \(6{,}5\) %, altså to like år. Ikke rentes rente.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Enkel rente</p>
+        <p>\(\text{rente} = \text{lån} \cdot \text{sats} \cdot \text{år}\)<br>
+        \(\text{totalt} = \text{lån} + \text{rente}\)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Fordeling">
+    <h2>Hvor går pengene?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Liggende stolper for bil, uforutsett og rente i et budsjett på 50 000 kroner">
+        <text x="20" y="50" font-size="16">Bil 25 760</text>
+        <rect x="140" y="30" width="250" height="24" fill="var(--kap)"/>
+        <text x="20" y="100" font-size="16">Uforutsett</text>
+        <rect x="140" y="80" width="68" height="24" fill="#f59e0b"/>
+        <text x="20" y="150" font-size="16">Rente 1 950</text>
+        <rect x="140" y="130" width="20" height="24" fill="#be123c"/>
+        <g data-vis-fra="2">
+          <text x="140" y="190" font-size="16" fill="#17202b">Bil 51,5 % av potten. Rente 3,9 %.</text>
+          <text x="140" y="215" font-size="16" fill="#5b6675">7 000 kr uforutsett er 14 %.</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En post blir tydelig når den står som prosent av 50 000 kr. Stolper passer når dere vil sammenligne poster. Et sektordiagram passer når dere vil vise delene av helheten.</p>
+      <div class="undre" data-hint="Del posten på 50 000 og gang med 100." data-sekunder="30">Er renta på 1 950 kr mer eller mindre enn 5 % av potten?</div>
+      <p class="steg">\(1\,950 : 50\,000 \cdot 100 = 3{,}9\) %. Mindre enn 5 %.</p>
+      <p class="steg">Bilen på 25 760 kr er \(25\,760 : 50\,000 \cdot 100 = 51{,}5\) %, omtrent halvparten.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Etter kjøpet">
+    <h2>Drivstoffet er ikke i potten</h2>
+    <div class="tekst">
+      <p>Potten på 50 000 kr er til kjøp og oppussing. Etterpå koster bilen fortsatt penger. Et eksempel: 0,6 liter per mil, 1 000 mil i året, 21 kr per liter.</p>
+      <div class="undre" data-hint="Først liter, så kroner. 1 000 · 0,6." data-sekunder="30">Blir drivstoffet over 10 000 kr i året?</div>
+      <p class="steg">Liter: \(1\,000 \cdot 0{,}6 = 600\) L.</p>
+      <p class="steg">Kostnad: \(600 \cdot 21 = 12\,600\) kr. Ja, over 10 000 kr.</p>
+      <p class="steg">De 12 600 kronene skal <b>ikke</b> presses inn i prosjektpotten. De viser hva bilen koster å eie etterpå. Prisene er eksempler.</p>
+      <p class="se-ogsa steg"><a href="../8-2/teori.html">8.2 Rabatt og mva</a> · <a href="oppgaver.html">Oppgaver 8.3</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

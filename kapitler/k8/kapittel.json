@@ -1,0 +1,104 @@
+{
+  "nr": 8,
+  "tittel": "Bilprosjektet",
+  "status": "ferdig",
+  "ingress": "Kjøp og puss opp en bruktbil innenfor 50 000 kr. Regn rabatt, mva og lån, lakk og grunning, og volum, plater og vekt til en basskasse.",
+  "handlerOm": "Laget får en fiktiv pott på 50 000 kr og skal kjøpe en bruktbil til høyst 30 000 kr og pusse den opp. Dere regner budsjett med kontantrabatt, mva og enkel rente, måler panser og dør for å finne lakk og grunning, og beregner en basskasse i MDF. Til slutt presenterer dere tallene.",
+  "byggerPa": [
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" },
+    { "tekst": "3.2 Prosent og 3.4 Rabatt og mva" },
+    { "tekst": "4.2 Areal og volum, 4.3 Masse" },
+    { "tekst": "6.3 Areal, 6.4 Volum og 6.6 Målestokk" },
+    { "tekst": "7.4 Lån og 7.6 Budsjett" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 9: Den store overfarten" }
+  ],
+  "delkapitler": [
+    {
+      "nr": "8.1",
+      "tittel": "Prosjektet, ukeplan og leveranser",
+      "formel": "Pott \\(50\\,000\\) kr · bil maks \\(30\\,000\\) kr",
+      "uke": "17"
+    },
+    {
+      "nr": "8.2",
+      "tittel": "Rabatt, mva og budsjett",
+      "formel": "\\(\\cdot\\,0{,}92\\) etter 8 % rabatt · \\(\\cdot\\,1{,}25\\) inkl. mva",
+      "uke": "17"
+    },
+    {
+      "nr": "8.3",
+      "tittel": "Lån og kostnadsfordeling",
+      "formel": "\\(rente = lån \\cdot 0{,}065 \\cdot 2\\)",
+      "uke": "18"
+    },
+    {
+      "nr": "8.4",
+      "tittel": "Lakk og grunning",
+      "formel": "\\(liter = areal \\cdot strøk / dekkevne\\)",
+      "uke": "18"
+    },
+    {
+      "nr": "8.5",
+      "tittel": "Basskassen",
+      "formel": "\\(V = l \\cdot b \\cdot h\\) · \\(m = V \\cdot 750\\)",
+      "uke": "19"
+    },
+    {
+      "nr": "8.6",
+      "tittel": "Presentasjon og vurdering",
+      "formel": "Rubrikk: lav, middels og høy",
+      "uke": "19"
+    }
+  ],
+  "jegKan": [
+    "Jeg kan fortelle rammene for prosjektet og hva laget skal levere hver uke.",
+    "Jeg kan regne kontantrabatt og pris med mva.",
+    "Jeg kan sette opp et budsjett og se om vi holder oss innenfor 50 000 kr.",
+    "Jeg kan regne enkel rente på et lån og si hva lånet koster ekstra.",
+    "Jeg kan fordele budsjettet i prosent og lage et diagram.",
+    "Jeg kan regne areal og hvor mange liter lakk og grunning som trengs.",
+    "Jeg kan regne volum, platebehov, pris og vekt for en basskasse.",
+    "Jeg kan bruke målestokk og forklare hvorfor volumet blir 1/1000 i målestokk 1:10.",
+    "Jeg kan vurdere arbeidet mot rubrikken og forklare en utregning for klassen."
+  ],
+  "verkstedoppdrag": [
+    {
+      "merke": "V/K",
+      "tittel": "Velg bil og deler",
+      "tekst": "Laget velger en bil fra prislista, setter av 25 % til uforutsett og noterer delene som må kjøpes.",
+      "lenke": "8-1/verksted.html"
+    },
+    {
+      "merke": "K",
+      "tittel": "Budsjett i regneark",
+      "tekst": "Bygg budsjettet med rabatt og mva, og sjekk at summen er under 50 000 kr.",
+      "lenke": "8-2/verksted.html"
+    },
+    {
+      "merke": "K",
+      "tittel": "Kostnadsfordeling",
+      "tekst": "Regn enkel rente, fordel budsjettet i prosent og lag et diagram.",
+      "lenke": "8-3/verksted.html"
+    },
+    {
+      "merke": "V/K",
+      "tittel": "Lakk og grunning",
+      "tekst": "Mål et panser eller en dør, regn areal og finn liter og pris.",
+      "lenke": "8-4/verksted.html"
+    },
+    {
+      "merke": "V",
+      "tittel": "Basskassen",
+      "tekst": "Regn volum, plater, pris og vekt, og lag en pappmodell i målestokk.",
+      "lenke": "8-5/verksted.html"
+    },
+    {
+      "merke": "K",
+      "tittel": "Presentasjon",
+      "tekst": "Presenter bil, budsjett og én utregning. Alle i laget sier noe.",
+      "lenke": "8-6/verksted.html"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 8.2 Rabatt, mva og budsjett</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="8" data-del="8.2">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Økonomi · Bilprosjektet</p>
+  <h1>Rabatt, mva og budsjett</h1>
+  <p class="ingress">Kontantrabatt gjør bilen billigere. Mva gjør delene dyrere. Budsjettet viser om summen fortsatt er under 50 000 kr.</p>
+
+  <ul class="laeringsmal">
+    <li>regne ny pris etter 8 % kontantrabatt</li>
+    <li>regne mva og pris inkl. mva, og vite at mva er 20 % av prisen inkl. mva</li>
+    <li>sette opp et budsjett med anslag, faktisk beløp og differanse</li>
+  </ul>
+
+  <ol class="kjede"><li>pris</li><li>rabatt</li><li>mva på deler</li><li>budsjett</li><li>sjekk mot 50 000</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Delelageret har støtdemper, bremseskiver og bremseklosser. Prisene på hylla er <b>uten mva</b>. Bilprisene i <a href="../8-1/teori.html">8.1</a> er prisantydninger slik selger oppgir dem. Rabatten gjelder bilen, ikke delene.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>8 % rabatt betyr at dere betaler 92 % av prisen. Gang med \(0{,}92\), eller trekk \(0{,}08\) ganger prisen.</p>
+  <p>Mva på deler er 25 % av prisen uten mva. Gang med \(1{,}25\) for å få det dere betaler. Når noen spør hvor stor <b>andel</b> mva er av kassalappen, er svaret 20 %, ikke 25 %.</p>
+
+  <div class="tabell-rull">
+    <table>
+      <caption>Deler, eks. mva. Prisene brukes i hele prosjektet.</caption>
+      <thead><tr><th>Del</th><th>Eks. mva</th><th>Mva</th><th>Inkl. mva</th></tr></thead>
+      <tbody>
+        <tr><td>Støtdemper</td><td>1 200 kr</td><td>300 kr</td><td>1 500 kr</td></tr>
+        <tr><td>Bremseskiver, par</td><td>890 kr</td><td>222,50 kr</td><td>1 112,50 kr</td></tr>
+        <tr><td>Bremseklosser, sett</td><td>340 kr</td><td>85 kr</td><td>425 kr</td></tr>
+        <tr><td><b>Sum</b></td><td><b>2 430 kr</b></td><td><b>607,50 kr</b></td><td><b>3 037,50 kr</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Rabatt: ny pris \(=\) gammel \(\cdot (1 - \text{rabatt})\). For 8 %: gang med \(0{,}92\).</p>
+    <p>Mva-beløp \(=\) pris eks. \(\cdot\, 0{,}25\). Pris inkl. \(=\) pris eks. \(\cdot\, 1{,}25\).</p>
+    <p>Andel mva av pris inkl. \(= 20\) %.</p>
+    <p>Differanse \(=\) faktisk \(-\) anslag. Hele budsjettet skal være \(\le 50\,000\) kr.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: Focus og delene</h3>
+    <p>Focus koster 28 000 kr. 8 % kontantrabatt. Delene i tabellen kjøpes i tillegg.</p>
+    <ol class="steg-liste">
+      <li class="steg">Rabatt: \(0{,}08 \cdot 28\,000 = 2\,240\) kr. Ny bilpris: \(28\,000 \cdot 0{,}92 = 25\,760\) kr.</li>
+      <li class="steg">Deler eks. mva: \(1\,200 + 890 + 340 = 2\,430\) kr.</li>
+      <li class="steg">Inkl. mva: \(2\,430 \cdot 1{,}25 = 3\,037{,}50\) kr.</li>
+      <li class="steg">Bil + deler: \(25\,760 + 3\,037{,}50 = 28\,797{,}50\) kr. Uforutsett på 7 000 kr er ikke med ennå. Det kommer i budsjettet i <a href="../8-3/teori.html">8.3</a>.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>8 % rabatt er ikke det samme som å gange med \(0{,}8\). \(0{,}8\) er 20 % rabatt. Da blir Focus \(22\,400\) kr, og det er 3 360 kr for lavt.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Bremseskivene koster 890 kr eks. mva. Hva er prisen inkl. mva?</p>
+    <div class="fasit">1 112,50 kr</div>
+    <div class="losning">\(890 \cdot 1{,}25 = 1\,112{,}50\) kr. Mva-beløpet er \(890 \cdot 0{,}25 = 222{,}50\) kr.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Regneark:</b> én rad per post. Kolonner: Post, Anslag, Faktisk, Differanse. Differanse kan være formelen <code>=C2-B2</code>. Sum nederst. Prisene her er eksempelpriser til timen, ikke et tilbud fra en butikk.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

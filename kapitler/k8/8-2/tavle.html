@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 8.2 Rabatt, mva og budsjett</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="8" data-del="8.2">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="8 % rabatt">
+    <h2>Kontant i dag</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Prislapp 28 000 kroner med 8 prosent rabatt, ny pris 25 760 kroner">
+        <rect x="40" y="50" width="160" height="120" rx="8" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="120" y="90" text-anchor="middle" font-size="16" fill="#5b6675">Focus</text>
+        <text x="120" y="130" text-anchor="middle" font-size="26" font-weight="700" fill="#17202b">28 000</text>
+        <g data-vis-fra="2">
+          <text x="250" y="110" font-size="28" fill="var(--kap)" font-weight="700">−8 %</text>
+          <rect x="300" y="50" width="120" height="120" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+          <text x="360" y="100" text-anchor="middle" font-size="16" fill="#15803d">Ny pris</text>
+          <text x="360" y="136" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">25 760</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Selger av Focus til 28 000 kr gir <b>8 % rabatt</b> hvis laget betaler kontant.</p>
+      <div class="undre" data-hint="10 % av 28 000 er 2 800. 8 % er litt mindre." data-sekunder="30">Blir bilen under 26 000 kr?</div>
+      <p class="steg">Rabatten: \(0{,}08 \cdot 28\,000 = 2\,240\) kr.</p>
+      <p class="steg">Ny pris: \(28\,000 - 2\,240 = 25\,760\) kr. Det er under 26 000 kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Ny pris \(=\) gammel pris \(\cdot (1 - \text{rabatt})\).<br>
+        8 % rabatt: gang med \(0{,}92\). \(28\,000 \cdot 0{,}92 = 25\,760\) kr.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Mva">
+    <h2>Delene kommer uten mva</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 230" role="img" aria-label="Støtdemper med pris 1 200 kroner eks. mva og 1 500 kroner inkl. mva">
+        <rect x="70" y="40" width="40" height="140" rx="8" fill="#cbd5e1" stroke="#17202b" stroke-width="3"/>
+        <rect x="55" y="40" width="70" height="18" rx="4" fill="#475569"/>
+        <rect x="55" y="162" width="70" height="18" rx="4" fill="#475569"/>
+        <text x="200" y="80" font-size="20" fill="#17202b">1 200 kr eks. mva</text>
+        <g data-vis-fra="2">
+          <text x="200" y="130" font-size="20" fill="var(--kap)">+ 300 kr mva</text>
+          <text x="200" y="180" font-size="24" font-weight="700" fill="#15803d">1 500 kr inkl. mva</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Støtdemperen står til <b>1 200 kr eks. mva</b>. Butikken legger på 25 %.</p>
+      <div class="undre" data-hint="En fjerdedel av 1 200." data-sekunder="30">Hvor mange kroner betaler dere ekstra i mva?</div>
+      <p class="steg">Mva: \(1\,200 \cdot 0{,}25 = 300\) kr.</p>
+      <p class="steg">Pris inkl. mva: \(1\,200 \cdot 1{,}25 = 1\,500\) kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Mva</p>
+        <p>Mva-beløp \(=\) pris eks. \(\cdot\, 0{,}25\).<br>
+        Pris inkl. \(=\) pris eks. \(\cdot\, 1{,}25\).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="20 % ikke 25">
+    <h2>Hvor stor del er mva?</h2>
+    <div class="tekst">
+      <p>Tre deler: støtdemper 1 200 kr, bremseskiver 890 kr og bremseklosser 340 kr, alle eks. mva. Sum eks. mva er 2 430 kr. Inkl. mva er det 3 037,50 kr. Mva-beløpet er 607,50 kr.</p>
+      <div class="undre" data-hint="Del mva-beløpet på prisen inkl. mva, ikke på prisen eks. mva." data-sekunder="30">Er mva 25 % av det dere betaler i kassa?</div>
+      <p class="steg">Andel: \(607{,}50 : 3\,037{,}50 = 0{,}20 = 20\) %.</p>
+      <p class="steg">25 % er påslaget på prisen <b>uten</b> mva. Av prisen <b>med</b> mva utgjør mva 20 %, fordi \(0{,}25 : 1{,}25 = 0{,}20\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Husk</p>
+        <p>Spørsmålet «hvor mange prosent av totalen er mva?» har svaret <b>20 %</b> når satsen er 25 %.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../8-3/teori.html">8.3 Lånet som hører til budsjettet</a></p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Budsjett">
+    <h2>Anslag, faktisk, differanse</h2>
+    <div class="tekst">
+      <p>Et budsjett har tre tallkolonner. Anslaget skrives først. Faktisk beløp kommer når dere har regnet ferdig. Differanse = faktisk − anslag. Pluss betyr at det ble dyrere.</p>
+      <div class="undre" data-hint="Dyrere enn anslaget gir positiv differanse." data-sekunder="30">Anslaget for deler var 2 500 kr. Faktisk ble 3 037,50 kr. Gikk dere over eller under?</div>
+      <p class="steg">\(3\,037{,}50 - 2\,500 = 537{,}50\) kr over anslaget.</p>
+      <p class="steg">Det er lov, så lenge <b>summen av hele budsjettet</b> er høyst 50 000 kr.</p>
+      <p class="se-ogsa steg"><a href="teori.html">Regelboks</a> · <a href="oppgaver.html">Oppgaver 8.2</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
