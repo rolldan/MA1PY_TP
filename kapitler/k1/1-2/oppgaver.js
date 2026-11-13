@@ -70,6 +70,125 @@ Bok.oppgaver([
     losning: "<p>a) \\(8 \\cdot 4 = 32\\) m².<br>b) \\(7{,}8 \\cdot 4{,}2 = 32{,}76\\) m². Overslaget ligger tett på.</p>"
   },
   {
+    id: "overslag-31",
+    niva: "lett",
+    tittel: "31 vinkler",
+    tekst: "<p>31 vinkelbeslag koster 49 kr per stykk. Rund 31 ned til 30 og 49 opp til 50. Hva blir overslaget?</p>",
+    stegForSteg: false,
+    svar: { verdi: 1500, enhet: "kr" },
+    hint: ["Ett tall ned og ett tall opp når du ganger.", "\\(30 \\cdot 50\\)."],
+    losning: "<p>\\(30 \\cdot 50 = 1500\\) kr.</p>"
+  },
+  {
+    id: "tier-ny",
+    niva: "lett",
+    tittel: "Nærmeste tier på lista",
+    tekst: "<p>Rund av til nærmeste tier. Tallene er antall skruer på fire hyller.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "64", svar: { verdi: 60 } },
+      { tekst: "75", svar: { verdi: 80 } },
+      { tekst: "132", svar: { verdi: 130 } },
+      { tekst: "86", svar: { verdi: 90 } }
+    ],
+    hint: ["Se på enerne. 0–4 runder ned, 5–9 runder opp.", "75 har ener 5, så den rundes opp til 80."],
+    losning: "<p>a) 60 &nbsp; b) 80 &nbsp; c) 130 &nbsp; d) 90</p>"
+  },
+  {
+    id: "hundre-ny",
+    niva: "lett",
+    tittel: "Nærmeste hundre",
+    tekst: "<p>Rund av til nærmeste hundre. Tallene er lengder i mm på tre emner.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "246 mm", svar: { verdi: 200, enhet: "mm" } },
+      { tekst: "463 mm", svar: { verdi: 500, enhet: "mm" } },
+      { tekst: "812 mm", svar: { verdi: 800, enhet: "mm" } }
+    ],
+    hint: ["Se på tierne. 0–4 runder ned, 5–9 runder opp.", "246 ligger 46 fra 200 og 54 fra 300."],
+    losning: "<p>a) 200 mm &nbsp; b) 500 mm &nbsp; c) 800 mm</p>"
+  },
+  {
+    id: "noyaktig-31",
+    niva: "middels",
+    tittel: "Vinkler, nøyaktig",
+    tekst: "<p>31 vinkelbeslag à 49 kr. Rund 31 ned til 30 og 49 opp til 50 i overslaget.</p>",
+    steg: [{ verdi: 1550, enhet: "kr" }, { verdi: 31, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva blir overslaget?", svar: { verdi: 1500, enhet: "kr" } },
+      { tekst: "Hva er den nøyaktige prisen?", svar: { verdi: 1519, enhet: "kr" } }
+    ],
+    hint: ["Overslag: \\(30 \\cdot 50\\).", "Nøyaktig: \\(31 \\cdot 50 - 31 = 1550 - 31\\)."],
+    losning: "<p>a) \\(30 \\cdot 50 = 1500\\) kr.<br>b) \\(31 \\cdot 49 = 1550 - 31 = 1519\\) kr.</p>"
+  },
+  {
+    id: "sum-47",
+    niva: "middels",
+    tittel: "To hyller",
+    tekst: "<p>Du skal ha 47 skruer og 86 muttere. Rund 47 opp til 50 og 86 ned til 80 når du gjør overslag på antallet.</p>",
+    steg: [{ verdi: 130, enhet: "stk" }],
+    deler: [
+      { tekst: "Hva blir overslaget?", svar: { verdi: 130, enhet: "stk" } },
+      { tekst: "Hva er det nøyaktige antallet?", svar: { verdi: 133, enhet: "stk" } }
+    ],
+    hint: ["Ett tall opp og ett tall ned når du legger sammen.", "\\(50 + 80\\). Nøyaktig: \\(47 + 86\\)."],
+    losning: "<p>a) \\(50 + 80 = 130\\) stk.<br>b) \\(47 + 86 = 133\\) stk.</p>"
+  },
+  {
+    id: "en-desimal",
+    niva: "middels",
+    tittel: "Én desimal på målet",
+    tekst: "<p>Rund av til én desimal.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "7,64 mm", svar: { verdi: 7.6, enhet: "mm" } },
+      { tekst: "4,96 mm", svar: { verdi: 5, enhet: "mm" } },
+      { tekst: "15,53 mm", svar: { verdi: 15.5, enhet: "mm" } },
+      { tekst: "8,45 mm", svar: { verdi: 8.5, enhet: "mm" } }
+    ],
+    hint: ["Se på andre desimal. 5 eller mer: rund opp.", "4,96 rundes opp, og 5,0 er 5."],
+    losning: "<p>a) 7,6 mm &nbsp; b) 5 mm &nbsp; c) 15,5 mm &nbsp; d) 8,5 mm</p>"
+  },
+  {
+    id: "gulv-64",
+    niva: "vanskelig",
+    tittel: "Gulv i sveisebua",
+    tekst: "<p>Gulvet i sveisebua er 6,4 m langt og 3,8 m bredt. Til overslag runder du 6,4 ned til 6 og 3,8 opp til 4.</p>",
+    steg: [{ verdi: 25.6, enhet: "m²" }, { verdi: 1.28, enhet: "m²" }],
+    deler: [
+      { tekst: "Hva blir overslaget på arealet?", svar: { verdi: 24, enhet: "m²" } },
+      { tekst: "Hva er det nøyaktige arealet?", svar: { verdi: 24.32, enhet: "m²" } }
+    ],
+    hint: ["Overslag: \\(6 \\cdot 4\\).", "Nøyaktig: \\(6{,}4 \\cdot 4 - 6{,}4 \\cdot 0{,}2\\). Regn \\(64 \\cdot 38\\) og flytt kommaet to plasser."],
+    losning: "<p>a) \\(6 \\cdot 4 = 24\\) m².<br>b) \\(64 \\cdot 38 = 2432\\), så \\(6{,}4 \\cdot 3{,}8 = 24{,}32\\) m².</p>"
+  },
+  {
+    id: "bolter-42",
+    niva: "vanskelig",
+    tittel: "42 bolter",
+    tekst: "<p>42 bolter koster 19 kr per stykk. Til overslag bruker du \\(40 \\cdot 20\\).</p>",
+    steg: [{ verdi: 840, enhet: "kr" }, { verdi: 42, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva blir overslaget?", svar: { verdi: 800, enhet: "kr" } },
+      { tekst: "Hva er den nøyaktige prisen?", svar: { verdi: 798, enhet: "kr" } }
+    ],
+    hint: ["Overslag: \\(40 \\cdot 20\\).", "Nøyaktig: \\(42 \\cdot 20 - 42\\)."],
+    losning: "<p>a) \\(40 \\cdot 20 = 800\\) kr.<br>b) \\(42 \\cdot 19 = 840 - 42 = 798\\) kr. Overslaget ligger 2 kr over.</p>"
+  },
+  {
+    id: "kapp-812",
+    niva: "vanskelig",
+    tittel: "Kapp med overslag",
+    tekst: "<p>En stang er 812 mm. Du kapper av 186 mm. For overslag ved minus runder du begge ned: 810 mm og 180 mm.</p>",
+    steg: [{ verdi: 630, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva blir overslaget?", svar: { verdi: 630, enhet: "mm" } },
+      { tekst: "Hvor mange millimeter er igjen, nøyaktig?", svar: { verdi: 626, enhet: "mm" } }
+    ],
+    hint: ["Ved minus runder du begge tall samme vei.", "\\(810 - 180\\). Nøyaktig: \\(812 - 186\\)."],
+    losning: "<p>a) \\(810 - 180 = 630\\) mm.<br>b) \\(812 - 186 = 626\\) mm.</p>"
+  },
+  {
     id: "lagerhylla",
     type: "verksted",
     niva: "middels",
