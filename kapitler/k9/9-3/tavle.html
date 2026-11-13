@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 9.3 Motor, navigasjon og rekkevidde</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="9" data-del="9.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Hestekrefter">
+    <h2>175 hk i kilowatt</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Motor merket 175 hk og pil mot 128,7 kW">
+        <rect x="30" y="60" width="160" height="90" rx="10" fill="#e8eef6" stroke="#17202b" stroke-width="3"/>
+        <text x="110" y="112" text-anchor="middle" font-size="28" font-weight="700" fill="#17202b">175 hk</text>
+        <g data-vis-fra="2">
+          <line x1="200" y1="105" x2="270" y2="105" stroke="var(--kap)" stroke-width="4"/>
+          <polygon points="270,95 290,105 270,115" fill="var(--kap)"/>
+          <rect x="300" y="60" width="120" height="90" rx="10" fill="var(--kap)"/>
+          <text x="360" y="112" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">128,7 kW</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>I papirene står motoren med 175 hk. På merkeskilt i verkstedet står effekten ofte i kW. 1 hk = 0,7355 kW.</p>
+      <div class="undre" data-hint="1 hk er litt under 1 kW. 175 hk er altså litt under 175 kW." data-sekunder="30">Blir svaret nærmere 130 kW eller 175 kW?</div>
+      <p class="steg">\(175 \cdot 0{,}7355 = 128{,}7125\) kW.</p>
+      <p class="steg">Avrundet til én desimal: <b>128,7 kW</b>.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Effekt og energi</p>
+        <p>kW = hk · 0,7355. Energi i kWh = effekt i kW · tid i timer. Full gass i én time gir 128,7 kWh.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="25 knop">
+    <h2>130 nautiske mil</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 200" role="img" aria-label="Strek fra Sandvika til Løkken merket 130 nautiske mil og 25 knop">
+        <line x1="40" y1="100" x2="400" y2="100" stroke="#17202b" stroke-width="3"/>
+        <circle cx="40" cy="100" r="7" fill="var(--kap)"/>
+        <circle cx="400" cy="100" r="7" fill="var(--kap)"/>
+        <text x="40" y="140" text-anchor="middle" font-size="16">Sandvika</text>
+        <text x="400" y="140" text-anchor="middle" font-size="16">Løkken</text>
+        <text x="220" y="80" text-anchor="middle" font-size="20" font-weight="700" fill="var(--kap)">130 nm · 25 knop</text>
+        <g data-vis-fra="2">
+          <text x="220" y="175" text-anchor="middle" font-size="18" fill="#17202b">tid = 130 : 25 = 5,2 timer</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Dere kaster loss kl. 22:00. Marsjfarten er 25 knop. 1 knop er 1 nautisk mil per time. 1 nautisk mil er 1,852 km.</p>
+      <div class="undre" data-hint="Tid = strekning : fart." data-sekunder="30">Tar turen nærmere 5 timer eller nærmere 8 timer?</div>
+      <p class="steg">\(t = 130 : 25 = 5{,}2\) timer.</p>
+      <p class="steg">Strekning i km: \(130 \cdot 1{,}852 = 240{,}76\) km. Fart: \(25 \cdot 1{,}852 = 46{,}3\) km/h. Det er byfart, ikke motorveifart.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Fart</p>
+        <p>\(t = s : v\). Knop og nautiske mil hører sammen. km/h og km hører sammen. Ikke bland dem i samme brøk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="5,2 timer">
+    <h2>5,2 timer er ikke 5 timer og 20 min</h2>
+    <div class="tekst">
+      <p>5,2 timer betyr 5 timer og 0,2 timer. Minutter er ikke hundredeler av en time.</p>
+      <div class="undre" data-hint="1 time = 60 minutter. 0,1 time = 6 minutter." data-sekunder="30">Hvor mange minutter er 0,2 timer? 12 eller 20?</div>
+      <p class="steg">\(0{,}2 \cdot 60 = 12\) minutter. Tiden er <b>5 timer og 12 minutter</b>.</p>
+      <p class="steg">Avreise 22:00. Pluss 5 timer er 03:00. Pluss 12 minutter er <b>03:12</b> neste dag.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Vanlig feil</p>
+        <p>Desimalen ganges med 60. 0,2 timer er 12 minutter. 0,5 timer er 30 minutter. 2,4 timer er 2 timer og 24 minutter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="30 prosent">
+    <h2>Rekker vi fram?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Tank på 400 liter der 364 liter er brukt og 36 liter er igjen">
+        <rect x="140" y="30" width="160" height="160" rx="8" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <rect x="140" y="46" width="160" height="144" fill="#cbd5e1"/>
+        <g data-vis-fra="2">
+          <rect x="140" y="174" width="160" height="16" fill="var(--kap)"/>
+          <text x="220" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#b91c1c">36 L igjen · krav 120 L</text>
+        </g>
+        <text x="220" y="120" text-anchor="middle" font-size="18" fill="#17202b">364 L brukt</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Forbruket på marsjfart er 2,8 liter per nautisk mil. Tanken er 400 L. Regelen i prosjektet: minst 30 % skal være igjen ved kai.</p>
+      <div class="undre" data-hint="30 % av 400 L er 120 L. Regn forbruket før du svarer." data-sekunder="30">Holder 400 liter til 130 nautiske mil med god reserve?</div>
+      <p class="steg">Forbruk: \(130 \cdot 2{,}8 = 364\) L. Igjen: \(400 - 364 = 36\) L.</p>
+      <p class="steg">30 % av 400 L er 120 L. 36 L er langt under. Turen er risikabel uten mer drivstoff eller lavere fart.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">30 %-regelen</p>
+        <p>Reserve i liter = 0,30 · tanken. Sammenlign med det som faktisk er igjen. Tur-retur er 260 nm og krever påfyll.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="teori.html">Teori 9.3</a> · <a href="../9-0/teori.html">Rubrikk</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

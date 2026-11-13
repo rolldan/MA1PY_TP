@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 9.3 Motor, navigasjon og rekkevidde</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="9" data-del="9.3">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Fart og effekt · Den store overfarten</p>
+  <h1>Motor, navigasjon og rekkevidde</h1>
+  <p class="ingress">175 hk, 25 knop og en tank på 400 liter. Spørsmålet er ikke bare om dere kommer fram, men om dere kommer fram med reserve.</p>
+
+  <ul class="laeringsmal">
+    <li>regne om mellom hk og kW og finne energi i kWh</li>
+    <li>regne tid, strekning og fart med knop, og gjøre om desimaltimer</li>
+    <li>vurdere forbruket mot 30 %-regelen</li>
+  </ul>
+
+  <ol class="kjede"><li>effekt</li><li>tid = strekning : fart</li><li>minutter</li><li>liter</li><li>reserve</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Én vei fra Sandvika til Løkken er 130 nautiske mil. Marsjfart 25 knop. Forbruk 2,8 L per nautisk mil. Avreise kl. 22:00. Tur-retur i budsjettet er 260 nautiske mil, så dere må fylle i Danmark. 30 %-regelen i dette prosjektet gjelder den ene overfarten.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>1 hk = 0,7355 kW. 175 hk er 128,7 kW når vi runder til én desimal. Kjører motoren med den effekten i én time, har den levert 128,7 kWh. Strøm til 1,50 kr per kWh ville kostet om lag 193 kr. Bensin til samme tur koster mye mer, fordi en bensinmotor ikke gjør om all energien i drivstoffet til nyttig arbeid. Det rekker å sammenligne tallene.</p>
+  <p>Tid er strekning delt på fart, når enhetene hører sammen. 130 nautiske mil : 25 knop = 5,2 timer. 0,2 timer · 60 = 12 minutter. Ankomst blir 03:12 neste dag.</p>
+  <p>Dreiemoment er ikke pensum å utlede. Får dere formelen, kan dere sette inn tall. Med effekt \(P\) i watt og turtall \(n\) i omdreininger per minutt er</p>
+  <p>\[M = \dfrac{P \cdot 60}{2 \cdot \pi \cdot n}\]</p>
+  <p>med \(M\) i Nm.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>kW = hk · 0,7355. kWh = kW · timer.</p>
+    <p>\(t = s : v\). Minutter = desimaldelen · 60.</p>
+    <p>1 nautisk mil = 1,852 km. 1 knop = 1,852 km/h.</p>
+    <p>Forbruk = strekning · liter per mil. Reserve = tank − forbruk. Krav i prosjektet: 0,30 · tanken.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: overfarten</h3>
+    <p>130 nautiske mil, 25 knop, avreise 22:00, tank 400 L, forbruk 2,8 L per nautisk mil.</p>
+    <ol class="steg-liste">
+      <li class="steg">\(130 : 25 = 5{,}2\) timer.</li>
+      <li class="steg">\(0{,}2 \cdot 60 = 12\) minutter. Tiden er 5 timer og 12 minutter. Framme 03:12.</li>
+      <li class="steg">\(130 \cdot 1{,}852 = 240{,}76\) km. \(25 \cdot 1{,}852 = 46{,}3\) km/h.</li>
+      <li class="steg">\(130 \cdot 2{,}8 = 364\) L. Igjen: \(400 - 364 = 36\) L. Kravet er \(0{,}30 \cdot 400 = 120\) L. 36 er under 120. Turen er risikabel uten mer drivstoff.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>5,2 timer er ikke 5 timer og 20 minutter. 20 ville vært om desimalen var minutter. Den er en del av en time, og timen har 60 minutter. En annen feil er å bruke 260 nautiske mil mot tanken på 400 L. 260 nm er tur-retur i budsjettet. Selve overfarten i denne oppgaven er 130 nm.</p>
+  </div>
+
+  <div class="underveis">
+    <p>En annen etappe tar 2,4 timer. Hvor mange minutter er de 0,4 timene?</p>
+    <div class="fasit">24 minutter</div>
+    <div class="losning">\(0{,}4 \cdot 60 = 24\). Etappen tar 2 timer og 24 minutter, ikke 2 timer og 40 minutter.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Sjekk i verkstedet.</b> Les liter-merket på en tom kanne og regn volumet fra målene, som på <a href="verksted.html">verkstedkortet</a>. Ikke åpne en bensintank. Repetisjon av fart og enheter: <a href="https://ndla.no/nb/f/matematikk-1p-y---tp/5fff4ebc1153">NDLA 1P-Y TP</a>.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

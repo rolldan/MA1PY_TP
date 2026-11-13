@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 9.1 Finansiering og budsjett</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="9" data-del="9.1">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Båten">
+    <h2>150 000 kr på deling</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="Enkel båt med prislapp 150 000 kr, egenkapital 30 000 og lån 120 000">
+        <path d="M40 150 L80 190 L360 190 L400 150 L340 150 L300 110 L140 110 L100 150 Z" fill="#e8eef6" stroke="#17202b" stroke-width="3"/>
+        <rect x="168" y="78" width="104" height="32" rx="4" fill="var(--kap)"/>
+        <text x="220" y="100" text-anchor="middle" font-size="16" fill="#fff" font-weight="700">175 hk</text>
+        <rect x="250" y="28" width="160" height="40" rx="8" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
+        <text x="330" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="#17202b">150 000 kr</text>
+        <g data-vis-fra="2">
+          <text x="120" y="230" font-size="16" fill="#17202b">Egenkapital 30 000</text>
+          <text x="280" y="230" font-size="16" font-weight="700" fill="var(--kap)">Lån 120 000</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Laget vil kjøpe en brukt skjærgårdsjeep til 150 000 kr. Til sammen har dere spart 30 000 kr.</p>
+      <div class="undre" data-hint="Rente betyr at banken skal ha mer tilbake enn dere lånte." data-sekunder="30">Blir båten dyrere enn 150 000 kr hvis resten lånes? Gjett først.</div>
+      <p class="steg">Resten er \(150\,000 - 30\,000 = 120\,000\) kr. Det er lånet.</p>
+      <p class="steg">Med rente betaler dere mer enn 120 000 kr tilbake. Båten koster da mer enn prislappen, hvis dere regner med egenkapitalen.</p>
+      <p class="se-ogsa steg"><a href="../9-0/teori.html">Prosjekt, ukeplan og rubrikk</a></p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Annuitet">
+    <h2>Samme termin hver måned</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Tre like søyler som viser samme terminbeløp i måned 1, 18 og 36">
+        <line x1="40" y1="190" x2="400" y2="190" stroke="#17202b" stroke-width="2"/>
+        <rect x="70" y="70" width="70" height="120" fill="var(--kap)" opacity="0.85"/>
+        <rect x="185" y="70" width="70" height="120" fill="var(--kap)" opacity="0.85"/>
+        <rect x="300" y="70" width="70" height="120" fill="var(--kap)" opacity="0.85"/>
+        <g font-size="16" text-anchor="middle" fill="#17202b">
+          <text x="105" y="214">Mnd 1</text>
+          <text x="220" y="214">Mnd 18</text>
+          <text x="335" y="214">Mnd 36</text>
+        </g>
+        <g data-vis-fra="3" font-size="16" font-weight="700" text-anchor="middle" fill="#fff">
+          <text x="105" y="140">3 788</text>
+          <text x="220" y="140">3 788</text>
+          <text x="335" y="140">3 788</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Banken tilbyr annuitetslån: like stort beløp hver måned i 3 år. Renta er 8,5 % per år. I starten er rentedelen stor. Avdragsdelen vokser.</p>
+      <div class="undre" data-hint="3 år er 36 måneder. Renta per måned er årsrenta delt på 12." data-sekunder="30">Hvor mange måneder er 3 år, og er renta per måned 8,5 %?</div>
+      <p class="steg">3 år er \(3 \cdot 12 = 36\) måneder. Månedsrenta er \(0{,}085 : 12\), ikke 8,5 %.</p>
+      <p class="steg">Første måneds rente er \(120\,000 \cdot 0{,}085 : 12 = 850\) kr. Resten av terminbeløpet er avdrag.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Annuitet</p>
+        <p>\(A = L \cdot \dfrac{r(1+r)^{n}}{(1+r)^{n}-1}\)</p>
+        <p>\(L\) lån, \(r\) rente per måned, \(n\) antall måneder. Her blir \(A\) om lag 3 788 kr.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Budsjett">
+    <h2>Har vi råd til turen?</h2>
+    <div class="tekst">
+      <p>Båten hjelper ikke hvis kassa er tom på Skagerrak. Tur-retur er 260 nautiske mil. Forbruket er 2,8 liter per mil. Bensin koster 22 kr per liter.</p>
+      <div class="undre" data-hint="Drivstoff er strekning ganger liter per mil ganger pris." data-sekunder="30">Hvilken post tror du blir størst: drivstoff, mat eller havn?</div>
+      <p class="steg">Drivstoff: \(260 \cdot 2{,}8 = 728\) liter, og \(728 \cdot 22 = 16\,016\) kr.</p>
+      <p class="steg">Havn: 2 netter à 350 DKK er 700 DKK. Med kurs 100 DKK = 150 NOK blir det \(700 \cdot 1{,}5 = 1\,050\) kr.</p>
+      <p class="steg">Mat: \(3 \cdot 3 \cdot 400 = 3\,600\) kr. Sikkerhet: \(3 \cdot 1\,200 + 900 = 4\,500\) kr.</p>
+      <p class="steg">Summen av de fire postene er \(16\,016 + 1\,050 + 3\,600 + 4\,500 = 25\,166\) kr. Drivstoff er størst.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Buffer">
+    <h2>15 % til det som ryker</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Søyle for 25 166 kr og et tillegg på 15 prosent">
+        <rect x="60" y="40" width="220" height="70" fill="#e8eef6" stroke="#17202b" stroke-width="2"/>
+        <text x="170" y="82" text-anchor="middle" font-size="18" fill="#17202b">25 166 kr</text>
+        <g data-vis-fra="2">
+          <rect x="280" y="40" width="100" height="70" fill="var(--kap)"/>
+          <text x="330" y="82" text-anchor="middle" font-size="16" fill="#fff">+ 15 %</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Motortrøbbel er dyrt på sjøen. Dere legger på 15 % buffer av de 25 166 kronene. Bufferen er ikke med i grunnlaget. Dere tar ikke 15 % av en sum som allerede har buffer.</p>
+      <div class="undre" data-hint="10 % av 25 000 er 2 500. 15 % er litt mer." data-sekunder="30">Er 15 % av 25 000 kr nærmere 2 500 kr eller 4 000 kr?</div>
+      <p class="steg">\(25\,166 \cdot 0{,}15 = 3\,774{,}9\) kr. Nærmere 4 000 enn 2 500.</p>
+      <p class="steg">Totalt: \(25\,166 + 3\,774{,}9 = 28\,940{,}9\) kr. Delt på tre: om lag 9 647 kr per person.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Buffer</p>
+        <p>Buffer = prosent · summen av postene. Ny bensinpris endrer drivstoffposten og dermed bufferen.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="teori.html">Teori 9.1</a> · <a href="https://ndla.no/nb/f/matematikk-1p-y---tp/5fff4ebc1153">NDLA 1P-Y TP</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

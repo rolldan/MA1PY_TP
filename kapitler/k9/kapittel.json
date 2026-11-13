@@ -1,0 +1,44 @@
+{
+  "nr": 9,
+  "tittel": "Den store overfarten",
+  "status": "ferdig",
+  "ingress": "Helårsprosjekt i uke 20–23. Tre venner kjøper en brukt båt og planlegger turen fra Sandvika til Løkken. Lån, budsjett, volum, målestokk, motor, fart og prosent brukes på samme oppdrag.",
+  "handlerOm": "I lunsjen finner laget en brukt skjærgårdsjeep til 150 000 kr. Tanken lekker, og Løkken ligger om lag 130 nautiske mil unna. Dere finansierer båten, setter opp budsjett, lager en tank på 400 liter i modell 1:10, sjekker motor og rekkevidde, og avslutter med diagram og fagsamtale.",
+  "byggerPa": [
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" },
+    { "tekst": "Kapittel 3: Forhold og prosent" },
+    { "tekst": "Kapittel 4: Enheter, fart og desimaltimer" },
+    { "tekst": "Kapittel 6: Volum, målestokk og Pytagoras" },
+    { "tekst": "Kapittel 7: Lån, sparing og budsjett" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 10: Eksamensforberedelse" }
+  ],
+  "delkapitler": [
+    { "nr": "9.0", "tittel": "Prosjekt, ukeplan og rubrikk", "formel": "Uke 20–23 · fagsamtale", "uke": "20–23", "sider": ["teori"] },
+    { "nr": "9.1", "tittel": "Finansiering og budsjett", "formel": "\\(A = L \\cdot \\dfrac{r(1+r)^{n}}{(1+r)^{n}-1}\\)", "uke": "20" },
+    { "nr": "9.2", "tittel": "Tank på 400 liter og modell i 1:10", "formel": "\\(1:10 \\Rightarrow V : 1000\\)", "uke": "21" },
+    { "nr": "9.3", "tittel": "Motor, navigasjon og rekkevidde", "formel": "\\(t = s : v\\)", "uke": "22" },
+    { "nr": "9.4", "tittel": "Brus, vinkler og presentasjon", "formel": "\\(a^{2}+b^{2} = c^{2}\\)", "uke": "23" }
+  ],
+  "jegKan": [
+    "Jeg kan sammenligne lån og sparing for et stort kjøp.",
+    "Jeg kan sette opp et budsjett med valuta, prosent og buffer.",
+    "Jeg kan regne volum av en tank og gjøre om mellom cm³, dm³ og liter.",
+    "Jeg kan lage en modell i målestokk 1:10 og forklare at volumet blir 1/1000.",
+    "Jeg kan sette toleranse på en tegning.",
+    "Jeg kan regne om mellom hk og kW og finne energi i kWh.",
+    "Jeg kan regne tid, strekning og fart med knop og nautiske mil.",
+    "Jeg kan gjøre om desimaltimer til timer og minutter.",
+    "Jeg kan vurdere om drivstoffreserven holder 30 %-regelen.",
+    "Jeg kan finne pris per stykk og prisforskjell i prosent.",
+    "Jeg kan kontrollere en rett vinkel med Pytagoras og 3-4-5.",
+    "Jeg kan presentere løsningene og argumentere for valgene."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "K", "tittel": "Finansiering og budsjett", "tekst": "Sammenlign lån og sparing, og sett opp budsjettet for turen.", "lenke": "9-1/verksted.html" },
+    { "merke": "V/K", "tittel": "Tank og modell i 1:10", "tekst": "Regn ut mål på en tank på 400 L, og lag modell og tegning med toleranse.", "lenke": "9-2/verksted.html" },
+    { "merke": "V/K", "tittel": "Drivstoff og rekkevidde", "tekst": "Mål en kanne i verkstedet og vurder om 30 %-regelen holder på overfarten.", "lenke": "9-3/verksted.html" },
+    { "merke": "V/K", "tittel": "Presentasjon ved benken", "tekst": "Brusdiagram, 3-4-5 på en ramme, og fagsamtale med praktisk del.", "lenke": "9-4/verksted.html" }
+  ]
+}
