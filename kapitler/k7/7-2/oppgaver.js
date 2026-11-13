@@ -127,5 +127,92 @@ Bok.oppgaver([
     ],
     hint: ["20 % er en femtedel.", "\\(15\\,000 : 5 = 3\\,000\\). Utbetalt: \\(15\\,000 - 3\\,000\\)."],
     losning: "<p>Trekk: 3 000 kr. Utbetalt: 12 000 kr.</p>"
+  },
+  {
+    id: "skatt-22-fem",
+    niva: "lett",
+    tittel: "22 prosent av 5 000",
+    tekst: "<p>Skatt på alminnelig inntekt er 22 % i 2026. Hvor mange kroner er 22 % av 5 000 kr?</p>",
+    svar: { verdi: 1100, enhet: "kr", tol: 0.5 },
+    steg: [{ verdi: 0.22 }, { verdi: 1100, enhet: "kr" }],
+    hint: ["22 % skrives 0,22.", "\\(5\\,000 \\cdot 0{,}22 = 1\\,100\\)."],
+    losning: "<p>\\(5\\,000 \\cdot 0{,}22 = 1\\,100\\) kr. Dette er bare prosenten av beløpet, ikke en ferdig skatteberegning.</p>"
+  },
+  {
+    id: "frikort-rest",
+    niva: "lett",
+    tittel: "Plass igjen på frikortet",
+    tekst: "<p>Frikortgrensen i 2026 er 100 000 kr for hele året. En elev på dekkhotellet har tjent 64 500 kr så langt. Hvor mye kan eleven tjene mer uten å gå over grensen?</p>",
+    svar: { verdi: 35500, enhet: "kr", tol: 0.5 },
+    steg: [{ verdi: 35500, enhet: "kr" }],
+    hint: ["Trekk det som er tjent, fra grensen.", "\\(100\\,000 - 64\\,500 = 35\\,500\\)."],
+    losning: "<p>\\(100\\,000 - 64\\,500 = 35\\,500\\) kr. Grensen gjelder hele året, ikke én måned.</p>"
+  },
+  {
+    id: "trygd-150",
+    niva: "middels",
+    tekst: "<p>Årslønn 150 000 kr i 2026. Inntekten er over nedre grense på 99 650 kr. Regn trygdeavgift med 7,6 %.</p>",
+    svar: { verdi: 11400, enhet: "kr", tol: 0.5 },
+    steg: [{ verdi: 7600, enhet: "kr" }, { verdi: 11400, enhet: "kr" }],
+    hint: ["Trygdeavgift = årslønn · 0,076.", "7,6 % av 100 000 er 7 600. 150 000 er 1,5 ganger så mye: \\(7\\,600 \\cdot 1{,}5 = 11\\,400\\)."],
+    losning: "<p>\\(150\\,000 \\cdot 0{,}076 = 11\\,400\\) kr.</p>"
+  },
+  {
+    id: "trekk-22-16",
+    niva: "middels",
+    tittel: "Skattekort på 22 prosent",
+    tekst: "<p>Bruttolønn 16 000 kr. Skattekortet sier 22 % trekk. Trekket er et forskudd, ikke den endelige skatten.</p>",
+    deler: [
+      { tekst: "Hvor stort er trekket?", svar: { verdi: 3520, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hva blir utbetalt?", svar: { verdi: 12480, enhet: "kr", tol: 0.5 } }
+    ],
+    steg: [{ verdi: 3520, enhet: "kr" }],
+    hint: ["Trekk = brutto · 0,22. Utbetalt = brutto − trekk.", "\\(16\\,000 \\cdot 0{,}22 = 3\\,520\\). \\(16\\,000 - 3\\,520 = 12\\,480\\)."],
+    losning: "<p>Trekk: \\(16\\,000 \\cdot 0{,}22 = 3\\,520\\) kr.<br>Utbetalt: \\(12\\,480\\) kr. Det er 78 % av brutto.</p>"
+  },
+  {
+    id: "trinn-250",
+    niva: "middels",
+    tittel: "Trinnskatt på 250 000",
+    tekst: "<p>Personinntekten er 250 000 kr i 2026. Trinnskatt er 1,7 % av den delen som ligger mellom 226 100 kr og 318 300 kr. Her stopper inntekten på 250 000 kr.</p>",
+    deler: [
+      { tekst: "Hvor mange kroner ligger i trinnet?", svar: { verdi: 23900, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvor stor blir trinnskatten?", svar: { verdi: 406.3, enhet: "kr", tol: 0.05 } }
+    ],
+    steg: [{ verdi: 23900, enhet: "kr" }, { verdi: 406.3, enhet: "kr" }],
+    hint: ["Grunnlaget er inntekten minus 226 100. Bare den delen får 1,7 %.", "\\(250\\,000 - 226\\,100 = 23\\,900\\). \\(23\\,900 \\cdot 0{,}017 = 406{,}30\\)."],
+    losning: "<p>Grunnlag: \\(23\\,900\\) kr.<br>Trinnskatt: \\(23\\,900 \\cdot 0{,}017 = 406{,}30\\) kr. Inntekten under 226 100 kr har 0 % trinnskatt.</p>"
+  },
+  {
+    id: "ar-300",
+    niva: "vanskelig",
+    tittel: "Årslønn 300 000 kr i 2026",
+    tekst: "<p>Bruk modellen i teorien. Minstefradrag er 46 %, men maksimalt 95 700 kr. Personfradrag er 114 540 kr. Trinnskatt: 1,7 % av inntekten mellom 226 100 og 318 300. Trygdeavgift på lønn er 7,6 %.</p>",
+    deler: [
+      { tekst: "Hvilket minstefradrag brukes?", svar: { verdi: 95700, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hva blir alminnelig inntekt?", svar: { verdi: 89760, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hva blir skatt med 22 %?", svar: { verdi: 19747.2, enhet: "kr", tol: 0.05 } },
+      { tekst: "Hva blir trinnskatten?", svar: { verdi: 1256.3, enhet: "kr", tol: 0.05 } },
+      { tekst: "Hva blir trygdeavgiften?", svar: { verdi: 22800, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hva blir sum skatt og avgift?", svar: { verdi: 43803.5, enhet: "kr", tol: 0.1 } }
+    ],
+    steg: [{ verdi: 138000, enhet: "kr" }, { verdi: 95700, enhet: "kr" }, { verdi: 89760, enhet: "kr" }, { verdi: 73900, enhet: "kr" }, { verdi: 19747.2, enhet: "kr" }, { verdi: 1256.3, enhet: "kr" }, { verdi: 22800, enhet: "kr" }],
+    hint: ["46 % av 300 000 er 138 000, som er over taket. Bruk 95 700.", "Alminnelig inntekt: \\(300\\,000 - 95\\,700 - 114\\,540 = 89\\,760\\). Trinn: \\(300\\,000 - 226\\,100 = 73\\,900\\), ganget med 0,017."],
+    losning: "<p>Minstefradrag 95 700 kr. Alminnelig inntekt \\(89\\,760\\) kr. Skatt \\(89\\,760 \\cdot 0{,}22 = 19\\,747{,}20\\) kr.<br>Trinnskatt: \\(73\\,900 \\cdot 0{,}017 = 1\\,256{,}30\\) kr.<br>Trygdeavgift: \\(300\\,000 \\cdot 0{,}076 = 22\\,800\\) kr.<br>Sum: \\(19\\,747{,}20 + 1\\,256{,}30 + 22\\,800 = 43\\,803{,}50\\) kr.</p>"
+  },
+  {
+    id: "ar-17220",
+    niva: "vanskelig",
+    tittel: "Tolv måneder med 17 220 kr",
+    tekst: "<p>Månedslønna er 17 220 kr i 12 måneder. Minstefradrag er 46 %, men maksimalt 95 700 kr. Personfradrag er 114 540 kr. Er fradragene større enn lønna, er alminnelig inntekt 0 kr i denne modellen. Trygdeavgift på lønn er 7,6 %.</p>",
+    deler: [
+      { tekst: "Hva er årslønna?", svar: { verdi: 206640, enhet: "kr", tol: 0.5 } },
+      { tekst: "Hvilket minstefradrag brukes?", svar: { verdi: 95054.4, enhet: "kr", tol: 0.05 } },
+      { tekst: "Hva blir alminnelig inntekt?", svar: { verdi: 0, enhet: "kr", tol: 0 } },
+      { tekst: "Hva blir trygdeavgiften?", svar: { verdi: 15704.64, enhet: "kr", tol: 0.01 } }
+    ],
+    steg: [{ verdi: 206640, enhet: "kr" }, { verdi: 95054.4, enhet: "kr" }, { verdi: 209594.4, enhet: "kr" }, { verdi: 0, enhet: "kr" }, { verdi: 15704.64, enhet: "kr" }],
+    hint: ["Årslønn først. 46 % av den er under taket på 95 700, så prosenten brukes.", "Minstefradrag pluss personfradrag er \\(95\\,054{,}40 + 114\\,540 = 209\\,594{,}40\\), som er mer enn 206 640. Alminnelig inntekt blir 0. Trygd: \\(206\\,640 \\cdot 0{,}076\\)."],
+    losning: "<p>Årslønn: \\(12 \\cdot 17\\,220 = 206\\,640\\) kr.<br>Minstefradrag: \\(206\\,640 \\cdot 0{,}46 = 95\\,054{,}40\\) kr.<br>Fradragene er større enn lønna, så alminnelig inntekt er 0 kr og skatt med 22 % er 0 kr.<br>Trygdeavgift: \\(206\\,640 \\cdot 0{,}076 = 15\\,704{,}64\\) kr.</p>"
   }
 ]);
