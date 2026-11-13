@@ -223,5 +223,206 @@ Bok.oppgaver([
     ],
     hint: ["Trekk kilometerstandene fra hverandre. 45 minutter er 45/60 timer.", "\\(84246 - 84210\\). Tida er \\(45 / 60\\) timer. Fart er strekning delt på tid."],
     losning: "<p>a) \\(84\\,246 - 84\\,210 = 36\\) km<br>b) 45 min \\(= 45 / 60 = 0{,}75\\) timer<br>c) \\(36 / 0{,}75 = 48\\) km/h. Det er en rolig fart i byen, så svaret er rimelig.</p>"
+  },
+  {
+    id: "del1-nuller",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "lett",
+    tittel: "Del 1 · Flytt komma",
+    tekst: "<p>Uten kalkulator.</p>",
+    steg: [{ verdi: 2.5 }, { verdi: 1000 }, { verdi: 48 }],
+    deler: [
+      { tekst: "\\(2{,}5 \\cdot 1000\\)", svar: { verdi: 2500 } },
+      { tekst: "\\(4800 / 100\\)", svar: { verdi: 48 } },
+      { tekst: "\\(0{,}07 \\cdot 100\\)", svar: { verdi: 7 } }
+    ],
+    hint: ["Tell nullene. Gange med 100 eller 1000 flytter kommaet til høyre. Dele med 100 flytter det til venstre.", "a) Tre plasser til høyre. b) To plasser til venstre. c) To plasser til høyre."],
+    losning: "<p>a) \\(2{,}5 \\cdot 1000 = 2500\\)<br>b) \\(4800 / 100 = 48\\)<br>c) \\(0{,}07 \\cdot 100 = 7\\)</p>"
+  },
+  {
+    id: "del1-prosent-av",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "lett",
+    tittel: "Del 1 · Prosent av",
+    tekst: "<p>Uten kalkulator.</p>",
+    steg: [{ verdi: 35, enhet: "kr" }, { verdi: 20, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er 20 % av 350 kr?", svar: { verdi: 70, enhet: "kr" } },
+      { tekst: "Hva er 15 % av 200 kr?", svar: { verdi: 30, enhet: "kr" } }
+    ],
+    hint: ["10 % er tallet delt på 10. 20 % er det dobbelte. 15 % er 10 % pluss halvparten av 10 %.", "a) 10 % av 350 er 35, så 20 % er 70. b) 10 % av 200 er 20, og 5 % er 10."],
+    losning: "<p>a) \\(350 \\cdot 0{,}20 = 70\\) kr<br>b) \\(200 \\cdot 0{,}15 = 30\\) kr</p>"
+  },
+  {
+    id: "jordpunkt",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Rustent jordpunkt",
+    utstyr: "Multimeter, eller tallene under",
+    hms: "Mål på et kretskort eller en ledning som er koblet fra. Ikke mål på en krets som står på, med mindre læreren står ved siden av.",
+    tekst: "<p>Et rustent jordpunkt har motstand 2,5 Ω. Strømmen gjennom punktet er 2 A. Batteriet er 12 V. Spenningsfall er \\(U = R \\cdot I\\).</p>",
+    steg: [{ verdi: 2.5, enhet: "Ω" }, { verdi: 2, enhet: "A" }],
+    deler: [
+      { tekst: "Hvor stort er spenningsfallet over jordpunktet?", svar: { verdi: 5, enhet: "V" } },
+      { tekst: "Hvor mange volt er igjen til lampa?", svar: { verdi: 7, enhet: "V" } }
+    ],
+    hint: ["Spenningsfall er motstand ganger strøm. Det som er igjen til lampa, er batterispenningen minus fallet.", "\\(2{,}5 \\cdot 2 = 5\\) V. Deretter \\(12 - 5\\)."],
+    losning: "<p>a) \\(U = 2{,}5 \\cdot 2 = 5\\) V<br>b) \\(12 - 5 = 7\\) V<br>Lampa får bare 7 V av 12 V. Den lyser svakt til jordpunktet er rengjort.</p>"
+  },
+  {
+    id: "reim-dreiing",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Reimskiver på dreiebenken",
+    utstyr: "Målebånd eller skyvelære til skivene. Maskinen står av.",
+    hms: "Ta ikke i reima mens maskinen kan starte. Lås fra strømmen hvis du skal måle på skivene.",
+    tekst: "<p>Motoren går med 1400 r/min. Reimskiva på motoren er 80 mm, og skiva på spindelen er 160 mm. \\(n_1 \\cdot d_1 = n_2 \\cdot d_2\\).</p>",
+    steg: [{ verdi: 80, enhet: "mm" }, { verdi: 160, enhet: "mm" }],
+    svar: { verdi: 700, enhet: "r/min" },
+    hint: ["Stor skive gir lavere turtall. \\(n_2 = n_1 \\cdot d_1 / d_2\\).", "\\(1400 \\cdot 80 / 160\\). 160 er dobbelt så stor som 80."],
+    losning: "<p>\\(n_2 = 1400 \\cdot 80 / 160 = 700\\) r/min. Spindelen går med halvparten av motorturtallet.</p>"
+  },
+  {
+    id: "vekst-nokkel",
+    niva: "middels",
+    tittel: "Ti prosent opp og ned",
+    tekst: "<p>En muttertrekker koster 2000 kr. Prisen stiger med 10 %, og faller deretter med 10 %.</p>",
+    steg: [{ verdi: 200, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva koster den etter oppgangen?", svar: { verdi: 2200, enhet: "kr" } },
+      { tekst: "Hva koster den etter nedgangen?", svar: { verdi: 1980, enhet: "kr" } },
+      {
+        tekst: "Hvorfor er prisen ikke 2000 kr igjen?",
+        svar: {
+          valg: ["10 % regnes av to ulike beløp", "Mva er trukket fra", "Kalkulatoren runder feil"],
+          riktig: 0,
+          forklaring: "Oppgangen er 10 % av 2000 kr. Nedgangen er 10 % av 2200 kr, og det er et større beløp."
+        }
+      }
+    ],
+    hint: ["Vekstfaktor 1,10 opp, deretter 0,90 ned. De to prosentene har ulik helhet.", "\\(2000 \\cdot 1{,}10\\). Deretter ganger du med 0,90."],
+    losning: "<p>a) \\(2000 \\cdot 1{,}10 = 2200\\) kr<br>b) \\(2200 \\cdot 0{,}90 = 1980\\) kr<br>c) 10 % av 2200 kr er 220 kr, mens 10 % av 2000 kr er 200 kr. Prisen lander 20 kr under start.</p>"
+  },
+  {
+    id: "tank-reserve",
+    type: "verksted",
+    niva: "vanskelig",
+    merke: "V",
+    tittel: "Tømmetid og reserve",
+    utstyr: "Målebeger og en kanne merket med liter, eller tallene under",
+    hms: "Tørk opp søl. Ingen åpen flamme ved olje.",
+    tekst: "<p>En oljetank rommer 30 liter. Pumpa flytter 1,5 liter per minutt. Dere skal alltid ha 30 % av tanken igjen som reserve.</p>",
+    steg: [{ verdi: 1.5, enhet: "L/min" }, { verdi: 9, enhet: "L" }],
+    deler: [
+      { tekst: "Hvor mange minutter tar det å tømme hele tanken?", svar: { verdi: 20, enhet: "min" } },
+      { tekst: "Hvor mange liter er reserven på 30 %?", svar: { verdi: 9, enhet: "L" } },
+      { tekst: "Hvor mange minutter kan pumpa gå før bare reserven er igjen?", svar: { verdi: 14, enhet: "min" } }
+    ],
+    hint: ["Tid er liter delt på liter per minutt. Reserven er 30 % av 30 liter. Du kan bruke resten.", "\\(30 / 1{,}5\\). Reserven: \\(0{,}30 \\cdot 30\\). Brukbart volum: \\(30 - 9\\)."],
+    losning: "<p>a) \\(30 / 1{,}5 = 20\\) min<br>b) \\(0{,}30 \\cdot 30 = 9\\) L<br>c) Brukbart volum er \\(30 - 9 = 21\\) L. \\(21 / 1{,}5 = 14\\) min</p>"
+  },
+  {
+    id: "bolt-sikker",
+    niva: "vanskelig",
+    tittel: "Når er du sikker?",
+    tekst: "<p>Bolter skal være \\(45{,}0 \\pm 0{,}3\\) mm. Måleverktøyet har usikkerhet \\(\\pm 0{,}1\\) mm. Du kan bare godkjenne en bolt når hele usikkerhetsintervallet ligger innenfor grensemålene.</p>",
+    steg: [{ verdi: 44.7, enhet: "mm" }, { verdi: 45.3, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er minste grensemål?", svar: { verdi: 44.7, enhet: "mm" } },
+      { tekst: "Hva er største grensemål?", svar: { verdi: 45.3, enhet: "mm" } },
+      { tekst: "Hva er det høyeste målet du kan godkjenne og fortsatt være sikker?", svar: { verdi: 45.2, enhet: "mm" } }
+    ],
+    hint: ["Trekk og legg til toleransen først. Verktøyet kan vise 0,1 mm for høyt, så det høyeste sikre målet ligger 0,1 mm under største grensemål.", "Største grensemål er 45,3 mm. \\(45{,}3 - 0{,}1\\)."],
+    losning: "<p>a) \\(45{,}0 - 0{,}3 = 44{,}7\\) mm<br>b) \\(45{,}0 + 0{,}3 = 45{,}3\\) mm<br>c) \\(45{,}3 - 0{,}1 = 45{,}2\\) mm. Måler du 45,2 mm, kan sann verdi være fra 45,1 mm til 45,3 mm. Alt det er innenfor. Måler du 45,3 mm, kan sann verdi være 45,4 mm, og da er du ikke sikker.</p>"
+  },
+  {
+    id: "del2-dor",
+    type: "eksamen",
+    eksamensdel: "Del 2 (med hjelpemidler)",
+    niva: "middels",
+    tittel: "Del 2 · Maling på en dør",
+    tekst: "<p>En dør er 1,5 m høy og 0,8 m bred. Den skal ha to strøk. Malingen dekker 6 m² per liter og koster 180 kr per liter.</p>",
+    steg: [{ verdi: 1.2, enhet: "m²" }],
+    deler: [
+      { tekst: "Hvor stort er arealet?", svar: { verdi: 1.2, enhet: "m²" } },
+      { tekst: "Hvor mange liter går med?", svar: { verdi: 0.4, enhet: "L" } },
+      { tekst: "Hva koster malingen?", svar: { verdi: 72, enhet: "kr" } }
+    ],
+    hint: ["Areal er høyde ganger bredde. To strøk betyr at du maler arealet to ganger. Del det på dekkevnen.", "\\(1{,}5 \\cdot 0{,}8\\). Liter: \\(1{,}2 \\cdot 2 / 6\\). Pris: liter ganger 180."],
+    losning: "<p>a) \\(1{,}5 \\cdot 0{,}8 = 1{,}2\\) m²<br>b) \\(1{,}2 \\cdot 2 / 6 = 0{,}4\\) L<br>c) \\(0{,}4 \\cdot 180 = 72\\) kr</p>"
+  },
+  {
+    id: "del2-tur",
+    type: "eksamen",
+    eksamensdel: "Del 2 (med hjelpemidler)",
+    niva: "middels",
+    tittel: "Del 2 · Kort tur",
+    tekst: "<p>Servicebilen har kilometerstand 12 480 km klokka 07:20 og 12 510 km klokka 07:50.</p>",
+    steg: [{ verdi: 30, enhet: "min" }],
+    deler: [
+      { tekst: "Hvor lang er turen?", svar: { verdi: 30, enhet: "km" } },
+      { tekst: "Hvor mange timer tar turen, som desimaltall?", svar: { verdi: 0.5, enhet: "h" } },
+      { tekst: "Hva er gjennomsnittsfarten?", svar: { verdi: 60, enhet: "km/h" } }
+    ],
+    hint: ["Trekk kilometerstandene fra hverandre. 30 minutter er en halv time. Fart er strekning delt på tid.", "\\(12\\,510 - 12\\,480\\). Tida er \\(30 / 60\\) timer."],
+    losning: "<p>a) \\(12\\,510 - 12\\,480 = 30\\) km<br>b) 30 min \\(= 0{,}5\\) timer<br>c) \\(30 / 0{,}5 = 60\\) km/h</p>"
+  },
+  {
+    id: "del2-spare",
+    type: "eksamen",
+    eksamensdel: "Del 2 (med hjelpemidler)",
+    niva: "vanskelig",
+    tittel: "Del 2 · Spare i ti måneder",
+    tekst: "<p>Du setter inn 1500 kr hver måned i 10 måneder. Etter den siste innbetalingen får du 2 % rente én gang, regnet av hele beløpet.</p>",
+    steg: [{ verdi: 1500, enhet: "kr" }, { verdi: 10 }],
+    deler: [
+      { tekst: "Hvor mye har du satt inn?", svar: { verdi: 15000, enhet: "kr" } },
+      { tekst: "Hvor mange kroner er renta?", svar: { verdi: 300, enhet: "kr" } },
+      { tekst: "Hvor mye står på kontoen etter renta?", svar: { verdi: 15300, enhet: "kr" } }
+    ],
+    hint: ["Gang månedsbeløpet med antall måneder. Renta er 2 % av det innskuddet. Legg renta oppå.", "\\(1500 \\cdot 10\\). Rente: \\(15\\,000 \\cdot 0{,}02\\)."],
+    losning: "<p>a) \\(1500 \\cdot 10 = 15\\,000\\) kr<br>b) \\(15\\,000 \\cdot 0{,}02 = 300\\) kr<br>c) \\(15\\,000 + 300 = 15\\,300\\) kr<br>Her kommer renta én gang til slutt, ikke hver måned.</p>"
+  },
+  {
+    id: "del1-kompressorleie",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "middels",
+    tittel: "Del 1 · Leie av kompressor",
+    tekst: "<p>Uten kalkulator. Det koster 100 kr å hente kompressoren, og 50 kr per time etter det. \\(P\\) er prisen i kroner, og \\(h\\) er antall timer.</p>",
+    steg: [{ verdi: 300, enhet: "kr" }, { verdi: 250, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva koster det å leie i 6 timer?", svar: { verdi: 400, enhet: "kr" } },
+      { tekst: "En kunde betalte 350 kr. Hvor mange timer var leien?", svar: { verdi: 5, enhet: "h" } },
+      {
+        tekst: "Hvilken formel gir prisen?",
+        svar: {
+          valg: ["P = 100 + 50h", "P = 100 · 50 · h", "P = 50 + 100h", "P = 100 · h + 50"],
+          riktig: 0,
+          forklaring: "100 kr betales én gang. 50 kr kommer i tillegg per time."
+        }
+      }
+    ],
+    hint: ["Det faste beløpet betales én gang. Timeprisen ganges med antall timer.", "a) \\(100 + 6 \\cdot 50\\). b) Trekk fra 100, og del resten på 50."],
+    losning: "<p>a) \\(100 + 6 \\cdot 50 = 400\\) kr<br>b) \\((350 - 100) / 50 = 5\\) timer<br>c) \\(P = 100 + 50h\\)</p>"
+  },
+  {
+    id: "slipeskive",
+    type: "eksamen",
+    eksamensdel: "Del 2 (med hjelpemidler)",
+    niva: "vanskelig",
+    tittel: "Del 2 · Slipeskive",
+    tekst: "<p>En slipeskive har diameter 115 mm og går med 10 000 r/min. Formelen \\(v_c = \\pi \\cdot d \\cdot n / 1000\\) gir meter per minutt. Del på 60 for å få meter per sekund. Største tillatte fart er 80 m/s.</p>",
+    steg: [{ verdi: 1150 }, { verdi: 60 }],
+    deler: [
+      { tekst: "Hvilken fart har skiva, i m/s? Én desimal.", svar: { verdi: 60.2, enhet: "m/s", tol: 0.15 } },
+      { tekst: "Hvor stor kan diameteren høyst være ved 10 000 r/min hvis farten skal være 80 m/s? Én desimal.", svar: { verdi: 152.8, enhet: "mm", tol: 0.1 } }
+    ],
+    hint: ["Regn først m/min, og del på 60. For diameteren snur du formelen og setter farten til 80 m/s.", "a) \\(\\pi \\cdot 115 \\cdot 10\\,000 / 1000 / 60\\). b) \\(d = 80 \\cdot 60 \\cdot 1000 / (\\pi \\cdot 10\\,000)\\)."],
+    losning: "<p>a) \\(v_c = \\pi \\cdot 115 \\cdot 10\\,000 / 1000 \\approx 3613\\) m/min. \\(3613 / 60 \\approx 60{,}2\\) m/s. Det er under 80 m/s, så skiva kan brukes.<br>b) \\(80 = \\pi \\cdot d \\cdot 10\\,000 / 60\\,000\\), så \\(d = 480 / \\pi \\approx 152{,}8\\) mm.</p>"
   }
 ]);

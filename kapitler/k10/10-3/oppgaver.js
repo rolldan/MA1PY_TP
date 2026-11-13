@@ -148,5 +148,218 @@ Bok.oppgaver([
     },
     hint: ["Velg ett mål: diameter, turtall eller grensemål. Ikke alle tre.", "Avslutt med en beslutning: godkjent, vrak, eller endre turtall."],
     losning: "<p>Et sterkt svar har en måling eller en formel, en enhet, og en konsekvens. Et svakt svar ramser opp alt du husker fra året.</p>"
+  },
+  {
+    id: "halvliter-olje",
+    niva: "lett",
+    tittel: "Målebeger",
+    tekst: "<p>I samtalen peker sensor på et beger med 500 ml skjæreolje. Hvor mange liter er det?</p>",
+    steg: [{ verdi: 1000 }],
+    svar: { verdi: 0.5, enhet: "L" },
+    hint: ["1000 ml er 1 liter. 500 ml er halvparten.", "\\(500 / 1000 = 0{,}5\\) L."],
+    losning: "<p>\\(500 / 1000 = 0{,}5\\) L. Si «en halv liter» høyt, med enheten.</p>"
+  },
+  {
+    id: "tre-kvart",
+    niva: "lett",
+    tittel: "Tre kvarter",
+    tekst: "<p>Sensor ber deg gjøre om 0,75 timer til minutter. Hva svarer du?</p>",
+    steg: [{ verdi: 0.75 }, { verdi: 60 }],
+    svar: { verdi: 45, enhet: "min" },
+    hint: ["0,75 timer er tre kvarter. En time er 60 minutter.", "\\(0{,}75 \\cdot 60 = 45\\) minutter."],
+    losning: "<p>\\(0{,}75 \\cdot 60 = 45\\) minutter. 0,75 timer er ikke 75 minutter.</p>"
+  },
+  {
+    id: "si-ohm",
+    type: "verksted",
+    niva: "lett",
+    merke: "V",
+    tittel: "Si strømmen",
+    utstyr: "Et merkeskilt eller tallene 24 V og 8 Ω",
+    hms: "Koble fra før du måler motstand. Mål motstand bare på en krets som er slått av.",
+    tekst: "<p>Ved benken skal du si formelen for strøm, og så bruke den. Spenningen er 24 V og motstanden er 8 Ω.</p>",
+    steg: [{ verdi: 24, enhet: "V" }, { verdi: 8, enhet: "Ω" }],
+    deler: [
+      {
+        tekst: "Hvilken formel bruker du?",
+        svar: {
+          valg: ["I = U / R", "I = R / U", "I = U · R", "I = P / R"],
+          riktig: 0,
+          forklaring: "Strøm er spenning delt på motstand."
+        }
+      },
+      { tekst: "Hvor stor er strømmen?", svar: { verdi: 3, enhet: "A" } }
+    ],
+    hint: ["Formelen deler spenning på motstand. Ikke bytt om.", "\\(24 / 8 = 3\\) A."],
+    losning: "<p>a) \\(I = U / R\\)<br>b) \\(I = 24 / 8 = 3\\) A<br>Si både formelen og enheten når du svarer.</p>"
+  },
+  {
+    id: "benk-kasse",
+    type: "verksted",
+    niva: "middels",
+    merke: "V/K",
+    tittel: "Liter i kassa",
+    utstyr: "Målebånd og en kasse. Bruk målene under hvis du ikke har en kasse.",
+    hms: "Kassen skal være tom og tørr før du måler innvendig.",
+    tekst: "<p>Innvendig mål: 600 mm × 250 mm × 100 mm. Hvor mange liter rommer kassen? 1 dm³ = 1 L.</p>",
+    steg: [{ verdi: 6, enhet: "dm" }, { verdi: 2.5, enhet: "dm" }, { verdi: 1, enhet: "dm" }],
+    svar: { verdi: 15, enhet: "L" },
+    hint: ["Gjør sidene om til dm før du ganger. 100 mm = 1 dm.", "\\(6 \\cdot 2{,}5 \\cdot 1\\)."],
+    losning: "<p>\\(600\\) mm \\(= 6\\) dm, \\(250\\) mm \\(= 2{,}5\\) dm, \\(100\\) mm \\(= 1\\) dm.<br>\\(6 \\cdot 2{,}5 \\cdot 1 = 15\\) dm³ \\(= 15\\) L.</p>"
+  },
+  {
+    id: "modell-boks",
+    niva: "vanskelig",
+    tittel: "Kanne i 1:2",
+    tekst: "<p>En kanne rommer 1,6 liter. Du lager en modell i målestokk 1:2 og skal fylle modellen med sand.</p>",
+    steg: [{ verdi: 8 }, { verdi: 0.2, enhet: "L" }],
+    deler: [
+      { tekst: "Hvor mange liter sand trenger modellen?", svar: { verdi: 0.2, enhet: "L" } },
+      { tekst: "Hvor mange milliliter er det?", svar: { verdi: 200, enhet: "ml" } }
+    ],
+    hint: ["Lengdeskala 1:2 gir volumskala \\(2^3 = 8\\). Del liter på 8, og gang med 1000 for å få ml.", "\\(1{,}6 / 8 = 0{,}2\\) L."],
+    losning: "<p>a) \\(1{,}6 / 8 = 0{,}2\\) L<br>b) \\(0{,}2 \\cdot 1000 = 200\\) ml<br>Delte du bare på 2, fikk du 0,8 L. Det er målestokk-fellen: volumet blir 1/8, ikke halvparten.</p>"
+  },
+  {
+    id: "moment-dobbel",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Kortere arm",
+    utstyr: "Fastnøkkel. Du kan regne uten å trekke til.",
+    hms: "Ikke forleng nøkkelen med et rør i denne oppgaven. Regn først.",
+    tekst: "<p>En bolt skal ha 80 Nm. \\(F = M / a\\).</p>",
+    steg: [{ verdi: 80, enhet: "Nm" }],
+    deler: [
+      { tekst: "Hvor stor kraft trengs på en arm på 0,40 m?", svar: { verdi: 200, enhet: "N" } },
+      { tekst: "Hvor stor kraft trengs på en arm på 0,20 m?", svar: { verdi: 400, enhet: "N" } }
+    ],
+    hint: ["Kraft er moment delt på arm. Halv arm krever dobbel kraft for samme moment.", "a) \\(80 / 0{,}40\\). b) \\(80 / 0{,}20\\)."],
+    losning: "<p>a) \\(F = 80 / 0{,}40 = 200\\) N<br>b) \\(F = 80 / 0{,}20 = 400\\) N<br>Når armen blir halvparten, må kraften dobles. Si det slik i samtalen.</p>"
+  },
+  {
+    id: "pinne-utenfor",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "Ligger målet inni?",
+    utstyr: "Skyvelære og en pinne. Bruk målet 10,06 mm hvis du ikke har en pinne.",
+    hms: "Mål på benken. Maskinen står av.",
+    tekst: "<p>Kravet er \\(10{,}00 \\pm 0{,}05\\) mm. Du måler 10,06 mm.</p>",
+    steg: [{ verdi: 0.05, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er minste mål?", svar: { verdi: 9.95, enhet: "mm" } },
+      { tekst: "Hva er største mål?", svar: { verdi: 10.05, enhet: "mm" } },
+      {
+        tekst: "Er pinnen godkjent?",
+        svar: {
+          valg: ["Ja", "Nei"],
+          riktig: 1,
+          forklaring: "10,06 mm er større enn 10,05 mm."
+        }
+      }
+    ],
+    hint: ["Trekk avviket fra 10,00 og legg det til. Sammenlign 10,06 med største mål.", "\\(10{,}00 - 0{,}05\\) og \\(10{,}00 + 0{,}05\\)."],
+    losning: "<p>a) \\(9{,}95\\) mm<br>b) \\(10{,}05\\) mm<br>c) Nei. 10,06 mm ligger 0,01 mm over største mål. Pinnen er vrak.</p>"
+  },
+  {
+    id: "kreditt-en",
+    type: "repetisjon",
+    fra: "kapittel 7",
+    niva: "middels",
+    tekst: "<p>Et kredittkort står med 8000 kr. Renta er 1,5 % per måned. Du betaler ingenting den første måneden.</p>",
+    steg: [{ verdi: 0.015 }],
+    deler: [
+      { tekst: "Hvor mange kroner er renta den måneden?", svar: { verdi: 120, enhet: "kr" } },
+      { tekst: "Hvor mye skylder du etter den måneden?", svar: { verdi: 8120, enhet: "kr" } }
+    ],
+    hint: ["1,5 % av 8000. Legg renta oppå gjelden.", "\\(8000 \\cdot 0{,}015 = 120\\)."],
+    losning: "<p>a) \\(8000 \\cdot 0{,}015 = 120\\) kr<br>b) \\(8000 + 120 = 8120\\) kr<br>I samtalen kan du si at neste måneds rente regnes av 8120 kr hvis du fortsatt ikke betaler.</p>"
+  },
+  {
+    id: "vrak-poeng",
+    type: "repetisjon",
+    fra: "kapittel 3",
+    niva: "lett",
+    tekst: "<p>Vrakprosenten i en serie går fra 10 % til 12 %.</p>",
+    steg: [{ verdi: 2 }],
+    deler: [
+      { tekst: "Hvor mange prosentpoeng økte vrakprosenten? Svar med tallet.", svar: { verdi: 2 } },
+      { tekst: "Hvor mange prosent økte vrakprosenten?", svar: { verdi: 20, enhet: "%" } }
+    ],
+    hint: ["Prosentpoeng er differansen mellom prosenttallene. Prosentendring deler differansen på den gamle verdien.", "\\(12 - 10 = 2\\) prosentpoeng. \\(2 / 10 \\cdot 100\\) prosent."],
+    losning: "<p>a) \\(12 - 10 = 2\\) prosentpoeng<br>b) \\(2 / 10 \\cdot 100 = 20\\,\\%\\)<br>Si hvilken av de to du mener. De er ikke det samme.</p>"
+  },
+  {
+    id: "ramme-rett",
+    type: "repetisjon",
+    fra: "kapittel 6",
+    niva: "lett",
+    tekst: "<p>På benken ligger en ramme som er 30 cm på den ene siden og 40 cm på den andre. Hjørnet skal være rett. Hvor lang skal diagonalen være?</p>",
+    steg: [{ verdi: 3 }, { verdi: 4 }, { verdi: 5 }],
+    svar: { verdi: 50, enhet: "cm" },
+    hint: ["3-4-5 kan ganges med 10.", "\\(5 \\cdot 10 = 50\\) cm."],
+    losning: "<p>\\(30\\), \\(40\\) og \\(50\\) er \\(3 \\cdot 10\\), \\(4 \\cdot 10\\) og \\(5 \\cdot 10\\). Diagonalen skal være 50 cm. Er den lengre eller kortere, er hjørnet ikke rett.</p>"
+  },
+  {
+    id: "maling-panser",
+    type: "eksamen",
+    eksamensdel: "Muntlig-praktisk",
+    niva: "middels",
+    tittel: "Panser og grunning",
+    tekst: "<p>Du har målt et panser til 2 m × 1 m. Det skal ha to strøk grunning. Grunningen dekker 8 m² per liter.</p>",
+    steg: [{ verdi: 2, enhet: "m²" }, { verdi: 8 }],
+    deler: [
+      { tekst: "Hvor stort er arealet?", svar: { verdi: 2, enhet: "m²" } },
+      { tekst: "Hvor mange liter grunning trenger du?", svar: { verdi: 0.5, enhet: "L" } },
+      {
+        tekst: "Skriv det du ville sagt om hvorfor det blir to ganger arealet.",
+        svar: {
+          fritekst: true,
+          fasit: "<p>To strøk betyr at hele arealet dekkes to ganger. Jeg regner 2 m² · 2 og deler på 8 m² per liter. Det blir 0,5 liter.</p>"
+        }
+      }
+    ],
+    hint: ["Areal er lengde ganger bredde. To strøk dobler arealet du skal dekke.", "\\(2 \\cdot 1 = 2\\) m². Liter: \\(2 \\cdot 2 / 8\\)."],
+    losning: "<p>a) \\(2 \\cdot 1 = 2\\) m²<br>b) \\(2 \\cdot 2 / 8 = 0{,}5\\) L<br>c) Si at to strøk er det samme arealet malt to ganger, og at du deler på dekkevnen.</p>"
+  },
+  {
+    id: "forklar-skala",
+    type: "eksamen",
+    eksamensdel: "Muntlig-praktisk",
+    niva: "vanskelig",
+    tittel: "Hvorfor ikke halvparten?",
+    tekst: "<p>En tank rommer 8 liter. Modellen lages i målestokk 1:2.</p>",
+    steg: [{ verdi: 8 }, { verdi: 2 }],
+    deler: [
+      { tekst: "Hvor mange liter rommer modellen?", svar: { verdi: 1, enhet: "L" } },
+      {
+        tekst: "Skriv det du ville sagt hvis sensor spør hvorfor svaret ikke er 4 liter.",
+        svar: {
+          fritekst: true,
+          fasit: "<p>1:2 gjelder lengden. Volumet skaleres med 2 · 2 · 2 = 8. 8 liter delt på 8 er 1 liter. 4 liter hadde vært halv lengde, halv bredde og full høyde, og det er ikke en modell i 1:2.</p>"
+        }
+      }
+    ],
+    hint: ["Volumskalaen er lengdeskalaen i tredje potens. \\(2^3 = 8\\).", "\\(8 / 8 = 1\\) L."],
+    losning: "<p>a) \\(8 / 2^3 = 8 / 8 = 1\\) L<br>b) 4 liter er det du får hvis du bare deler på 2. Si at alle tre retninger blir halvparten, så volumet blir en åttedel.</p>"
+  },
+  {
+    id: "tur-drivstoff",
+    type: "verksted",
+    niva: "vanskelig",
+    merke: "V/K",
+    tittel: "Servicebilen",
+    utstyr: "Tankmåler eller en kanne du kan lese liter på. Bruk tallene under hvis du ikke måler selv.",
+    hms: "Ingen åpen flamme ved drivstoff. Les av, ikke fyll.",
+    tekst: "<p>Turen er 90 km. Bilen bruker 0,5 liter per 10 km og holder 45 km/h. Tanken var full og rommer 20 liter.</p>",
+    steg: [{ verdi: 9 }, { verdi: 0.5, enhet: "L" }, { verdi: 2, enhet: "h" }],
+    deler: [
+      { tekst: "Hvor mange liter går med?", svar: { verdi: 4.5, enhet: "L" } },
+      { tekst: "Hvor mange minutter tar turen?", svar: { verdi: 120, enhet: "min" } },
+      { tekst: "Hvor mange liter er igjen i tanken etter turen?", svar: { verdi: 15.5, enhet: "L" } }
+    ],
+    hint: ["Hvor mange ganger 10 km er det i 90 km? Tid er strekning delt på fart, og så om til minutter.", "Drivstoff: \\(9 \\cdot 0{,}5\\). Tid: \\(90 / 45\\) timer, ganger 60. Igjen: \\(20 - 4{,}5\\)."],
+    losning: "<p>a) \\(90 / 10 = 9\\), og \\(9 \\cdot 0{,}5 = 4{,}5\\) L<br>b) \\(90 / 45 = 2\\) timer \\(= 120\\) minutter<br>c) \\(20 - 4{,}5 = 15{,}5\\) L<br>Det er godt igjen i tanken. 4,5 liter av 20 liter er under en fjerdedel.</p>"
   }
 ]);
