@@ -30,6 +30,6 @@
     { "merke": "V/K", "tittel": "Overslag ved lagerhylla", "tekst": "Skruer, planker og bolter: gjør overslag ved hylla og sjekk med kalkulator.", "lenke": "1-2/verksted.html" },
     { "merke": "V", "tittel": "Avvik på tavla", "tekst": "Mål fem emner, før avvik med pluss og minus og finn største og minste avvik.", "lenke": "1-3/verksted.html" },
     { "merke": "V", "tittel": "Tommer til millimeter", "tekst": "Mål nøkler, bor og rørdeler merket i tommer og finn nærmeste metriske nøkkel.", "lenke": "1-4/verksted.html" },
-    { "merke": "K", "tittel": "Akslingskonkurransen", "tekst": "Lag diagram fra egne data og tolk det.", "lenke": "1-5/verksted.html" }
+    { "merke": "K", "tittel": "Akslingskonkurransen", "tekst": "Lag og tolk diagram av en konkurranse om å dreie akslinger, og av egen skjermtid.", "lenke": "1-5/verksted.html" }
   ]
 }

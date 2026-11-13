@@ -1,0 +1,30 @@
+{
+  "nr": 0,
+  "tittel": "Oppstart",
+  "status": "ferdig",
+  "ingress": "Bli kjent med nettboka, måltrappa og verkstedet. Fem temaark og en kartlegging viser hva du kan, og hvor du starter.",
+  "handlerOm": "Første ukene handler om å se matematikk der du står: på turtallstabellen, på tegningen, på manometeret og på prisskiltet. Du lærer hvordan timene er bygget, prøver fem temaer og finner startnivået ditt i måltrappa.",
+  "byggerPa": [{ "tekst": "Regning fra ungdomsskolen" }],
+  "lenkerVidere": [{ "tekst": "Kapittel 1: Verktøykassen", "lenke": "kapitler/k1/index.html" }],
+  "delkapitler": [
+    { "nr": "0.1", "tittel": "Slik bruker du nettboka, tavla og måltrappa", "formel": "Tavle · Teori · Oppgaver · Verksted", "uke": "34" },
+    { "nr": "0.2", "tittel": "Fem temaark", "formel": "Geometri, tall, formler, økonomi, programfag", "uke": "35" },
+    { "nr": "0.3", "tittel": "Kartlegging: hva kan jeg allerede?", "formel": "Tallinje, negative tall, \\(\\cdot 10\\)", "uke": "35" }
+  ],
+  "jegKan": [
+    "Jeg kan finne tavle, teori, oppgaver og verkstedkort.",
+    "Jeg kan forklare de fem spillereglene.",
+    "Jeg kan peke på matematikk i verkstedet: tall og enheter.",
+    "Jeg kan velge nivå i måltrappa og føre loggbok.",
+    "Jeg kan prøve meg på geometri, tall, formler, økonomi og programfag.",
+    "Jeg kan reglene i spillet Bjørn.",
+    "Jeg kan plassere tall på tallinja, også negative tall.",
+    "Jeg kan gange og dele med 10 i enkle oppgaver.",
+    "Jeg vet hva jeg skal øve på i kapittel 1."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V", "tittel": "Verkstedrunde med matteblikk", "tekst": "Lagene finner fem steder med matematikk og noterer tall og enhet.", "lenke": "0-1/verksted.html" },
+    { "merke": "V/K", "tittel": "Fem temaark i stasjoner", "tekst": "Geometri, tall, formler, økonomi og programfag. Lagene roterer.", "lenke": "0-2/verksted.html" },
+    { "merke": "K", "tittel": "Bli kjent og kartlegging", "tekst": "Hvorfor TIF, finn fram i nettboka, og startnivå i måltrappa.", "lenke": "0-3/verksted.html" }
+  ]
+}
