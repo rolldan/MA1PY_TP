@@ -135,5 +135,128 @@ Bok.oppgaver([
     ],
     hint: ["+5 % er faktor 1,05, og du deler for å finne gammel verdi. +125 % er faktor 2,25, ikke 1,25.", "\\(252 : 1{,}05 = 240\\). \\(400 \\cdot 2{,}25 = 900\\)."],
     losning: "<p>a) \\(252 : 1{,}05 = 240\\) kr<br>b) Faktor 2,25. \\(400 \\cdot 2{,}25 = 900\\) kr</p>"
+  },
+  {
+    id: "faktor-ny",
+    niva: "lett",
+    tittel: "Flere faktorer",
+    tekst: "<p>Skriv vekstfaktoren som desimaltall.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "Noe øker med 8 %", svar: { verdi: 1.08, tol: 0.001 } },
+      { tekst: "Noe synker med 8 %", svar: { verdi: 0.92, tol: 0.001 } },
+      { tekst: "Noe øker med 2,5 %", svar: { verdi: 1.025, tol: 0.0005 } },
+      { tekst: "Noe synker med 2,5 %", svar: { verdi: 0.975, tol: 0.0005 } }
+    ],
+    hint: ["Opp: 1 pluss prosenten som desimal. Ned: 1 minus prosenten som desimal.", "8 % opp er 1,08. 8 % ned er 0,92. 2,5 % opp er 1,025. 2,5 % ned er 0,975."],
+    losning: "<p>a) 1,08 b) 0,92 c) 1,025 d) 0,975</p>"
+  },
+  {
+    id: "lonn-216",
+    niva: "lett",
+    tekst: "<p>Timelønna er 200 kr og øker med 8 %. Hva blir den nye timelønna?</p>",
+    steg: [{ verdi: 1.08 }],
+    svar: { verdi: 216, enhet: "kr" },
+    hint: ["Faktoren for 8 % opp er 1,08.", "\\(200 \\cdot 1{,}08 = 216\\) kr."],
+    losning: "<p>\\(200 \\cdot 1{,}08 = 216\\) kr.</p>"
+  },
+  {
+    id: "maskin-hjelm",
+    niva: "lett",
+    tekst: "<p>Bruk vekstfaktor.</p>",
+    deler: [
+      { tekst: "En søyleboremaskin er verdsatt til 15 000 kr og stiger 12 %. Hva blir verdien?", svar: { verdi: 16800, enhet: "kr" } },
+      { tekst: "En sveisehjelm koster 800 kr og settes ned med 25 %. Hva blir prisen?", svar: { verdi: 600, enhet: "kr" } }
+    ],
+    hint: ["+12 % er 1,12. −25 % er 0,75.", "\\(15\\,000 \\cdot 1{,}12 = 16\\,800\\). \\(800 \\cdot 0{,}75 = 600\\)."],
+    losning: "<p>a) \\(15\\,000 \\cdot 1{,}12 = 16\\,800\\) kr<br>b) \\(800 \\cdot 0{,}75 = 600\\) kr</p>"
+  },
+  {
+    id: "gammel-komp",
+    niva: "middels",
+    tekst: "<p>En kompressor er verdt 22 000 kr etter at prisen steg 10 % i år. Hva kostet den i fjor?</p>",
+    steg: [{ verdi: 1.1 }],
+    svar: { verdi: 20000, enhet: "kr" },
+    hint: ["Faktoren er 1,10. Del den nye verdien på faktoren.", "\\(22\\,000 : 1{,}10 = 20\\,000\\) kr."],
+    losning: "<p>\\(22\\,000 : 1{,}10 = 20\\,000\\) kr.</p>"
+  },
+  {
+    id: "tilhenger-fall",
+    niva: "middels",
+    tekst: "<p>En tilhenger er verdt 18 000 kr etter at verdien har sunket 40 %. Hva var den verdt før fallet?</p>",
+    steg: [{ verdi: 0.6 }],
+    svar: { verdi: 30000, enhet: "kr" },
+    hint: ["40 % ned betyr at 60 % er igjen. Faktoren er 0,60.", "\\(18\\,000 : 0{,}60 = 30\\,000\\) kr."],
+    losning: "<p>\\(18\\,000 : 0{,}60 = 30\\,000\\) kr.</p>"
+  },
+  {
+    id: "dekk-faktor",
+    niva: "middels",
+    tekst: "<p>Et dekk kostet 1000 kr og koster nå 850 kr.</p>",
+    deler: [
+      { tekst: "Hva er vekstfaktoren? Skriv desimaltall.", svar: { verdi: 0.85, tol: 0.001 } },
+      { tekst: "Hvor mange prosent er rabatten?", svar: { verdi: 15, enhet: "%" } }
+    ],
+    hint: ["Faktoren er ny pris delt på gammel pris. Rabatten er 1 minus faktoren.", "\\(850 : 1000 = 0{,}85\\). \\(1 - 0{,}85 = 0{,}15 = 15\\) %."],
+    losning: "<p>Faktor: \\(850 : 1000 = 0{,}85\\). Rabatt: 15 %.</p>"
+  },
+  {
+    id: "sett-kjede",
+    niva: "vanskelig",
+    tittel: "Tre endringer",
+    tekst: "<p>Et verktøysett til 4000 kr stiger først 5 %, synker deretter 10 % og stiger så 5 %.</p>",
+    steg: [{ verdi: 4200, enhet: "kr" }, { verdi: 3780, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva er settet verdt etter alle tre endringene?", svar: { verdi: 3969, enhet: "kr" } },
+      { tekst: "Hvor mange prosent under startprisen er det, avrundet til én desimal?", svar: { verdi: 0.8, enhet: "%", tol: 0.05 } }
+    ],
+    hint: ["Faktorene er 1,05, 0,90 og 1,05. Gang dem i rekkefølge. Ikke regn 5 − 10 + 5.", "\\(4000 \\cdot 1{,}05 = 4200\\). \\(4200 \\cdot 0{,}90 = 3780\\). \\(3780 \\cdot 1{,}05 = 3969\\)."],
+    losning: "<p>Verdien blir 3969 kr. Nedgangen er \\(31 : 4000 = 0{,}775\\%\\), som avrundes til 0,8 %. Det er ikke 0 %.</p>"
+  },
+  {
+    id: "lift-tre",
+    niva: "vanskelig",
+    tekst: "<p>En verkstedlift koster 50 000 kr og synker 10 % i verdi hvert år. Hva er den verdt etter 3 år?</p>",
+    steg: [{ verdi: 45000, enhet: "kr" }, { verdi: 40500, enhet: "kr" }],
+    svar: { verdi: 36450, enhet: "kr" },
+    hint: ["Faktoren er 0,90. Gang med den tre ganger. Ikke trekk 30 % én gang.", "\\(50\\,000 \\cdot 0{,}90 = 45\\,000\\). \\(45\\,000 \\cdot 0{,}90 = 40\\,500\\). \\(40\\,500 \\cdot 0{,}90 = 36\\,450\\)."],
+    losning: "<p>\\(50\\,000 \\cdot 0{,}90^{3} = 36\\,450\\) kr.</p>"
+  },
+  {
+    id: "bore-to-ar",
+    type: "verksted",
+    niva: "middels",
+    merke: "K",
+    tittel: "Søyleboremaskin i regneark",
+    utstyr: "PC med regneark",
+    hms: "Klasseromsøkt. Ledninger langs veggen.",
+    tekst: "<p>En søyleboremaskin koster 24 000 kr og synker 5 % i verdien hvert år. Hva er den verdt etter 2 år?</p>",
+    steg: [{ verdi: 0.95 }, { verdi: 22800, enhet: "kr" }],
+    svar: { verdi: 21660, enhet: "kr" },
+    hint: ["Faktoren er 0,95. Gang med den to ganger.", "\\(24\\,000 \\cdot 0{,}95 = 22\\,800\\). \\(22\\,800 \\cdot 0{,}95 = 21\\,660\\)."],
+    losning: "<p>\\(24\\,000 \\cdot 0{,}95^{2} = 21\\,660\\) kr.</p>"
+  },
+  {
+    id: "rep-meter-lang",
+    type: "repetisjon",
+    fra: "kapittel 1",
+    niva: "lett",
+    tekst: "<p>En stang på tegningen er 845 mm. Hvor mange meter er det?</p>",
+    svar: { verdi: 0.845, enhet: "m" },
+    hint: ["1 m = 1000 mm. Fra mm til m deler du med 1000.", "\\(845 : 1000 = 0{,}845\\) m."],
+    losning: "<p>\\(845 : 1000 = 0{,}845\\) m.</p>"
+  },
+  {
+    id: "eks-gammel-ny",
+    type: "eksamen",
+    eksamensdel: "Del 2 (med hjelpemidler)",
+    niva: "middels",
+    tekst: "<p>To priser. Bruk vekstfaktor.</p>",
+    deler: [
+      { tekst: "Ny timelønn er 630 kr etter 5 % tillegg. Hva var den gamle timelønna?", svar: { verdi: 600, enhet: "kr" } },
+      { tekst: "En kabel kostet 200 kr og steg med 150 %. Hva koster den nå?", svar: { verdi: 500, enhet: "kr" } }
+    ],
+    hint: ["+5 % er faktor 1,05, og du deler for å finne gammel verdi. +150 % er faktor 2,50, ikke 1,50.", "\\(630 : 1{,}05 = 600\\). \\(200 \\cdot 2{,}50 = 500\\)."],
+    losning: "<p>a) \\(630 : 1{,}05 = 600\\) kr<br>b) Faktor 2,50. \\(200 \\cdot 2{,}50 = 500\\) kr</p>"
   }
 ]);

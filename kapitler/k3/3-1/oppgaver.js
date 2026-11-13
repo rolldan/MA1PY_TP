@@ -140,5 +140,144 @@ Bok.oppgaver([
     ],
     hint: ["1 del konsentrat skal ha 4 deler vann.", "\\(3 \\cdot 4 = 12\\) dl vann. Ferdig: \\(3 + 12 = 15\\) dl."],
     losning: "<p>Vann: \\(3 \\cdot 4 = 12\\) dl. Ferdig blanding: \\(3 + 12 = 15\\) dl.</p>"
+  },
+  {
+    id: "profil-6m",
+    niva: "lett",
+    tittel: "Aluminiumsprofil",
+    tekst: "<p>6 m aluminiumsprofil koster 840 kr. Bruk veien om 1.</p>",
+    steg: [{ verdi: 140, enhet: "kr" }],
+    deler: [
+      { tekst: "Hva koster 1 m?", svar: { verdi: 140, enhet: "kr" } },
+      { tekst: "Hva koster 2,5 m?", svar: { verdi: 350, enhet: "kr" } }
+    ],
+    hint: ["Del totalprisen på 6. Da får du prisen for 1 m.", "\\(840 : 6 = 140\\) kr per meter. Gang med 2,5."],
+    losning: "<p>a) \\(840 : 6 = 140\\) kr<br>b) \\(140 \\cdot 2{,}5 = 350\\) kr</p>"
+  },
+  {
+    id: "bor-kasse",
+    niva: "lett",
+    tittel: "Bor i kassa",
+    tekst: "<p>I en kasse ligger 15 spiralbor og 25 senterbor. Skriv forholdet spiralbor : senterbor med minst mulig hele tall.</p>",
+    deler: [
+      { tekst: "Første tall (spiralbor)", svar: { verdi: 3 } },
+      { tekst: "Andre tall (senterbor)", svar: { verdi: 5 } }
+    ],
+    hint: ["Del begge tallene på samme tall. 5 går opp i både 15 og 25.", "\\(15 : 5 = 3\\) og \\(25 : 5 = 5\\). Forholdet er 3 : 5."],
+    losning: "<p>\\(15 : 25 = 3 : 5\\). Første tall er 3, andre tall er 5.</p>"
+  },
+  {
+    id: "epoksy-4dl",
+    niva: "lett",
+    tittel: "Epoksy 2 : 1",
+    tekst: "<p>Epoksy til et feste blandes harpiks : herder = 2 : 1. Nora måler opp 4 dl harpiks.</p>",
+    steg: [{ verdi: 2, enhet: "dl" }],
+    deler: [
+      { tekst: "Hvor mye herder skal hun ha i?", svar: { verdi: 2, enhet: "dl" } },
+      { tekst: "Hvor stor blir den ferdige blandingen?", svar: { verdi: 6, enhet: "dl" } }
+    ],
+    hint: ["2 deler harpiks er 4 dl. Finn først 1 del.", "1 del er \\(4 : 2 = 2\\) dl. Herder er 1 del. Ferdig: \\(4 + 2\\)."],
+    losning: "<p>1 del er 2 dl. Herder: 2 dl. Ferdig: \\(4 + 2 = 6\\) dl.</p>"
+  },
+  {
+    id: "trad-sju",
+    niva: "middels",
+    tittel: "Sveisetråd til sju jobber",
+    tekst: "<p>1,6 kg sveisetråd holder til 4 like sveisejobber. Hvor mye tråd trengs til 7 slike jobber?</p>",
+    steg: [{ verdi: 0.4, enhet: "kg" }],
+    svar: { verdi: 2.8, enhet: "kg" },
+    hint: ["Finn først hvor mye tråd én jobb bruker. Del 1,6 kg på 4.", "\\(1{,}6 : 4 = 0{,}4\\) kg per jobb. \\(0{,}4 \\cdot 7 = 2{,}8\\) kg."],
+    losning: "<p>Én jobb: \\(1{,}6 : 4 = 0{,}4\\) kg.<br>Sju jobber: \\(0{,}4 \\cdot 7 = 2{,}8\\) kg.</p>"
+  },
+  {
+    id: "kjole-25",
+    niva: "middels",
+    tittel: "2,5 L kjølevæske",
+    tekst: "<p>Glykol : vann = 1 : 4. Du skal blande 2,5 L ferdig kjølevæske.</p>",
+    steg: [{ verdi: 0.5, enhet: "L" }],
+    deler: [
+      { tekst: "Hvor mye glykol?", svar: { verdi: 0.5, enhet: "L" } },
+      { tekst: "Hvor mye vann?", svar: { verdi: 2, enhet: "L" } }
+    ],
+    hint: ["Delene til sammen er 1 + 4 = 5. Del 2,5 L på 5.", "Én del er 0,5 L. Glykol er 1 del, vann er 4 deler."],
+    losning: "<p>\\(1 + 4 = 5\\) deler. Én del er \\(2{,}5 : 5 = 0{,}5\\) L.<br>Glykol: 0,5 L. Vann: \\(4 \\cdot 0{,}5 = 2\\) L.</p>"
+  },
+  {
+    id: "tre-bolter",
+    niva: "middels",
+    tittel: "Tre boltstørrelser",
+    tekst: "<p>I en kasse er forholdet M6 : M8 : M10 = 2 : 3 : 5. Det er 40 bolter til sammen.</p>",
+    steg: [{ verdi: 4, enhet: "stk" }],
+    deler: [
+      { tekst: "Hvor mange M6?", svar: { verdi: 8, enhet: "stk" } },
+      { tekst: "Hvor mange M8?", svar: { verdi: 12, enhet: "stk" } },
+      { tekst: "Hvor mange M10?", svar: { verdi: 20, enhet: "stk" } }
+    ],
+    hint: ["Legg sammen delene: 2 + 3 + 5. Del 40 på den summen.", "10 deler i 40 bolter gir 4 bolter per del."],
+    losning: "<p>\\(2 + 3 + 5 = 10\\) deler. Én del er \\(40 : 10 = 4\\) bolter.<br>M6: 8. M8: 12. M10: 20.</p>"
+  },
+  {
+    id: "primer-tynn",
+    niva: "vanskelig",
+    tittel: "For tynn grunning",
+    tekst: "<p>Sara har blandet 1,8 L grunning. Forholdet grunning : tynner er 1 : 2. Blandingen er for tynn. Hun vil ha 1 : 1 og beholde tynneren som allerede er i spannet.</p>",
+    steg: [{ verdi: 3 }, { verdi: 0.6, enhet: "L" }],
+    deler: [
+      { tekst: "Hvor mye grunning er det i spannet nå?", svar: { verdi: 0.6, enhet: "L" } },
+      { tekst: "Hvor mye tynner er det nå?", svar: { verdi: 1.2, enhet: "L" } },
+      { tekst: "Hvor mye grunning må hun helle i?", svar: { verdi: 0.6, enhet: "L" } }
+    ],
+    hint: ["Finn først hvor mye tynner som ligger i de 1,8 L. I forholdet 1 : 1 skal grunningen være like stor som tynneren.", "3 deler i 1,8 L gir 0,6 L per del. Tynner: 1,2 L. Hun har 0,6 L grunning og trenger 1,2 L."],
+    losning: "<p>\\(1 + 2 = 3\\) deler. Én del er \\(1{,}8 : 3 = 0{,}6\\) L.<br>Grunning nå: 0,6 L. Tynner: 1,2 L.<br>Til 1 : 1 må grunningen også bli 1,2 L. Hun heller i \\(1{,}2 - 0{,}6 = 0{,}6\\) L.</p>"
+  },
+  {
+    id: "olje-10l",
+    niva: "vanskelig",
+    tittel: "Olje først",
+    tekst: "<p>Du har 200 mL totaktsolje. Olje : bensin skal være 1 : 50. Hvor mange liter bensin skal oljen blandes i?</p>",
+    steg: [{ verdi: 10000, enhet: "ml" }],
+    svar: { verdi: 10, enhet: "L" },
+    hint: ["1 del olje skal ha 50 deler bensin. Gjør milliliter om til liter til slutt.", "\\(200 \\cdot 50 = 10\\,000\\) mL. \\(10\\,000\\) mL = 10 L."],
+    losning: "<p>\\(200 \\cdot 50 = 10\\,000\\) mL \\(= 10\\) L bensin.</p>"
+  },
+  {
+    id: "frost-4l",
+    type: "verksted",
+    niva: "middels",
+    merke: "V",
+    tittel: "4 L frostvæske",
+    utstyr: "Målebeger, trakt, glykol, vann, hansker",
+    hms: "Ikke smak på glykolen. Rester i merket dunk, ikke i sluket.",
+    tekst: "<p>Etiketten sier glykol : vann = 2 : 3. Du skal fylle en kanne på 4 L.</p>",
+    steg: [{ verdi: 0.8, enhet: "L" }],
+    deler: [
+      { tekst: "Hvor mye glykol?", svar: { verdi: 1.6, enhet: "L" } },
+      { tekst: "Hvor mye vann?", svar: { verdi: 2.4, enhet: "L" } }
+    ],
+    hint: ["2 + 3 = 5 deler. Del 4 L på 5.", "Én del er 0,8 L. Glykol er 2 deler, vann er 3 deler."],
+    losning: "<p>Én del er \\(4 : 5 = 0{,}8\\) L.<br>Glykol: \\(2 \\cdot 0{,}8 = 1{,}6\\) L. Vann: \\(3 \\cdot 0{,}8 = 2{,}4\\) L.</p>"
+  },
+  {
+    id: "rep-gange",
+    type: "repetisjon",
+    fra: "kapittel 1",
+    niva: "lett",
+    tekst: "<p>Regn ut \\(6{,}4 \\cdot 100\\).</p>",
+    svar: { verdi: 640 },
+    hint: ["100 har to nuller. Kommaet flyttes to plasser til høyre.", "\\(6{,}4 \\cdot 100 = 640\\)."],
+    losning: "<p>\\(6{,}4 \\cdot 100 = 640\\).</p>"
+  },
+  {
+    id: "eks-epoksy",
+    type: "eksamen",
+    eksamensdel: "Del 1 (uten hjelpemidler)",
+    niva: "middels",
+    tekst: "<p>Du blander lakk. Lakk : herder = 3 : 1. Du bruker 6 dl lakk.</p>",
+    deler: [
+      { tekst: "Hvor mye herder skal du ha i?", svar: { verdi: 2, enhet: "dl" } },
+      { tekst: "Hvor stor blir den ferdige blandingen?", svar: { verdi: 8, enhet: "dl" } }
+    ],
+    hint: ["3 deler lakk er 6 dl. Finn 1 del, det er herderen.", "\\(6 : 3 = 2\\) dl herder. Ferdig: \\(6 + 2 = 8\\) dl."],
+    losning: "<p>Herder: \\(6 : 3 = 2\\) dl. Ferdig blanding: \\(6 + 2 = 8\\) dl.</p>"
   }
 ]);
