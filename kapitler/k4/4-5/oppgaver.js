@@ -149,5 +149,115 @@ Bok.oppgaver([
     ],
     hint: ["15 minutter er 0,25 timer. kWh = kW · timer, deretter ganger du med dager og pris.", "\\(2{,}25 \\cdot 1{,}8 = 4{,}05\\) kWh per dag. \\(4{,}05 \\cdot 5 = 20{,}25\\). \\(20{,}25 \\cdot 2{,}40 = 48{,}60\\) kr."],
     losning: "<p>\\(2 + 15/60 = 2{,}25\\) h.<br>\\(1{,}8 \\cdot 2{,}25 = 4{,}05\\) kWh per dag.<br>\\(4{,}05 \\cdot 5 = 20{,}25\\) kWh.<br>\\(20{,}25 \\cdot 2{,}40 = 48{,}60\\) kr.</p>"
+  },
+  {
+    id: "drill-trykk-mer",
+    niva: "lett",
+    tittel: "bar, kPa og psi",
+    tekst: "<p>\\(1\\ \\text{bar} = 100\\ \\text{kPa} = 14{,}5\\ \\text{psi}\\).</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "1,8 bar i kPa", svar: { verdi: 180, enhet: "kPa" } },
+      { tekst: "350 kPa i bar", svar: { verdi: 3.5, enhet: "bar" } },
+      { tekst: "3 bar i psi", svar: { verdi: 43.5, enhet: "psi" } }
+    ],
+    hint: ["Til kPa: gang med 100. Til bar: del med 100. Til psi: gang med 14,5.", "\\(1{,}8 \\cdot 100 = 180\\). \\(350 : 100 = 3{,}5\\). \\(3 \\cdot 14{,}5 = 43{,}5\\)."],
+    losning: "<p>a) 180 kPa &nbsp; b) 3,5 bar &nbsp; c) 43,5 psi</p>"
+  },
+  {
+    id: "drill-sammen",
+    niva: "lett",
+    tittel: "kWh, L/min og kg/m",
+    tekst: "<p>Det som står etter streken, er det du ganger med.</p>",
+    stegForSteg: false,
+    deler: [
+      { tekst: "1,5 kW i 4 timer. Hvor mange kWh?", svar: { verdi: 6, enhet: "kWh" } },
+      { tekst: "2,5 L/min i 8 minutter. Hvor mange liter?", svar: { verdi: 20, enhet: "L" } },
+      { tekst: "3,6 kg/m og 0,5 m. Hvor mange kilogram?", svar: { verdi: 1.8, enhet: "kg" } }
+    ],
+    hint: ["kW · timer = kWh. L/min · minutter = L. kg/m · meter = kg.", "\\(1{,}5 \\cdot 4 = 6\\). \\(2{,}5 \\cdot 8 = 20\\). \\(3{,}6 \\cdot 0{,}5 = 1{,}8\\)."],
+    losning: "<p>a) 6 kWh &nbsp; b) 20 L &nbsp; c) 1,8 kg</p>"
+  },
+  {
+    id: "dekk-23",
+    niva: "middels",
+    tittel: "Dekk på 2,3 bar",
+    tekst: "<p>Et dekk skal ha 2,3 bar. Bruk 1 bar = 100 kPa og 1 bar = 14,5 psi.</p>",
+    deler: [
+      { tekst: "Hvor mange kPa er 2,3 bar?", svar: { verdi: 230, enhet: "kPa" } },
+      { tekst: "Hvor mange psi er 2,3 bar?", svar: { verdi: 33.35, enhet: "psi", tol: 0.05 } }
+    ],
+    hint: ["kPa: gang med 100. psi: gang med 14,5.", "\\(2{,}3 \\cdot 100 = 230\\). \\(2{,}3 \\cdot 14{,}5 = 33{,}35\\)."],
+    losning: "<p>a) 230 kPa &nbsp; b) 33,35 psi</p>"
+  },
+  {
+    id: "slip-kost",
+    niva: "middels",
+    tittel: "Vinkelsliper i tre kvarter",
+    tekst: "<p>Vinkelsliperen er merket 1,2 kW og går i 45 minutter. Strømmen koster 2,50 kr/kWh.</p>",
+    steg: [{ verdi: 0.75, enhet: "h" }, { verdi: 0.9, enhet: "kWh" }],
+    deler: [
+      { tekst: "Hvor mange desimaltimer går sliperen?", svar: { verdi: 0.75, enhet: "h" } },
+      { tekst: "Hvor mange kWh brukes?", svar: { verdi: 0.9, enhet: "kWh" } },
+      { tekst: "Hva koster økta?", svar: { verdi: 2.25, enhet: "kr", tol: 0.05 } }
+    ],
+    hint: ["45 minutter er 0,75 timer, ikke 0,45. kWh = kW · timer. Kostnad = kWh · pris.", "\\(45 : 60 = 0{,}75\\) h. \\(1{,}2 \\cdot 0{,}75 = 0{,}9\\) kWh. \\(0{,}9 \\cdot 2{,}50 = 2{,}25\\) kr."],
+    losning: "<p>0,75 h.<br>\\(1{,}2 \\cdot 0{,}75 = 0{,}9\\) kWh.<br>\\(0{,}9 \\cdot 2{,}50 = 2{,}25\\) kr.</p>"
+  },
+  {
+    id: "pumpe-slange",
+    niva: "middels",
+    tittel: "Pumpe og slange",
+    tekst: "<p>Kjølevæskepumpa gir 4,5 L/min i 20 minutter. En slange veier 2,8 kg/m, og du kapper 6 m. Tanken på maskinen rommer 80 L.</p>",
+    deler: [
+      { tekst: "Hvor mange liter gir pumpa?", svar: { verdi: 90, enhet: "L" } },
+      { tekst: "Hvor mange kilogram veier slangen?", svar: { verdi: 16.8, enhet: "kg" } },
+      { tekst: "Renner det over i tanken på 80 L?", svar: { valg: ["Ja, 90 L er mer enn 80 L", "Nei, 90 L får plass"], riktig: 0, forklaring: "90 L er mer enn 80 L. Stopp pumpa før tanken er full." } }
+    ],
+    hint: ["L/min · minutter = liter. kg/m · meter = kg. Sammenlign liter med 80.", "\\(4{,}5 \\cdot 20 = 90\\) L. \\(2{,}8 \\cdot 6 = 16{,}8\\) kg. 90 er større enn 80."],
+    losning: "<p>a) 90 L &nbsp; b) 16,8 kg &nbsp; c) Ja, det renner over. 90 L er mer enn 80 L.</p>"
+  },
+  {
+    id: "kompressor-kveld",
+    niva: "vanskelig",
+    tittel: "Kompressor en kveld",
+    tekst: "<p>Kompressoren på 2,2 kW går 1 time og 45 minutter. Strømmen koster 1,80 kr/kWh.</p>",
+    steg: [{ verdi: 1.75, enhet: "h" }, { verdi: 3.85, enhet: "kWh" }],
+    deler: [
+      { tekst: "Hvor mange desimaltimer går kompressoren?", svar: { verdi: 1.75, enhet: "h" } },
+      { tekst: "Hvor mange kWh brukes?", svar: { verdi: 3.85, enhet: "kWh" } },
+      { tekst: "Hva koster økta?", svar: { verdi: 6.93, enhet: "kr", tol: 0.05 } }
+    ],
+    hint: ["45 minutter er 0,75 timer. Ikke skriv 1,45. kWh = kW · timer.", "\\(1 + 45/60 = 1{,}75\\) h. \\(2{,}2 \\cdot 1{,}75 = 3{,}85\\) kWh. \\(3{,}85 \\cdot 1{,}80 = 6{,}93\\) kr."],
+    losning: "<p>1 t 45 min = 1,75 h, ikke 1,45 h.<br>\\(2{,}2 \\cdot 1{,}75 = 3{,}85\\) kWh.<br>\\(3{,}85 \\cdot 1{,}80 = 6{,}93\\) kr.</p>"
+  },
+  {
+    id: "flaske-150",
+    niva: "vanskelig",
+    tittel: "Flaske og regulator",
+    tekst: "<p>En gassflaske er merket 150 bar. Regulatoren senker trykket til 1,5 bar før slangen. Ikke skru på flaska. Her skal du bare regne. Bruk 1 bar = 14,5 psi.</p>",
+    deler: [
+      { tekst: "Hvor mange kPa er det på flaska?", svar: { verdi: 15000, enhet: "kPa" } },
+      { tekst: "Hvor mange kPa er det etter regulatoren?", svar: { verdi: 150, enhet: "kPa" } },
+      { tekst: "Hvor mange psi er 1,5 bar?", svar: { verdi: 21.75, enhet: "psi", tol: 0.05 } },
+      { tekst: "Hva passer til et personbildekk?", svar: { valg: ["150 bar", "omtrent 2 til 3 bar"], riktig: 1, forklaring: "Personbildekk ligger rundt 2–3 bar. 150 bar er flasketrykk." } }
+    ],
+    hint: ["1 bar = 100 kPa, også når tallet er stort. psi: gang bar med 14,5.", "\\(150 \\cdot 100 = 15\\,000\\) kPa. \\(1{,}5 \\cdot 100 = 150\\) kPa. \\(1{,}5 \\cdot 14{,}5 = 21{,}75\\) psi."],
+    losning: "<p>Flaske: 15 000 kPa.<br>Etter regulator: 150 kPa = 21,75 psi.<br>Dekk: 2–3 bar, ikke 150 bar.</p>"
+  },
+  {
+    id: "sveiseokt",
+    niva: "vanskelig",
+    tittel: "Sveis i 2 timer og 12 minutter",
+    tekst: "<p>En sveiser trekker 3,6 kW i 2 timer og 12 minutter. Strømmen koster 1,50 kr/kWh.</p>",
+    steg: [{ verdi: 0.2, enhet: "h" }, { verdi: 2.2, enhet: "h" }, { verdi: 7.92, enhet: "kWh" }],
+    deler: [
+      { tekst: "Hvor mange desimaltimer går sveiseren?", svar: { verdi: 2.2, enhet: "h" } },
+      { tekst: "Hvor mange kWh brukes?", svar: { verdi: 7.92, enhet: "kWh" } },
+      { tekst: "Hva koster økta?", svar: { verdi: 11.88, enhet: "kr", tol: 0.05 } },
+      { tekst: "Hva er riktig tid?", svar: { valg: ["2,12 h", "2,2 h"], riktig: 1, forklaring: "12 minutter er 0,2 timer, ikke 0,12." } }
+    ],
+    hint: ["12 minutter delt på 60 er 0,2, ikke 0,12. kWh = kW · timer.", "\\(2 + 12/60 = 2{,}2\\) h. \\(3{,}6 \\cdot 2{,}2 = 7{,}92\\) kWh. \\(7{,}92 \\cdot 1{,}50 = 11{,}88\\) kr."],
+    losning: "<p>2 t 12 min = 2,2 h, ikke 2,12 h.<br>\\(3{,}6 \\cdot 2{,}2 = 7{,}92\\) kWh.<br>\\(7{,}92 \\cdot 1{,}50 = 11{,}88\\) kr.</p>"
   }
 ]);
