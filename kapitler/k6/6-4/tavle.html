@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.4 Volum av prisme og sylinder</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.4">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="0,33 liter">
+    <h2>Boksen skal romme en brusboks</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="En brusboks på 0,33 liter ved siden av en rektangulær boks">
+        <rect x="40" y="70" width="150" height="140" rx="28" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <rect x="55" y="110" width="120" height="50" fill="var(--kap)" opacity="0.85"/>
+        <text x="115" y="142" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">0,33 L</text>
+        <rect x="240" y="50" width="150" height="160" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="315" y="130" text-anchor="middle" font-size="16">11 × 6 × 5 cm</text>
+        <g data-vis-fra="3">
+          <text x="315" y="240" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">330 cm³</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>I makerspace skal du lage en boks som rommer nøyaktig like mye som en brusboks: 0,33 L. Formen kan du velge selv.</p>
+      <div class="undre" data-hint="1 L = 1000 cm³." data-sekunder="30">Hvor mange kubikkcentimeter er 0,33 L?</div>
+      <p class="steg">\(0{,}33\ \text{L} = 0{,}33 \cdot 1000 = 330\ \text{cm}^3\).</p>
+      <p class="steg">Et rett prisme har volum \(V = l \cdot b \cdot h\). \(11 \cdot 6 \cdot 5 = 330\).</p>
+      <p class="steg">En boks med innvendige mål 11 cm, 6 cm og 5 cm rommer nøyaktig 0,33 L. Det finnes mange andre mål som også gir 330.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Sylinder">
+    <h2>Hydraulikksylinderen</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="En sylinder med diameter 8 cm og høyde 20 cm">
+        <ellipse cx="160" cy="40" rx="70" ry="18" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <path d="M90 40 V190 A70 18 0 0 0 230 190 V40" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <line x1="160" y1="40" x2="230" y2="40" stroke="var(--kap)" stroke-width="3"/>
+        <text x="188" y="32" font-size="14" fill="var(--kap)">r = 4</text>
+        <text x="260" y="120" font-size="16">h = 20 cm</text>
+        <text x="250" y="150" font-size="14">d = 8 cm</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En hydraulikksylinder har innvendig diameter 8 cm og slaglengde 20 cm. Hvor mye olje rommer den?</p>
+      <div class="undre" data-hint="Volumet er grunnflata ganger høyden. Grunnflata er en sirkel.">Er det omtrent 1 liter eller omtrent 10 liter?</div>
+      <p class="steg">Radius er halvparten av diameteren: \(r = 4\ \text{cm}\).</p>
+      <p class="steg">\(V = \pi r^2 h = \pi \cdot 16 \cdot 20 \approx 1005\ \text{cm}^3\).</p>
+      <p class="steg">\(1005\ \text{cm}^3 \approx 1{,}0\ \text{L}\), eller omtrent 10 dl. Ikke 10 liter.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Høyden">
+    <h2>Bunnarealet er låst</h2>
+    <div class="tekst">
+      <p>En kunde trenger 1,5 L. Bunnen må være 10 cm × 12 cm, for boksen skal inn i en maskin.</p>
+      <div class="undre" data-hint="Volum delt på grunnflate gir høyden.">Er høyden over eller under 15 cm?</div>
+      <p class="steg">\(1{,}5\ \text{L} = 1500\ \text{cm}^3\).</p>
+      <p class="steg">Grunnflata er \(10 \cdot 12 = 120\ \text{cm}^2\).</p>
+      <p class="steg">Høyden er \(1500 : 120 = 12{,}5\ \text{cm}\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>\(V = G \cdot h\), der \(G\) er arealet av grunnflata.<br>
+        Prisme med rektangelbunn: \(V = l \cdot b \cdot h\).<br>
+        Sylinder: \(V = \pi r^2 h\).<br>
+        \(1\ \text{L} = 1\ \text{dm}^3 = 1000\ \text{cm}^3\).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Innvendig">
+    <h2>Platene stjeler plass</h2>
+    <div class="tekst">
+      <p>Du lager boksen av 4 mm finér. Volumet på 0,33 L er det <b>innvendige</b> rommet. Platene kommer utenpå.</p>
+      <div class="undre" data-hint="To vegger, én i hver ende. 4 mm + 4 mm.">Innvendig lengde er 110 mm. Hvor lang blir boksen utvendig?</div>
+      <p class="steg">Lengde og bredde får plate på begge sider: \(110 + 8 = 118\ \text{mm}\) og \(60 + 8 = 68\ \text{mm}\).</p>
+      <p class="steg">Åpen boks har bare bunn: høyden øker med 4 mm, fra 50 til 54 mm.</p>
+      <p class="steg">Regner du volum av de utvendige målene, blir boksen for liten inni. Sandtesten avslører det.</p>
+      <p class="se-ogsa steg"><a href="../6-5/teori.html">6.5 Slagvolum</a> · <a href="../6-6/teori.html">6.6 Målestokk</a> · <a href="verksted.html">Verkstedkort</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

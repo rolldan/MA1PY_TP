@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.7 Overflate og masse</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.7">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Etiketten">
+    <h2>Papiret rundt boksen</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="En sylinder med diameter 66 mm og etikett som er et rektangel når den rulles ut">
+        <ellipse cx="120" cy="50" rx="50" ry="16" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <path d="M70 50 V180 A50 16 0 0 0 170 180 V50" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <rect x="230" y="60" width="160" height="100" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+        <text x="310" y="100" text-anchor="middle" font-size="14">π · 66 mm</text>
+        <text x="310" y="125" text-anchor="middle" font-size="14">høyde 100 mm</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En etikett skal rundt en sylinder med diameter 66 mm. Etiketten er 100 mm høy og dekker ikke lokk og bunn.</p>
+      <div class="undre" data-hint="Rull ut sylinderen. Bredden blir omkretsen." data-sekunder="30">Er papiret nærmere 200 cm² eller 2000 cm²?</div>
+      <p class="steg">Utbrettet er et rektangel. Bredden er omkretsen \(\pi d = \pi \cdot 66\).</p>
+      <p class="steg">\(A = \pi \cdot 66 \cdot 100 \approx 20\,700\ \text{mm}^2 \approx 207\ \text{cm}^2\).</p>
+      <p class="steg">Omtrent 2 dm². 2000 cm² hadde vært et stort ark, ikke en etikett.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Dreid stang">
+    <h2>Det som blir spon</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 200" role="img" aria-label="En stang som dreies fra diameter 20 mm til 18 mm over 120 mm">
+        <rect x="40" y="70" width="360" height="50" fill="#cbd5e1" stroke="#17202b" stroke-width="2"/>
+        <rect x="40" y="75" width="360" height="40" fill="#fff" stroke="var(--kap)" stroke-width="2"/>
+        <text x="220" y="55" text-anchor="middle" font-size="16">Ø20 → Ø18, lengde 120 mm</text>
+        <g data-vis-fra="2">
+          <text x="220" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">ca. 7163 mm³ spon</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En stang dreies fra diameter 20 mm til 18 mm. Lengden som dreies, er 120 mm. Du skal finne volumet som forsvinner.</p>
+      <div class="undre" data-hint="Det er et rør av spon: ytre radius 10 mm, indre 9 mm.">Er det noen få tusen mm³ eller flere hundre tusen?</div>
+      <p class="steg">Volumet er en hul sylinder: \(\pi (R^2 - r^2) \cdot L\).</p>
+      <p class="steg">\(\pi (10^2 - 9^2) \cdot 120 = \pi \cdot 19 \cdot 120 = 2280\pi \approx 7163\ \text{mm}^3\).</p>
+      <p class="steg">Med stål på 7,85 g/cm³ veier sponen omtrent 56 g. 7,85 er gram per cm³, ikke kilo per cm³.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Hjulet">
+    <h2>Hvor langt på ett omløp?</h2>
+    <div class="tekst">
+      <p>Et dekk er merket 235/60 R18. 235 er bredden i mm. 60 er sidehøyden i prosent av bredden. 18 er felgen i tommer.</p>
+      <div class="undre" data-hint="Diameter = felg + to sidehøyder. Omkrets = π · diameter.">Er omkretsen nærmere 2,3 m eller 7 m?</div>
+      <p class="steg">Sidehøyde: \(0{,}60 \cdot 235 = 141\) mm. Felg: \(18 \cdot 25{,}4 = 457{,}2\) mm.</p>
+      <p class="steg">Diameter: \(457{,}2 + 2 \cdot 141 = 739{,}2\) mm. Omkrets: \(\pi \cdot 0{,}7392 \approx 2{,}32\) m.</p>
+      <p class="steg">På 11,6 km blir det omtrent 5000 omdreininger. Målebånd rundt dekket gir ofte litt mer, og da blir det færre runder på samme strekning.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Masse</p>
+        <p>\(m = \rho \cdot V\).<br>
+        Stål: \(7{,}85\ \text{g/cm}^3 = 7850\ \text{kg/m}^3\).<br>
+        1 mm stålplate veier omtrent 7,85 kg per m². 3 mm veier omtrent 23,6 kg per m².</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Røret">
+    <h2>Ikke glem hullet</h2>
+    <div class="tekst">
+      <p>Et stålrør har utvendig diameter 50 mm, innvendig 40 mm og lengde 200 mm. Massetettheten er 7,85 g/cm³.</p>
+      <div class="undre" data-hint="Trekk den indre sylinderen fra den ytre.">Veier røret omtrent 1 kg eller omtrent 3 kg?</div>
+      <p class="steg">\(V = \pi (25^2 - 20^2) \cdot 200 \approx 141\,400\ \text{mm}^3 \approx 141\ \text{cm}^3\).</p>
+      <p class="steg">\(m = 141 \cdot 7{,}85 \approx 1110\ \text{g} \approx 1{,}11\ \text{kg}\).</p>
+      <p class="steg">Regner du hele den ytre sylinderen, tar du med lufta inni. Massen blir for stor.</p>
+      <p class="se-ogsa steg"><a href="../6-3/teori.html">6.3 Areal</a> · <a href="../6-4/teori.html">6.4 Volum</a> · <a href="oppgaver.html">Oppgaver 6.7</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

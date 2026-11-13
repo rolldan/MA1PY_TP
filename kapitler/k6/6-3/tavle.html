@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.3 Omkrets og areal</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Plata med hull">
+    <h2>Hvor mye plate er igjen?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 260" role="img" aria-label="Rektangulær plate 600 mm ganger 400 mm med et hull på 100 mm">
+        <rect x="40" y="40" width="300" height="180" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <circle cx="190" cy="130" r="36" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+        <text x="190" y="250" text-anchor="middle" font-size="16">600 mm</text>
+        <text x="370" y="140" font-size="16">400 mm</text>
+        <text x="190" y="136" text-anchor="middle" font-size="14" fill="var(--kap)">Ø100</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En aluminiumsplate er 600 mm × 400 mm. Midt på skal det bores et hull med diameter 100 mm. Du skal bestille lakk ut fra arealet som er igjen.</p>
+      <div class="undre" data-hint="Regn plata først. Hullet er en sirkel, og du bruker radius." data-sekunder="30">Blir arealet omtrent 0,24 m² eller omtrent 0,20 m²?</div>
+      <p class="steg">Plata: \(600 \cdot 400 = 240\,000\ \text{mm}^2 = 2400\ \text{cm}^2\).</p>
+      <p class="steg">Radius er 50 mm = 5 cm. Hullet: \(\pi \cdot 5^2 \approx 78{,}5\ \text{cm}^2\).</p>
+      <p class="steg">Igjen: \(2400 - 78{,}5 \approx 2322\ \text{cm}^2\), omtrent 0,23 m². Hullet er lite mot plata.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Omkrets eller areal">
+    <h2>Lengde er ikke flate</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 240" role="img" aria-label="En sirkel. Omkretsen er streken rundt, arealet er flaten inni">
+        <circle cx="210" cy="120" r="80" fill="#dcfce7" stroke="#17202b" stroke-width="4"/>
+        <line x1="210" y1="120" x2="290" y2="120" stroke="var(--kap)" stroke-width="3"/>
+        <text x="250" y="112" font-size="16" fill="var(--kap)">r</text>
+        <text x="210" y="200" text-anchor="middle" font-size="14">omkrets = streken</text>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Omkrets er hvor langt det er rundt. Areal er hvor stor flaten er. De har ulike enheter, og ulike formler.</p>
+      <div class="undre" data-hint="Omkrets bruker du når du skal ha en list eller et bånd. Areal når du skal ha plate eller lakk.">Skal du bestille tetningslist eller plate?</div>
+      <p class="steg">Sirkel, omkrets: \(O = 2\pi r = \pi d\). Enhet mm eller cm.</p>
+      <p class="steg">Sirkel, areal: \(A = \pi r^2\). Enhet mm² eller cm². Radius, ikke diameter, inni kvadratet.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Rektangel: \(O = 2l + 2b\) og \(A = l \cdot b\).<br>Trekant: \(A = \dfrac{g \cdot h}{2}\).<br>Sirkel: \(O = \pi d\) og \(A = \pi r^2\).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Halvsirkelen">
+    <h2>Buen er ikke π·d</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 220" role="img" aria-label="Et halvsirkelformet vern med radius 3 cm">
+        <path d="M80 160 A90 90 0 0 1 260 160" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <line x1="80" y1="160" x2="260" y2="160" stroke="#17202b" stroke-width="3"/>
+        <line x1="170" y1="160" x2="260" y2="160" stroke="var(--kap)" stroke-width="3"/>
+        <text x="200" y="150" font-size="16" fill="var(--kap)">r = 3 cm</text>
+        <g data-vis-fra="3">
+          <text x="170" y="200" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">omkrets ≈ 15,4 cm</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Et vern på slipemaskinen er en halvsirkel med radius 3 cm. Du skal ha lengden av kanten: buen pluss den rette diameteren.</p>
+      <div class="undre" data-hint="Halve omkretsen av en sirkel er π·r, ikke π·d.">Er kanten nærmere 15 cm eller 25 cm?</div>
+      <p class="steg">Buen er en halv sirkelomkrets: \(\pi r = \pi \cdot 3 \approx 9{,}4\ \text{cm}\).</p>
+      <p class="steg">Diameteren er \(2 \cdot 3 = 6\ \text{cm}\). Den er med, for vernet har en rett kant.</p>
+      <p class="steg">Omkretsen er \(9{,}4 + 6 \approx 15{,}4\ \text{cm}\). 24,8 cm blir det hvis du tar \(\pi \cdot d\) som bue. Det er en hel sving for mye.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Stempel">
+    <h2>Stempelbunnen</h2>
+    <div class="tekst">
+      <p>Et stempel har radius 42 mm. Du skal finne arealet av bunnen, flaten som møter forbrenningen.</p>
+      <div class="undre" data-hint="Overslag: 40 · 40 · 3 er allerede over 4000.">Kan arealet være 364 mm²?</div>
+      <p class="steg">\(A = \pi r^2 = \pi \cdot 42^2 = \pi \cdot 1764 \approx 5542\ \text{mm}^2\).</p>
+      <p class="steg">364 mm² er omtrent som en liten skrue, ikke et stempel. Overslaget avslører feilen.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Halvsirkel, areal: \(\dfrac{\pi r^2}{2}\). Diameter 125 mm gir radius 62,5 mm og areal omtrent 6136 mm², ikke arealet av en sirkel med radius 125 mm.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../6-4/teori.html">6.4 Volum</a> · <a href="oppgaver.html">Oppgaver 6.3</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "nr": 6,
+  "tittel": "Geometri, målestokk og makerspace",
+  "status": "ferdig",
+  "ingress": "Vinkler, Pytagoras, areal, volum og målestokk i verkstedet. Du lager en brusboks på 0,33 L og ser at en modell i 1:2 bare rommer en åttedel.",
+  "handlerOm": "Etter sveising drar en stålramme seg, og du kontrollerer den rette vinkelen med 3-4-5 og diagonaler. I makerspace lager du en boks som rommer nøyaktig 0,33 L, og en modell i målestokk 1:2. Testen med sand viser målestokk-fellen: volumet blir en åttedel, ikke halvparten. Samme regning brukes på plater, slagvolum, arbeidstegninger og hjul.",
+  "byggerPa": [
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" },
+    { "tekst": "1.4 Brøk, desimaltall og tommer", "lenke": "kapitler/k1/1-4/teori.html" },
+    { "tekst": "Kapittel 3: Forhold og prosent" },
+    { "tekst": "Kapittel 4: Lengde, areal, volum og liter" },
+    { "tekst": "Kapittel 5: Formler fra verkstedet" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 8: Bilprosjektet, lakk og basskasse" },
+    { "tekst": "Kapittel 9: Tank i målestokk 1:10" }
+  ],
+  "delkapitler": [
+    { "nr": "6.1", "tittel": "Vinkler", "formel": "Sum i trekant \\(180^\\circ\\)", "uke": "5" },
+    { "nr": "6.2", "tittel": "Pytagoras og 3-4-5-metoden", "formel": "\\(a^2 + b^2 = c^2\\)", "uke": "5" },
+    { "nr": "6.3", "tittel": "Omkrets og areal", "formel": "\\(A = \\pi r^2\\)", "uke": "6" },
+    { "nr": "6.4", "tittel": "Volum av prisme og sylinder", "formel": "\\(V = l \\cdot b \\cdot h\\)", "uke": "7" },
+    { "nr": "6.5", "tittel": "Slagvolum og tanker", "formel": "\\(V = \\pi r^2 h \\cdot n\\)", "uke": "9" },
+    { "nr": "6.6", "tittel": "Målestokk og arbeidstegninger", "formel": "1 : 2 gir volum \\(1/8\\)", "uke": "9" },
+    { "nr": "6.7", "tittel": "Overflate og masse", "formel": "\\(m = \\rho \\cdot V\\)", "uke": "10" }
+  ],
+  "jegKan": [
+    "Jeg kan finne en manglende vinkel i en trekant og på en rett linje.",
+    "Jeg kan forklare halve vinkelen-fella: en kjørner på 60° stilles med toppslide på 30°.",
+    "Jeg kan bruke Pytagoras og 3-4-5 til å kontrollere en rett vinkel.",
+    "Jeg kan avgjøre om en trekant er rettvinklet. 8-15-17 er rettvinklet.",
+    "Jeg kan regne omkrets og areal av mangekanter, sirkler, halvsirkler og plater med hull.",
+    "Jeg kan regne volum av prisme og sylinder og gjøre om mellom cm³ og liter.",
+    "Jeg kan regne slagvolum og si om et motormål stemmer.",
+    "Jeg kan lese en arbeidstegning og bruke målestokk på lengde, areal og volum.",
+    "Jeg kan forklare at målestokk 1:2 gir en åttedel av volumet.",
+    "Jeg kan regne overflate og finne masse fra volum og massetetthet."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V", "tittel": "Vinkler på braketten", "tekst": "Mål vinkler med gradskive og vinkelhake, og sjekk at summen stemmer.", "lenke": "6-1/verksted.html" },
+    { "merke": "V", "tittel": "Er rammen rett?", "tekst": "Kontroller en sveiset ramme med 3-4-5 og diagonalmåling.", "lenke": "6-2/verksted.html" },
+    { "merke": "V", "tittel": "Kutteplan for plate", "tekst": "Planlegg kapp av braketter og regn svinn i prosent.", "lenke": "6-3/verksted.html" },
+    { "merke": "V", "tittel": "Brusboks på 0,33 L", "tekst": "Design, beregn og tegn en boks som rommer nøyaktig 0,33 L.", "lenke": "6-4/verksted.html" },
+    { "merke": "V/K", "tittel": "Slagvolum", "tekst": "Mål en sylinder i bilverkstedet og kontroller moped og Volvo B230.", "lenke": "6-5/verksted.html" },
+    { "merke": "V", "tittel": "Modell i 1:2", "tekst": "Kutt, monter og test brusboksen og modellen med sand.", "lenke": "6-6/verksted.html" },
+    { "merke": "V/K", "tittel": "Hjuloppdraget", "tekst": "Regn omkrets ut fra dekkmerking og sammenlign med målebånd.", "lenke": "6-7/verksted.html" }
+  ]
+}

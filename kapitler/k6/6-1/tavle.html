@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 6.1 Vinkler</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="6" data-del="6.1">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Braketten">
+    <h2>Hvor stor er den siste vinkelen?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 280" role="img" aria-label="En brakett med vinkler 90 grader, 55 grader og et ukjent hjørne">
+        <polygon points="70,220 250,220 310,70 130,70" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <path d="M70 190 L100 190 L100 220" fill="none" stroke="var(--kap)" stroke-width="3"/>
+        <text x="112" y="210" font-size="18" font-weight="700" fill="var(--kap)">90°</text>
+        <text x="175" y="205" font-size="18" font-weight="700" fill="#17202b">55°</text>
+        <text x="250" y="100" font-size="22" font-weight="700" fill="#a16207">?</text>
+        <g data-vis-fra="3">
+          <rect x="230" y="40" width="90" height="32" rx="6" fill="#dcfce7"/>
+          <text x="275" y="62" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">35°</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Du skal sveise en brakett. To vinkler er gitt: \(90^\circ\) og \(55^\circ\). Den tredje står ikke på skissen.</p>
+      <div class="undre" data-hint="Alle tre vinklene i en trekant er til sammen 180°." data-sekunder="30">Er den siste vinkelen større eller mindre enn 45°? Gjett først.</div>
+      <p class="steg">Vinkelsummen i en trekant er \(180^\circ\). De to kjente er \(90 + 55 = 145\).</p>
+      <p class="steg">Den siste er \(180 - 145 = 35\). Altså \(35^\circ\).</p>
+      <p class="steg">Sjekk: \(90 + 55 + 35 = 180\). Summen stemmer.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Rett linje">
+    <h2>Vinkler på en rett kant</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="En rett platekant med to vinkler som til sammen er 180 grader">
+        <line x1="30" y1="140" x2="410" y2="140" stroke="#17202b" stroke-width="4"/>
+        <line x1="210" y1="140" x2="300" y2="40" stroke="#17202b" stroke-width="3"/>
+        <path d="M210 140 L250 118 A46 46 0 0 0 164 140" fill="var(--kap)" opacity="0.25"/>
+        <text x="150" y="118" font-size="20" font-weight="700" fill="var(--kap)">125°</text>
+        <g data-vis-fra="2">
+          <text x="300" y="118" font-size="20" font-weight="700" fill="#15803d">55°</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En plate er kappet. Langs den rette kanten er den ene vinkelen \(125^\circ\).</p>
+      <div class="undre" data-hint="En rett linje er 180°.">Hvor stor er vinkelen som ligger inntil?</div>
+      <p class="steg">Nabovinkler på en rett linje er til sammen \(180^\circ\).</p>
+      <p class="steg">\(180 - 125 = 55\). Den andre vinkelen er \(55^\circ\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Regel</p>
+        <p>Trekant: \(180^\circ\). Rett linje: \(180^\circ\). Rett vinkel: \(90^\circ\). Fullt omløp: \(360^\circ\).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Halve vinkelen">
+    <h2>Kjørneren på 60°</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 260" role="img" aria-label="Spiss på en kjørner. Hele vinkelen er 60 grader, hver side er 30 grader fra senterlinjen">
+        <polygon points="210,40 150,210 270,210" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <line x1="210" y1="40" x2="210" y2="210" stroke="var(--kap)" stroke-width="2" stroke-dasharray="6 4"/>
+        <text x="228" y="150" font-size="16" fill="var(--kap)">senter</text>
+        <text x="168" y="90" font-size="18" font-weight="700">60°</text>
+        <g data-vis-fra="2">
+          <text x="148" y="160" font-size="18" font-weight="700" fill="#15803d">30°</text>
+          <text x="232" y="160" font-size="18" font-weight="700" fill="#15803d">30°</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En kjørner er merket \(60^\circ\). Det er vinkelen tvers over spissen. Du skal dreie en lik spiss, og toppsleiden skal stilles inn.</p>
+      <div class="undre" data-hint="Senterlinjen deler spissen i to like deler.">Stiller du toppsleiden på 60° eller på 30°?</div>
+      <p class="steg">Senterlinjen deler \(60^\circ\) i to. Hver side ligger \(30^\circ\) fra senterlinjen.</p>
+      <p class="steg">Toppsleiden stilles på \(30^\circ\), ikke på \(60^\circ\).</p>
+      <p class="steg">Stiller du \(60^\circ\), blir spissen \(120^\circ\). Det er halve vinkelen-fella.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Sjekk med vinkelhake">
+    <h2>90° skal se ut som 90°</h2>
+    <div class="tekst">
+      <p>Et hjørne på en ramme skal være rett. Vinkelhaken lyser ikke gjennom noe sted hvis hjørnet er \(90^\circ\).</p>
+      <div class="undre" data-hint="En firkant med fire rette hjørner har vinkelsum 360°.">Du måler hjørnene til 88°, 91°, 90° og 93°. Kan alle være rette?</div>
+      <p class="steg">Avvikene er 2°, 1°, 0° og 3°. Størst avvik er \(3^\circ\).</p>
+      <p class="steg">Summen er \(88 + 91 + 90 + 93 = 362\), ikke \(360\). Målingen eller rammen er skeiv.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Spiss vinkel er under \(90^\circ\). Rett er \(90^\circ\). Stump er over \(90^\circ\) og under \(180^\circ\).</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../6-2/teori.html">6.2 Pytagoras og 3-4-5</a> · <a href="oppgaver.html">Oppgaver 6.1</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
