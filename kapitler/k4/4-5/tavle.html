@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 4.5 Sammensatte enheter</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="4" data-del="4.5">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Dekket">
+    <h2>2,2 bar, hvor mange kPa?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 260" role="img" aria-label="Manometer som viser 2,2 bar på et bildekk">
+        <circle cx="160" cy="130" r="90" fill="#fff" stroke="#17202b" stroke-width="4"/>
+        <circle cx="160" cy="130" r="6" fill="#17202b"/>
+        <line x1="160" y1="130" x2="210" y2="80" stroke="var(--kap)" stroke-width="4"/>
+        <text x="160" y="210" text-anchor="middle" font-size="18" font-weight="700">2,2 bar</text>
+        <g data-vis-fra="2">
+          <text x="330" y="110" font-size="20" font-weight="700" fill="var(--kap)">220 kPa</text>
+          <text x="330" y="145" font-size="20" font-weight="700" fill="var(--kap)">31,9 psi</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Manometeret på dekket viser <b>2,2 bar</b>. Verkstedmanualen ber om kilopascal, og et gammelt amerikansk mål viser psi.</p>
+      <div class="undre" data-hint="1 bar er 100 kPa, ikke 1000." data-sekunder="30">Er 2,2 bar nærmere 2,2 kPa, 220 kPa eller 2200 kPa?</div>
+      <p class="steg">\(1\ \text{bar} = 100\ \text{kPa}\). \(2{,}2 \cdot 100 = 220\) kPa.</p>
+      <p class="steg">Med \(1\ \text{bar} \approx 14{,}5\ \text{psi}\): \(2{,}2 \cdot 14{,}5 = 31{,}9\) psi.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Trykk</p>
+        <p>\(1\ \text{bar} = 100\ \text{kPa} = 100\,000\ \text{Pa} \approx 14{,}5\ \text{psi}\)<br>
+        Personbildekk ligger ofte rundt 2–3 bar. 200 bar er gassflaske, ikke dekk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="kg/m og L/min">
+    <h2>To skilt, to enheter</h2>
+    <div class="tekst">
+      <p>På stålhylla står det 1,44 kg/m. På kjølevæskepumpa står det 8 L/min.</p>
+      <div class="undre" data-hint="kg/m ganger meter gir kilogram. L/min ganger minutter gir liter.">Hva veier 2 meter, og hvor mange liter kommer på 5 minutter?</div>
+      <p class="steg">\(1{,}44 \cdot 2 = 2{,}88\) kg stål.</p>
+      <p class="steg">\(8 \cdot 5 = 40\) L væske.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Sammensatt enhet</p>
+        <p>Enheten etter streken er det du deler på. Gang med den, så faller den bort: kg/m · m = kg, og L/min · min = L.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="kWh">
+    <h2>Hva koster kompressoren?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 240" role="img" aria-label="Kompressor merket 2,2 kW som går i 3 timer">
+        <rect x="40" y="50" width="200" height="140" rx="10" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <rect x="60" y="70" width="120" height="50" rx="4" fill="#fff" stroke="var(--kap)" stroke-width="2"/>
+        <text x="120" y="102" text-anchor="middle" font-size="20" font-weight="700">2,2 kW</text>
+        <text x="140" y="160" text-anchor="middle" font-size="16">går i 3 h</text>
+        <g data-vis-fra="3">
+          <text x="320" y="110" font-size="22" font-weight="700" fill="var(--kap)">6,6 kWh</text>
+          <text x="320" y="145" font-size="18" fill="#17202b">· 2 kr = 13,20 kr</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Kompressoren er merket 2,2 kW og går i 3 timer. Strømprisen er 2 kr per kWh.</p>
+      <div class="undre" data-hint="Kilowattimer er effekt ganger tid i timer.">Er energien 2,2 kWh, 6,6 kWh eller 220 kWh?</div>
+      <p class="steg">\(2{,}2 \cdot 3 = 6{,}6\) kWh. Ikke 2,2, og ikke 220.</p>
+      <p class="steg">Kostnad: \(6{,}6 \cdot 2 = 13{,}20\) kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Energi</p>
+        <p>\(\text{kWh} = \text{kW} \cdot \text{timer}\)<br>
+        Timene må være desimaltimer. 90 minutter er 1,5 h, ikke 90 i formelen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Minutter">
+    <h2>Ikke gang kW med minutter</h2>
+    <div class="tekst">
+      <p>En sveiser går på 4 kW i 1 time og 30 minutter. En lærling regner \(4 \cdot 1{,}30 = 5{,}2\) kWh.</p>
+      <div class="undre" data-hint="30 minutter er en halv time.">Hvor mange desimaltimer er 1 time og 30 minutter?</div>
+      <p class="steg">30 min = 0,5 h. Tiden er <b>1,5 h</b>, ikke 1,30.</p>
+      <p class="steg">\(4 \cdot 1{,}5 = 6\) kWh. Med 1,60 kr per kWh blir det \(6 \cdot 1{,}6 = 9{,}60\) kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>kWh bruker timer. L/min bruker minutter. kg/m bruker meter. Les enheten etter streken før du ganger.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../4-4/teori.html">4.4 Desimaltimer</a> · <a href="../4-6/teori.html">4.6 Velg riktig enhet</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
