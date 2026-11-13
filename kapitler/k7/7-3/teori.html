@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 7.3 Sparing og BSU</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="7" data-del="7.3">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">ØKONOMI · SPARING</p>
+  <h1>Sparing og BSU</h1>
+  <p class="ingress">Penger du setter av, vokser med renta. BSU gir i tillegg et skattefradrag, men bare når du betaler skatt og ikke eier bolig.</p>
+
+  <ul class="laeringsmal">
+    <li>regne et innskudd med vekstfaktor</li>
+    <li>regne skattefradrag på BSU med reglene for 2026</li>
+    <li>forklare at fradraget ikke settes inn på kontoen</li>
+  </ul>
+
+  <ol class="kjede"><li>finn innskuddet</li><li>gang med vekstfaktor</li><li>sjekk BSU-grensen</li><li>regn fradraget</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Etter utbetalt lønn setter lærlingen av 1 000 kr. Målet er egenkapital til bolig, ikke et nytt verktøy neste uke. Verktøyet kan vente. Boligen krever at pengene får stå.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Et engangsinnskudd med fast rente regnes med vekstfaktor, som i kapittel 3:</p>
+  <p>\[ K = K_0 \cdot (1 + r)^n \]</p>
+  <p>\(r\) er renta som desimaltall. 2 % er \(r = 0{,}02\), og vekstfaktoren er 1,02. \(n\) er antall år.</p>
+  <p>Setter du inn 1 000 kr i måneden, er innskuddet på ett år 12 000 kr. Banken regner rente av det som faktisk står inne. I oppgavene bruker vi en enkel modell: hele årssummen settes inn ved starten av året, hvis ikke oppgaven sier noe annet.</p>
+  <p>BSU i 2026, etter Skatteetaten:</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Regel</th><th>2026</th></tr></thead>
+      <tbody>
+        <tr><td>Maks innskudd per år</td><td>27 500 kr</td></tr>
+        <tr><td>Skattefradrag</td><td>10 % av innskuddet, maks 2 750 kr</td></tr>
+        <tr><td>Samlet innskudd</td><td>300 000 kr</td></tr>
+        <tr><td>Alder</td><td>Til og med året du fyller 33</td></tr>
+        <tr><td>Bolig</td><td>Ikke fradrag hvis du eier bolig 31. desember</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Rentene på kontoen teller ikke med i de 27 500 kronene, og de teller ikke med i taket på 300 000 kr. Fradraget gis i skatten. Det settes ikke inn på BSU-kontoen. Betaler du mindre i skatt og trygdeavgift enn fradraget, får du bare fradrag for det du faktisk skulle betalt.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Etter ett år: beløp · 1,02 når renta er 2 % per år.<br>
+    BSU-fradrag = innskudd · 0,10, maksimalt 2 750 kr i 2026.<br>
+    Fradraget er lavere skatt, ikke et ekstra innskudd.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: 20 000 kr i tre år</h3>
+    <p>Du setter inn 20 000 kr én gang. Renta er 2 % per år. Pengene står i tre år.</p>
+    <ol class="steg-liste">
+      <li class="steg">Vekstfaktor per år: 1,02.</li>
+      <li class="steg">Etter ett år: \(20\,000 \cdot 1{,}02 = 20\,400\) kr.</li>
+      <li class="steg">Etter tre år: \(20\,000 \cdot 1{,}02^3 = 20\,000 \cdot 1{,}061208 = 21\,224{,}16\) kr.</li>
+      <li class="steg">Renta du har fått: \(21\,224{,}16 - 20\,000 = 1\,224{,}16\) kr.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>Skattefradraget på BSU settes ikke inn på kontoen. Det trekkes fra skatten. Renter teller ikke med i de 27 500 kronene. 2 % per år er ikke det samme som 2 % per måned.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Du setter inn 15 000 kr på BSU i 2026 og betaler mer enn nok skatt. Hvor stort blir skattefradraget?</p>
+    <div class="fasit">1 500 kr</div>
+    <div class="losning">\(15\,000 \cdot 0{,}10 = 1\,500\) kr. Beløpet på kontoen er fortsatt 15 000 kr pluss eventuelle renter.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Kilde, 2026.</b> Skatteetaten: boligsparing for ungdom. Maksimalt årlig sparebeløp 27 500 kr, skattefradrag 10 %, samlet sparebeløp 300 000 kr, alder til og med året du fyller 33 år. Ikke fradrag hvis du eier bolig 31. desember. Regneark: kolonne for måned, innskudd og saldo. Formelen for neste saldo er forrige saldo ganger 1,02 hvis renta legges til én gang i året.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

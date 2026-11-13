@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 7.4 Lån: serielån og annuitetslån</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="7" data-del="7.4">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">ØKONOMI · LÅN</p>
+  <h1>Lån: serielån og annuitetslån</h1>
+  <p class="ingress">Et lån betales tilbake med avdrag og renter. I et serielån er avdraget likt. I et annuitetslån er terminbeløpet likt. Renta bestemmer hva lånet koster.</p>
+
+  <ul class="laeringsmal">
+    <li>kjenne igjen serielån og annuitetslån</li>
+    <li>regne avdrag, rente og restgjeld på et serielån</li>
+    <li>sammenligne hva kontant, billån og forbrukslån koster</li>
+  </ul>
+
+  <ol class="kjede"><li>les renta</li><li>finn avdrag</li><li>rente av restgjeld</li><li>sammenlign totalen</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Sara er lærling og trenger et verktøysett til 36 000 kr. Hun kan spare, eller låne. Lånet har 5 % rente og tre årlige terminer. Før hun sier ja, regner hun hva hun betaler i tillegg til de 36 000 kronene.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Hver termin betaler du avdrag og renter. Avdraget minker gjelden. Renta er prisen for å låne.</p>
+  <p>På et <b>serielån</b> er avdraget det samme hver termin:</p>
+  <p>\[ \text{avdrag} = \frac{\text{lån}}{\text{antall terminer}} \]</p>
+  <p>\[ \text{rente} = \text{restgjeld} \cdot r \]</p>
+  <p>Terminbeløpet synker, fordi restgjelden synker.</p>
+  <p>På et <b>annuitetslån</b> er terminbeløpet det samme hver gang. I starten er en stor del rente. Senere er en stor del avdrag. Formelen for terminbeløpet er</p>
+  <p>\[ T = L \cdot \frac{r(1+r)^n}{(1+r)^n - 1} \]</p>
+  <p>I oppgavene får du ofte \(T\) oppgitt, så du kan finne rente og avdrag uten å regne ut brøken for hånd. I regnearket kan du bruke formelen.</p>
+  <p>I eksemplene her er det én termin i året, så \(r\) er årsrenta. Betaler du hver måned, er månedsrenta årsrenta delt på 12. 6 % per år er ikke 6 % per måned.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Serielån: likt avdrag, synkende terminbeløp.<br>
+    Annuitetslån: likt terminbeløp, voksende avdrag.<br>
+    Terminbeløp = avdrag + rente.<br>
+    Restgjeld = forrige restgjeld − avdrag.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: serielånet til Sara</h3>
+    <p>36 000 kr, 5 % rente per år, 3 år, én termin i året.</p>
+    <ol class="steg-liste">
+      <li class="steg">Avdrag: \(36\,000 : 3 = 12\,000\) kr hvert år.</li>
+      <li class="steg">År 1: rente \(36\,000 \cdot 0{,}05 = 1\,800\) kr. Termin \(13\,800\) kr. Restgjeld 24 000 kr.</li>
+      <li class="steg">År 2: rente \(24\,000 \cdot 0{,}05 = 1\,200\) kr. Termin \(13\,200\) kr. Restgjeld 12 000 kr.</li>
+      <li class="steg">År 3: rente \(12\,000 \cdot 0{,}05 = 600\) kr. Termin \(12\,600\) kr. Restgjeld 0 kr.</li>
+      <li class="steg">Renter til sammen: \(1\,800 + 1\,200 + 600 = 3\,600\) kr. Hun betaler 39 600 kr for et sett til 36 000 kr.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>I et serielån er avdraget likt, og terminbeløpet synker. I et annuitetslån er terminbeløpet likt, og avdraget vokser. Et lavere terminbeløp første året betyr ikke at lånet er billigere. Sjekk renta og antall år.</p>
+  </div>
+
+  <div class="underveis">
+    <p>Et serielån på 24 000 kr betales over 4 år med én termin i året. Hvor stort er avdraget per år?</p>
+    <div class="fasit">6 000 kr</div>
+    <div class="losning">\(24\,000 : 4 = 6\,000\) kr. Renta kommer i tillegg og regnes av restgjelden.</div>
+  </div>
+
+  <div class="verktoy">
+    <p>I regneark: én rad per år. Kolonner for restgjeld ved starten, rente, avdrag og restgjeld ved slutten. Neste rad starter med restgjelden fra raden over. Sjekk at siste restgjeld blir 0.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 7.5 Kredittkort</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="7" data-del="7.5">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Betal senere">
+    <h2>Hva koster «betal senere»?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Verktøysett til 20 000 kroner og et kredittkort">
+        <rect x="40" y="50" width="180" height="120" rx="8" fill="#fff" stroke="#17202b" stroke-width="2"/>
+        <text x="130" y="100" text-anchor="middle" font-size="16" fill="#5b6675">verktøysett</text>
+        <text x="130" y="136" text-anchor="middle" font-size="26" font-weight="700">20 000 kr</text>
+        <g data-vis-fra="2">
+          <rect x="250" y="70" width="150" height="90" rx="10" fill="var(--kap)"/>
+          <text x="325" y="110" text-anchor="middle" font-size="16" fill="#fff">kreditt</text>
+          <text x="325" y="136" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">1,8 % / mnd</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Verktøysettet koster 20 000 kr. Første måned er rentefri hvis hele beløpet betales innen forfall. Etterpå er renta 1,8 % per måned.</p>
+      <div class="undre" data-hint="1,8 % av 20 000. Det er ikke 1,8 kroner." data-sekunder="30">Omtrent hvor mange kroner er renta den første måneden du ikke betaler?</div>
+      <p class="steg">\(20\,000 \cdot 0{,}018 = 360\) kr på én måned.</p>
+      <p class="steg">Betaler du hele regningen i den rentefrie måneden, er renta 0 kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Kreditt</p>
+        <p>Rentefri måned gjelder bare hvis hele beløpet er betalt innen forfall.<br>
+        Ellers: ny saldo = gammel saldo · 1,018.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Et halvt år">
+    <h2>Et halvt år senere</h2>
+    <div class="tekst">
+      <p>Et halvt år er 6 måneder. Én måned er rentefri. De neste fem månedene legges renta på renta. Vekstfaktoren for fem måneder er 1,093299.</p>
+      <div class="undre" data-hint="Gang 20 000 med 1,093299, ikke med 1,018 fem ganger i hodet." data-sekunder="30">Står gjelden på omtrent 20 360 kr eller omtrent 21 900 kr?</div>
+      <p class="steg">\(20\,000 \cdot 1{,}093299 = 21\,865{,}98\) kr.</p>
+      <p class="steg">Renta på et halvt år er \(21\,865{,}98 - 20\,000 = 1\,865{,}98\) kr, omtrent 1 866 kr.</p>
+      <p class="steg">1,8 % · 12 = 21,6 % uten rentesrente. Med rentesrente er årsrenta omtrent 23,9 %. Det er mye dyrere enn billånet på 6 %.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>1,8 % per måned er ikke 1,8 % per år.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Minste beløp">
+    <h2>Minste beløp</h2>
+    <div class="tekst">
+      <p>Kortet ber deg betale et minste beløp. Hvis det beløpet er lik renta, synker ikke gjelden.</p>
+      <div class="undre" data-hint="Renta var 360 kr. Hvis du betaler nøyaktig 360 kr, hva skjer med de 20 000?" data-sekunder="30">Er verktøysettet betalt når du har betalt minste beløp én gang?</div>
+      <p class="steg">Nei. Betaler du 360 kr, dekker du bare renta. Gjelden er fortsatt 20 000 kr.</p>
+      <p class="steg">Neste måned kommer 360 kr i rente igjen, hvis gjelden fortsatt er 20 000 kr.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Konsekvens</p>
+        <p>Minste beløp holder kortet åpent. Det sletter ikke gjelden. Et kredittkort er et lån med høy rente.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../7-4/teori.html">7.4 Lån</a> · <a href="../7-6/teori.html">7.6 Budsjett</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
