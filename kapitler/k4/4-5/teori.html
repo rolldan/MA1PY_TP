@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 4.5 Sammensatte enheter</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="4" data-del="4.5">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Enheter · Sammensatte</p>
+  <h1>Sammensatte enheter</h1>
+  <p class="ingress">kg/m, L/min, kWh, bar, kPa og psi er to enheter satt sammen. Den etter streken sier hva du må gange eller dele med.</p>
+
+  <ul class="laeringsmal">
+    <li>gjøre om mellom bar, kPa og psi</li>
+    <li>bruke kg/m og L/min</li>
+    <li>regne energi i kWh fra effekt og desimaltimer</li>
+  </ul>
+
+  <ol class="kjede"><li>les enheten etter streken</li><li>gjør om tiden eller lengden</li><li>gang eller del</li><li>sjekk at svaret har enheten som er igjen</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Dekket viser 2,2 bar. Det er 220 kPa og omtrent 31,9 psi når 1 bar ≈ 14,5 psi. Kompressoren på 2,2 kW som går i 3 timer, bruker \(2{,}2 \cdot 3 = 6{,}6\) kWh. Med 2 kr per kWh koster økta 13,20 kr.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>En sammensatt enhet er en brøk. kg/m betyr kilogram per meter. Ganger du med antall meter, blir det kilogram igjen. L/min ganger minutter blir liter. kW ganger timer blir kWh.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Enhet</th><th>Brukes til</th><th>Regnestykke</th></tr></thead>
+      <tbody>
+        <tr><td>kg/m</td><td>profiler og stang</td><td>\(1{,}44\ \text{kg/m} \cdot 2\ \text{m} = 2{,}88\ \text{kg}\)</td></tr>
+        <tr><td>L/min</td><td>pumpe og kjølevæske</td><td>\(8\ \text{L/min} \cdot 5\ \text{min} = 40\ \text{L}\)</td></tr>
+        <tr><td>kWh</td><td>strøm på merkeskiltet</td><td>\(2{,}2\ \text{kW} \cdot 3\ \text{h} = 6{,}6\ \text{kWh}\)</td></tr>
+        <tr><td>bar, kPa, psi</td><td>dekk, kompressor, flaske</td><td>\(2{,}2\ \text{bar} = 220\ \text{kPa} \approx 31{,}9\ \text{psi}\)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>\(1\ \text{bar} = 100\ \text{kPa} \approx 14{,}5\ \text{psi}\)</p>
+    <p>\(\text{kWh} = \text{kW} \cdot \text{h}\). Kostnad = kWh · kr/kWh.</p>
+    <p>Personbil: omtrent 2–3 bar. Kompressor i verkstedet: ofte rundt 6–8 bar. Gassflaske: mye høyere, les skiltet og ikke skru selv.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: sveiser i halvannen time</h3>
+    <p>Sveiseren trekker 4 kW i 1 time og 30 minutter. Strømmen koster 1,60 kr/kWh. Hva koster økta?</p>
+    <ol class="steg-liste">
+      <li class="steg">30 min = 0,5 h. Tiden er 1,5 h, ikke 1,30.</li>
+      <li class="steg">Energi: \(4 \cdot 1{,}5 = 6\) kWh.</li>
+      <li class="steg">Kostnad: \(6 \cdot 1{,}6 = 9{,}60\) kr.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>1 bar er 100 kPa, ikke 10 og ikke 1000. kWh er kilowatt ganger timer, ikke ganger minutter. 1,5 timer er ikke 1,30, og 1,30 timer er ikke «en time og 30 minutter».</p>
+  </div>
+
+  <div class="underveis">
+    <p>En pumpe gir 6 L/min. Hvor mange liter kommer det på 12 minutter?</p>
+    <div class="fasit">72 L</div>
+    <div class="losning">\(6 \cdot 12 = 72\) L. Minuttene står etter streken, så de skal ganges inn.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Regneark:</b> kolonne A effekt i kW, kolonne B timer, kolonne C <code>=A2*B2</code> for kWh, kolonne D pris. Bytt B til minutter uten å dele på 60, og se at kostnaden blir 60 ganger for stor. Det er sjekken.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>

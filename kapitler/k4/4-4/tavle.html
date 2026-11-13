@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 4.4 Fart og tid. Desimaltimer</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="4" data-del="4.4">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Timelista">
+    <h2>1 time og 15 minutter</h2>
+    <div class="figur">
+      <svg viewBox="0 0 420 260" role="img" aria-label="Klokke fra 08.00 til 09.15 og tallet 1,25 timer">
+        <circle cx="120" cy="130" r="80" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <line x1="120" y1="130" x2="120" y2="70" stroke="#17202b" stroke-width="4"/>
+        <line x1="120" y1="130" x2="160" y2="150" stroke="var(--kap)" stroke-width="4"/>
+        <text x="120" y="40" text-anchor="middle" font-size="16" fill="#17202b">08:00–09:15</text>
+        <g data-vis-fra="2">
+          <rect x="240" y="90" width="150" height="80" rx="8" fill="#dcfce7"/>
+          <text x="315" y="125" text-anchor="middle" font-size="18" fill="#15803d">ikke 1,15</text>
+          <text x="315" y="152" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">1,25 h</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En jobb i bilverkstedet starter 08:00 og slutter 09:15. Timelista og timeprisen skal ha desimaltimer.</p>
+      <div class="undre" data-hint="Det går 60 minutter i en time, ikke 100." data-sekunder="30">Skriver du 1,15 timer eller 1,25 timer?</div>
+      <p class="steg">15 minutter er \(15 / 60 = 0{,}25\) time.</p>
+      <p class="steg">1 time + 0,25 time = <b>1,25 h</b>. 1,15 h ville vært 1 time og 9 minutter.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Desimaltimer</p>
+        <p>Timer + minutter / 60.<br>
+        Tilbake: desimalen · 60 = minutter.<br>
+        0,1 h = 6 min. 0,25 h = 15 min. 0,5 h = 30 min.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="5,2 timer">
+    <h2>5,2 timer er ikke 5 timer og 20 minutter</h2>
+    <div class="tekst">
+      <p>En kjøretur er regnet til 5,2 timer. En lærling skriver 5 t 20 min på seddelen, fordi «2-tallet er 20».</p>
+      <div class="undre" data-hint="Gang desimalen med 60.">Hvor mange minutter er 0,2 timer?</div>
+      <p class="steg">\(0{,}2 \cdot 60 = 12\). Det er 12 minutter, ikke 20.</p>
+      <p class="steg">5,2 h = <b>5 timer og 12 minutter</b>. I minutter: \(5{,}2 \cdot 60 = 312\) min.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Vanlig feil</p>
+        <p>Desimalene er tideler og hundredeler av en time. De er ikke minutter. Minutter får du først når du ganger med 60.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Varebilen">
+    <h2>Hvor fort gikk bilen?</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="Varebil som kjører 48 kilometer på 45 minutter">
+        <rect x="40" y="90" width="150" height="60" rx="8" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/>
+        <polygon points="140,90 190,90 210,120 140,120" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <circle cx="80" cy="155" r="16" fill="#17202b"/><circle cx="170" cy="155" r="16" fill="#17202b"/>
+        <text x="300" y="100" font-size="20" fill="#17202b">48 km</text>
+        <text x="300" y="130" font-size="20" fill="#17202b">45 min</text>
+        <g data-vis-fra="3">
+          <text x="300" y="175" font-size="24" font-weight="700" fill="var(--kap)">64 km/h</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Varebilen kjører 48 km på 45 minutter, fra skolen til en kunde.</p>
+      <div class="undre" data-hint="45 minutter er tre kvarter, altså 0,75 timer.">Ligger farten over eller under 80 km/h?</div>
+      <p class="steg">45 min = \(45 / 60 = 0{,}75\) h.</p>
+      <p class="steg">\(v = 48 / 0{,}75 = 64\) km/h. Under 80.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Fart</p>
+        <p>\(v = s / t\). Tid i timer gir km/h. Tid i sekunder gir m/s.<br>
+        km/h til m/s: del med 3,6. m/s til km/h: gang med 3,6.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="m/s">
+    <h2>Trucken i hallen</h2>
+    <div class="tekst">
+      <p>En truck kjører 4 m/s mellom reolene. Fartsgrensen på området står i km/h.</p>
+      <div class="undre" data-hint="1 m/s er 3,6 km/h. Skal tallet bli større eller mindre?">Skal du gange eller dele 4 med 3,6?</div>
+      <p class="steg">km/h er det større tallet. \(4 \cdot 3{,}6 = 14{,}4\) km/h.</p>
+      <p class="steg">Andre veien: 36 km/h = \(36 / 3{,}6 = 10\) m/s. 72 km/h = 20 m/s.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>m/s · 3,6 = km/h. En person som går, ligger rundt 1,5 m/s, omtrent 5 km/h. En truck på 4 m/s er rask inne i en hall.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../4-5/teori.html">4.5 Sammensatte enheter</a> · <a href="oppgaver.html">Oppgaver 4.4</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

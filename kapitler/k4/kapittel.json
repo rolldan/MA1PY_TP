@@ -1,0 +1,48 @@
+{
+  "nr": 4,
+  "tittel": "Måleenheter og sammensatte enheter",
+  "status": "ferdig",
+  "ingress": "Prefikser, liter og dm³, masse og massetetthet, desimaltimer, og sammensatte enheter som kg/m, L/min, kWh, bar og psi. Du avslutter med å velge enhet som passer jobben, øve til juletentamen og lage en gaveeske på 3 dm³.",
+  "handlerOm": "I verkstedet står effekten i kW, tegningen i mm, oljen i liter og dekktrykket i bar. I dette kapitlet gjør du om mellom enhetene og bruker sammensatte enheter på platting, flattstål, dekk og merkeskilt. I SI er 1 GB = 1000 MB. Etterpå øver du til juletentamen i uke 50. I uke 51 lager du en gaveeske på 3 dm³ i makerspace.",
+  "byggerPa": [
+    { "tekst": "1.1 Gange og dele med 10, 100 og 1000", "lenke": "kapitler/k1/1-1/teori.html" },
+    { "tekst": "Kapittel 2: måling og µm" },
+    { "tekst": "Kapittel 3: forhold og prosent" }
+  ],
+  "lenkerVidere": [
+    { "tekst": "Kapittel 5: Formler fra verkstedet" },
+    { "tekst": "Juletentamen i uke 50, kapittel 1–4" }
+  ],
+  "delkapitler": [
+    { "nr": "4.1", "tittel": "Prefikser: µ, m, k, M og G", "formel": "\\(1\\ \\text{GB} = 1000\\ \\text{MB}\\)", "uke": "47" },
+    { "nr": "4.2", "tittel": "Lengde, areal og volum. Liter og dm³", "formel": "\\(1\\ \\text{L} = 1\\ \\text{dm}^3\\)", "uke": "47" },
+    { "nr": "4.3", "tittel": "Masse og massetetthet", "formel": "\\(m = \\rho \\cdot V\\)", "uke": "48" },
+    { "nr": "4.4", "tittel": "Fart og tid. Desimaltimer", "formel": "\\(1{,}25\\ \\text{h} = 1\\ \\text{t}\\ 15\\ \\text{min}\\)", "uke": "48" },
+    { "nr": "4.5", "tittel": "Sammensatte enheter", "formel": "\\(1\\ \\text{bar} = 100\\ \\text{kPa} \\approx 14{,}5\\ \\text{psi}\\)", "uke": "49" },
+    { "nr": "4.6", "tittel": "Velg riktig enhet", "formel": "Enheten jobben spør etter", "uke": "49" }
+  ],
+  "jegKan": [
+    "Jeg kan bruke prefiksene µ, m, k, M og G.",
+    "Jeg kan gjøre om ved å gange eller dele med 1000.",
+    "Jeg vet at 1 GB = 1000 MB i SI.",
+    "Jeg kan gjøre om mellom mm, cm, dm og m.",
+    "Jeg kan gjøre om areal med faktor 100 og volum med faktor 1000.",
+    "Jeg kan gjøre om mellom liter, mL og dm³.",
+    "Jeg kan regne masse fra volum og massetetthet.",
+    "Jeg kan bruke kg/m på et profil.",
+    "Jeg kan skrive tid som desimaltimer.",
+    "Jeg kan regne fart i m/s og km/h.",
+    "Jeg kan gjøre om mellom bar, kPa og psi.",
+    "Jeg kan regne energi i kWh og volumstrøm i L/min.",
+    "Jeg kan velge en enhet som passer til jobben."
+  ],
+  "verkstedoppdrag": [
+    { "merke": "V/K", "tittel": "Merkeskilt og minne", "tekst": "Les kW og mm på maskinene, og regn om lagringsplass på telefonen med 1 GB = 1000 MB.", "lenke": "4-1/verksted.html" },
+    { "merke": "V/K", "tittel": "Liter-duell", "tekst": "Makkerspill med olje, kjølevæske og spylervæske. Avslutning: plattingen på 575 × 250 × 10 cm.", "lenke": "4-2/verksted.html" },
+    { "merke": "V", "tittel": "Gaveeske på 3 dm³", "tekst": "Makerspace i uke 51: regn ut, tegn og laserkutt en eske som rommer nøyaktig 3 dm³.", "lenke": "4-2/verksted.html#gaveeske" },
+    { "merke": "V", "tittel": "Hvor tungt er det?", "tekst": "Flattstål 6 × 30 mm og en jernplate med fem hull. Regn først, vei etterpå.", "lenke": "4-3/verksted.html" },
+    { "merke": "V/K", "tittel": "Tid på jobben", "tekst": "Ta tiden på en strekning i verkstedet og skriv timene som desimaltimer.", "lenke": "4-4/verksted.html" },
+    { "merke": "V", "tittel": "Trykk og strøm", "tekst": "Mål dekktrykk i bar og gjør om til kPa og psi. Les kW på merkeskiltet og regn kWh.", "lenke": "4-5/verksted.html" },
+    { "merke": "V/K", "tittel": "Stasjoner før juletentamen", "tekst": "Fem stasjoner med prefiks, liter, masse, desimaltimer og bar/kWh. Fast start med en sikker oppgave.", "lenke": "4-6/verksted.html" }
+  ]
+}

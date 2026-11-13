@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 4.1 Prefikser: µ, m, k, M og G</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="4" data-del="4.1">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Enheter · Prefikser</p>
+  <h1>Prefikser: µ, m, k, M og G</h1>
+  <p class="ingress">På vinkelsliperen står det 0,85 kW. På tegningen står det 50 µm. På telefonen står det 128 GB. Prefikset sier hvor kommaet skal flyttes.</p>
+
+  <ul class="laeringsmal">
+    <li>bruke prefiksene mikro, milli, kilo, mega og giga</li>
+    <li>gjøre om ved å gange eller dele med 1000</li>
+    <li>bruke at 1 GB = 1000 MB i SI</li>
+  </ul>
+
+  <ol class="kjede"><li>les prefikset</li><li>tell steg på 1000</li><li>flytt kommaet</li><li>sjekk størrelsen</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Vinkelsliperen er merket 0,85 kW. Det er 850 W. En kurs på 10 A og 230 V tåler \(10 \cdot 230 = 2300\) W, så sliperen kan stå der. Kompressoren på 2,2 kW trekker 2200 W og ligger tett oppunder grensen.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Et prefiks står foran enheten og betyr et tall. I SI hopper disse prefiksene med <b>1000</b> for hvert steg:</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Prefiks</th><th>Symbol</th><th>Betyr</th><th>Eksempel</th></tr></thead>
+      <tbody>
+        <tr><td>mikro</td><td>µ</td><td>milliondel, 0,000001</td><td>\(50\ \text{µm} = 0{,}05\ \text{mm}\)</td></tr>
+        <tr><td>milli</td><td>m</td><td>tusendel, 0,001</td><td>\(850\ \text{mA} = 0{,}85\ \text{A}\)</td></tr>
+        <tr><td>kilo</td><td>k</td><td>tusen, 1000</td><td>\(0{,}85\ \text{kW} = 850\ \text{W}\)</td></tr>
+        <tr><td>mega</td><td>M</td><td>million, 1 000 000</td><td>\(0{,}5\ \text{MW} = 500\ \text{kW}\)</td></tr>
+        <tr><td>giga</td><td>G</td><td>milliard, 1 000 000 000</td><td>\(128\ \text{GB} = 128\,000\ \text{MB}\)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Fra et stort prefiks til et mindre: <b>gang</b> med 1000 per steg. Fra et lite til et større: <b>del</b> med 1000. centi (c) og desi (d) hopper med 10 og 100. Dem tar vi i 4.2.</p>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>µ → m → enheten → k → M → G. Hvert steg er 1000.</p>
+    <p>I SI er \(1\ \text{GB} = 1000\ \text{MB}\) og \(1\ \text{MB} = 1000\ \text{kB}\).<br>
+    Liten <b>m</b> er milli. Stor <b>M</b> er mega.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: 128 GB på telefonen</h3>
+    <p>Hvor mange megabyte er 128 GB når vi bruker SI?</p>
+    <ol class="steg-liste">
+      <li class="steg">G står ett steg over M. Vi skal fra stor til liten enhet, så vi ganger.</li>
+      <li class="steg">\(128 \cdot 1000 = 128\,000\). Telefonen har 128 000 MB.</li>
+      <li class="steg">Sjekk: 100 GB ville vært 100 000 MB. 128 GB skal være litt mer. 128 000 er fornuftig. \(128 \cdot 1024\) er binært (GiB) og brukes ikke her.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>To feller går igjen. Den ene er å gange gigabyte med 1024. I dette faget er 1 GB = 1000 MB. Den andre er å blande m og M: 50 m er 50 meter, 50 mm er 50 millimeter, og 50 µm er 0,05 mm.</p>
+  </div>
+
+  <div class="underveis">
+    <p>En sveiseomformer er merket 5,5 kW. Hvor mange watt er det?</p>
+    <div class="fasit">5500 W</div>
+    <div class="losning">Fra kW til W er ett steg ned. Gang med 1000: \(5{,}5 \cdot 1000 = 5500\) W.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Stigen:</b> Skriv µ, m, 1, k, M, G på en lapp og legg den ved siden av oppgavene. For hvert omgjøringsstykke: pek på starten, tell stegene, og si høyt om du ganger eller deler. Ta de første oppgavene på <a href="oppgaver.html">oppgavesiden</a> uten kalkulator.</p>
+  </div>
+</article>
+</main>
+</body>
+</html>
