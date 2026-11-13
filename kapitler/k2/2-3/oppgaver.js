@@ -250,5 +250,90 @@ Bok.oppgaver([
     ],
     hint: ["Gang eller del med 1000.", "0,35 · 1000 = 350. 70 : 1000 = 0,07."],
     losning: "<p>a) 350 µm b) 0,070 mm</p>"
+  },
+  {
+    id: "um-tre",
+    niva: "lett",
+    tittel: "Tre avvik til millimeter",
+    tekst: "<p>Toleransetabellen gir avvik i µm. Gjør om til mm.</p>",
+    steg: [{ verdi: 1000 }],
+    deler: [
+      { tekst: "48 µm", svar: { verdi: 0.048, enhet: "mm" } },
+      { tekst: "260 µm", svar: { verdi: 0.26, enhet: "mm" } },
+      { tekst: "7 µm", svar: { verdi: 0.007, enhet: "mm" } }
+    ],
+    hint: ["Fra µm til mm deler du med 1000. Kommaet flyttes tre plasser mot venstre.", "\\(48 : 1000 = 0{,}048\\). \\(260 : 1000 = 0{,}260\\). \\(7 : 1000 = 0{,}007\\)."],
+    losning: "<p>0,048 mm, 0,260 mm og 0,007 mm. 7 µm er ikke 0,07 mm.</p>"
+  },
+  {
+    id: "mm-tre",
+    niva: "lett",
+    tittel: "Tre mål til mikrometer",
+    tekst: "<p>Gjør om til µm, slik avvikene står i pasningstabellen.</p>",
+    steg: [{ verdi: 1000 }],
+    deler: [
+      { tekst: "0,45 mm", svar: { verdi: 450, enhet: "µm" } },
+      { tekst: "0,018 mm", svar: { verdi: 18, enhet: "µm" } },
+      { tekst: "2,4 mm", svar: { verdi: 2400, enhet: "µm" } }
+    ],
+    hint: ["Fra mm til µm ganger du med 1000.", "\\(0{,}45 \\cdot 1000 = 450\\). \\(0{,}018 \\cdot 1000 = 18\\). \\(2{,}4 \\cdot 1000 = 2400\\)."],
+    losning: "<p>450 µm, 18 µm og 2400 µm.</p>"
+  },
+  {
+    id: "boring-36",
+    niva: "middels",
+    tittel: "Boring Ø36 i µm",
+    tekst: "<p>En boring er Ø36. Øvre avvik er +28 µm. Nedre avvik er 0.</p>",
+    steg: [{ verdi: 0.028, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 36.028, enhet: "mm" } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 36, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 0.028, enhet: "mm" } }
+    ],
+    hint: ["Gjør 28 µm om til mm før du legger til.", "\\(28 : 1000 = 0{,}028\\). \\(36 + 0{,}028 = 36{,}028\\). Toleransen er det samme som øvre avvik, fordi nedre er 0."],
+    losning: "<p>Øvre 36,028 mm. Nedre 36,000 mm. Toleranse 0,028 mm. 36,28 mm hadde vært ti ganger for stort avvik.</p>"
+  },
+  {
+    id: "aksel-33",
+    niva: "middels",
+    tittel: "Aksel Ø33 i µm",
+    tekst: "<p>En aksel er Ø33. Avvikene er −8 µm og −21 µm.</p>",
+    steg: [{ verdi: 0.008, enhet: "mm" }, { verdi: 0.021, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 32.992, enhet: "mm" } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 32.979, enhet: "mm" } },
+      { tekst: "Toleranse?", svar: { verdi: 0.013, enhet: "mm" } }
+    ],
+    hint: ["Begge avvikene er negative. 8 µm = 0,008 mm og 21 µm = 0,021 mm.", "\\(33 - 0{,}008 = 32{,}992\\). \\(33 - 0{,}021 = 32{,}979\\). \\(32{,}992 - 32{,}979 = 0{,}013\\)."],
+    losning: "<p>Øvre 32,992 mm. Nedre 32,979 mm. Toleranse 0,013 mm.</p>"
+  },
+  {
+    id: "komma-35",
+    niva: "vanskelig",
+    tittel: "35 µm ble 0,35 mm",
+    tekst: "<p>Et avvik på tegningen er 35 µm. En lærling skriver 0,35 mm i måleskjemaet.</p>",
+    steg: [{ verdi: 0.035, enhet: "mm" }, { verdi: 0.35, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er riktig avvik i mm?", svar: { verdi: 0.035, enhet: "mm" } },
+      { tekst: "Hvor mange mm for stort er tallet lærlingen skrev?", svar: { verdi: 0.315, enhet: "mm" } },
+      { tekst: "Hvor mange ganger for stort er tallet?", svar: { verdi: 10, enhet: "stk", tol: 0 } }
+    ],
+    hint: ["35 : 1000 = 0,035, ikke 0,35. Én kommaflytting for lite ganger med 10.", "\\(0{,}35 - 0{,}035 = 0{,}315\\). \\(0{,}35 : 0{,}035 = 10\\)."],
+    losning: "<p>Riktig avvik er 0,035 mm. Lærlingen skrev 0,315 mm for mye, altså 10 ganger for stort. På en lagerbane er det forskjellen på godkjent og vrak.</p>"
+  },
+  {
+    id: "klaring-52",
+    niva: "vanskelig",
+    tittel: "Hull og aksel i µm",
+    tekst: "<p>Et hull er Ø52 med avvik +30 / 0 µm. Akselen er Ø52 med avvik −4 / −16 µm. Regn minste klaring. Klaring = minste hull − største aksel.</p>",
+    steg: [{ verdi: 0.03, enhet: "mm" }, { verdi: 0.004, enhet: "mm" }, { verdi: 51.996, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål for hullet?", svar: { verdi: 52.03, enhet: "mm" } },
+      { tekst: "Øvre grensemål for akselen?", svar: { verdi: 51.996, enhet: "mm" } },
+      { tekst: "Minste klaring i mm?", svar: { verdi: 0.004, enhet: "mm" } },
+      { tekst: "Minste klaring i µm?", svar: { verdi: 4, enhet: "µm", tol: 0 } }
+    ],
+    hint: ["30 µm = 0,030 mm. 4 µm = 0,004 mm. Største aksel er \\(52 - 0{,}004\\).", "\\(52{,}000 - 51{,}996 = 0{,}004\\) mm = 4 µm. Klaringen er positiv, så akselen går i hullet."],
+    losning: "<p>Hull 52,000 til 52,030 mm. Aksel 51,984 til 51,996 mm. Minste klaring \\(52{,}000 - 51{,}996 = 0{,}004\\) mm = 4 µm.</p>"
   }
 ]);

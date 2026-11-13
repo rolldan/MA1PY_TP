@@ -253,5 +253,85 @@ Bok.oppgaver([
     ],
     hint: ["Trekk fra det som er likt hver gang.", "\\(55{,}20 - 0{,}05 = 55{,}15\\) mm. Varmen er systematisk."],
     losning: "<p>Korrigert mål 55,15 mm. Gjennomsnittet demper tilfeldig spredning, men blir fortsatt omtrent 0,05 mm for høyt. Vent til delen er kald, eller korriger.</p>"
+  },
+  {
+    id: "linjal-tre",
+    niva: "lett",
+    tittel: "Linjalen starter på 3",
+    tekst: "<p>Enden på stållinjalen er slitt. Skalaen starter på 3 mm. Du leser 97 mm mot enden av en kappet plate. Hvor lang er plata?</p>",
+    steg: [{ verdi: 3, enhet: "mm" }],
+    svar: { verdi: 94, enhet: "mm", tol: 0 },
+    hint: ["Linjalen legger på 3 mm hver gang. Det er en systematisk feil.", "Trekk fra 3 mm: \\(97 - 3\\)."],
+    losning: "<p>\\(97 - 3 = 94\\) mm. Samme korreksjon gjelder neste plate du måler med linjalen.</p>"
+  },
+  {
+    id: "mikro-klikk",
+    niva: "lett",
+    tittel: "Forbi klikken",
+    tekst: "<p>Du skrur alltid mikrometeret like langt forbi friksjonsklikken. Lukket viser det 0,015 mm. På en lagerbane leser du 16,480 mm.</p>",
+    steg: [{ verdi: 0.015, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er korrigert mål?", svar: { verdi: 16.465, enhet: "mm" } },
+      { tekst: "Hva slags feil er det faste overtrekket?", svar: { valg: ["Tilfeldig feil", "Systematisk feil"], riktig: 1 } }
+    ],
+    hint: ["Verktøyet viser for mye, like mye hver gang. Trekk fra.", "\\(16{,}480 - 0{,}015 = 16{,}465\\) mm. Ulikt trykk fra gang til gang hadde vært tilfeldig."],
+    losning: "<p>\\(16{,}480 - 0{,}015 = 16{,}465\\) mm. Alltid like mye forbi klikken er systematisk. Ulikt klemmetrykk fra gang til gang er tilfeldig.</p>"
+  },
+  {
+    id: "passbit-15",
+    niva: "middels",
+    tittel: "Passbit 15,00 mm",
+    tekst: "<p>En passbit er 15,00 mm. Fem avlesinger: 15,04 · 15,07 · 15,03 · 15,06 · 15,05 mm.</p>",
+    steg: [{ verdi: 75.25, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er gjennomsnittet?", svar: { verdi: 15.05, enhet: "mm" } },
+      { tekst: "Hvor stort er det systematiske avviket?", svar: { verdi: 0.05, enhet: "mm" } },
+      { tekst: "Hvor stor er spredningen?", svar: { verdi: 0.04, enhet: "mm" } }
+    ],
+    hint: ["Summen er 75,25 mm. Del på 5.", "\\(15{,}05 - 15{,}00 = 0{,}05\\) mm. Spredning: \\(15{,}07 - 15{,}03\\)."],
+    losning: "<p>Gjennomsnitt \\(75{,}25 : 5 = 15{,}05\\) mm. Systematisk avvik 0,05 mm. Spredning 0,04 mm. Flere målinger fjerner ikke de 0,05 mm. Nullstill skyvelæret.</p>"
+  },
+  {
+    id: "varm-tapp",
+    niva: "middels",
+    tittel: "Tappen er alltid varm",
+    tekst: "<p>En dreid tapp måles alltid før den er kald. Varmen gjør avlesingen 0,07 mm for lang. Du leser 44,36 mm.</p>",
+    steg: [{ verdi: 0.07, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er korrigert mål?", svar: { verdi: 44.29, enhet: "mm" } },
+      { tekst: "Hva slags feil er varmen, når den slår likt ut hver gang?", svar: { valg: ["Tilfeldig feil", "Systematisk feil"], riktig: 1 } },
+      { tekst: "Fjerner gjennomsnittet av ti slike målinger de 0,07 mm?", svar: { valg: ["Ja", "Nei"], riktig: 1 } }
+    ],
+    hint: ["Trekk fra det som er likt hver gang.", "\\(44{,}36 - 0{,}07 = 44{,}29\\) mm. Gjennomsnittet blir fortsatt for høyt."],
+    losning: "<p>\\(44{,}36 - 0{,}07 = 44{,}29\\) mm. Varmen er systematisk. Ti nye varme målinger demper bare den tilfeldige spredningen.</p>"
+  },
+  {
+    id: "passbit-70",
+    niva: "vanskelig",
+    tittel: "Passbit 70,00 mm",
+    tekst: "<p>En passbit er 70,00 mm. Målinger: 70,21 · 70,15 · 70,23 · 70,17 · 70,19 mm. Du trekker deretter det systematiske avviket fra hver måling.</p>",
+    steg: [{ verdi: 350.95, enhet: "mm" }, { verdi: 70.19, enhet: "mm" }],
+    deler: [
+      { tekst: "Hva er gjennomsnittet?", svar: { verdi: 70.19, enhet: "mm" } },
+      { tekst: "Hvor stort er det systematiske avviket?", svar: { verdi: 0.19, enhet: "mm" } },
+      { tekst: "Hvor stor er spredningen etter korreksjonen?", svar: { verdi: 0.08, enhet: "mm" } }
+    ],
+    hint: ["Summen er 350,95 mm. Del på 5.", "Å trekke 0,19 mm fra alle tall endrer ikke \\(70{,}23 - 70{,}15\\)."],
+    losning: "<p>Gjennomsnitt \\(350{,}95 : 5 = 70{,}19\\) mm. Systematisk avvik 0,19 mm. Spredningen er 0,08 mm både før og etter. De to feilene rettes på hver sin måte.</p>"
+  },
+  {
+    id: "to-mikro",
+    niva: "vanskelig",
+    tittel: "To mikrometer",
+    tekst: "<p>Mikrometer A viser alltid 0,009 mm for lite. Du leser 21,486 mm på en lagerbane. Mikrometer B måler en passbit på 21,500 mm: 21,502 · 21,498 · 21,501 · 21,499 · 21,500 mm.</p>",
+    steg: [{ verdi: 107.5, enhet: "mm" }, { verdi: 21.5, enhet: "mm" }],
+    deler: [
+      { tekst: "Korrigert mål fra mikrometer A?", svar: { verdi: 21.495, enhet: "mm" } },
+      { tekst: "Gjennomsnitt for mikrometer B?", svar: { verdi: 21.5, enhet: "mm" } },
+      { tekst: "Systematisk avvik for mikrometer B?", svar: { verdi: 0, enhet: "mm", tol: 0 } },
+      { tekst: "Hvilket verktøy har systematisk feil?", svar: { valg: ["Bare A", "Bare B", "Begge"], riktig: 0 } }
+    ],
+    hint: ["A mangler 0,009 mm. Legg til. Summen for B er 107,500 mm.", "\\(21{,}486 + 0{,}009 = 21{,}495\\). \\(107{,}500 : 5 = 21{,}500\\), som er passbiten."],
+    losning: "<p>A korrigert: 21,495 mm. B gjennomsnitt: 21,500 mm, systematisk avvik 0 mm. Spredningen på B er \\(21{,}502 - 21{,}498 = 0{,}004\\) mm, altså tilfeldig. Bare A har systematisk feil.</p>"
   }
 ]);

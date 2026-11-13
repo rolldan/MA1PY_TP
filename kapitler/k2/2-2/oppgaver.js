@@ -259,5 +259,90 @@ Bok.oppgaver([
     ],
     hint: ["± 0,25 mm gir bredde 0,50 mm.", "\\(0{,}50 : 10 = 0{,}05\\) mm. Skyvelærets 0,02 mm er mindre enn 0,05 mm."],
     losning: "<p>Bredde 0,50 mm. 1/10 er 0,05 mm. ± 0,02 mm er innenfor, så skyvelæret er fint nok til dette kravet.</p>"
+  },
+  {
+    id: "grind-2650",
+    niva: "lett",
+    tittel: "Grind på 2650 mm",
+    tekst: "<p>En sveiset grind skal kappes til 2650 mm. Vanlig skyvelære rekker 150 mm. Målebåndet i verkstedet har usikkerhet ± 1 mm.</p>",
+    steg: [{ verdi: 150, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor stor er usikkerheten til målebåndet?", svar: { verdi: 1, enhet: "mm", tol: 0 } },
+      { tekst: "Rekker skyvelæret på 150 mm?", svar: { valg: ["Ja", "Nei"], riktig: 1 } }
+    ],
+    hint: ["Langt og grovt mål: målebånd. Sjekk om 2650 mm er lengre enn 150 mm.", "Usikkerheten er 1 mm. 2650 er mye lengre enn 150, så skyvelæret rekker ikke."],
+    losning: "<p>Målebånd ± 1 mm. Skyvelæret rekker ikke en grind på 2650 mm. Bruk båndet til grovkappingen.</p>"
+  },
+  {
+    id: "lager-008",
+    niva: "lett",
+    tittel: "Lagerbane med smal toleranse",
+    tekst: "<p>En lagerbane har toleransebredde 0,08 mm. Bruk 1/10-regelen. Skyvelære er ± 0,02 mm. Mikrometer er ± 0,001 mm.</p>",
+    steg: [{ verdi: 0.08, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor stor bør usikkerheten høyst være?", svar: { verdi: 0.008, enhet: "mm" } },
+      { tekst: "Hvilket verktøy holder regelen?", svar: { valg: ["Målebånd", "Skyvelære", "Mikrometer"], riktig: 2 } }
+    ],
+    hint: ["Del toleransebredden på 10.", "\\(0{,}08 : 10 = 0{,}008\\) mm. 0,02 mm er større enn det. 0,001 mm er mindre."],
+    losning: "<p>1/10 er 0,008 mm. Skyvelær ± 0,02 mm er for grovt. Mikrometer ± 0,001 mm holder.</p>"
+  },
+  {
+    id: "tapp-36",
+    niva: "middels",
+    tittel: "Tapp 36 ± 0,06",
+    tekst: "<p>En dreid tapp skal være 36 ± 0,06 mm. Bruk 1/10-regelen.</p>",
+    steg: [{ verdi: 0.12, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor stor er toleransebredden?", svar: { verdi: 0.12, enhet: "mm" } },
+      { tekst: "Hvor stor bør usikkerheten høyst være?", svar: { verdi: 0.012, enhet: "mm" } },
+      { tekst: "Holder skyvelære ± 0,02 mm regelen?", svar: { valg: ["Ja", "Nei"], riktig: 1 } },
+      { tekst: "Holder mikrometer ± 0,001 mm regelen?", svar: { valg: ["Ja", "Nei"], riktig: 0 } }
+    ],
+    hint: ["± 0,06 mm gir bredde \\(2 \\cdot 0{,}06\\). Del den på 10.", "\\(0{,}12 : 10 = 0{,}012\\) mm. 0,02 mm er for grovt. 0,001 mm holder."],
+    losning: "<p>Bredde 0,12 mm. 1/10 er 0,012 mm. Skyvelæret er for grovt. Mikrometeret holder.</p>"
+  },
+  {
+    id: "boring-28",
+    niva: "middels",
+    tittel: "Boring Ø28",
+    tekst: "<p>En boring er Ø28 med avvik +0,05 / +0,02 mm. Hullet skal altså være større enn 28 mm begge veier. Bruk 1/10-regelen.</p>",
+    steg: [{ verdi: 28.05, enhet: "mm" }, { verdi: 28.02, enhet: "mm" }, { verdi: 0.03, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 28.05, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 28.02, enhet: "mm", tol: 0 } },
+      { tekst: "Hvor stor bør usikkerheten høyst være?", svar: { verdi: 0.003, enhet: "mm" } },
+      { tekst: "Hvilket verktøy holder regelen?", svar: { valg: ["Målebånd", "Skyvelære", "Mikrometer"], riktig: 2 } }
+    ],
+    hint: ["Legg begge avvikene til 28. Bredden er øvre minus nedre.", "\\(28{,}05 - 28{,}02 = 0{,}03\\). \\(0{,}03 : 10 = 0{,}003\\) mm. Skyvelær ± 0,02 mm er for grovt."],
+    losning: "<p>Øvre 28,05 mm. Nedre 28,02 mm. Bredde 0,03 mm. 1/10 er 0,003 mm. Mikrometer ± 0,001 mm holder. Skyvelæret gjør det ikke.</p>"
+  },
+  {
+    id: "flens-tapp",
+    niva: "vanskelig",
+    tittel: "Flens og tapp samme dag",
+    tekst: "<p>Du har ett skyvelære, ± 0,02 mm, og ett mikrometer, ± 0,001 mm. Flensen er 14 ± 0,3 mm tykk. Tappen er Ø11 med avvik −0,005 / −0,017 mm.</p>",
+    steg: [{ verdi: 0.6, enhet: "mm" }, { verdi: 10.995, enhet: "mm" }, { verdi: 10.983, enhet: "mm" }],
+    deler: [
+      { tekst: "1/10-kravet for flensen?", svar: { verdi: 0.06, enhet: "mm" } },
+      { tekst: "Toleransebredde for tappen?", svar: { verdi: 0.012, enhet: "mm" } },
+      { tekst: "1/10-kravet for tappen?", svar: { verdi: 0.0012, enhet: "mm" } },
+      { tekst: "Hva kan skyvelæret brukes til, etter 1/10-regelen?", svar: { valg: ["Begge jobbene", "Bare flensen", "Bare tappen"], riktig: 1 } }
+    ],
+    hint: ["Bredde for ± 0,3 mm er 0,6 mm. Tappens grenser er \\(11 - 0{,}005\\) og \\(11 - 0{,}017\\).", "\\(0{,}6 : 10 = 0{,}06\\). Bredden på tappen er 0,012 mm, og 1/10 er 0,0012 mm. 0,02 mm er under 0,06 og over 0,0012."],
+    losning: "<p>Flens: bredde 0,6 mm, 1/10 er 0,06 mm. Skyvelæret holder. Tapp: 10,995 mm til 10,983 mm, bredde 0,012 mm, 1/10 er 0,0012 mm. Skyvelæret er for grovt. Mikrometer ± 0,001 mm holder på tappen.</p>"
+  },
+  {
+    id: "sikker-63",
+    niva: "vanskelig",
+    tittel: "Høyeste sikre avlesing",
+    tekst: "<p>En aksel skal være 63 ± 0,15 mm. Skyvelæret har usikkerhet ± 0,02 mm. Et mål er sikkert inne bare når hele usikkerhetsintervallet ligger innenfor grensene.</p>",
+    steg: [{ verdi: 63.15, enhet: "mm" }, { verdi: 62.85, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 63.15, enhet: "mm", tol: 0 } },
+      { tekst: "Høyeste avlesing som fortsatt er sikkert inne?", svar: { verdi: 63.13, enhet: "mm" } },
+      { tekst: "Du leser 63,14 mm. Hva kan du si?", svar: { valg: ["Sikkert inne", "Usikker", "Sikkert vrak"], riktig: 1 } }
+    ],
+    hint: ["Øvre grense er \\(63 + 0{,}15\\). Trekk verktøyets usikkerhet fra den grensen.", "\\(63{,}15 - 0{,}02 = 63{,}13\\). \\(63{,}14 + 0{,}02 = 63{,}16\\), som er over 63,15."],
+    losning: "<p>Grenser 62,85 mm og 63,15 mm. Høyeste sikre avlesing er 63,13 mm. 63,14 mm kan være fra 63,12 til 63,16 mm. Det er usikkert. Mål på nytt med mikrometer.</p>"
   }
 ]);

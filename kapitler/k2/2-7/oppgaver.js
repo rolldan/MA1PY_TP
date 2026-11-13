@@ -297,5 +297,96 @@ Bok.oppgaver([
     ],
     hint: ["13 µm = 0,013 mm. \\(20 - 0{,}013\\).", "Minste hull minus største aksel er \\(20{,}000 - 20{,}000\\). Største klaring: \\(20{,}021 - 19{,}987\\)."],
     losning: "<p>Aksel 19,987 til 20,000 mm. Hull 20,000 til 20,021 mm. Minste klaring 0 mm. Største 0,034 mm. Klaringspasning.</p>"
+  },
+  {
+    id: "hull-27",
+    niva: "lett",
+    tittel: "Ø27 H7",
+    tekst: "<p>Et hull er Ø27 H7. Bruk tabellen på <a href=\"teori.html\">teorisiden</a>: H7 er +21 / 0 µm for diameter over 18 til og med 30 mm. Stor H betyr hull.</p>",
+    steg: [{ verdi: 0.021, enhet: "mm" }],
+    deler: [
+      { tekst: "Basismål?", svar: { verdi: 27, enhet: "mm", tol: 0 } },
+      { tekst: "Øvre grensemål?", svar: { verdi: 27.021, enhet: "mm" } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 27, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 0.021, enhet: "mm" } }
+    ],
+    hint: ["21 µm = 0,021 mm. Nedre avvik for H er 0, så hullet er aldri mindre enn basismålet.", "\\(27 + 0{,}021 = 27{,}021\\). Toleransen er 0,021 mm."],
+    losning: "<p>Basismål 27 mm. Hull 27,000 til 27,021 mm. Toleranse 0,021 mm.</p>"
+  },
+  {
+    id: "aksel-24",
+    niva: "lett",
+    tittel: "Ø24 h6",
+    tekst: "<p>En aksel er Ø24 h6. Tabellen: h6 er 0 / −13 µm i området over 18 til og med 30 mm. Liten h betyr aksel, og øvre avvik er 0.</p>",
+    steg: [{ verdi: 0.013, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 24, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 23.987, enhet: "mm" } },
+      { tekst: "Er koden et hull eller en aksel?", svar: { valg: ["Hull", "Aksel"], riktig: 1 } }
+    ],
+    hint: ["13 µm = 0,013 mm. Øvre avvik 0 betyr at akselen aldri er større enn 24 mm.", "\\(24 - 0{,}013 = 23{,}987\\). Liten bokstav er aksel."],
+    losning: "<p>Aksel 23,987 til 24,000 mm. Liten h er aksel. Stor H hadde vært hull.</p>"
+  },
+  {
+    id: "klaring-26",
+    niva: "middels",
+    tittel: "Ø26 H7/g6",
+    tekst: "<p>Ø26 H7/g6. Samme tabell, området over 18 til og med 30 mm: H7 +21 / 0 µm, g6 −7 / −20 µm. Klaring = hull − aksel.</p>",
+    steg: [{ verdi: 0.021, enhet: "mm" }, { verdi: 25.993, enhet: "mm" }, { verdi: 25.98, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål for akselen?", svar: { verdi: 25.993, enhet: "mm" } },
+      { tekst: "Nedre grensemål for akselen?", svar: { verdi: 25.98, enhet: "mm" } },
+      { tekst: "Minste klaring?", svar: { verdi: 0.007, enhet: "mm" } },
+      { tekst: "Største klaring?", svar: { verdi: 0.041, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 0 } }
+    ],
+    hint: ["7 µm = 0,007 mm og 20 µm = 0,020 mm. Trekk dem fra 26.", "Minste klaring: \\(26{,}000 - 25{,}993\\). Største: \\(26{,}021 - 25{,}980\\). Begge er positive."],
+    losning: "<p>Hull 26,000 til 26,021 mm. Aksel 25,980 til 25,993 mm. Minste klaring 0,007 mm. Største klaring 0,041 mm. Alltid klaring.</p>"
+  },
+  {
+    id: "mellom-29",
+    niva: "middels",
+    tittel: "Ø29 H7/k6",
+    tekst: "<p>Ø29 H7/k6. 29 mm er med i tabellen over 18 til og med 30 mm: H7 +21 / 0 µm, k6 +15 / +2 µm. Negativ klaring er press.</p>",
+    steg: [{ verdi: 0.015, enhet: "mm" }, { verdi: 29.015, enhet: "mm" }, { verdi: 29.002, enhet: "mm" }],
+    deler: [
+      { tekst: "Største aksel?", svar: { verdi: 29.015, enhet: "mm" } },
+      { tekst: "Minste aksel?", svar: { verdi: 29.002, enhet: "mm" } },
+      { tekst: "Minste klaring (negativ hvis det er press)?", svar: { verdi: -0.015, enhet: "mm" } },
+      { tekst: "Største klaring?", svar: { verdi: 0.019, enhet: "mm" } },
+      { tekst: "Hva slags pasning?", svar: { valg: ["Klaringspasning", "Mellompasning", "Presspasning"], riktig: 1 } }
+    ],
+    hint: ["15 µm = 0,015 mm og 2 µm = 0,002 mm. Legg dem til 29.", "Minste klaring: \\(29{,}000 - 29{,}015 = -0{,}015\\). Største: \\(29{,}021 - 29{,}002 = 0{,}019\\). Ett av hvert fortegn er mellompasning."],
+    losning: "<p>Hull 29,000 til 29,021 mm. Aksel 29,002 til 29,015 mm. Minste klaring −0,015 mm. Største klaring 0,019 mm. Noen kombinasjoner gir press, andre klaring. Det er mellompasning.</p>"
+  },
+  {
+    id: "sikker-78",
+    niva: "vanskelig",
+    tittel: "Bolt 78 ± 0,20",
+    tekst: "<p>Bolter skal være 78 ± 0,20 mm. Verktøyet har usikkerhet ± 0,05 mm. En bolt er sikkert inne bare når avlesingen ligger minst 0,05 mm innenfor begge grenser. Du leser 78,17 mm.</p>",
+    steg: [{ verdi: 0.05, enhet: "mm" }, { verdi: 78.2, enhet: "mm" }, { verdi: 77.8, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 78.2, enhet: "mm", tol: 0 } },
+      { tekst: "Høyeste avlesing som er sikkert inne?", svar: { verdi: 78.15, enhet: "mm" } },
+      { tekst: "Laveste avlesing som er sikkert inne?", svar: { verdi: 77.85, enhet: "mm" } },
+      { tekst: "Hva kan du si om 78,17 mm?", svar: { valg: ["Sikkert inne", "Usikker", "Sikkert vrak"], riktig: 1 } }
+    ],
+    hint: ["Grensene er 77,80 og 78,20. Trekk 0,05 fra øvre og legg 0,05 til nedre for den sikre sonen.", "\\(78{,}20 - 0{,}05 = 78{,}15\\). \\(78{,}17 + 0{,}05 = 78{,}22\\), som er over 78,20."],
+    losning: "<p>Grenser 77,80 mm og 78,20 mm. Sikkert inne: 77,85 mm til 78,15 mm. 78,17 mm kan være fra 78,12 til 78,22 mm. Det er usikkert, ikke sikkert vrak.</p>"
+  },
+  {
+    id: "krymp-250",
+    niva: "vanskelig",
+    tittel: "Ståltapp fra 70 °C",
+    tekst: "<p>En ståltapp måles til 250,32 mm mens den er 70 °C. Lengdemål gjelder ved 20 °C. Bruk \\(\\alpha = 0{,}000012\\) per °C. Kravet når den er kald, er \\(250 \\pm 0{,}10\\) mm. \\(\\Delta L = \\alpha \\cdot L \\cdot \\Delta T\\).</p>",
+    steg: [{ verdi: 50, enhet: "°C" }, { verdi: 0.15, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor mange grader skal den kjøles?", svar: { verdi: 50, enhet: "°C", tol: 0 } },
+      { tekst: "Hvor mye krymper den?", svar: { verdi: 0.15, enhet: "mm" } },
+      { tekst: "Hvor lang er den ved 20 °C?", svar: { verdi: 250.17, enhet: "mm" } },
+      { tekst: "Er den godkjent når den er kald?", svar: { valg: ["Ja", "Nei"], riktig: 1 } }
+    ],
+    hint: ["\\(\\Delta T = 70 - 20\\). \\(0{,}000012 \\cdot 250 \\cdot 50\\).", "Krympet er 0,15 mm. \\(250{,}32 - 0{,}15 = 250{,}17\\). Øvre grense er 250,10 mm."],
+    losning: "<p>\\(\\Delta T = 50\\) °C. \\(\\Delta L = 0{,}000012 \\cdot 250 \\cdot 50 = 0{,}15\\) mm. Kald lengde \\(250{,}32 - 0{,}15 = 250{,}17\\) mm. Kravet er 249,90 mm til 250,10 mm. 250,17 mm er vrak. Ikke godkjenn den mens den er varm.</p>"
   }
 ]);

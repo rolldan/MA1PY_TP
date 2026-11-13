@@ -258,5 +258,93 @@ Bok.oppgaver([
     ],
     hint: ["\\(28 + 0{,}15\\) og \\(28 - 0{,}05\\).", "\\(T = 28{,}15 - 27{,}95 = 0{,}20\\). 27,95 er nedre grense."],
     losning: "<p>Øvre 28,15 mm. Nedre 27,95 mm. Toleranse 0,20 mm. 27,95 mm er på grensen og er godkjent.</p>"
+  },
+  {
+    id: "stang-86",
+    niva: "lett",
+    tittel: "Stang 86 ± 1,5",
+    tekst: "<p>En kappet stang er gitt som 86 ± 1,5 mm. Fyll ut grensene og toleransen.</p>",
+    steg: [{ verdi: 1.5, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 87.5, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 84.5, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 3, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["Legg til og trekk fra 1,5. Toleransen er bredden, ikke ±-tallet alene.", "\\(86 + 1{,}5 = 87{,}5\\) og \\(86 - 1{,}5 = 84{,}5\\). \\(T = 3\\) mm."],
+    losning: "<p>Øvre 87,5 mm. Nedre 84,5 mm. \\(T = 87{,}5 - 84{,}5 = 3\\) mm.</p>"
+  },
+  {
+    id: "hylse-12",
+    niva: "lett",
+    tittel: "Hylse 12 +0,25 / 0",
+    tekst: "<p>En hylse er gitt som 12 +0,25 / 0 mm. Nedre avvik er 0. Den kan være lengre, men ikke kortere enn 12 mm.</p>",
+    steg: [{ verdi: 0.25, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 12.25, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 12, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 0.25, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["Nedre avvik 0 betyr at minste mål er basismålet. Ikke trekk 0,25 fra begge veier.", "\\(12 + 0{,}25 = 12{,}25\\). \\(T = 12{,}25 - 12{,}00 = 0{,}25\\)."],
+    losning: "<p>Øvre 12,25 mm. Nedre 12,00 mm. Toleranse 0,25 mm. 11,75 mm er vrak.</p>"
+  },
+  {
+    id: "tapp-45",
+    niva: "middels",
+    tittel: "Tapp Ø45",
+    tekst: "<p>En tapp er Ø45 med avvik +0,03 / −0,02 mm. Et emne måles til 45,00 mm.</p>",
+    steg: [{ verdi: 0.03, enhet: "mm" }, { verdi: 0.02, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 45.03, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 44.98, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 0.05, enhet: "mm", tol: 0 } },
+      { tekst: "Er 45,00 mm godkjent?", svar: { valg: ["Ja", "Nei"], riktig: 0 } }
+    ],
+    hint: ["Ett avvik er positivt og ett er negativt. Legg hvert avvik til 45 med sitt fortegn.", "\\(45 + 0{,}03 = 45{,}03\\) og \\(45 - 0{,}02 = 44{,}98\\). \\(T = 0{,}05\\). 45,00 ligger imellom."],
+    losning: "<p>Øvre 45,03 mm. Nedre 44,98 mm. Toleranse 0,05 mm. 45,00 mm er godkjent.</p>"
+  },
+  {
+    id: "fra-grenser",
+    niva: "middels",
+    tittel: "Bare grensene er fylt ut",
+    tekst: "<p>I måleskjemaet står øvre grensemål 67,4 mm og nedre grensemål 66,6 mm. Toleransen er symmetrisk om basismålet.</p>",
+    steg: [{ verdi: 67.4, enhet: "mm" }, { verdi: 66.6, enhet: "mm" }],
+    deler: [
+      { tekst: "Toleranse?", svar: { verdi: 0.8, enhet: "mm", tol: 0 } },
+      { tekst: "Basismål?", svar: { verdi: 67, enhet: "mm", tol: 0 } },
+      { tekst: "Hvor stort er avviket til hver side (uten ±)?", svar: { verdi: 0.4, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["Toleransen er øvre minus nedre. Basismålet ligger midt mellom når toleransen er symmetrisk.", "\\(67{,}4 - 66{,}6 = 0{,}8\\). Midten er \\(67{,}0\\). Halvparten av 0,8 er 0,4."],
+    losning: "<p>Toleranse 0,8 mm. Basismål 67,0 mm. Avviket er ± 0,4 mm. Sjekk: \\(67{,}0 + 0{,}4 = 67{,}4\\) og \\(67{,}0 - 0{,}4 = 66{,}6\\).</p>"
+  },
+  {
+    id: "atte-58",
+    niva: "vanskelig",
+    tittel: "Åtte emner på 58 mm",
+    tekst: "<p>Krav 58 ± 0,25 mm. På grensen er godkjent. Mål: 58,20 · 57,75 · 58,25 · 58,30 · 57,70 · 58,00 · 57,90 · 58,26 mm.</p>",
+    steg: [{ verdi: 58.25, enhet: "mm" }, { verdi: 57.75, enhet: "mm" }],
+    deler: [
+      { tekst: "Øvre grensemål?", svar: { verdi: 58.25, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 57.75, enhet: "mm", tol: 0 } },
+      { tekst: "Hvor mange er godkjent?", svar: { verdi: 5, enhet: "stk" } },
+      { tekst: "Hvor mange er vrak?", svar: { verdi: 3, enhet: "stk" } },
+      { tekst: "Vrakprosent?", svar: { verdi: 37.5, enhet: "%", tol: 0 } }
+    ],
+    hint: ["Grensene er 57,75 og 58,25. 58,26 er ute, selv om den bare er 0,01 mm over.", "Ute: 58,30 · 57,70 · 58,26. Det er 3 av 8. \\(3 : 8 \\cdot 100 = 37{,}5\\)."],
+    losning: "<p>Inne: 58,20 · 57,75 · 58,25 · 58,00 · 57,90 (5 stk). Vrak: 58,30 · 57,70 · 58,26 (3 stk). \\(3 : 8 \\cdot 100\\% = 37{,}5\\%\\).</p>"
+  },
+  {
+    id: "plate-sara",
+    niva: "vanskelig",
+    tittel: "Plata til Sara",
+    tekst: "<p>Sara kapper en plate. Målene er i millimeter. RS = \\(175 \\pm 0{,}7\\). MN = 90 +0,4 / 0. PQ skal være \\(208 \\pm 1{,}5\\). Hun kapper PQ til 206,4 mm.</p>",
+    steg: [{ verdi: 0.7, enhet: "mm" }, { verdi: 206.5, enhet: "mm" }, { verdi: 209.5, enhet: "mm" }],
+    deler: [
+      { tekst: "Nedre grensemål for RS?", svar: { verdi: 174.3, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål for MN?", svar: { verdi: 90, enhet: "mm", tol: 0 } },
+      { tekst: "Er 206,4 mm akseptabelt for PQ?", svar: { valg: ["Ja", "Nei"], riktig: 1 } },
+      { tekst: "Hvor mange prosent er det tillatte avviket på RS (0,7 mm) av basismålet?", svar: { verdi: 0.4, enhet: "%", tol: 0 } }
+    ],
+    hint: ["RS: trekk 0,7 fra 175. MN har nedre avvik 0. PQ: \\(208 - 1{,}5\\).", "\\(174{,}3\\) mm og 90 mm. Nedre for PQ er 206,5 mm, så 206,4 er vrak. \\(0{,}7 : 175 \\cdot 100 = 0{,}4\\)."],
+    losning: "<p>RS: 174,3 mm til 175,7 mm. MN: nedre 90,00 mm, øvre 90,4 mm. PQ: 206,5 mm til 209,5 mm. 206,4 mm er 0,1 mm under og er vrak. Det tillatte avviket er \\(0{,}7 : 175 \\cdot 100\\% = 0{,}4\\%\\). Toleransebredden er 1,4 mm, ikke 0,7 mm.</p>"
   }
 ]);

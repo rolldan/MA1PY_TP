@@ -269,5 +269,94 @@ Bok.oppgaver([
     ],
     hint: ["400 er med i raden som slutter på 400. 1000 er med i raden som slutter på 1000.", "2500 mm er over 2000 til og med 4000. Fin har ingen verdi der. Grov i den raden er ± 4 mm, men spørsmålet gjelder fin."],
     losning: "<p>a) ± 0,2 mm. b) ± 2 mm, ikke ± 3 mm. c) Fin har strek. Toleransen må stå ved målet. Middels for 2500 mm er ± 2 mm, og meget grov er ± 8 mm.</p>"
+  },
+  {
+    id: "iso-22",
+    niva: "lett",
+    tittel: "22 mm, middels",
+    tekst: "<p>ISO 2768-m. Basismål 22 mm. Bruk tabellen på <a href=\"teori.html\">teorisiden</a>, ikke en eldre DIN 7168-tabell.</p>",
+    steg: [{ verdi: 0.2, enhet: "mm" }],
+    deler: [
+      { tekst: "Tillatt avvik (uten ±)?", svar: { verdi: 0.2, enhet: "mm", tol: 0 } },
+      { tekst: "Øvre grensemål?", svar: { verdi: 22.2, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 21.8, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 0.4, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["22 mm er over 6 til og med 30. Les kolonnen middels.", "Middels ± 0,2 mm. \\(22{,}2\\) og \\(21{,}8\\). Bredden er \\(2 \\cdot 0{,}2\\)."],
+    losning: "<p>± 0,2 mm. Øvre 22,2 mm. Nedre 21,8 mm. Toleranse 0,4 mm.</p>"
+  },
+  {
+    id: "iso-5-v",
+    niva: "lett",
+    tittel: "5 mm, meget grov",
+    tekst: "<p>ISO 2768-v. Basismål 5 mm. Bruk tabellen på <a href=\"teori.html\">teorisiden</a>.</p>",
+    steg: [{ verdi: 0.5, enhet: "mm" }],
+    deler: [
+      { tekst: "Tillatt avvik (uten ±)?", svar: { verdi: 0.5, enhet: "mm", tol: 0 } },
+      { tekst: "Øvre grensemål?", svar: { verdi: 5.5, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 4.5, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["5 mm er over 3 til og med 6, ikke i raden 0,5 til og med 3. Les kolonnen meget grov.", "Meget grov ± 0,5 mm. \\(5{,}5\\) og \\(4{,}5\\)."],
+    losning: "<p>± 0,5 mm. Øvre 5,5 mm. Nedre 4,5 mm. I raden 0,5 til og med 3 har meget grov en strek. 5 mm har en verdi.</p>"
+  },
+  {
+    id: "iso-350",
+    niva: "middels",
+    tittel: "350 mm, middels",
+    tekst: "<p>ISO 2768-m. Basismål 350 mm. Bruk gjeldende ISO 2768-1. Den gamle inndelingen 120–315 og 315–1000 skal ikke brukes.</p>",
+    steg: [{ verdi: 0.5, enhet: "mm" }],
+    deler: [
+      { tekst: "Tillatt avvik (uten ±)?", svar: { verdi: 0.5, enhet: "mm", tol: 0 } },
+      { tekst: "Øvre grensemål?", svar: { verdi: 350.5, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 349.5, enhet: "mm", tol: 0 } },
+      { tekst: "Toleranse?", svar: { verdi: 1, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["350 mm er over 120 til og med 400. Ikke raden som slutter på 1000.", "Middels ± 0,5 mm, ikke ± 0,8 mm. \\(350{,}5\\) og \\(349{,}5\\). Bredden er 1,0 mm."],
+    losning: "<p>± 0,5 mm. Øvre 350,5 mm. Nedre 349,5 mm. Toleranse 1,0 mm. ± 0,8 mm er middels for mål over 400 til og med 1000 mm, og også et tall fra den gamle tabellen. Det gjelder ikke her.</p>"
+  },
+  {
+    id: "iso-3200",
+    niva: "middels",
+    tittel: "3200 mm, meget grov",
+    tekst: "<p>ISO 2768-v. Basismål 3200 mm. En eldre tabell gir ± 6 mm for mål rundt 2500–3200 mm. Den bruker vi ikke.</p>",
+    steg: [{ verdi: 8, enhet: "mm" }],
+    deler: [
+      { tekst: "Tillatt avvik (uten ±)?", svar: { verdi: 8, enhet: "mm", tol: 0 } },
+      { tekst: "Øvre grensemål?", svar: { verdi: 3208, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål?", svar: { verdi: 3192, enhet: "mm", tol: 0 } },
+      { tekst: "Hva gjelder for fin i samme rad?", svar: { valg: ["± 0,5 mm", "± 2 mm", "Standarden oppgir ikke verdi"], riktig: 2 } }
+    ],
+    hint: ["3200 mm er over 2000 til og med 4000. Les kolonnen meget grov.", "Meget grov ± 8 mm, ikke ± 6 mm og ikke ± 4 mm. Fin har strek i denne raden."],
+    losning: "<p>± 8 mm. Øvre 3208 mm. Nedre 3192 mm. Fin har ingen verdi over 2000 mm. Middels i raden er ± 2 mm, og grov er ± 4 mm.</p>"
+  },
+  {
+    id: "kjede-c",
+    niva: "vanskelig",
+    tittel: "Tre mål etter hverandre",
+    tekst: "<p>En sveiset brakett har tre mål etter hverandre: 18 mm, 95 mm og 260 mm. De utgjør totallengden. Tittelfeltet sier ISO 2768-c, og ingen av målene har eget ±. Bruk tabellen på <a href=\"teori.html\">teorisiden</a>.</p>",
+    steg: [{ verdi: 18.5, enhet: "mm" }, { verdi: 95.8, enhet: "mm" }, { verdi: 261.2, enhet: "mm" }],
+    deler: [
+      { tekst: "Tillatt avvik for 18 mm (uten ±)?", svar: { verdi: 0.5, enhet: "mm", tol: 0 } },
+      { tekst: "Tillatt avvik for 95 mm (uten ±)?", svar: { verdi: 0.8, enhet: "mm", tol: 0 } },
+      { tekst: "Tillatt avvik for 260 mm (uten ±)?", svar: { verdi: 1.2, enhet: "mm", tol: 0 } },
+      { tekst: "Største mulige totallengde?", svar: { verdi: 375.5, enhet: "mm", tol: 0 } }
+    ],
+    hint: ["Hvert mål har sin rad. Grov: over 6 til 30 er ± 0,5, over 30 til 120 er ± 0,8, over 120 til 400 er ± 1,2.", "Maks: \\(18{,}5 + 95{,}8 + 261{,}2\\)."],
+    losning: "<p>18 mm: ± 0,5 mm. 95 mm: ± 0,8 mm. 260 mm: ± 1,2 mm. Største totallengde \\(18{,}5 + 95{,}8 + 261{,}2 = 375{,}5\\) mm. Minste er 370,5 mm.</p>"
+  },
+  {
+    id: "sara-aksling",
+    niva: "vanskelig",
+    tittel: "Akslingen til Sara",
+    tekst: "<p>Sara dreier en aksling. Tegningen har ikke ± på diameterne. Tittelfeltet sier ISO 2768-m. Minste diameter skal være Ø42. Største diameter skal være Ø110. Hun måler den største ferdig til 110,4 mm.</p>",
+    steg: [{ verdi: 0.3, enhet: "mm" }, { verdi: 41.7, enhet: "mm" }, { verdi: 109.7, enhet: "mm" }],
+    deler: [
+      { tekst: "Tillatt avvik for Ø42 (uten ±)?", svar: { verdi: 0.3, enhet: "mm", tol: 0 } },
+      { tekst: "Nedre grensemål for Ø42?", svar: { verdi: 41.7, enhet: "mm", tol: 0 } },
+      { tekst: "Øvre grensemål for Ø110?", svar: { verdi: 110.3, enhet: "mm", tol: 0 } },
+      { tekst: "Kan hun godkjenne 110,4 mm?", svar: { valg: ["Ja", "Nei"], riktig: 1 } }
+    ],
+    hint: ["Både 42 mm og 110 mm er over 30 til og med 120. Middels er ± 0,3 mm i den raden.", "\\(42 - 0{,}3 = 41{,}7\\). \\(110 + 0{,}3 = 110{,}3\\). 110,4 er 0,1 mm over."],
+    losning: "<p>Begge diameterne har ± 0,3 mm. Ø42: 41,7 mm til 42,3 mm. Ø110: 109,7 mm til 110,3 mm. 110,4 mm er vrak. Neste rad, over 120 mm, hadde hatt ± 0,5 mm, men 110 mm er ikke der.</p>"
   }
 ]);
