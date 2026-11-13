@@ -105,5 +105,96 @@ Bok.oppgaver([
     ],
     hint: ["Overflate: 2πrh + 2πr². Masse: volum πr²h ganger 2,70.", "2π·5·12 + 2π·25 = 170π ≈ 534 cm². Volum π·25·12 ≈ 942 cm³. Masse omtrent 2545 g."],
     losning: "<p>Overflate: \\(2\\pi\\cdot 5\\cdot 12 + 2\\pi\\cdot 25 = 170\\pi \\approx 534\\) cm².<br>Volum: \\(\\pi\\cdot 25\\cdot 12 \\approx 942{,}5\\) cm³. Masse: \\(942{,}5 \\cdot 2{,}70 \\approx 2545\\) g.</p>"
+  },
+  {
+    id: "tynnplate",
+    niva: "lett",
+    tekst: "<p>1 mm stål veier 7,85 kg per kvadratmeter. Hvor mye veier en plate på 2 m²?</p>",
+    svar: { verdi: 15.7, enhet: "kg" },
+    hint: ["Gang massen per kvadratmeter med arealet.", "2 · 7,85 = 15,7 kg."],
+    losning: "<p>\\(2 \\cdot 7{,}85 = 15{,}7\\) kg.</p>"
+  },
+  {
+    id: "sideflate-10",
+    niva: "lett",
+    tekst: "<p>En etikett skal dekke sideflaten på en sylinder. Diameteren er 10 cm, og høyden er 15 cm. Lokk og bunn skal ikke dekkes. Hvor stort er arealet?</p>",
+    svar: { verdi: 471, enhet: "cm²", tol: 3 },
+    hint: ["Rull ut sideflaten: bredde π · d, høyde 15 cm.", "π · 10 · 15 ≈ 471 cm²."],
+    losning: "<p>\\(A = \\pi \\cdot 10 \\cdot 15 \\approx 471\\) cm². Uten endeflatene.</p>"
+  },
+  {
+    id: "flattstal-40",
+    niva: "lett",
+    tittel: "Flattstål 40 × 5",
+    tekst: "<p>Et flattstål er 40 mm bredt, 5 mm tykt og 1 m langt. Stål veier 7,85 g/cm³.</p>",
+    steg: [{ verdi: 200, enhet: "cm³" }],
+    deler: [
+      { tekst: "Hvor stort er volumet?", svar: { verdi: 200, enhet: "cm³" } },
+      { tekst: "Hvor mange kilo veier stanga?", svar: { verdi: 1.57, enhet: "kg" } }
+    ],
+    hint: ["4 cm · 0,5 cm · 100 cm gir cm³. Masse i gram er volum ganger 7,85. 1000 g = 1 kg.", "Volum 200 cm³. 200 · 7,85 = 1570 g = 1,57 kg."],
+    losning: "<p>\\(4 \\cdot 0{,}5 \\cdot 100 = 200\\) cm³. \\(m = 200 \\cdot 7{,}85 = 1570\\) g \\(= 1{,}57\\) kg.</p>"
+  },
+  {
+    id: "apen-kasse",
+    niva: "middels",
+    tittel: "Maling uten lokk",
+    tekst: "<p>En åpen kasse, uten lokk, er 30 cm lang, 20 cm bred og 15 cm høy. Du maler utsiden: bunn og fire vegger. Målene er ytter mål, og platetykkelsen ser du bort fra.</p>",
+    steg: [{ verdi: 600, enhet: "cm²" }, { verdi: 900, enhet: "cm²" }],
+    deler: [
+      { tekst: "Hvor stor er bunnen?", svar: { verdi: 600, enhet: "cm²" } },
+      { tekst: "Hvor stort er arealet du maler?", svar: { verdi: 2100, enhet: "cm²" } }
+    ],
+    hint: ["Bunn pluss to langvegger pluss to kortvegger. Lokket er ikke med.", "Bunn 30 · 20 = 600. Langvegger 2 · 30 · 15 = 900. Kortvegger 2 · 20 · 15 = 600. Sum 2100 cm²."],
+    losning: "<p>\\(30 \\cdot 20 + 2 \\cdot 30 \\cdot 15 + 2 \\cdot 20 \\cdot 15 = 600 + 900 + 600 = 2100\\) cm².</p>"
+  },
+  {
+    id: "hullplate-masse",
+    niva: "middels",
+    tekst: "<p>En stålplate er 200 mm × 100 mm × 5 mm og har ett hull med diameter 20 mm. Stål veier 7,85 g/cm³.</p>",
+    steg: [{ verdi: 100, enhet: "cm³" }, { verdi: 1.57, enhet: "cm³", tol: 0.05 }],
+    deler: [
+      { tekst: "Hvor stort er volumet som er igjen?", svar: { verdi: 98.4, enhet: "cm³", tol: 0.4 } },
+      { tekst: "Hvor mange gram veier plata?", svar: { verdi: 773, enhet: "g", tol: 8 } }
+    ],
+    hint: ["Platevolum minus hull. Radius 10 mm, og hullet går gjennom 5 mm. Gjør om til cm³ før du ganger med 7,85.", "Plata er 100 cm³. Hullet er \\(\\pi \\cdot 1^2 \\cdot 0{,}5 \\approx 1{,}57\\) cm³. Resten · 7,85 ≈ 773 g."],
+    losning: "<p>Plate: \\(20 \\cdot 10 \\cdot 0{,}5 = 100\\) cm³. Hull: \\(\\pi \\cdot 1^2 \\cdot 0{,}5 \\approx 1{,}57\\) cm³. Rest: omtrent 98,4 cm³. Masse: \\(98{,}4 \\cdot 7{,}85 \\approx 773\\) g.</p>"
+  },
+  {
+    id: "dekk-205",
+    niva: "middels",
+    tittel: "205/55 R16",
+    tekst: "<p>Et dekk er merket 205/55 R16. 1 tomme = 25,4 mm. Sidehøyden er 55 % av bredden.</p>",
+    steg: [{ verdi: 112.75, enhet: "mm" }, { verdi: 406.4, enhet: "mm" }],
+    deler: [
+      { tekst: "Hvor stor er diameteren på hjulet?", svar: { verdi: 631.9, enhet: "mm", tol: 0.3 } },
+      { tekst: "Hvor lang er omkretsen?", svar: { verdi: 1.985, enhet: "m", tol: 0.01 } }
+    ],
+    hint: ["Sidehøyde = 0,55 · 205 mm. Felg = 16 · 25,4 mm. Diameter = felg + to sidehøyder.", "112,75 + 112,75 + 406,4 = 631,9 mm. Omkrets π · 0,6319 m ≈ 1,985 m."],
+    losning: "<p>Sidehøyde 112,75 mm. Felg 406,4 mm. Diameter \\(406{,}4 + 225{,}5 = 631{,}9\\) mm.<br>Omkrets \\(\\pi \\cdot 0{,}6319 \\approx 1{,}985\\) m.</p>"
+  },
+  {
+    id: "spon-30",
+    niva: "vanskelig",
+    tittel: "Fra Ø30 til Ø26",
+    tekst: "<p>En stang dreies fra diameter 30 mm til 26 mm. Lengden som dreies, er 80 mm. Stålet veier 7,85 g/cm³.</p>",
+    steg: [{ verdi: 15, enhet: "mm" }, { verdi: 13, enhet: "mm" }, { verdi: 56 }],
+    deler: [
+      { tekst: "Hvor stort volum dreies bort?", svar: { verdi: 14074, enhet: "mm³", tol: 40 } },
+      { tekst: "Hvor mange gram veier sponen?", svar: { verdi: 110.5, enhet: "g", tol: 1.5 } }
+    ],
+    hint: ["Hul sylinder: π · (15² − 13²) · 80. Del mm³ på 1000 før du ganger med 7,85.", "15² − 13² = 56. 56 · 80 · π ≈ 14 074 mm³ ≈ 14,07 cm³. 14,07 · 7,85 ≈ 110,5 g."],
+    losning: "<p>\\(V = \\pi (15^2 - 13^2) \\cdot 80 = 4480\\pi \\approx 14\\,074\\) mm³.<br>\\(14{,}07 \\cdot 7{,}85 \\approx 110{,}5\\) g. 14 074 mm³ er sponen, ikke hele stanga.</p>"
+  },
+  {
+    id: "runder-199",
+    niva: "vanskelig",
+    tekst: "<p>Et hjul har omkrets 1,99 m og ruller 9,95 km. Bruk 1,99 m selv om du har regnet en annen omkrets på et annet dekk.</p>",
+    deler: [
+      { tekst: "Hvor mange omdreininger blir det?", svar: { verdi: 5000, enhet: "stk" } },
+      { tekst: "Målebåndet rundt slitebanen viser større omkrets enn 1,99 m. Blir det da flere eller færre runder på samme strekning?", svar: { valg: ["Færre", "Flere"], riktig: 0 } }
+    ],
+    hint: ["9,95 km = 9950 m. Del strekningen på omkretsen.", "9950 : 1,99 = 5000. Større omkrets betyr lengre vei per runde, så det blir færre runder."],
+    losning: "<p>\\(9950 : 1{,}99 = 5000\\) omdreininger. Større målt omkrets gir færre runder på samme vei.</p>"
   }
 ]);

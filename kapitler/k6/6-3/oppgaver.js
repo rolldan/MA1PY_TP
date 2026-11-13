@@ -110,5 +110,95 @@ Bok.oppgaver([
     ],
     hint: ["Omkrets: 2 · π · r. Areal: π · r².", "2 · π · 5 ≈ 31,4 cm. π · 25 ≈ 78,5 cm²."],
     losning: "<p>Omkrets: \\(2\\pi\\cdot 5 \\approx 31{,}4\\) cm.<br>Areal: \\(\\pi \\cdot 5^2 \\approx 78{,}5\\) cm². Kall dem ikke det samme.</p>"
+  },
+  {
+    id: "knekkjern",
+    niva: "lett",
+    tittel: "Kilevinkel",
+    tekst: "<p>En kilevinkel er en trekant med grunnlinje 120 mm og høyde 80 mm vinkelrett på grunnlinjen. Hvor stort er arealet?</p>",
+    steg: [{ verdi: 9600 }],
+    svar: { verdi: 4800, enhet: "mm²" },
+    hint: ["Areal av trekant er grunnlinje · høyde : 2.", "120 · 80 = 9600. 9600 : 2 = 4800 mm²."],
+    losning: "<p>\\(A = 120 \\cdot 80 / 2 = 4800\\) mm².</p>"
+  },
+  {
+    id: "deksel-150",
+    niva: "lett",
+    tekst: "<p>Et kvadratisk deksel har side 150 mm.</p>",
+    deler: [
+      { tekst: "Hvor lang er omkretsen?", svar: { verdi: 600, enhet: "mm" } },
+      { tekst: "Hvor stort er arealet?", svar: { verdi: 22500, enhet: "mm²" } }
+    ],
+    hint: ["Omkrets er fire sider. Areal er side · side.", "4 · 150 = 600 mm. 150 · 150 = 22 500 mm²."],
+    losning: "<p>Omkrets: \\(4 \\cdot 150 = 600\\) mm.<br>Areal: \\(150 \\cdot 150 = 22\\,500\\) mm².</p>"
+  },
+  {
+    id: "aksel-50",
+    niva: "lett",
+    tittel: "Omkrets av aksel",
+    tekst: "<p>En aksel har diameter 50 mm. Hvor lang er omkretsen? Rund av til nærmeste millimeter.</p>",
+    svar: { verdi: 157, enhet: "mm", tol: 1 },
+    hint: ["Omkrets av sirkel er π · d, ikke π · r².", "π · 50 ≈ 157 mm."],
+    losning: "<p>\\(O = \\pi \\cdot 50 \\approx 157\\) mm. 157 mm er en lengde. Arealet av tverrsnittet hadde vært et helt annet tall, i mm².</p>"
+  },
+  {
+    id: "vinkel-l",
+    niva: "middels",
+    tittel: "L-brakett",
+    tekst: "<p>En L-brakett dekker et rektangel på 120 mm × 80 mm, men et hjørne på 70 mm × 40 mm er skåret bort. Hvor stort er arealet som er igjen?</p>",
+    steg: [{ verdi: 9600, enhet: "mm²" }, { verdi: 2800, enhet: "mm²" }],
+    svar: { verdi: 6800, enhet: "mm²" },
+    hint: ["Regn hele rektangelet, og trekk fra hjørnet som er borte.", "120 · 80 = 9600. 70 · 40 = 2800. 9600 − 2800 = 6800 mm²."],
+    losning: "<p>\\(120 \\cdot 80 - 70 \\cdot 40 = 9600 - 2800 = 6800\\) mm².</p>"
+  },
+  {
+    id: "to-hull-10",
+    niva: "middels",
+    tekst: "<p>En plate er 100 mm × 80 mm og har to hull. Hvert hull har diameter 10 mm.</p>",
+    deler: [
+      { tekst: "Hvor stort er platearealet uten hull?", svar: { verdi: 8000, enhet: "mm²" } },
+      { tekst: "Hvor stort er de to hullene til sammen?", svar: { verdi: 157, enhet: "mm²", tol: 2 } },
+      { tekst: "Hvor stort er arealet som er igjen?", svar: { verdi: 7843, enhet: "mm²", tol: 8 } }
+    ],
+    hint: ["Radius er 5 mm. To hull er 2 · π · r². Trekk det fra plata.", "Plata: 100 · 80 = 8000 mm². Ett hull: π · 25 ≈ 78,5 mm². To hull ≈ 157 mm²."],
+    losning: "<p>Plata er 8000 mm². To hull: \\(2 \\cdot \\pi \\cdot 5^2 \\approx 157\\) mm². Igjen er omtrent 7843 mm².</p>"
+  },
+  {
+    id: "kile-60-80",
+    niva: "middels",
+    tekst: "<p>En rettvinklet kilevinkel har sider 60 mm, 80 mm og 100 mm. Den rette vinkelen ligger mellom sidene på 60 mm og 80 mm.</p>",
+    deler: [
+      { tekst: "Hvor stort er arealet?", svar: { verdi: 2400, enhet: "mm²" } },
+      { tekst: "Hvor lang er omkretsen?", svar: { verdi: 240, enhet: "mm" } }
+    ],
+    hint: ["Arealet bruker de to katetene, ikke hypotenusen. Omkretsen er alle tre sidene.", "60 · 80 : 2 = 2400 mm². 60 + 80 + 100 = 240 mm."],
+    losning: "<p>Areal: \\(60 \\cdot 80 / 2 = 2400\\) mm².<br>Omkrets: \\(60 + 80 + 100 = 240\\) mm. 100 mm er kanten, ikke høyden.</p>"
+  },
+  {
+    id: "svinn-625",
+    niva: "vanskelig",
+    tittel: "Kutteplan med rest",
+    tekst: "<p>En plate er 1200 mm × 800 mm. Hver brakett er 200 mm × 150 mm. Du legger 200 mm-siden langs 1200 mm, og 150 mm-siden langs 800 mm. Delene kan ikke snus. Se bort fra sagspor.</p>",
+    steg: [{ verdi: 6 }, { verdi: 5 }, { verdi: 960000 }],
+    deler: [
+      { tekst: "Hvor mange braketter får du plass til?", svar: { verdi: 30, enhet: "stk" } },
+      { tekst: "Hvor mange millimeter blir til overs langs 800 mm-siden?", svar: { verdi: 50, enhet: "mm" } },
+      { tekst: "Hvor mange prosent av plata blir svinn?", svar: { verdi: 6.25, enhet: "%" } }
+    ],
+    hint: ["Hvor mange hele 200 mm får plass i 1200 mm, og hvor mange hele 150 mm i 800 mm? Svinn er restareal delt på plateareal.", "1200 : 200 = 6 og 800 : 150 = 5 hele, med 50 mm til overs. 6 · 5 = 30. Plateareal 960 000 mm². Deler: 900 000 mm². Resten er 6,25 %."],
+    losning: "<p>\\(1200 : 200 = 6\\) og \\(800 : 150 = 5\\) hele. Antall: \\(6 \\cdot 5 = 30\\). Til overs: \\(800 - 5 \\cdot 150 = 50\\) mm.<br>Plate: \\(1200 \\cdot 800 = 960\\,000\\) mm². Deler: \\(30 \\cdot 200 \\cdot 150 = 900\\,000\\) mm². Svinn: \\(60\\,000 / 960\\,000 = 6{,}25\\%\\).</p>"
+  },
+  {
+    id: "vern-sammen",
+    niva: "vanskelig",
+    tittel: "Vern med halvsirkel",
+    tekst: "<p>Et vern er et rektangel på 80 mm × 40 mm med en halvsirkel utenpå den ene langsiden. Diameteren er 80 mm og faller sammen med siden på 80 mm. Den rette diameteren er ikke en ytterkant.</p>",
+    steg: [{ verdi: 40, enhet: "mm" }, { verdi: 3200, enhet: "mm²" }],
+    deler: [
+      { tekst: "Hvor stort er arealet?", svar: { verdi: 5713, enhet: "mm²", tol: 15 } },
+      { tekst: "Hvor lang er ytterkanten?", svar: { verdi: 285.7, enhet: "mm", tol: 1 } }
+    ],
+    hint: ["Areal: rektangel pluss halvsirkel. Radius er 40 mm. Ytterkant: tre sider av rektangelet pluss buen π · r.", "Rektangel 80 · 40 = 3200 mm². Halvsirkel π · 40² / 2 ≈ 2513 mm². Bue π · 40 ≈ 126 mm. Sidene som er ytterkant: 40 + 80 + 40 = 160 mm."],
+    losning: "<p>Areal: \\(80 \\cdot 40 + \\pi \\cdot 40^2 / 2 \\approx 3200 + 2513 = 5713\\) mm².<br>Ytterkant: \\(40 + 80 + 40 + \\pi \\cdot 40 \\approx 160 + 125{,}7 = 285{,}7\\) mm. Diameteren ligger inni og skal ikke med i omkretsen.</p>"
   }
 ]);
