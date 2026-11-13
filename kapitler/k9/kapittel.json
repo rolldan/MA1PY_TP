@@ -15,7 +15,7 @@
     { "tekst": "Kapittel 10: Eksamensforberedelse" }
   ],
   "delkapitler": [
-    { "nr": "9.0", "tittel": "Prosjekt, ukeplan og rubrikk", "formel": "Uke 20–23 · fagsamtale", "uke": "20–23", "sider": ["teori"] },
+    { "nr": "9.0", "tittel": "Prosjekt, ukeplan og rubrikk", "formel": "Uke 20–23 · fagsamtale", "uke": "20–23", "sider": ["teori", "oppgaver"] },
     { "nr": "9.1", "tittel": "Finansiering og budsjett", "formel": "\\(A = L \\cdot \\dfrac{r(1+r)^{n}}{(1+r)^{n}-1}\\)", "uke": "20" },
     { "nr": "9.2", "tittel": "Tank på 400 liter og modell i 1:10", "formel": "\\(1:10 \\Rightarrow V : 1000\\)", "uke": "21" },
     { "nr": "9.3", "tittel": "Motor, navigasjon og rekkevidde", "formel": "\\(t = s : v\\)", "uke": "22" },
