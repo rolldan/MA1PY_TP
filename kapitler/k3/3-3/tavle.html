@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavle · 3.3 Endring i prosent og prosentpoeng</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="tavle" data-kapittel="3" data-del="3.3">
+<div class="tavle">
+
+  <section class="lysbilde" data-tittel="Lærlinglønn">
+    <h2>Fra 150 kr til 180 kr</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 220" role="img" aria-label="To lønnssedler, 150 kr og 180 kr per time, med pil som viser 30 kr økning">
+        <rect x="40" y="50" width="140" height="90" rx="8" fill="#fff" stroke="#17202b" stroke-width="3"/>
+        <text x="110" y="85" text-anchor="middle" font-size="16" fill="#5b6675">i fjor</text>
+        <text x="110" y="115" text-anchor="middle" font-size="26" font-weight="700">150 kr</text>
+        <rect x="260" y="50" width="140" height="90" rx="8" fill="#fff" stroke="var(--kap)" stroke-width="3"/>
+        <text x="330" y="85" text-anchor="middle" font-size="16" fill="#5b6675">i år</text>
+        <text x="330" y="115" text-anchor="middle" font-size="26" font-weight="700" fill="var(--kap)">180 kr</text>
+        <g data-vis-fra="2">
+          <text x="220" y="180" text-anchor="middle" font-size="18" font-weight="700" fill="#17202b">+30 kr · det er 20 %</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>En lærling hadde 150 kr i timen. I år er timelønna 180 kr.</p>
+      <div class="undre" data-hint="Økningen er 30 kr. Sammenlign 30 med den gamle lønna, 150." data-sekunder="30">Er økningen nærmere 10 % eller nærmere 20 %? Gjett først.</div>
+      <p class="steg">Endringen i kroner: \(180 - 150 = 30\) kr.</p>
+      <p class="steg">Prosent av den <b>gamle</b> lønna: \(30 : 150 = 0{,}20 = 20\ \%\).</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Endring i prosent</p>
+        <p>\(\text{prosent} = \dfrac{\text{ny} - \text{gammel}}{\text{gammel}} \cdot 100\)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Prosentpoeng">
+    <h2>12 % ble 9 %</h2>
+    <div class="figur">
+      <svg viewBox="0 0 440 200" role="img" aria-label="To stolper, 12 prosent og 9 prosent, med mellomrom på 3 prosentpoeng">
+        <line x1="60" y1="160" x2="400" y2="160" stroke="#17202b" stroke-width="2"/>
+        <rect x="100" y="40" width="70" height="120" fill="var(--kap)"/>
+        <rect x="250" y="70" width="70" height="90" fill="#94a3b8"/>
+        <text x="135" y="32" text-anchor="middle" font-size="18" font-weight="700">12 %</text>
+        <text x="285" y="62" text-anchor="middle" font-size="18" font-weight="700">9 %</text>
+        <g data-vis-fra="2">
+          <text x="220" y="190" text-anchor="middle" font-size="16" font-weight="700" fill="#17202b">3 prosentpoeng ned · 25 % nedgang</text>
+        </g>
+      </svg>
+    </div>
+    <div class="tekst">
+      <p>Vrakandelen i et parti sank fra 12 % til 9 %.</p>
+      <div class="undre" data-hint="Trekk prosentene fra hverandre. Det er prosentpoeng. Den relative endringen deler du på den gamle prosenten.">Hvor stor er nedgangen i prosentpoeng, og hvor mange prosent er nedgangen?</div>
+      <p class="steg">Prosentpoeng: \(12 - 9 = 3\). Andelen sank med 3 prosentpoeng.</p>
+      <p class="steg">Prosentvis nedgang, av den gamle andelen: \(3 : 12 = 0{,}25 = 25\ \%\).</p>
+      <p class="steg">3 prosentpoeng og 25 % er to ulike svar på to ulike spørsmål.</p>
+    </div>
+  </section>
+
+  <section class="lysbilde" data-tittel="Opp og ned">
+    <h2>20 % opp og 20 % ned</h2>
+    <div class="tekst">
+      <p>En reservedel koster 500 kr. Prisen øker med 20 %, og synker deretter med 20 %.</p>
+      <div class="undre" data-hint="Regn den nye prisen først. Den andre prosenten regnes av det nye tallet.">Er prisen tilbake på 500 kr?</div>
+      <p class="steg">Opp: \(500 \cdot 1{,}20 = 600\) kr.</p>
+      <p class="steg">Ned: \(600 \cdot 0{,}80 = 480\) kr.</p>
+      <p class="steg">480 kr er 20 kr under starten. Det er \(20 : 500 = 4\ \%\) lavere enn 500 kr. Like mange prosent opp og ned fører ikke tilbake til start, fordi den andre prosenten regnes av et annet tall.</p>
+      <div class="regel steg">
+        <p class="regel-tittel">Huskeregel</p>
+        <p>Prosentpoeng: trekk de to prosentene fra hverandre. Prosent: del endringen på den gamle verdien.</p>
+      </div>
+      <p class="se-ogsa steg"><a href="../3-4/teori.html">3.4 Rabatt og mva</a> · <a href="../3-5/teori.html">3.5 Vekstfaktor</a> · <a href="oppgaver.html">Oppgaver 3.3</a></p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

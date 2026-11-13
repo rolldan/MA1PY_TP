@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teori · 3.5 Vekstfaktor og flere perioder</title>
+<link rel="stylesheet" href="../../../assets/css/bok.css">
+<script defer src="../../../assets/js/bok.js"></script>
+</head>
+<body data-side="teori" data-kapittel="3" data-del="3.5">
+<main class="innhold">
+<article class="teori">
+  <p class="etikett">Prosent · Vekstfaktor</p>
+  <h1>Vekstfaktor og flere perioder</h1>
+  <p class="ingress">Vekstfaktoren er det tallet du ganger med. Over flere perioder ganger du faktorene, én for hver endring.</p>
+
+  <ul class="laeringsmal">
+    <li>finne vekstfaktoren ved oppgang og nedgang</li>
+    <li>finne ny verdi, gammel verdi og prosenten</li>
+    <li>regne flere perioder etter hverandre</li>
+  </ul>
+
+  <ol class="kjede"><li>gjør prosent om til faktor</li><li>gang</li><li>del for å finne gammel</li><li>gjenta for neste periode</li></ol>
+
+  <div class="fra-verkstedet">
+    <p>Lærlinglønn 150 kr med 20 % tillegg er \(150 \cdot 1{,}20 = 180\) kr. En Mustang verdt 1,25 millioner etter 6,5 % oppgang kostet omtrent 1 173 709 kr i fjor. En Avensis verdt 25 000 kr etter 90 % verdifall hadde nypris 250 000 kr.</p>
+  </div>
+
+  <h2>Forklaring</h2>
+  <p>Vekstfaktoren samler «behold det gamle og legg til endringen» i ett tall. 20 % opp er 1,20. 15 % ned er 0,85. 90 % ned er 0,10. 6,5 % opp er 1,065.</p>
+  <p>Kjenner du den nye verdien og faktoren, finner du den gamle ved å dele. Kjenner du begge verdier, er faktoren ny delt på gammel. Prosenten er da \((V - 1) \cdot 100\) ved oppgang, og \((1 - V) \cdot 100\) ved nedgang.</p>
+  <div class="tabell-rull">
+    <table>
+      <thead><tr><th>Endring</th><th>Vekstfaktor</th><th>Eksempel</th></tr></thead>
+      <tbody>
+        <tr><td>+20 %</td><td>1,20</td><td>\(150 \cdot 1{,}20 = 180\)</td></tr>
+        <tr><td>+6,5 %</td><td>1,065</td><td>\(1\,250\,000 : 1{,}065 \approx 1\,173\,709\)</td></tr>
+        <tr><td>−15 %</td><td>0,85</td><td>\(1000 \cdot 0{,}85 = 850\)</td></tr>
+        <tr><td>−90 %</td><td>0,10</td><td>\(25\,000 : 0{,}10 = 250\,000\)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="regel">
+    <h3>Regel</h3>
+    <p>Ny \(=\) gammel \(\cdot V\). Gammel \(=\) ny \(: V\). \(V =\) ny \(:\) gammel.</p>
+    <p>Samme faktor i \(t\) perioder: \(N = G \cdot V^{t}\). Ulike faktorer: gang dem i rekkefølge.</p>
+  </div>
+
+  <div class="eksempel">
+    <h3>Eksempel: Snorres regnestykke</h3>
+    <p>\(25\,000 \cdot 1{,}05 \cdot 0{,}85 \cdot 0{,}97\).</p>
+    <ol class="steg-liste">
+      <li class="steg">\(1{,}05\) er +5 %, \(0{,}85\) er −15 %, \(0{,}97\) er −3 %.</li>
+      <li class="steg">\(25\,000 \cdot 1{,}05 = 26\,250\). \(26\,250 \cdot 0{,}85 = 22\,312{,}5\). \(22\,312{,}5 \cdot 0{,}97 = 21\,643{,}125\).</li>
+      <li class="steg">Avrundet til nærmeste krone: 21 643 kr. Verdien har sunket omtrent 13,4 %, ikke 13 prosentpoeng.</li>
+    </ol>
+  </div>
+
+  <div class="vanlig-feil">
+    <p>6,5 % opp er faktor 1,065, ikke 1,65. 1,65 ville vært 65 % opp. Nedgang har faktor under 1: −15 % er 0,85, ikke 1,15. Og +4 % etterfulgt av −6 % og +5 % er ikke det samme som +3 %, fordi prosentene regnes av ulike tall.</p>
+  </div>
+
+  <div class="underveis">
+    <p>En bruktbil til 80 000 kr synker med 15 % hvert år i tre år. Hva er den verdt etter tre år?</p>
+    <div class="fasit">49 130 kr</div>
+    <div class="losning">Faktoren er 0,85. \(80\,000 \cdot 0{,}85^{3} = 80\,000 \cdot 0{,}614125 = 49\,130\) kr.</div>
+  </div>
+
+  <div class="verktoy">
+    <p><b>Regnearkmal.</b> Skriv startverdien i B1. I B2 skriver du <code>=B1*1,065</code> og kopierer nedover. I CAS kan du løse \(1\,250\,000 = G \cdot 1{,}065\) for \(G\). Husk desimalkomma i regnearket hvis det er stilt inn på norsk.</p>
+    <div class="tabell-rull">
+      <table>
+        <thead><tr><th></th><th>A</th><th>B</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Start</td><td>25000</td></tr>
+          <tr><td>2</td><td>Etter +5 %</td><td>=B1*1,05</td></tr>
+          <tr><td>3</td><td>Etter −15 %</td><td>=B2*0,85</td></tr>
+          <tr><td>4</td><td>Etter −3 %</td><td>=B3*0,97</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</article>
+</main>
+</body>
+</html>
