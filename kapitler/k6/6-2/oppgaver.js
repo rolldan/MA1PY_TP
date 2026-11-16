@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "lett",
+    tittel: "Les trekanten",
+    tekst: '<div class="figur"><svg viewBox="0 0 280 240" role="img" aria-label="Rettvinklet trekant med kateter 3 og 4"><polygon points="40,190 124,190 124,78" fill="#fff" stroke="#17202b" stroke-width="3"/><path d="M124 170 L104 170 L104 190" fill="none" stroke="#b45309" stroke-width="3"/><text x="82" y="214" text-anchor="middle" font-size="18" font-weight="700">3</text><text x="140" y="140" font-size="18" font-weight="700">4</text><text x="60" y="140" font-size="18" font-weight="700">?</text></svg></div><p>Katetene står på figuren. Hvor lang er siden merket med spørsmålstegn?</p>',
+    svar: { verdi: 5 },
+    hint: ["Dette er 3-4-5. Kvadrer de to korte sidene.", "\\(3^2 + 4^2 = 25\\), og \\(\\sqrt{25} = 5\\)."],
+    losning: "<p>\\(3^2 + 4^2 = 25\\). \\(\\sqrt{25} = 5\\).</p>"
+  },
+  {
     id: "tre-fire-fem",
     niva: "lett",
     tittel: "3-4-5",

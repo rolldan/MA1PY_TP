@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "middels",
+    tittel: "Les stanga",
+    tekst: '<div class="figur"><svg viewBox="0 0 420 160" role="img" aria-label="Stang som dreies fra diameter 20 mm til 18 mm over 120 mm"><rect x="40" y="50" width="300" height="48" fill="#cbd5e1" stroke="#17202b" stroke-width="2"/><rect x="40" y="52.4" width="300" height="43.2" fill="#fff" stroke="#b45309" stroke-width="2"/><text x="190" y="36" text-anchor="middle" font-size="16">Ø20 → Ø18, lengde 120 mm</text></svg></div><p>Hvor stort volum blir spon når stanga på figuren dreies ned?</p>',
+    svar: { verdi: 7163, enhet: "mm³", tol: 20 },
+    hint: ["Sponen er en hul sylinder: π · (10² − 9²) · 120.", "\\(\\pi \\cdot 19 \\cdot 120 \\approx 7163\\) mm³."],
+    losning: "<p>\\(\\pi (10^2 - 9^2) \\cdot 120 = 2280\\pi \\approx 7163\\) mm³.</p>"
+  },
+  {
     id: "etikett",
     niva: "lett",
     tekst: "<p>En etikett dekker sideflaten på en sylinder. Diameteren er 66 mm, og etiketten er 100 mm høy. Hvor stort er arealet?</p>",

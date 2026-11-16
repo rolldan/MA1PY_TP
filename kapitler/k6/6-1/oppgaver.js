@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "lett",
+    tittel: "Les braketten",
+    tekst: '<div class="figur"><svg viewBox="0 0 220 210" role="img" aria-label="Rettvinklet trekant med 90 og 55 grader"><polygon points="30,180 130,180 30,37" fill="#fff" stroke="#17202b" stroke-width="3"/><path d="M30 158 L52 158 L52 180" fill="none" stroke="#b45309" stroke-width="3"/><text x="58" y="174" font-size="16" font-weight="700">90°</text><text x="92" y="168" font-size="16" font-weight="700">55°</text><text x="40" y="58" font-size="18" font-weight="700">?</text></svg></div><p>Figuren er tegnet med de to vinklene som står på. Hvor stor er vinkelen merket med spørsmålstegn? Skriv tallet uten gradtegn.</p>',
+    svar: { verdi: 35 },
+    hint: ["Vinkelsummen i en trekant er 180°.", "180 − 90 − 55 = 35."],
+    losning: "<p>\\(180 - 90 - 55 = 35\\). Vinkelen er 35°.</p>"
+  },
+  {
     id: "rett-vinkel",
     niva: "lett",
     tittel: "Hva er en rett vinkel?",

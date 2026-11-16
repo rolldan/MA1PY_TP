@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "lett",
+    tittel: "Les boksen",
+    tekst: '<div class="figur"><svg viewBox="0 0 360 200" role="img" aria-label="Boks med sider 11, 6 og 5 cm"><polygon points="70,90 202,90 202,150 70,150" fill="#fff" stroke="#17202b" stroke-width="3"/><polygon points="70,90 132,54 264,54 202,90" fill="#f8fafc" stroke="#17202b" stroke-width="3"/><polygon points="202,90 264,54 264,114 202,150" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/><text x="136" y="174" text-anchor="middle" font-size="16">11 cm</text><text x="272" y="96" font-size="16">6 cm</text><text x="28" y="128" font-size="16">5 cm</text></svg></div><p>Hvor stort er volumet av boksen på figuren?</p>',
+    svar: { verdi: 330, enhet: "cm³" },
+    hint: ["Gang de tre kantene som står på figuren.", "11 · 6 · 5 = 330 cm³."],
+    losning: "<p>\\(11 \\cdot 6 \\cdot 5 = 330\\) cm³.</p>"
+  },
+  {
     id: "prisme",
     niva: "lett",
     tittel: "Brusboksens prisme",

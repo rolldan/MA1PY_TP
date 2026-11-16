@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "lett",
+    tittel: "Les tegningen",
+    tekst: '<div class="figur"><svg viewBox="0 0 420 180" role="img" aria-label="Liten tegning på 8 cm og virkelig lengde i målestokk 1 til 5"><rect x="16" y="70" width="40" height="25" fill="#fff" stroke="#17202b" stroke-width="2"/><text x="36" y="62" text-anchor="middle" font-size="14">8 cm</text><text x="36" y="116" text-anchor="middle" font-size="14">1 : 5</text><line x1="70" y1="82" x2="118" y2="82" stroke="#b45309" stroke-width="3"/><polygon points="112,76 128,82 112,88" fill="#b45309"/><rect x="146" y="20" width="200" height="125" fill="#fff" stroke="#17202b" stroke-width="3"/><text x="246" y="90" text-anchor="middle" font-size="18" font-weight="700">?</text></svg></div><p>Tegningen til venstre er i målestokk 1 : 5. Hvor lang er kassen i verkstedet?</p>',
+    svar: { verdi: 40, enhet: "cm" },
+    hint: ["1 : 5 betyr at virkeligheten er 5 ganger tegningen.", "8 · 5 = 40 cm."],
+    losning: "<p>\\(8 \\cdot 5 = 40\\). Kassen er 40 cm lang.</p>"
+  },
+  {
     id: "en-til-fem",
     niva: "lett",
     tekst: "<p>En arbeidstegning er i målestokk 1 : 5. På tegningen er en lengde 8 cm. Hvor lang er den i virkeligheten?</p>",
