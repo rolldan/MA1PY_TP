@@ -6,7 +6,18 @@ const { sql, transaksjon, lukk } = require("./db");
 const { lagHash, sjekkPassord } = require("./passord");
 const { erInne, oppsummer } = require("./framdrift");
 
-const rot = path.join(__dirname, "..");
+function velgRot() {
+  const kilde = path.join(__dirname, "..");
+  const publikum = path.join(kilde, "public");
+  if (fs.existsSync(path.join(kilde, "index.html"))) return kilde;
+  if (fs.existsSync(path.join(publikum, "index.html"))) return publikum;
+  const her = process.cwd();
+  if (fs.existsSync(path.join(her, "index.html"))) return her;
+  if (fs.existsSync(path.join(her, "public", "index.html"))) return path.join(her, "public");
+  return kilde;
+}
+
+const rot = velgRot();
 const GRENSE = 8;
 const VINDU = "15 minutes";
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -24,7 +35,7 @@ const MIME = {
   ".ico": "image/x-icon"
 };
 const TILLATT = new Set(Object.keys(MIME));
-const SKJULT = new Set(["server", "scripts", "node_modules", "migrations", "tester"]);
+const SKJULT = new Set(["server", "scripts", "node_modules", "migrations", "tester", "public"]);
 
 let dummyLovet;
 
@@ -721,4 +732,4 @@ if (require.main === module) {
   process.on("SIGINT", () => { lukk().finally(() => process.exit(0)); });
 }
 
-module.exports = { start, lukk };
+module.exports = { start, lukk, handter };

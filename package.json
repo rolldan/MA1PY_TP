@@ -4,13 +4,15 @@
   "description": "Nettbok i matematikk 1P-Y med elevinnlogging og lærerside.",
   "scripts": {
     "start": "node server/index.js",
-    "build": "node scripts/migrate.mjs"
+    "build": "node scripts/kopier-public.mjs && node scripts/migrate.mjs"
   },
   "engines": {
     "node": ">=20"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.16",
+    "@vercel/functions": "^3.11.3",
+    "express": "^4.22.3",
     "pg": "^8.23.1"
   }
 }
