@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin · Matematikk 1P-Y TIF</title>
+<link rel="stylesheet" href="assets/css/bok.css">
+<script defer src="assets/js/bok.js"></script>
+<script defer src="assets/js/admin.js"></script>
+</head>
+<body data-side="admin">
+<main class="innhold bred" id="admin">
+  <p class="etikett">Lærerside</p>
+  <h1>Elever og framdrift</h1>
+  <div id="admin-uten-api">
+    <p>Live admin kommer på utgaven med database. Resten av boka virker som før, uten konto.</p>
+    <p><a class="knapp" href="index.html">Til boka</a></p>
+  </div>
+  <div id="admin-verktoy" hidden>
+    <p class="ingress">Siden oppdateres av seg selv. En elev er inne når siste signal er under 30 sekunder.</p>
+    <h2>Inne nå</h2>
+    <div id="admin-live" class="live-liste" aria-live="polite"></div>
+    <h2>Ny elev</h2>
+    <form id="ny-elev" class="skjema" autocomplete="off" novalidate>
+      <label>Navn <input name="navn" autocomplete="off" required maxlength="80"></label>
+      <label>Brukernavn <input name="brukernavn" autocomplete="off" required maxlength="40"></label>
+      <label>Passord <input name="passord" type="password" autocomplete="new-password" required minlength="8" maxlength="200"></label>
+      <button class="knapp" type="submit">Opprett elev</button>
+    </form>
+    <p id="admin-melding" class="tilbakemelding" aria-live="polite"></p>
+    <h2>Kontoer</h2>
+    <div id="admin-kontoer"></div>
+  </div>
+</main>
+</body>
+</html>

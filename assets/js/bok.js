@@ -26,6 +26,8 @@
   };
 
   var registrerteOppgaver = null;
+  var sesjon = null;
+  var pulsPlan = null;
   var body = document.body;
   var ctx = {
     side: body.dataset.side || "",
@@ -54,6 +56,7 @@
     },
     sett: function (nokkel, verdi) {
       try { localStorage.setItem(LAGER + nokkel, JSON.stringify(verdi)); } catch (e) { /* privat modus */ }
+      planleggPuls();
     },
     alle: function () {
       var ut = {};
@@ -130,10 +133,7 @@
       el("div", { class: "topp-indre" }, [
         el("a", { class: "logo", href: ROT + "index.html" }, [el("b", { tekst: "1P-Y" }), "Matematikk TIF"]),
         smule,
-        el("nav", { class: "topp-hoyre", "aria-label": "Snarveier" }, [
-          el("a", { href: ROT + "ukeplan.html", tekst: "Ukeplan" }),
-          el("a", { href: ROT + "framdrift.html", tekst: "Min framdrift" })
-        ])
+        kontoNav()
       ])
     ]);
     if (del && ctx.side !== "kapittel") {
@@ -311,7 +311,8 @@
       el("a", { href: urlKapittel(ctx.kap), tekst: "‹ Kapittel " + ctx.kap }),
       el("span", { class: "tittel", tekst: del.nr + " " + del.tittel }),
       faner,
-      el("a", { class: "til-teori", href: urlSide(ctx.kap, del.nr, "teori"), tekst: "Teori ›" })
+      el("a", { class: "til-teori", href: urlSide(ctx.kap, del.nr, "teori"), tekst: "Teori ›" }),
+      kontoKort()
     ]);
     ramme.appendChild(topp);
     ramme.appendChild(tavle);
@@ -836,6 +837,11 @@
   // ---------- Framdrift ----------
   function bygFramdrift() {
     var main = $("#framdrift");
+    var etikett = $("p.etikett", main);
+    if (etikett && sesjon && sesjon.rolle === "elev") etikett.textContent = "Lagres i nettleseren og hos læreren";
+    if (sesjon && sesjon.rolle === "elev" && lokalKonto() && lokalKonto() !== sesjon.id) {
+      main.appendChild(el("p", { class: "boks", tekst: "Framdriften i denne nettleseren hører til en annen konto og blir ikke sendt til læreren." }));
+    }
     var meta = lager.hent("meta", {});
     var perDel = {};
     Object.keys(meta).forEach(function (id) { (perDel[meta[id].del] = perDel[meta[id].del] || []).push(id); });
@@ -910,6 +916,116 @@
   }
   function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
+  // ---------- Innlogging, puls og framdrift til læreren ----------
+  function kontoNav() {
+    var n = el("nav", { class: "topp-hoyre", "aria-label": "Snarveier" });
+    n.appendChild(el("a", { href: ROT + "ukeplan.html", tekst: "Ukeplan" }));
+    n.appendChild(el("a", { href: ROT + "framdrift.html", tekst: "Min framdrift" }));
+    if (sesjon && sesjon.rolle === "admin") n.appendChild(el("a", { href: ROT + "admin.html", tekst: "Admin" }));
+    if (sesjon) {
+      n.appendChild(el("span", { class: "innlogget-navn", tekst: sesjon.navn }));
+      n.appendChild(el("button", { type: "button", tekst: "Logg ut", onclick: loggUt }));
+    } else if (ctx.side !== "innlogging") {
+      n.appendChild(el("a", { href: ROT + "innlogging.html", tekst: "Logg inn" }));
+    }
+    return n;
+  }
+  function kontoKort() {
+    var s = el("span", { class: "konto-kort" });
+    if (sesjon && sesjon.rolle === "admin") s.appendChild(el("a", { href: ROT + "admin.html", tekst: "Admin" }));
+    if (sesjon) {
+      s.appendChild(el("span", { tekst: sesjon.navn }));
+      s.appendChild(el("button", { type: "button", tekst: "Logg ut", onclick: loggUt }));
+    } else if (ctx.side !== "innlogging") {
+      s.appendChild(el("a", { href: ROT + "innlogging.html", tekst: "Logg inn" }));
+    }
+    return s;
+  }
+  function loggUt() {
+    fetch(ROT + "api/utlogging", { method: "POST", credentials: "same-origin" })
+      .finally(function () { location.href = ROT + "innlogging.html"; });
+  }
+  function hentTilstand() {
+    var signal = typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(4000) : undefined;
+    return fetch(ROT + "api/tilstand", { credentials: "same-origin", headers: { accept: "application/json" }, signal: signal })
+      .then(function (r) {
+        var type = r.headers.get("content-type") || "";
+        if (!r.ok || type.indexOf("application/json") === -1) return { api: false };
+        return r.json().then(function (d) { d.api = true; return d; });
+      })
+      .catch(function () { return { api: false }; });
+  }
+  function lokalKonto() {
+    try {
+      var v = localStorage.getItem(LAGER + "konto");
+      return v === null ? null : JSON.parse(v);
+    } catch (e) { return null; }
+  }
+  function harLokalFramdrift() {
+    return Object.keys(lager.alle()).length > 0;
+  }
+  function hentEgenFramdrift() {
+    return fetch(ROT + "api/framdrift", { credentials: "same-origin", headers: { accept: "application/json" } })
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (d) { return d && d.framdrift ? d.framdrift : {}; })
+      .catch(function () { return {}; });
+  }
+  function sendPuls() {
+    if (!sesjon || sesjon.rolle !== "elev") return;
+    var merke = lokalKonto();
+    if (!merke) {
+      try { localStorage.setItem(LAGER + "konto", JSON.stringify(sesjon.id)); } catch (e) { /* privat modus */ }
+      merke = sesjon.id;
+    }
+    var sti = (location.pathname || "/") + location.search + location.hash;
+    var kropp = { sti: sti.slice(0, 500), tittel: (document.title || "Uten tittel").slice(0, 200) };
+    if (merke === sesjon.id) kropp.framdrift = lager.alle();
+    fetch(ROT + "api/puls", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(kropp)
+    }).catch(function () {});
+  }
+  function planleggPuls() {
+    if (!sesjon || sesjon.rolle !== "elev") return;
+    clearTimeout(pulsPlan);
+    pulsPlan = setTimeout(sendPuls, 500);
+  }
+  function startPuls() {
+    if (!sesjon || sesjon.rolle !== "elev" || window.__ma1pyPuls) return;
+    window.__ma1pyPuls = true;
+    sendPuls();
+    setInterval(sendPuls, 10000);
+    window.addEventListener("hashchange", planleggPuls);
+  }
+  function klargjorSide(t) {
+    if (t.api && !t.innlogget && ctx.side !== "innlogging") {
+      location.replace(ROT + "innlogging.html?neste=" + encodeURIComponent(location.pathname + location.search + location.hash));
+      return Promise.resolve(false);
+    }
+    if (t.api && t.innlogget && ctx.side === "innlogging") {
+      location.replace(ROT + (t.rolle === "admin" ? "admin.html" : "index.html"));
+      return Promise.resolve(false);
+    }
+    if (t.api && t.innlogget && ctx.side === "admin" && t.rolle !== "admin") {
+      location.replace(ROT + "index.html");
+      return Promise.resolve(false);
+    }
+    sesjon = t.api && t.innlogget ? t : null;
+    if (!(sesjon && sesjon.rolle === "elev" && !harLokalFramdrift())) return Promise.resolve(true);
+    return hentEgenFramdrift().then(function (data) {
+      var nokler = Object.keys(data || {});
+      if (!nokler.length) return true;
+      nokler.forEach(function (k) {
+        if (k.indexOf(LAGER) === 0 && typeof data[k] === "string") localStorage.setItem(k, data[k]);
+      });
+      try { localStorage.setItem(LAGER + "konto", JSON.stringify(sesjon.id)); } catch (e) { /* privat modus */ }
+      location.reload();
+      return false;
+    });
+  }
+
   // ---------- Oppstart ----------
   window.Bok = {
     oppgaver: function (data) { registrerteOppgaver = Array.isArray(data) ? { oppgaver: data } : data; },
@@ -930,8 +1046,19 @@
   });
 
   Promise.all([klar, domKlar]).then(function () {
+    return hentTilstand().then(klargjorSide);
+  }).then(function (vis) {
+    if (vis === false) return;
     if (ctx.kap !== null) settKapFarge(ctx.kap);
     body.classList.add("side-" + ctx.side);
+    if (sesjon) {
+      var gammel = document.getElementById("logg-inn-lenke");
+      if (gammel) gammel.hidden = true;
+      if (ctx.side === "forside") {
+        var fot = document.querySelector("footer p");
+        if (fot) fot.textContent = "Du er logget inn. Framdriften lagres i denne nettleseren og sendes til læreren.";
+      }
+    }
     var kapLast = ctx.kap !== null ? hentKapittel(ctx.kap) : Promise.resolve(null);
     return kapLast.then(function (kapData) {
       if (ctx.side !== "tavle") bygTopp(kapData);
@@ -943,6 +1070,6 @@
       if (ctx.side === "teori") { bygTeori(); bygBunnnav(kapData); }
       if (ctx.side === "oppgaver") { bygOppgaveside(kapData); bygBunnnav(kapData); }
       if (ctx.side === "verksted") { bygVerksted(); bygTeori(); bygBunnnav(kapData); }
-    });
+    }).then(function () { startPuls(); });
   }).then(function () { renderMatte(); }).catch(function (e) { console.error(e); renderMatte(); });
 })();

@@ -1,0 +1,16 @@
+{
+  "name": "ma1py-tp",
+  "private": true,
+  "description": "Nettbok i matematikk 1P-Y med elevinnlogging og lærerside.",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "node scripts/migrate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "pg": "^8.23.1"
+  }
+}

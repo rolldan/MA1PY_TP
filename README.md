@@ -2,7 +2,7 @@
 
 Bokmål. Læreplan MAT08-01 (LK20), fagkode MAT1129. Skoleåret 2026/2027.
 
-Nettboka brukes i to økter i uka: 60 minutter med tavle og måltrapp, og 75 minutter med verkstedkort. Hvert delkapittel har fire sider: **tavle**, **teori**, **oppgaver** og **verkstedkort**. Framdriften lagres bare i nettleseren.
+Nettboka brukes i to økter i uka: 60 minutter med tavle og måltrapp, og 75 minutter med verkstedkort. Hvert delkapittel har fire sider: **tavle**, **teori**, **oppgaver** og **verkstedkort**. På GitHub Pages lagres framdriften bare i nettleseren. Utgaven med database har elevinnlogging og en lærerside som viser hvem som er inne.
 
 Publisert utgave: https://rolldan.github.io/MA1PY_TP/
 
@@ -12,7 +12,18 @@ Publisert utgave: https://rolldan.github.io/MA1PY_TP/
 python3 -m http.server 8000
 ```
 
-Gå til [http://localhost:8000/](http://localhost:8000/). Forsiden henter `kapitler/kN/kapittel.json` for kapittel 0 til 10. Mangler fila, står kapitlet som «kommer».
+Gå til [http://localhost:8000/](http://localhost:8000/). Forsiden henter `kapitler/kN/kapittel.json` for kapittel 0 til 10. Mangler fila, står kapitlet som «kommer». Denne utgaven har ikke database, så innloggingssiden sier at live innlogging kommer på utgaven med database. Boka er ikke låst.
+
+## Innlogging og lærerside
+
+Node-serveren serverer de samme filene og et API på samme origin. Uten `DATABASE_URL` brukes en database i minnet. Hvis variabelen peker på en annen database, kjør med den fjernet.
+
+```bash
+npm install
+env -u DATABASE_URL npm start
+```
+
+Åpne [http://localhost:3000/innlogging.html](http://localhost:3000/innlogging.html). Den første kontoen blir lærerkontoen. Etterpå kan læreren opprette elever på Admin. Passord lagres bare som hash. `npm run build` kjører migrasjonene når `DATABASE_URL` er satt.
 
 ## Det som ligger inne nå
 
