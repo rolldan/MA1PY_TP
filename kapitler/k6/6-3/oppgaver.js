@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "middels",
+    tittel: "Les plata",
+    tekst: '<div class="figur"><svg viewBox="0 0 360 250" role="img" aria-label="Plate 60 cm ganger 40 cm med hull diameter 10 cm"><rect x="30" y="20" width="240" height="160" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/><circle cx="150" cy="100" r="20" fill="#fff" stroke="#b45309" stroke-width="3"/><text x="190" y="106" font-size="14">Ø 10 cm</text><text x="150" y="206" text-anchor="middle" font-size="16">60 cm</text><text x="286" y="104" font-size="16">40 cm</text></svg></div><p>Hvor stort areal er igjen når hullet er boret? Bruk målene på figuren.</p>',
+    svar: { verdi: 2321.5, enhet: "cm²", tol: 1 },
+    hint: ["Radius er 5 cm. Trekk sirkelen fra rektangelet.", "60 · 40 = 2400. π · 5² ≈ 78,5. 2400 − 78,5 = 2321,5."],
+    losning: "<p>Plata er 2400 cm². Hullet er \\(\\pi \\cdot 5^2 \\approx 78{,}5\\) cm². Igjen er omtrent 2322 cm².</p>"
+  },
+  {
     id: "rektangel",
     niva: "lett",
     tekst: "<p>En plate er 800 mm lang og 500 mm bred.</p>",

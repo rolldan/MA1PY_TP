@@ -1,5 +1,14 @@
 Bok.oppgaver([
   {
+    id: "fra-figuren",
+    niva: "middels",
+    tittel: "Les sylinderen",
+    tekst: '<div class="figur"><svg viewBox="0 0 360 200" role="img" aria-label="Sylinder med boring 47 mm og slag 40 mm, tegnet i samme forhold"><rect x="70" y="40" width="141" height="120" fill="#e2e8f0" stroke="#17202b" stroke-width="3"/><line x1="80" y1="40" x2="201" y2="40" stroke="#b45309" stroke-width="3"/><line x1="80" y1="160" x2="201" y2="160" stroke="#b45309" stroke-width="3"/><text x="140" y="28" text-anchor="middle" font-size="14">boring 47 mm</text><text x="230" y="106" font-size="14">slag 40 mm</text></svg></div><p>Regn slagvolumet til sylinderen på figuren. Én sylinder.</p>',
+    svar: { verdi: 69.4, enhet: "cm³", tol: 0.5 },
+    hint: ["Radius er 23,5 mm. Gjør mm³ om til cm³ til slutt.", "\\(\\pi \\cdot 23{,}5^2 \\cdot 40 \\approx 69\\,400\\) mm³ \\(\\approx 69{,}4\\) cm³."],
+    losning: "<p>\\(r = 23{,}5\\) mm. \\(V = \\pi \\cdot 23{,}5^2 \\cdot 40 \\approx 69\\,400\\) mm³ \\(\\approx 69{,}4\\) cm³.</p>"
+  },
+  {
     id: "moped",
     niva: "lett",
     tittel: "Moped-sylinder",

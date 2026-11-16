@@ -186,6 +186,9 @@ body.side-tavle { background-color: #e9eef3; }
 .lysbilde > h2 { grid-column: 1; margin: 0.3rem 0 0.5rem; font-size: clamp(1.8rem, 3.6vw, 2.8rem); }
 .lysbilde .figur { grid-column: 1; grid-row: 3; display: flex; align-items: center; justify-content: center; min-height: 14rem; }
 .lysbilde .figur svg { width: 100%; max-height: 60vh; }
+.oppgave-tekst .figur { margin: 0.4rem 0 0.8rem; max-width: 28rem; }
+.oppgave-tekst .figur svg { width: 100%; height: auto; display: block; }
+.figur svg text { font-family: inherit; }
 .lysbilde .tekst { grid-column: 2; grid-row: 2 / span 2; font-size: clamp(1.15rem, 1.7vw, 1.45rem); line-height: 1.5; }
 .lysbilde.uten-figur .tekst { grid-column: 1 / -1; max-width: 52rem; }
 .lysbilde .tekst > :first-child { margin-top: 0.4rem; }
